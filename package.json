@@ -1,0 +1,39 @@
+{
+  "name": "matilha-web",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Mila Zanforlin",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
+    "start": "node .next/standalone/server.js",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^5.5.7",
+    "@next/third-parties": "^16.2.12",
+    "framer-motion": "^12.43.0",
+    "gsap": "^3.15.0",
+    "lottie-react": "^2.4.1",
+    "next": "16.2.12",
+    "next-intl": "^4.13.4",
+    "nodemailer": "^9.0.3",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-hook-form": "^7.83.0",
+    "swiper": "^14.0.7",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/nodemailer": "^8.0.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.12",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "charney-companies",
+  "slug": "charney-companies",
+  "title": "Charney Companies",
+  "client": "Charney Companies",
+  "summary": "Organização imobiliária verticalmente integrada: incorporação, corretagem e gestão de propriedades.",
+  "challenge": "Projetar e desenvolver o novo site da Charney alinhado com a nova marca da empresa.",
+  "solution": "Redesign do website com base no novo manual de marca e nos problemas identificados no site anterior.",
+  "services": [
+    "UI | UX Design",
+    "Desenvolvimento e Tech"
+  ],
+  "cover": "/images/cases/charney-companies/cover.webp",
+  "coverAlt": "Case Charney Companies — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/charney-companies/gallery-1.webp",
+      "alt": "Charney Companies — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-2.webp",
+      "alt": "Charney Companies — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-3.webp",
+      "alt": "Charney Companies — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-4.webp",
+      "alt": "Charney Companies — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-5.webp",
+      "alt": "Charney Companies — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-6.webp",
+      "alt": "Charney Companies — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "cormora",
+    "sestini"
+  ],
+  "seo": {
+    "title": "Charney Companies — Matilha Estúdio",
+    "description": "Redesign do website imobiliário Charney Companies."
+  }
+}

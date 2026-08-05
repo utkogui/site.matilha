@@ -1,0 +1,49 @@
+{
+  "id": "charney-companies",
+  "slug": "charney-companies",
+  "title": "Charney Companies",
+  "client": "Charney Companies",
+  "summary": "Vertically integrated real estate organization: development, brokerage and property management.",
+  "challenge": "Design and develop Charney's new website aligned with the company's new brand.",
+  "solution": "Website redesign based on the new brand guidelines and issues identified on the previous site.",
+  "services": [
+    "UI | UX Design",
+    "Development & Tech"
+  ],
+  "cover": "/images/cases/charney-companies/cover.webp",
+  "coverAlt": "Charney Companies case — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/charney-companies/gallery-1.webp",
+      "alt": "Charney Companies — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-2.webp",
+      "alt": "Charney Companies — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-3.webp",
+      "alt": "Charney Companies — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-4.webp",
+      "alt": "Charney Companies — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-5.webp",
+      "alt": "Charney Companies — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/charney-companies/gallery-6.webp",
+      "alt": "Charney Companies — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "cormora",
+    "sestini"
+  ],
+  "seo": {
+    "title": "Charney Companies — Matilha Estúdio",
+    "description": "Charney Companies real estate website redesign."
+  }
+}

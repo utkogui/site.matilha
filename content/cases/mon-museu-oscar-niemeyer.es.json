@@ -1,0 +1,50 @@
+{
+  "id": "mon-museu-oscar-niemeyer",
+  "slug": "museo-oscar-niemeyer",
+  "title": "Museo Oscar Niemeyer",
+  "client": "MON",
+  "summary": "El museo de arte más grande de América Latina.",
+  "challenge": "Hacer la experiencia del sitio agradable y útil, unificando información de los diferentes sectores del museo.",
+  "solution": "Investigación de servicio, rediseño con identidad visual existente y desarrollo incluyendo tienda virtual y migración de contenido.",
+  "services": [
+    "Diseño de Servicio",
+    "UI | UX Design",
+    "Desarrollo y Tech"
+  ],
+  "cover": "/images/cases/mon-museu/cover.webp",
+  "coverAlt": "Case MON — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/mon-museu/gallery-1.webp",
+      "alt": "MON — imagen 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/mon-museu/gallery-2.webp",
+      "alt": "MON — imagen 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/mon-museu/gallery-3.webp",
+      "alt": "MON — imagen 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/mon-museu/gallery-4.webp",
+      "alt": "MON — imagen 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/mon-museu/gallery-5.webp",
+      "alt": "MON — imagen 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/mon-museu/gallery-6.webp",
+      "alt": "MON — imagen 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "sestini"
+  ],
+  "seo": {
+    "title": "MON — Matilha Estúdio",
+    "description": "Rediseño y desarrollo del sitio del Museo Oscar Niemeyer."
+  }
+}

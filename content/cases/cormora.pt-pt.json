@@ -1,0 +1,51 @@
+{
+  "id": "cormora",
+  "slug": "cormora",
+  "title": "Cormora",
+  "client": "Cormora",
+  "summary": "Plataforma de gerenciamento de viagens de turismo para consultores centralizarem seus negócios.",
+  "challenge": "Criar um produto White Label modular, intuitivo e simples para agentes de turismo gerenciarem seus negócios de viagem.",
+  "solution": "Discovery, roadmap de inovação, branding e naming, UI/UX e desenvolvimento da plataforma white label Cormora.",
+  "services": [
+    "Branding & Naming",
+    "Design de Serviço",
+    "UI | UX Design",
+    "Desenvolvimento e Tech"
+  ],
+  "cover": "/images/cases/cormora/cover.webp",
+  "coverAlt": "Case Cormora — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/cormora/gallery-1.webp",
+      "alt": "Cormora — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/cormora/gallery-2.webp",
+      "alt": "Cormora — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/cormora/gallery-3.webp",
+      "alt": "Cormora — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/cormora/gallery-4.webp",
+      "alt": "Cormora — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/cormora/gallery-5.webp",
+      "alt": "Cormora — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/cormora/gallery-6.webp",
+      "alt": "Cormora — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "sestini"
+  ],
+  "seo": {
+    "title": "Cormora — Matilha Estúdio",
+    "description": "Plataforma white label de turismo — branding, UX e desenvolvimento."
+  }
+}

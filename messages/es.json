@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "siteName": "Matilha Estúdio",
+    "homeTitle": "Matilha ∴ 15 años",
+    "defaultDescription": "Estudio de diseño que transforma negocios a través de experiencias que generan resultados."
+  },
+  "nav": {
+    "home": "Inicio",
+    "services": "Qué hacemos",
+    "cases": "Nuestro trabajo",
+    "contact": "Hablemos",
+    "careers": "Únete",
+    "menu": "Menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "backToTop": "Volver arriba",
+    "language": "Idioma"
+  },
+  "home": {
+    "heroTitle": "Tu idea ejecutada con perfección.",
+    "heroCta": "Transformemos tu idea juntos",
+    "scrollDown": "Ir a la siguiente sección",
+    "heroCaption": "matilha estúdio",
+    "studioLabel": "// ESTÚDIO MATILHA",
+    "transformHeading": "Transformamos <u>negocios</u> a través de <u>experiencias</u> que generan resultados.",
+    "servicesLabel": "// QUÉ HACEMOS",
+    "casesLabel": "// NUESTRO TRABAJO",
+    "casesHeading": "De <u>historias</u> a <u>resultados.</u>",
+    "clientsLabel": "// Empresas",
+    "clientsHeading": "Marcas que <u>confían en nosotros.</u>",
+    "viewAllCases": "Ver todo nuestro trabajo",
+    "ctaTitle": "Transformemos tu idea juntos",
+    "growLabel": "// MATILHA.DIGITAL",
+    "growHeading": "Diseñamos productos que dan forma a las <u>experiencias.</u>"
+  },
+  "services": {
+    "uxui": "UI/UX Design",
+    "serviceDesign": "Service Design",
+    "daas": "Equipos dedicados (DaaS)",
+    "branding": "Branding y naming",
+    "development": "Desarrollo y tecnología",
+    "mvp": "Validación de modelos de negocio"
+  },
+  "cases": {
+    "title": "Nuestro trabajo",
+    "pageLabel": "// NUESTRO TRABAJO",
+    "pageHeading": "Donde la <u>estrategia</u> se encuentra con el <u>diseño.</u>",
+    "subtitle": "Proyectos que impulsan negocios",
+    "viewCase": "Ver proyecto",
+    "allCases": "Ver todo el trabajo",
+    "related": "Proyectos relacionados",
+    "challenge": "Desafío",
+    "solution": "Solución",
+    "services": "Servicios"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "pageLabel": "// HABLEMOS",
+    "pageHeading": "Conversemos y <u>definamos</u> juntos el <u>próximo paso.</u>",
+    "subtitle": "Cuéntanos tu proyecto. Te responderemos pronto.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escribe tu mensaje",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado correctamente.",
+    "error": "No pudimos enviar tu mensaje. Inténtalo de nuevo.",
+    "whatsapp": "WhatsApp",
+    "phoneLabel": "TELÉFONO",
+    "addressLabel": "DIRECCIÓN"
+  },
+  "careers": {
+    "title": "Únete",
+    "pageLabel": "// ÚNETE",
+    "pageHeading": "Únete a nosotros y <u>construyamos</u> el futuro <u>juntos.</u>",
+    "subtitle": "Buscamos talento con visión de producto, diseño y tecnología.",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos sobre ti e incluye enlaces a tu portafolio, LinkedIn, etc.",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Tu candidatura fue enviada correctamente.",
+    "error": "No pudimos enviar tu candidatura. Inténtalo de nuevo."
+  },
+  "privacy": {
+    "title": "Política de privacidad",
+    "updated": "Última actualización: en revisión",
+    "placeholder": "Estamos actualizando el contenido completo de esta política. Pronto publicaremos la versión definitiva en esta página."
+  },
+  "footer": {
+    "email": "talk@matilha.digital",
+    "navLabel": "Navegación",
+    "casesLabel": "Nuestro trabajo",
+    "contactLabel": "Contacto",
+    "phoneLabel": "Teléfono",
+    "addressesLabel": "Oficinas",
+    "brazil": "Brasil | Curitiba - PR",
+    "brazilAddress": "Rua Emiliano Perneta, 680",
+    "usa": "Estados Unidos | Orlando, FL",
+    "usaAddress": "7345 W Sand Lake RD, STE 210 Office 8716",
+    "languagesLabel": "Idiomas",
+    "privacy": "Política de privacidad",
+    "copyright": "© 2012–{year} Matilha Estúdio de Design Ltda.",
+    "years": "XV aniversario.",
+    "socialLinkedin": "Matilha en LinkedIn",
+    "socialInstagram": "Matilha en Instagram",
+    "socialMedium": "Matilha en Medium",
+    "socialBehance": "Matilha en Behance",
+    "socialLabel": "Redes sociales",
+    "showMore": "Ver más información",
+    "showLess": "Ocultar información"
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o ha sido movida.",
+    "backHome": "Volver al inicio"
+  },
+  "common": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  }
+}

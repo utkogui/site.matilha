@@ -1,0 +1,48 @@
+{
+  "id": "sestini",
+  "slug": "sestini",
+  "title": "Brandbook Sestini",
+  "client": "Sestini",
+  "summary": "Empresa referencia nacional en maletas, mochilas, bolsos y accesorios.",
+  "challenge": "Basándose en el nuevo logo de Sestini, crear el Manual de Marca para estandarizar la comunicación institucional.",
+  "solution": "Brandbook con reglas de identidad visual, aplicaciones, dimensiones mínimas y paleta institucional.",
+  "services": [
+    "Branding"
+  ],
+  "cover": "/images/cases/sestini/cover.webp",
+  "coverAlt": "Case Sestini — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/sestini/gallery-1.webp",
+      "alt": "Sestini — imagen 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/sestini/gallery-2.webp",
+      "alt": "Sestini — imagen 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/sestini/gallery-3.webp",
+      "alt": "Sestini — imagen 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/sestini/gallery-4.webp",
+      "alt": "Sestini — imagen 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/sestini/gallery-5.webp",
+      "alt": "Sestini — imagen 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/sestini/gallery-6.webp",
+      "alt": "Sestini — imagen 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "neodent"
+  ],
+  "seo": {
+    "title": "Sestini — Matilha Estúdio",
+    "description": "Brandbook y manual de marca para Sestini."
+  }
+}

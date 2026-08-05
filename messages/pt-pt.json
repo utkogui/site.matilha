@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "siteName": "Matilha Estúdio",
+    "homeTitle": "Matilha ∴ 15 anos",
+    "defaultDescription": "Estúdio de design que transforma negócios através de experiências que geram resultado."
+  },
+  "nav": {
+    "home": "Início",
+    "services": "O que fazemos",
+    "cases": "Cases",
+    "contact": "Vamos Conversar",
+    "careers": "Junte-se",
+    "menu": "MENU",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu",
+    "backToTop": "Voltar ao topo",
+    "language": "Idioma"
+  },
+  "home": {
+    "heroTitle": "A sua ideia executada com perfeição.",
+    "heroCta": "Vamos transformar a sua ideia connosco",
+    "scrollDown": "Ir para a próxima seção",
+    "heroCaption": "estúdio matilha",
+    "studioLabel": "// ESTÚDIO MATILHA",
+    "transformHeading": "Transformamos <u>negócios</u> através de <u>experiências</u> que geram resultado.",
+    "servicesLabel": "// O QUE FAZEMOS",
+    "casesLabel": "// CASES",
+    "casesHeading": "Histórias que viraram resultado.",
+    "clientsLabel": "// Empresas",
+    "clientsHeading": "Marcas que confiam na nossa <u>Matilha</u>",
+    "viewAllCases": "Ver todos os nossos cases",
+    "ctaTitle": "Vamos transformar a sua ideia connosco",
+    "growLabel": "// MATILHA.DIGITAL",
+    "growHeading": "Desenhamos produtos que moldam <u>experiências.</u>"
+  },
+  "services": {
+    "uxui": "UI/UX Design",
+    "serviceDesign": "Design de Serviço",
+    "daas": "Alocação (DaaS)",
+    "branding": "Branding e Naming",
+    "development": "Desenvolvimento e Tecnologia",
+    "mvp": "Validação de Modelo de Negócio"
+  },
+  "cases": {
+    "title": "Cases",
+    "pageLabel": "// CASES",
+    "pageHeading": "Onde <u>estratégia</u> encontra <u>design.</u>",
+    "subtitle": "Projetos que transformam negócios",
+    "viewCase": "Ver case",
+    "allCases": "Ver todos os cases",
+    "related": "Cases relacionados",
+    "challenge": "Desafio",
+    "solution": "Solução",
+    "services": "Serviços"
+  },
+  "contact": {
+    "title": "Vamos Conversar",
+    "pageLabel": "// VAMOS CONVERSAR",
+    "pageHeading": "Entre em contacto e vamos <u>pensar</u> <u>juntos</u> o próximo passo.",
+    "subtitle": "Conte-nos sobre o seu projecto. Responderemos em breve.",
+    "name": "Nome",
+    "email": "Email",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "messagePlaceholder": "Escreva a sua mensagem",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Não foi possível enviar agora. Tente novamente.",
+    "whatsapp": "Whatsapp",
+    "phoneLabel": "TELEFONE",
+    "addressLabel": "Morada"
+  },
+  "careers": {
+    "title": "Junte-se",
+    "pageLabel": "// JUNTE-SE",
+    "pageHeading": "Junte-se a nós e vamos <u>construir</u> <u>juntos</u> o futuro.",
+    "subtitle": "Junte-se a nós e vamos construir juntos o futuro.",
+    "name": "Nome",
+    "email": "Email",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "messagePlaceholder": "Escreva a sua mensagem, adicione links para seu portfólio, linkedin, etc.",
+    "submit": "Enviar",
+    "sending": "Enviando...",
+    "success": "Candidatura enviada com sucesso!",
+    "error": "Não foi possível enviar agora. Tente novamente."
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "updated": "Última atualização: em revisão",
+    "placeholder": "O conteúdo completo da política de privacidade está sendo atualizado. Em breve publicaremos a versão integral nesta página."
+  },
+  "footer": {
+    "email": "talk@matilha.digital",
+    "navLabel": "Navegação",
+    "casesLabel": "Cases",
+    "contactLabel": "Contacto",
+    "phoneLabel": "Telefone",
+    "addressesLabel": "Moradas",
+    "brazil": "Brasil | Curitiba - PR",
+    "brazilAddress": "Rua Emiliano Perneta, 680",
+    "usa": "EUA | Orlando - FL",
+    "usaAddress": "7345 W Sand Lake RD, STE 210 Office 8716",
+    "languagesLabel": "Idiomas",
+    "privacy": "Política de Privacidade",
+    "copyright": "© 2012–{year} Matilha Estúdio de Design Ltda.",
+    "years": "15 anos.",
+    "socialLinkedin": "Matilha no LinkedIn",
+    "socialInstagram": "Matilha no Instagram",
+    "socialMedium": "Matilha no Medium",
+    "socialBehance": "Matilha no Behance",
+    "socialLabel": "Redes sociais",
+    "showMore": "Ver mais informações",
+    "showLess": "Ocultar informações"
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "A página que procura não existe ou foi movida.",
+    "backHome": "Voltar ao início"
+  },
+  "common": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  }
+}

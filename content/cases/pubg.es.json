@@ -1,0 +1,50 @@
+{
+  "id": "pubg",
+  "slug": "pubg",
+  "title": "PUBG",
+  "client": "PUBG",
+  "summary": "El Battle Royale más jugado del mundo.",
+  "challenge": "Mejorar y unificar la experiencia del usuario en los sitios global y regional de PUBG.",
+  "solution": "Discovery con jugadores de todo el mundo, rediseño de plataformas y desarrollo front y back-end.",
+  "services": [
+    "Diseño de Servicio",
+    "UI | UX Design",
+    "Desarrollo y Tech"
+  ],
+  "cover": "/images/cases/pubg/cover.webp",
+  "coverAlt": "Case PUBG — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/pubg/gallery-1.webp",
+      "alt": "PUBG — imagen 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/pubg/gallery-2.webp",
+      "alt": "PUBG — imagen 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/pubg/gallery-3.webp",
+      "alt": "PUBG — imagen 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/pubg/gallery-4.webp",
+      "alt": "PUBG — imagen 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/pubg/gallery-5.webp",
+      "alt": "PUBG — imagen 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/pubg/gallery-6.webp",
+      "alt": "PUBG — imagen 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "sestini"
+  ],
+  "seo": {
+    "title": "PUBG — Matilha Estúdio",
+    "description": "Rediseño y unificación de la experiencia del sitio PUBG."
+  }
+}

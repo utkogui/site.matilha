@@ -1,0 +1,50 @@
+{
+  "id": "meu-playstation",
+  "slug": "my-playstation",
+  "title": "My PlayStation",
+  "client": "My PlayStation",
+  "summary": "The largest PlayStation news channel in the Americas.",
+  "challenge": "Redesign the MeuPS news site to improve end-user experience and interaction.",
+  "solution": "Discovery, innovation roadmap and UI design with deep immersion in the gaming universe and platform users.",
+  "services": [
+    "Service Design",
+    "UI | UX Design",
+    "Development & Tech"
+  ],
+  "cover": "/images/cases/meu-playstation/cover.webp",
+  "coverAlt": "My PlayStation case — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/meu-playstation/gallery-1.webp",
+      "alt": "My PlayStation — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-2.webp",
+      "alt": "My PlayStation — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-3.webp",
+      "alt": "My PlayStation — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-4.webp",
+      "alt": "My PlayStation — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-5.webp",
+      "alt": "My PlayStation — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-6.webp",
+      "alt": "My PlayStation — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "mon-museu-oscar-niemeyer"
+  ],
+  "seo": {
+    "title": "My PlayStation — Matilha Estúdio",
+    "description": "My PlayStation news site redesign."
+  }
+}

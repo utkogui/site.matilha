@@ -1,0 +1,40 @@
+{
+  "id": "conecte-ai",
+  "slug": "conecte-ai",
+  "title": "Conecte.ai",
+  "client": "Conecte.ai",
+  "summary": "Empresa especializada em ferramentas digitais para provedores regionais de internet na venda online.",
+  "challenge": "Possibilitar o desenvolvimento estratégico de soluções a partir do entendimento de demandas e tarefas dos usuários dos serviços.",
+  "solution": "Pesquisa empática com mapa de modelo mental, thinking styles e jornada do usuário para inovação baseada em tarefas ainda não supridas.",
+  "services": [
+    "Design de Serviço"
+  ],
+  "cover": "/images/cases/conecte-ai/cover.webp",
+  "coverAlt": "Case Conecte AI — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/conecte-ai/gallery-1.webp",
+      "alt": "Conecte.ai — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai/gallery-2.webp",
+      "alt": "Conecte.ai — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai/gallery-3.webp",
+      "alt": "Conecte.ai — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai/gallery-4.webp",
+      "alt": "Conecte.ai — imagem 4 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "cormora",
+    "meu-playstation"
+  ],
+  "seo": {
+    "title": "Conecte.ai — Matilha Estúdio",
+    "description": "Design de serviço e pesquisa empática para provedores de internet."
+  }
+}

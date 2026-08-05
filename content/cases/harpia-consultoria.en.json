@@ -1,0 +1,49 @@
+{
+  "id": "harpia-consultoria",
+  "slug": "harpia-consultoria",
+  "title": "Harpia Consultoria",
+  "client": "Harpia Consultoria",
+  "summary": "Process consulting, web solutions, mobile apps and ERP system.",
+  "challenge": "Create a new interface for Harpia's website, exploring the impact and strength the brand represents.",
+  "solution": "Website redesign with topographic maps as texture, WhatsApp API integration and newsletter management.",
+  "services": [
+    "UI | UX Design",
+    "Development & Tech"
+  ],
+  "cover": "/images/cases/harpia/cover.webp",
+  "coverAlt": "Harpia Consultoria case — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/harpia/gallery-1.webp",
+      "alt": "Harpia Consultoria — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/harpia/gallery-2.webp",
+      "alt": "Harpia Consultoria — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/harpia/gallery-3.webp",
+      "alt": "Harpia Consultoria — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/harpia/gallery-4.webp",
+      "alt": "Harpia Consultoria — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/harpia/gallery-5.webp",
+      "alt": "Harpia Consultoria — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/harpia/gallery-6.webp",
+      "alt": "Harpia Consultoria — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "sestini"
+  ],
+  "seo": {
+    "title": "Harpia Consultoria — Matilha Estúdio",
+    "description": "Harpia Consultoria website redesign."
+  }
+}

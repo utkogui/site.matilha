@@ -1,0 +1,50 @@
+{
+  "id": "syx",
+  "slug": "syx",
+  "title": "SYX",
+  "client": "SYX",
+  "summary": "Marketplace enfocado en la recolocación de máquinas y equipos usados",
+  "challenge": "Traducir el nuevo momento de la empresa en una nueva marca y reformular la plataforma existente para una experiencia funcional y agradable.",
+  "solution": "Discovery, rebranding y renaming de Central de Materiais, rediseño y prototipado del marketplace SYX enfocado en la expansión del mercado.",
+  "services": [
+    "Diseño de Servicio",
+    "Branding & Naming",
+    "UI | UX Design"
+  ],
+  "cover": "/images/cases/syx/cover.webp",
+  "coverAlt": "Case SYX — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/syx/gallery-1.webp",
+      "alt": "SYX — imagen 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/syx/gallery-2.webp",
+      "alt": "SYX — imagen 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/syx/gallery-3.webp",
+      "alt": "SYX — imagen 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/syx/gallery-4.webp",
+      "alt": "SYX — imagen 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/syx/gallery-5.webp",
+      "alt": "SYX — imagen 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/syx/gallery-6.webp",
+      "alt": "SYX — imagen 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "charney-companies",
+    "sestini"
+  ],
+  "seo": {
+    "title": "SYX — Matilha Estúdio",
+    "description": "Rebranding y rediseño del marketplace SYX para máquinas y equipos usados."
+  }
+}

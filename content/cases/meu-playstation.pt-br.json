@@ -1,0 +1,50 @@
+{
+  "id": "meu-playstation",
+  "slug": "meu-playstation",
+  "title": "Meu PlayStation",
+  "client": "Meu PlayStation",
+  "summary": "O maior canal de notícias sobre PlayStation das Américas.",
+  "challenge": "Redesenhar o site de notícias do MeuPS para melhorar a experiência e interação do usuário final.",
+  "solution": "Discovery, roadmap de inovação e UI design com imersão no universo gamer e contato com usuários da plataforma.",
+  "services": [
+    "Design de Serviço",
+    "UI | UX Design",
+    "Desenvolvimento e Tech"
+  ],
+  "cover": "/images/cases/meu-playstation/cover.webp",
+  "coverAlt": "Case Meu PlayStation — Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/meu-playstation/gallery-1.webp",
+      "alt": "Meu PlayStation — imagem 1 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-2.webp",
+      "alt": "Meu PlayStation — imagem 2 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-3.webp",
+      "alt": "Meu PlayStation — imagem 3 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-4.webp",
+      "alt": "Meu PlayStation — imagem 4 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-5.webp",
+      "alt": "Meu PlayStation — imagem 5 — Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/meu-playstation/gallery-6.webp",
+      "alt": "Meu PlayStation — imagem 6 — Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "mon-museu-oscar-niemeyer"
+  ],
+  "seo": {
+    "title": "Meu PlayStation — Matilha Estúdio",
+    "description": "Redesign do site de notícias Meu PlayStation."
+  }
+}

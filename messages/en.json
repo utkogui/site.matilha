@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "siteName": "Matilha Estúdio",
+    "homeTitle": "Matilha ∴ 15 years",
+    "defaultDescription": "Design studio that transforms businesses through experiences that deliver results."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "What we do",
+    "cases": "Our Work",
+    "contact": "Let's Talk",
+    "careers": "Join Us",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "backToTop": "Back to top",
+    "language": "Language"
+  },
+  "home": {
+    "heroTitle": "Your idea, perfectly executed.",
+    "heroCta": "Let's transform your idea together",
+    "scrollDown": "Go to next section",
+    "heroCaption": "matilha estúdio",
+    "studioLabel": "// ESTÚDIO MATILHA",
+    "transformHeading": "Transforming businesses through <u>result-driven</u> <u>experiences.</u>",
+    "servicesLabel": "// WHAT WE DO",
+    "casesLabel": "// OUR WORK",
+    "casesHeading": "From <u>stories</u> to <u>results.</u>",
+    "clientsLabel": "// Companies",
+    "clientsHeading": "Brands that <u>trust us.</u>",
+    "viewAllCases": "View all our work",
+    "ctaTitle": "Let's transform your idea together",
+    "growLabel": "// MATILHA.DIGITAL",
+    "growHeading": "We design products that shape <u>experiences.</u>"
+  },
+  "services": {
+    "uxui": "UI/UX Design",
+    "serviceDesign": "Service Design",
+    "daas": "Team Allocation (DaaS)",
+    "branding": "Branding & Naming",
+    "development": "Development & Technology",
+    "mvp": "Business Model Validation"
+  },
+  "cases": {
+    "title": "Our Work",
+    "pageLabel": "// OUR WORK",
+    "pageHeading": "Where <u>strategy</u> meets <u>design.</u>",
+    "subtitle": "Projects that transform businesses",
+    "viewCase": "View project",
+    "allCases": "View all projects",
+    "related": "Related projects",
+    "challenge": "Challenge",
+    "solution": "Solution",
+    "services": "Services"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "pageLabel": "// LET'S TALK",
+    "pageHeading": "Get in touch and let's <u>plan</u> the <u>next step</u> together.",
+    "subtitle": "Tell us about your project. We'll get back to you soon.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Write your message",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Could not send right now. Please try again.",
+    "whatsapp": "Whatsapp",
+    "phoneLabel": "PHONE",
+    "addressLabel": "ADRESS"
+  },
+  "careers": {
+    "title": "Join Us",
+    "pageLabel": "// JOIN US",
+    "pageHeading": "Join us and let's <u>build</u> the future <u>together.</u>",
+    "subtitle": "Join us and let's build the future together.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "messagePlaceholder": "Write your message, add links to your portfolio, LinkedIn, etc.",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Application sent successfully!",
+    "error": "Could not send right now. Please try again."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "updated": "Last updated: under review",
+    "placeholder": "The full privacy policy content is being updated. We will publish the complete version on this page soon."
+  },
+  "footer": {
+    "email": "talk@matilha.digital",
+    "navLabel": "Navigation",
+    "casesLabel": "Our Work",
+    "contactLabel": "Contact",
+    "phoneLabel": "Phone",
+    "addressesLabel": "Addresses",
+    "brazil": "Brazil | Curitiba - PR",
+    "brazilAddress": "Rua Emiliano Perneta, 680",
+    "usa": "USA | Orlando - FL",
+    "usaAddress": "7345 W Sand Lake RD, STE 210 Office 8716",
+    "languagesLabel": "Languages",
+    "privacy": "Privacy Policy",
+    "copyright": "© 2012–{year} Matilha Estúdio de Design Ltda.",
+    "years": "15th anniversary.",
+    "socialLinkedin": "Matilha on LinkedIn",
+    "socialInstagram": "Matilha on Instagram",
+    "socialMedium": "Matilha on Medium",
+    "socialBehance": "Matilha on Behance",
+    "socialLabel": "Social media",
+    "showMore": "Show more information",
+    "showLess": "Hide information"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "common": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  }
+}

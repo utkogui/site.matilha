@@ -1,0 +1,23 @@
+# Matilha Estúdio — matilha.digital
+
+> Design studio that transforms businesses through experiences that deliver results.
+
+## About
+
+Matilha Estúdio is a trilingual design studio (PT, EN, ES) based in Curitiba, Brazil and Orlando, USA.
+
+## Main pages
+
+- Home: https://matilha.digital/
+- Cases (PT): https://matilha.digital/cases
+- Our Work (EN): https://matilha.digital/en/our-work
+- Contact: https://matilha.digital/vamos-conversar
+
+## Contact
+
+- Email: talk@matilha.digital
+- Phone: +55 41 99737-6060
+
+## Services
+
+UI/UX Design, Service Design, Team Allocation (DaaS), Branding & Naming, Development & Tech
