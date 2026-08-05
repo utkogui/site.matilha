@@ -31,7 +31,9 @@
     "viewAllCases": "View all our work",
     "ctaTitle": "Let's transform your idea together",
     "growLabel": "// MATILHA.DIGITAL",
-    "growHeading": "We design products that shape <u>experiences.</u>"
+    "growHeading": "We design products that shape <u>experiences.</u>",
+    "sliderPrev": "Previous slide",
+    "sliderNext": "Next slide"
   },
   "services": {
     "uxui": "UI/UX Design",

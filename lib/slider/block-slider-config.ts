@@ -1,19 +1,22 @@
 export const blockSliderBreakpoints = {
-  0: { slidesPerView: 1 },
-  500: { slidesPerView: 1.2 },
-  992: { slidesPerView: 1.5 },
+  0: { slidesPerView: 1.12, spaceBetween: 16 },
+  640: { slidesPerView: 1.45, spaceBetween: 22 },
+  992: { slidesPerView: 2.25, spaceBetween: 28 },
+  1280: { slidesPerView: 2.45, spaceBetween: 30 },
 } as const;
 
 export const servicesSliderConfig = {
-  speed: 1000,
-  spaceBetween: 30,
-  slidesPerView: 1.5,
-  autoplayDelay: 5000,
+  speed: 900,
+  spaceBetween: 28,
+  slidesPerView: 1.08,
+  autoplayDelay: 4800,
+  slidesOffsetAfter: 32,
 } as const;
 
 export const casesSliderConfig = {
-  speed: 1000,
-  spaceBetween: 30,
-  slidesPerView: 1.5,
-  autoplayDelay: 2000,
+  speed: 900,
+  spaceBetween: 28,
+  slidesPerView: 1.08,
+  autoplayDelay: 3600,
+  slidesOffsetAfter: 32,
 } as const;

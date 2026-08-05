@@ -76,8 +76,8 @@ export default async function HomePage({
           <AnimatedHeading as="div" className="heading-display">
             {t.rich("growHeading", highlightTag)}
           </AnimatedHeading>
+          <GrowSection />
         </div>
-        <GrowSection />
       </section>
 
       <section className="home-section">
