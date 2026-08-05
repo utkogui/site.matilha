@@ -3,9 +3,9 @@
   "slug": "my-playstation",
   "title": "My PlayStation",
   "client": "My PlayStation",
-  "summary": "The largest PlayStation news channel in the Americas.",
-  "challenge": "Redesign the MeuPS news site to improve end-user experience and interaction.",
-  "solution": "Discovery, innovation roadmap and UI design with deep immersion in the gaming universe and platform users.",
+  "summary": "The largest PlayStation news channel in the Americas — redesigned from discovery to pixel.",
+  "challenge": "My PlayStation was already a reference for the PlayStation community, but the platform needed to keep up with its audience: more content, more formats, higher expectations of fluidity. The challenge was to redesign the site and app without losing the identity the community had built — improving end-user experience and interaction while keeping the channel’s voice.",
+  "solution": "We worked in layers: service research with users and stakeholders, a prioritized innovation roadmap, and only then the UI redesign. The result is a coherent gaming experience across web and mobile — clearer navigation, strong editorial hierarchy, and interface details that celebrate the PlayStation universe.",
   "services": [
     "Service Design",
     "UI | UX Design",
@@ -16,35 +16,101 @@
   "gallery": [
     {
       "src": "/images/cases/meu-playstation/gallery-1.webp",
-      "alt": "My PlayStation — imagem 1 — Matilha Estúdio"
+      "alt": "My PlayStation — image 1 — Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-2.webp",
-      "alt": "My PlayStation — imagem 2 — Matilha Estúdio"
+      "alt": "My PlayStation — image 2 — Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-3.webp",
-      "alt": "My PlayStation — imagem 3 — Matilha Estúdio"
+      "alt": "My PlayStation — image 3 — Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-4.webp",
-      "alt": "My PlayStation — imagem 4 — Matilha Estúdio"
+      "alt": "My PlayStation — image 4 — Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-5.webp",
-      "alt": "My PlayStation — imagem 5 — Matilha Estúdio"
+      "alt": "My PlayStation — image 5 — Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-6.webp",
-      "alt": "My PlayStation — imagem 6 — Matilha Estúdio"
+      "alt": "My PlayStation — image 6 — Matilha Estúdio"
     }
   ],
   "relatedCases": [
     "conecte-ai",
     "mon-museu-oscar-niemeyer"
   ],
+  "story": {
+    "approach": "Before opening Figma, we opened the conversation. We learned how the newsroom publishes, how readers search, and how the brand needs to advertise — and only then designed the system that holds it all together.",
+    "deliverables": [
+      {
+        "title": "Discovery (Service Design)",
+        "body": "Gathering and structuring insights from the platform’s clients and users — real pains, routines, and opportunities, not slide-deck hypotheses."
+      },
+      {
+        "title": "Innovation Roadmap",
+        "body": "Mapping and prioritizing a backlog of possible innovations and features for the platform and project, focused on impact without losing direction."
+      },
+      {
+        "title": "UI Design",
+        "body": "Redesigning the existing platform from earlier findings — from the sticky home to tag typography, from dark mode to the search button detail."
+      }
+    ],
+    "quote": "Through service research, we immersed ourselves in the gaming universe and engaged with platform users to uncover opportunities aligned not only with the market but also with the community My PlayStation had already built.",
+    "quoteAuthor": "Service Design Team",
+    "chapters": {
+      "app": {
+        "title": "The app as an extension of the newsroom",
+        "body": "On mobile, every inch matters. Shrinking the site wasn’t enough: we redesigned reading, search, and category rhythms for the thumb — without losing My PlayStation’s voice.",
+        "points": [
+          "Categories and feeds built for fast scanning without losing editorial hierarchy.",
+          "Search and results that bring news, reviews, and deals into one gesture.",
+          "Authors and tags as continuity points — readers return by habit, not only via home."
+        ]
+      },
+      "site": {
+        "title": "A portal that scales content",
+        "body": "The desktop home carries a daily channel’s weight: features, ads, lists, and navigation. We made the long scroll intentional — every block with a job, never a generic endless feed.",
+        "points": [
+          "Clear hierarchy between editorial hero, commercial modules, and listings.",
+          "Sticky and long sections tuned to My PlayStation’s real publishing rhythm.",
+          "Navigation and search reachable without competing with the main story."
+        ]
+      },
+      "article": {
+        "title": "The article page where the story lives",
+        "body": "The article template is the product. Typography, media, and related modules exist for deep reading — and for the next click that keeps readers inside My PlayStation.",
+        "points": [
+          "Comfortable reading across long blocks, without visual noise.",
+          "Media and embeds treated as part of the narrative, not attachments.",
+          "Related modules and CTAs that extend the session without breaking flow."
+        ]
+      },
+      "details": {
+        "title": "The details that build the brand",
+        "body": "Light and dark, partnerships, about us, tag and following states: identity becomes a system in the corners. Below, fragments of that design system in use.",
+        "points": [
+          "Light and dark modes coherent with the channel’s gaming aesthetic.",
+          "Institutional and commercial screens sharing the same visual grammar.",
+          "Micro-states (follow, tag, empty) treated as part of the experience."
+        ]
+      }
+    },
+    "team": [
+      "Barbara Borges | Lead Ops",
+      "Rodrigo Vidinich | Service Designer",
+      "Bianca Falcão | Service Designer",
+      "Rodrigo Ramos | UX/UI Designer",
+      "Rodrigo Liva | UX/UI Designer",
+      "Barbara Lourenço | UX/UI Designer",
+      "Ilana Heymowski | UX/UI Designer"
+    ]
+  },
   "seo": {
     "title": "My PlayStation — Matilha Estúdio",
-    "description": "My PlayStation news site redesign."
+    "description": "Discovery, roadmap, and UI design for the largest PlayStation news channel in the Americas."
   }
 }

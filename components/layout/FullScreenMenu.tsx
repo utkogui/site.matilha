@@ -16,22 +16,46 @@ interface FullScreenMenuProps {
   onClose: () => void;
 }
 
-// Approximates GSAP power4.out (matilha full-screen-menu)
-const panelEase = [0.19, 1, 0.22, 1] as const;
+// Teste: easing mais suave que power4.out (menos “chicote” no início)
+const gracefulEase = [0.22, 0.61, 0.36, 1] as const;
 
 const panelSlide = {
-  duration: 0.25,
-  ease: panelEase,
+  duration: 0.55,
+  ease: gracefulEase,
 };
 
 const innerSlide = {
-  duration: 0.5,
-  ease: panelEase,
+  duration: 0.65,
+  ease: gracefulEase,
 };
 
 const contentReveal = {
-  duration: 0.5,
-  ease: panelEase,
+  duration: 0.55,
+  ease: gracefulEase,
+};
+
+const listContainer = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.06, delayChildren: 0.08 },
+  },
+  exit: {
+    transition: { staggerChildren: 0.04, staggerDirection: -1 },
+  },
+};
+
+const listItem = {
+  hidden: { opacity: 0, y: 14 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.45, ease: gracefulEase },
+  },
+  exit: {
+    opacity: 0,
+    y: 8,
+    transition: { duration: 0.28, ease: gracefulEase },
+  },
 };
 
 export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
@@ -53,26 +77,57 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
           className="fullscreen-menu"
           initial={{ x: "-100%" }}
           animate={{ x: 0, transition: panelSlide }}
-          exit={{ x: "-100%", transition: { ...innerSlide, delay: 0.75 } }}
+          exit={{ x: "-100%", transition: { ...panelSlide, delay: 0.28 } }}
         >
+          {/* Fan service: só existe no meio do wipe amarelo (abre/fecha) */}
+          <motion.span
+            className="fullscreen-menu-teaser"
+            aria-hidden
+            initial={{ opacity: 0 }}
+            animate={{
+              opacity: [0, 1, 1, 0],
+              transition: {
+                duration: 0.85,
+                times: [0, 0.16, 0.45, 0.78],
+                ease: gracefulEase,
+              },
+            }}
+            exit={{
+              opacity: [0, 1, 1, 0],
+              transition: {
+                duration: 0.72,
+                times: [0, 0.06, 0.52, 1],
+                ease: gracefulEase,
+              },
+            }}
+          >
+            <span className="fullscreen-menu-teaser-text">matilha estúdio</span>
+          </motion.span>
+
           <motion.div
             className="fullscreen-menu-inner"
             initial={{ x: "-100%" }}
-            animate={{ x: 0, transition: { ...innerSlide, delay: 0.25 } }}
-            exit={{ x: "-100%", transition: { ...panelSlide, delay: 0.5 } }}
+            animate={{ x: 0, transition: { ...innerSlide, delay: 0.1 } }}
+            exit={{ x: "-100%", transition: { duration: 0.5, ease: gracefulEase, delay: 0.12 } }}
           />
 
           <motion.div
             className="fullscreen-menu-container"
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0, transition: { ...contentReveal, delay: 0.5 } }}
-            exit={{ opacity: 0, y: 25, transition: contentReveal }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0, transition: { ...contentReveal, delay: 0.32 } }}
+            exit={{ opacity: 0, y: 8, transition: { duration: 0.28, ease: gracefulEase } }}
           >
             <div className="fullscreen-menu-content">
               <div className="fullscreen-menu-top">
                 <div className="fullscreen-menu-brand-header">
                   <div className="fullscreen-menu-logo">
-                    <Image src="/images/brand/logo.svg" alt="Matilha Estúdio" width={232} height={54} className="w-auto" />
+                    <Image
+                      src="/images/brand/logo.svg"
+                      alt="Matilha Estúdio"
+                      width={232}
+                      height={54}
+                      className="w-auto"
+                    />
                   </div>
                   <button
                     type="button"
@@ -94,25 +149,42 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
               </div>
 
               <nav className="fullscreen-menu-nav" aria-label={t("menu")}>
-                <ul className="fullscreen-menu-list">
-                  {menuItems.map((item) => (
-                    <li key={item.key}>
-                      {item.key === "services" ? (
-                        <ServicesAnchorLink onNavigate={onClose} className="fullscreen-menu-link">
-                          {t(item.key)}
-                        </ServicesAnchorLink>
-                      ) : (
-                        <Link
-                          href={item.href as "/" | "/cases" | "/contact"}
-                          onClick={onClose}
-                          className="fullscreen-menu-link"
-                        >
-                          {t(item.key)}
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
+                <motion.ul
+                  className="fullscreen-menu-list"
+                  variants={listContainer}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                >
+                  {menuItems.map((item, index) => {
+                    const label = (
+                      <>
+                        <span className="fullscreen-menu-link-index" aria-hidden>
+                          {String(index + 1).padStart(2, "0")}
+                        </span>
+                        <span className="fullscreen-menu-link-label">{t(item.key)}</span>
+                      </>
+                    );
+
+                    return (
+                      <motion.li key={item.key} variants={listItem}>
+                        {item.key === "services" ? (
+                          <ServicesAnchorLink onNavigate={onClose} className="fullscreen-menu-link">
+                            {label}
+                          </ServicesAnchorLink>
+                        ) : (
+                          <Link
+                            href={item.href as "/" | "/cases" | "/contact"}
+                            onClick={onClose}
+                            className="fullscreen-menu-link"
+                          >
+                            {label}
+                          </Link>
+                        )}
+                      </motion.li>
+                    );
+                  })}
+                </motion.ul>
               </nav>
 
               <div className="fullscreen-menu-footer">
@@ -124,9 +196,9 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
 
             <motion.div
               className="fullscreen-menu-image"
-              initial={{ opacity: 0, x: "50%" }}
-              animate={{ opacity: 1, x: 0, transition: { ...contentReveal, delay: 0.5 } }}
-              exit={{ opacity: 0, x: "50%", transition: contentReveal }}
+              initial={{ opacity: 0, x: "12%" }}
+              animate={{ opacity: 1, x: 0, transition: { ...contentReveal, delay: 0.4 } }}
+              exit={{ opacity: 0, x: "8%", transition: { duration: 0.3, ease: gracefulEase } }}
             >
               <Image
                 src="/images/brand/menu-side.webp"

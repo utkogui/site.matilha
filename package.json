@@ -4,10 +4,9 @@
   "private": true,
   "author": "Mila Zanforlin",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --hostname 0.0.0.0 --port 3000",
     "build": "next build",
-    "postbuild": "cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/",
-    "start": "node .next/standalone/server.js",
+    "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {

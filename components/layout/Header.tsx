@@ -39,7 +39,7 @@ export function Header() {
               alt="Matilha Estúdio"
               width={232}
               height={54}
-              className="hidden w-auto lg:block lg:h-[3.105rem]"
+              className="hidden w-auto lg:block"
               priority
             />
             <Image

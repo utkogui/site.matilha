@@ -3,9 +3,9 @@
   "slug": "mi-playstation",
   "title": "Mi PlayStation",
   "client": "Mi PlayStation",
-  "summary": "El mayor canal de noticias sobre PlayStation de las Américas.",
-  "challenge": "Rediseñar el sitio de noticias MeuPS para mejorar la experiencia e interacción del usuario.",
-  "solution": "Discovery, roadmap de innovación y UI design con inmersión en el universo gamer y usuarios de la plataforma.",
+  "summary": "El mayor canal de noticias sobre PlayStation de las Américas — rediseñado del discovery al pixel.",
+  "challenge": "Mi PlayStation ya era referencia en la comunidad PlayStation, pero la plataforma necesitaba seguir el ritmo del público: más contenido, más formatos, más expectativa de fluidez. El desafío era rediseñar sitio y app sin perder la identidad construida por la comunidad — mejorar la experiencia e interacción del usuario final manteniendo la voz del canal.",
+  "solution": "Trabajamos por capas: investigación de servicio con usuarios y stakeholders, un roadmap de innovación priorizado y, solo entonces, el rediseño de UI. El resultado es una experiencia gamer coherente entre web y mobile — navegación más clara, jerarquía editorial fuerte y detalles de interfaz que celebran el universo PlayStation.",
   "services": [
     "Diseño de Servicio",
     "UI | UX Design",
@@ -43,8 +43,74 @@
     "conecte-ai",
     "mon-museu-oscar-niemeyer"
   ],
+  "story": {
+    "approach": "Antes de abrir Figma, abrimos la conversación. Entendimos cómo publica la redacción, cómo busca el lector y cómo la marca necesita anunciar — y solo entonces diseñamos el sistema que sostiene todo eso.",
+    "deliverables": [
+      {
+        "title": "Discovery (Diseño de Servicio)",
+        "body": "Recolección y estructuración de la información de clientes y usuarios de la plataforma — dolores, rutinas y oportunidades reales, no hipótesis de slides."
+      },
+      {
+        "title": "Roadmap de Innovación",
+        "body": "Mapeo y backlog de posibles innovaciones y features para la plataforma y el proyecto, priorizados para generar impacto sin perder el foco."
+      },
+      {
+        "title": "UI Design",
+        "body": "Rediseño de la plataforma existente a partir de las fases anteriores — del home sticky a la tipografía de tags, del dark mode al detalle del botón de búsqueda."
+      }
+    ],
+    "quote": "La investigación de servicio permitió una inmersión profunda en el universo gamer y el contacto con usuarios de la plataforma, para encontrar oportunidades alineadas con el mercado y con la comunidad que Mi PlayStation ya había construido.",
+    "quoteAuthor": "Equipo de Diseño de Servicio",
+    "chapters": {
+      "app": {
+        "title": "La app como extensión de la redacción",
+        "body": "En mobile, cada pulgada cuenta. No bastaba encoger el sitio: había que rediseñar el ritmo de lectura, búsqueda y categorías para el pulgar — sin perder la voz de Mi PlayStation.",
+        "points": [
+          "Categorías y feeds pensados para scanning rápido sin perder jerarquía editorial.",
+          "Búsqueda y resultados que acercan noticia, review y oferta en el mismo gesto.",
+          "Autores y tags como puntos de continuidad — el lector vuelve por hábito, no solo por el home."
+        ]
+      },
+      "site": {
+        "title": "Un portal que escala contenido",
+        "body": "El home desktop carga el peso de un canal diario: destacados, ads, listas y navegación. Hicimos que el scroll largo fuera intencional — cada bloque con función, nunca un feed infinito genérico.",
+        "points": [
+          "Jerarquía clara entre héroe editorial, módulos comerciales y listados.",
+          "Sticky y secciones largas afinadas al ritmo real de publicación.",
+          "Navegación y búsqueda accesibles sin competir con el contenido principal."
+        ]
+      },
+      "article": {
+        "title": "La interna donde vive la noticia",
+        "body": "La página de artículo es el producto. Tipografía, media y módulos relacionados existen para lectura profunda — y para el siguiente clic que mantiene al lector en Mi PlayStation.",
+        "points": [
+          "Lectura cómoda en bloques largos, sin ruido visual.",
+          "Media y embeds tratados como parte de la narrativa, no como anexos.",
+          "Relacionados y CTAs que alargan la sesión sin romper el flujo."
+        ]
+      },
+      "details": {
+        "title": "Los detalles que construyen la marca",
+        "body": "Light y dark, partnerships, quiénes somos, estados de tag y seguir: la identidad se vuelve sistema en las esquinas. Abajo, recortes de ese design system en uso.",
+        "points": [
+          "Modos claro y oscuro coherentes con la estética gamer del canal.",
+          "Pantallas institucionales y comerciales con la misma gramática visual.",
+          "Microestados (seguir, tag, vacío) tratados como parte de la experiencia."
+        ]
+      }
+    },
+    "team": [
+      "Barbara Borges | Lead Ops",
+      "Rodrigo Vidinich | Service Designer",
+      "Bianca Falcão | Service Designer",
+      "Rodrigo Ramos | UX/UI Designer",
+      "Rodrigo Liva | UX/UI Designer",
+      "Barbara Lourenço | UX/UI Designer",
+      "Ilana Heymowski | UX/UI Designer"
+    ]
+  },
   "seo": {
     "title": "Mi PlayStation — Matilha Estúdio",
-    "description": "Rediseño del sitio de noticias Mi PlayStation."
+    "description": "Discovery, roadmap y UI design del mayor canal de noticias PlayStation de las Américas."
   }
 }

@@ -1,5 +1,30 @@
 import type { Locale } from "@/lib/i18n/routing";
 
+export interface CaseStoryDeliverable {
+  title: string;
+  body: string;
+}
+
+export interface CaseStoryChapter {
+  title: string;
+  body: string;
+  points?: string[];
+}
+
+export interface CaseStory {
+  approach?: string;
+  deliverables?: CaseStoryDeliverable[];
+  quote?: string;
+  quoteAuthor?: string;
+  chapters?: {
+    app?: CaseStoryChapter;
+    site?: CaseStoryChapter;
+    article?: CaseStoryChapter;
+    details?: CaseStoryChapter;
+  };
+  team?: string[];
+}
+
 export interface CaseContent {
   id: string;
   slug: string;
@@ -13,6 +38,7 @@ export interface CaseContent {
   coverAlt: string;
   gallery: { src: string; alt: string }[];
   relatedCases: string[];
+  story?: CaseStory;
   seo: {
     title: string;
     description: string;

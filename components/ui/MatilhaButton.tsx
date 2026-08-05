@@ -14,7 +14,7 @@ type InternalHref = "/" | "/cases" | "/contact" | "/careers" | "/privacy";
 type MatilhaButtonProps = {
   children: ReactNode;
   href: string;
-  variant?: "underline" | "cta" | "icon";
+  variant?: "underline" | "cta" | "icon" | "solid";
   external?: boolean;
   className?: string;
   onClick?: () => void;
@@ -33,15 +33,18 @@ export function MatilhaButton({
     variant === "underline" && "matilha-btn-underline",
     variant === "cta" && "matilha-btn-cta",
     variant === "icon" && "matilha-btn-icon",
+    variant === "solid" && "matilha-btn-solid",
     className,
   ]
     .filter(Boolean)
     .join(" ");
 
+  const withArrow = variant === "cta" || variant === "icon" || variant === "solid";
+
   const content = (
     <>
       <span className="matilha-btn-label">{children}</span>
-      {(variant === "cta" || variant === "icon") && (
+      {withArrow && (
         <span className="matilha-btn-icon-wrap">
           <ArrowIcon />
         </span>

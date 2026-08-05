@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { ContactHero } from "@/components/media/ContactHero";
+import { OfficePhotoMosaic } from "@/components/media/OfficePhotoMosaic";
 import { ContactInfo } from "@/components/contact/ContactInfo";
 import { baseMetadata, buildPageTitle } from "@/lib/seo/metadata";
 import type { Locale } from "@/lib/i18n/routing";
@@ -31,7 +32,8 @@ export default async function ContactPage({
 
   return (
     <>
-      <ContactHero />
+      <ContactHero variant="office" />
+      <OfficePhotoMosaic />
 
       <section className="contact-body">
         <div className="container-site contact-body-grid">

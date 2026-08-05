@@ -99,6 +99,9 @@ export default async function HomePage({
           </div>
 
           <div className="home-cases-actions mt-12">
+            <MatilhaButton href="/contact" variant="solid">
+              {t("casesTalkCta")}
+            </MatilhaButton>
             <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn">
               {t("viewAllCases")}
             </MatilhaButton>
@@ -133,6 +136,13 @@ export default async function HomePage({
                 />
               </div>
             ))}
+          </div>
+
+          <div className="home-section-cta-band">
+            <p className="home-section-cta-copy">{t("clientsTalkCopy")}</p>
+            <MatilhaButton href="/contact" variant="solid">
+              {t("clientsTalkCta")}
+            </MatilhaButton>
           </div>
         </div>
       </section>

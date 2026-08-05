@@ -6,6 +6,7 @@ import { ImageCarousel } from "@/components/media/ImageCarousel";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { PageTitle } from "@/components/animation/PageTitle";
 import { LottieArrow } from "@/components/animation/LottieArrow";
+import { MeuPlaystationCase } from "@/components/cases/meups/MeuPlaystationCase";
 import { getCaseContent, getAllCases } from "@/lib/content/cases";
 import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-registry";
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
@@ -62,7 +63,18 @@ export default async function CaseDetailPage({
       const relatedSlug = getCaseSlug(id, locale as Locale);
       return allCases.find((c) => c.id === id && relatedSlug);
     })
-    .filter(Boolean);
+    .filter((item): item is NonNullable<typeof item> => Boolean(item))
+    .map((item) => ({
+      id: item.id,
+      slug: item.slug,
+      title: item.title,
+      cover: item.cover,
+      coverAlt: item.coverAlt,
+    }));
+
+  if (content.id === "meu-playstation") {
+    return <MeuPlaystationCase content={content} related={related} />;
+  }
 
   return (
     <article className="page-section">
@@ -121,23 +133,21 @@ export default async function CaseDetailPage({
               className="mb-8 text-[length:var(--text-h2)]"
             />
             <div className="grid gap-8 sm:grid-cols-2">
-              {related.map((item) =>
-                item ? (
-                  <Link
-                    key={item.id}
-                    href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                    className="group flex gap-4 bg-white/5 p-4"
-                  >
-                    <div className="relative h-24 w-32 shrink-0 overflow-hidden">
-                      <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="128px" />
-                    </div>
-                    <div>
-                      <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                      <span className="text-sm text-primary">{t("viewCase")} →</span>
-                    </div>
-                  </Link>
-                ) : null,
-              )}
+              {related.map((item) => (
+                <Link
+                  key={item.id}
+                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
+                  className="group flex gap-4 bg-white/5 p-4"
+                >
+                  <div className="relative h-24 w-32 shrink-0 overflow-hidden">
+                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="128px" />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
+                    <span className="text-sm text-primary">{t("viewCase")} →</span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </section>
         )}

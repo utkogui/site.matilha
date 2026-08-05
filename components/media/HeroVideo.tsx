@@ -42,9 +42,10 @@ export function HeroVideo() {
           <div className="hero-content">
             <AnimatedHeading key={locale} as="h1" trigger="load" className="hero-title" text={t("heroTitle")} />
             <div className="hero-cta-row">
-              <MatilhaButton href={WHATSAPP_URL} variant="cta" external>
+              <MatilhaButton href={WHATSAPP_URL} variant="solid" external>
                 {t("heroCta")}
               </MatilhaButton>
+              <p className="hero-cta-hint">{t("heroCtaHint")}</p>
             </div>
           </div>
           <div className="hero-lottie-col">
