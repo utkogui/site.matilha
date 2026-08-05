@@ -4,7 +4,7 @@ import { HeroVideo } from "@/components/media/HeroVideo";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { highlightTag } from "@/lib/i18n/rich-tags";
 import { GrowSection } from "@/components/animation/GrowSection";
-import { ServiceSlider } from "@/components/sliders/ServiceSlider";
+import { ServiceGrid } from "@/components/sliders/ServiceGrid";
 import { CaseBlockSlider } from "@/components/sliders/CaseBlockSlider";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { baseMetadata, buildHomeTitle } from "@/lib/seo/metadata";
@@ -53,10 +53,10 @@ export default async function HomePage({
     <>
       <HeroVideo />
 
-      <section id="home-studio" className="home-section">
+      <section id="home-studio" className="home-section home-section-services">
         <div className="container-site home-intro-grid">
           <div>
-            <p className="mini-heading">{t("studioLabel")}</p>
+            <p className="mini-heading">{t("servicesLabel")}</p>
             <AnimatedHeading as="div" className="heading-display">
               {t.rich("transformHeading", highlightTag)}
             </AnimatedHeading>
@@ -65,12 +65,12 @@ export default async function HomePage({
           </div>
         </div>
 
-        <div className="container-site home-slider-row mt-16 lg:mt-24">
-          <ServiceSlider services={services} />
+        <div className="container-site mt-16 lg:mt-24">
+          <ServiceGrid services={services} />
         </div>
       </section>
 
-      <section className="home-section">
+      <section id="home-grow" className="home-section home-section-grow">
         <div className="container-site">
           <p className="mini-heading">{t("growLabel")}</p>
           <AnimatedHeading as="div" className="heading-display">
@@ -80,7 +80,7 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="home-section">
+      <section id="home-cases" className="home-section home-section-cases">
         <div className="container-site">
           <div className="home-cases-header">
             <div className="home-cases-heading-col">
@@ -90,7 +90,7 @@ export default async function HomePage({
               </AnimatedHeading>
             </div>
             <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn home-cases-action-btn-header">
-              {t("casesLabel").replace("// ", "")}
+              {t("casesCta")}
             </MatilhaButton>
           </div>
 
@@ -106,12 +106,20 @@ export default async function HomePage({
         </div>
       </section>
 
-      <section className="home-section">
+      <section id="home-clients" className="home-section home-section-clients">
         <div className="container-site">
-          <p className="mini-heading">{t("clientsLabel")}</p>
-          <AnimatedHeading as="div" className="heading-display">
-            {t.rich("clientsHeading", highlightTag)}
-          </AnimatedHeading>
+          <div className="clients-header">
+            <div className="clients-heading-col">
+              <p className="mini-heading">{t("clientsLabel")}</p>
+              <AnimatedHeading as="div" className="heading-display">
+                {t.rich("clientsHeading", highlightTag)}
+              </AnimatedHeading>
+              <p className="clients-support">{t("clientsSupport")}</p>
+            </div>
+            <p className="clients-stat font-display" aria-hidden>
+              {t("clientsStat")}
+            </p>
+          </div>
 
           <div className="clients-grid mt-16">
             {clientLogos.map((logo) => (
@@ -119,9 +127,9 @@ export default async function HomePage({
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={200}
-                  height={104}
-                  className="h-auto w-full max-w-[200px] object-contain opacity-80 transition hover:opacity-100"
+                  width={220}
+                  height={114}
+                  className="clients-logo"
                 />
               </div>
             ))}

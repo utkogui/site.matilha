@@ -26,8 +26,11 @@
     "servicesLabel": "// WHAT WE DO",
     "casesLabel": "// OUR WORK",
     "casesHeading": "From <u>stories</u> to <u>results.</u>",
-    "clientsLabel": "// Companies",
+    "casesCta": "OUR WORK",
+    "clientsLabel": "// COMPANIES",
     "clientsHeading": "Brands that <u>trust us.</u>",
+    "clientsStat": "15 years",
+    "clientsSupport": "From startups to global brands.",
     "viewAllCases": "View all our work",
     "ctaTitle": "Let's transform your idea together",
     "growLabel": "// MATILHA.DIGITAL",
@@ -94,6 +97,9 @@
     "placeholder": "The full privacy policy content is being updated. We will publish the complete version on this page soon."
   },
   "footer": {
+    "label": "// LET'S TALK",
+    "heading": "Your idea deserves the next step.",
+    "cta": "Let's Talk",
     "email": "talk@matilha.digital",
     "navLabel": "Navigation",
     "casesLabel": "Our Work",
@@ -112,9 +118,7 @@
     "socialInstagram": "Matilha on Instagram",
     "socialMedium": "Matilha on Medium",
     "socialBehance": "Matilha on Behance",
-    "socialLabel": "Social media",
-    "showMore": "Show more information",
-    "showLess": "Hide information"
+    "socialLabel": "Social media"
   },
   "notFound": {
     "title": "Page not found",

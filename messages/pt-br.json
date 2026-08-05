@@ -26,8 +26,11 @@
     "servicesLabel": "// O QUE FAZEMOS",
     "casesLabel": "// CASES",
     "casesHeading": "Histórias que viraram resultado.",
-    "clientsLabel": "// Empresas",
+    "casesCta": "CASES",
+    "clientsLabel": "// EMPRESAS",
     "clientsHeading": "Marcas que confiam na nossa <u>Matilha</u>",
+    "clientsStat": "15 anos",
+    "clientsSupport": "De startups a marcas globais.",
     "viewAllCases": "Ver todos os nossos cases",
     "ctaTitle": "Vamos transformar sua ideia juntos",
     "growLabel": "// MATILHA.DIGITAL",
@@ -94,6 +97,9 @@
     "placeholder": "O conteúdo completo da política de privacidade está sendo atualizado. Em breve publicaremos a versão integral nesta página."
   },
   "footer": {
+    "label": "// VAMOS CONVERSAR",
+    "heading": "Sua ideia merece o próximo passo.",
+    "cta": "Vamos Conversar",
     "email": "talk@matilha.digital",
     "navLabel": "Navegação",
     "casesLabel": "Cases",
@@ -112,9 +118,7 @@
     "socialInstagram": "Matilha no Instagram",
     "socialMedium": "Matilha no Medium",
     "socialBehance": "Matilha no Behance",
-    "socialLabel": "Redes sociais",
-    "showMore": "Ver mais informações",
-    "showLess": "Ocultar informações"
+    "socialLabel": "Redes sociais"
   },
   "notFound": {
     "title": "Página não encontrada",

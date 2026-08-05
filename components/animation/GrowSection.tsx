@@ -35,7 +35,7 @@ export function GrowSection() {
 
     const tween = gsap.fromTo(
       el,
-      { clipPath: "polygon(20% 20%, 80% 20%, 80% 80%, 20% 80%)" },
+      { clipPath: "polygon(1.5% 3%, 98.5% 3%, 98.5% 97%, 1.5% 97%)" },
       {
         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         ease: "none",

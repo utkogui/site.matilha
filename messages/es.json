@@ -26,8 +26,11 @@
     "servicesLabel": "// QUÉ HACEMOS",
     "casesLabel": "// NUESTRO TRABAJO",
     "casesHeading": "De <u>historias</u> a <u>resultados.</u>",
-    "clientsLabel": "// Empresas",
+    "casesCta": "TRABAJO",
+    "clientsLabel": "// EMPRESAS",
     "clientsHeading": "Marcas que <u>confían en nosotros.</u>",
+    "clientsStat": "15 años",
+    "clientsSupport": "De startups a marcas globales.",
     "viewAllCases": "Ver todo nuestro trabajo",
     "ctaTitle": "Transformemos tu idea juntos",
     "growLabel": "// MATILHA.DIGITAL",
@@ -94,6 +97,9 @@
     "placeholder": "Estamos actualizando el contenido completo de esta política. Pronto publicaremos la versión definitiva en esta página."
   },
   "footer": {
+    "label": "// HABLEMOS",
+    "heading": "Tu idea merece el próximo paso.",
+    "cta": "Hablemos",
     "email": "talk@matilha.digital",
     "navLabel": "Navegación",
     "casesLabel": "Nuestro trabajo",
@@ -112,9 +118,7 @@
     "socialInstagram": "Matilha en Instagram",
     "socialMedium": "Matilha en Medium",
     "socialBehance": "Matilha en Behance",
-    "socialLabel": "Redes sociales",
-    "showMore": "Ver más información",
-    "showLess": "Ocultar información"
+    "socialLabel": "Redes sociales"
   },
   "notFound": {
     "title": "Página no encontrada",
