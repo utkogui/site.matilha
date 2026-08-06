@@ -83,6 +83,7 @@ export function HeaderLocaleLinks({ className = "" }: { className?: string }) {
           type="button"
           className="matilha-btn matilha-btn-underline matilha-btn-header"
           onClick={() => switchUiLanguage(item.key)}
+          aria-label={item.label}
         >
           {headerLocaleLabel(item.key)}
         </button>
@@ -123,7 +124,7 @@ export function LocaleLinks({
       {variant === "footer" && !hideLabel && (
         <h3 className="text-label mb-4">{tFooter("languagesLabel")}</h3>
       )}
-      <ul className={listClass}>
+      <ul className={listClass} role="list">
         {uiLanguages.map((item) => (
           <li key={item.key}>
             {item.key === activeKey ? (

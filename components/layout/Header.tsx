@@ -1,17 +1,23 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/lib/i18n/navigation";
-import { FullScreenMenu } from "./FullScreenMenu";
 import { HeaderLocaleLinks } from "./LocaleLinks";
+
+const FullScreenMenu = dynamic(
+  () => import("./FullScreenMenu").then((mod) => ({ default: mod.FullScreenMenu })),
+  { ssr: false },
+);
 
 export function Header() {
   const t = useTranslations("nav");
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [menuMounted, setMenuMounted] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -23,6 +29,10 @@ export function Header() {
   useEffect(() => {
     setMenuOpen(false);
   }, [pathname]);
+
+  useEffect(() => {
+    if (menuOpen) setMenuMounted(true);
+  }, [menuOpen]);
 
   const headerHeight = scrolled ? "var(--header-height-shrink)" : "var(--header-height)";
 
@@ -44,11 +54,11 @@ export function Header() {
             />
             <Image
               src="/images/brand/logo.svg"
-              alt="Matilha Estúdio"
+              alt=""
               width={202}
               height={46}
               className="site-header-logo-mark w-auto lg:hidden"
-              priority
+              aria-hidden
             />
           </Link>
 
@@ -92,7 +102,7 @@ export function Header() {
         </span>
       </button>
 
-      <FullScreenMenu open={menuOpen} onClose={() => setMenuOpen(false)} />
+      {menuMounted ? <FullScreenMenu open={menuOpen} onClose={() => setMenuOpen(false)} /> : null}
     </>
   );
 }

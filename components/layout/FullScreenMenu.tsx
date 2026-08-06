@@ -151,6 +151,7 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
               <nav className="fullscreen-menu-nav" aria-label={t("menu")}>
                 <motion.ul
                   className="fullscreen-menu-list"
+                  role="list"
                   variants={listContainer}
                   initial="hidden"
                   animate="visible"
@@ -206,7 +207,6 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
                 fill
                 className="object-cover"
                 sizes="40vw"
-                priority
               />
             </motion.div>
           </motion.div>

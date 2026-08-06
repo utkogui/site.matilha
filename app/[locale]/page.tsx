@@ -1,16 +1,26 @@
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HeroVideo } from "@/components/media/HeroVideo";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { highlightTag } from "@/lib/i18n/rich-tags";
-import { GrowSection } from "@/components/animation/GrowSection";
-import { ServiceGrid } from "@/components/sliders/ServiceGrid";
-import { CaseBlockSlider } from "@/components/sliders/CaseBlockSlider";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { baseMetadata, buildHomeTitle } from "@/lib/seo/metadata";
 import { clientLogos, homeFeaturedCaseIds, services } from "@/lib/content/home";
 import { getAllCases } from "@/lib/content/cases";
 import type { Locale } from "@/lib/i18n/routing";
+
+const ServiceGrid = dynamic(() =>
+  import("@/components/sliders/ServiceGrid").then((mod) => ({ default: mod.ServiceGrid })),
+);
+
+const GrowSection = dynamic(() =>
+  import("@/components/animation/GrowSection").then((mod) => ({ default: mod.GrowSection })),
+);
+
+const CaseBlockSlider = dynamic(() =>
+  import("@/components/sliders/CaseBlockSlider").then((mod) => ({ default: mod.CaseBlockSlider })),
+);
 
 export async function generateMetadata({
   params,
@@ -57,7 +67,7 @@ export default async function HomePage({
         <div className="container-site home-intro-grid">
           <div>
             <p className="mini-heading">{t("servicesLabel")}</p>
-            <AnimatedHeading as="div" className="heading-display">
+            <AnimatedHeading as="h2" className="heading-display">
               {t.rich("transformHeading", highlightTag)}
             </AnimatedHeading>
             <span id="o-que-fazemos" className="anchor-target" aria-hidden />
@@ -73,7 +83,7 @@ export default async function HomePage({
       <section id="home-grow" className="home-section home-section-grow">
         <div className="container-site">
           <p className="mini-heading">{t("growLabel")}</p>
-          <AnimatedHeading as="div" className="heading-display">
+          <AnimatedHeading as="h2" className="heading-display">
             {t.rich("growHeading", highlightTag)}
           </AnimatedHeading>
           <GrowSection />
@@ -85,7 +95,7 @@ export default async function HomePage({
           <div className="home-cases-header">
             <div className="home-cases-heading-col">
               <p className="mini-heading">{t("casesLabel")}</p>
-              <AnimatedHeading as="div" className="heading-display">
+              <AnimatedHeading as="h2" className="heading-display">
                 {t.rich("casesHeading", highlightTag)}
               </AnimatedHeading>
             </div>
@@ -114,7 +124,7 @@ export default async function HomePage({
           <div className="clients-header">
             <div className="clients-heading-col">
               <p className="mini-heading">{t("clientsLabel")}</p>
-              <AnimatedHeading as="div" className="heading-display">
+              <AnimatedHeading as="h2" className="heading-display">
                 {t.rich("clientsHeading", highlightTag)}
               </AnimatedHeading>
               <p className="clients-support">{t("clientsSupport")}</p>
@@ -130,9 +140,10 @@ export default async function HomePage({
                 <Image
                   src={logo.src}
                   alt={logo.alt}
-                  width={220}
-                  height={114}
+                  width={200}
+                  height={104}
                   className="clients-logo"
+                  loading="lazy"
                 />
               </div>
             ))}

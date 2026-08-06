@@ -1,44 +1,30 @@
 "use client";
 
 import { useEffect, type RefObject } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export function useBlockSliderReveal(containerRef: RefObject<HTMLElement | null>) {
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
 
+    el.classList.add("js-reveal");
+
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const parts = el.querySelectorAll<HTMLElement>(".block-slide-part");
-
-    if (!parts.length) return;
-
     if (reduced) {
-      gsap.set(parts, { clearProps: "all" });
+      el.classList.add("is-revealed");
       return;
     }
 
-    gsap.set(parts, { opacity: 0, y: 48 });
-
-    const tween = gsap.to(parts, {
-      opacity: 1,
-      y: 0,
-      duration: 0.65,
-      stagger: 0.08,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: el,
-        start: "top 82%",
-        toggleActions: "play none none none",
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        el.classList.add("is-revealed");
+        observer.disconnect();
       },
-    });
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.08 },
+    );
 
-    return () => {
-      tween.scrollTrigger?.kill();
-      tween.kill();
-    };
+    observer.observe(el);
+    return () => observer.disconnect();
   }, [containerRef]);
 }

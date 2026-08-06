@@ -7,7 +7,7 @@ export type ServiceItem = {
 export const growSectionVideo = {
   vimeoId: "504394316",
   title: "Manifesto | Matilha Estúdio",
-  poster: "/images/brand/wall.png",
+  poster: "/images/brand/wall.webp",
 } as const;
 
 export const heroVideo = {
@@ -44,32 +44,32 @@ export const clientLogos = [
 export const services: ServiceItem[] = [
   {
     key: "uxui",
-    image: "/images/services/service-uxui.jpg",
+    image: "/images/services/service-uxui.webp",
     alt: "UI/UX Design — Matilha Estúdio",
   },
   {
     key: "serviceDesign",
-    image: "/images/services/service-service.jpg",
+    image: "/images/services/service-service.webp",
     alt: "Design de Serviço — Matilha Estúdio",
   },
   {
     key: "daas",
-    image: "/images/services/service-alocacao.jpg",
+    image: "/images/services/service-alocacao.webp",
     alt: "Alocação DaaS — Matilha Estúdio",
   },
   {
     key: "branding",
-    image: "/images/services/service-branding.jpg",
+    image: "/images/services/service-branding.webp",
     alt: "Branding e Naming — Matilha Estúdio",
   },
   {
     key: "development",
-    image: "/images/services/service-dev.jpg",
+    image: "/images/services/service-dev.webp",
     alt: "Desenvolvimento e Tech — Matilha Estúdio",
   },
   {
     key: "mvp",
-    image: "/images/services/service-mvp.jpg",
+    image: "/images/services/service-mvp.webp",
     alt: "Validação de Modelo de Negócio — Matilha Estúdio",
   },
 ];

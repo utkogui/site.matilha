@@ -151,7 +151,7 @@ export function Footer() {
               </div>
 
               <nav className="site-footer-social" aria-label={t("socialLabel")}>
-                <ul className="site-footer-social-list">
+                <ul className="site-footer-social-list" role="list">
                   {socialLinks.map((item) => (
                     <li key={item.key}>
                       <a
@@ -173,7 +173,7 @@ export function Footer() {
 
           <div className="site-footer-utility">
             <nav className="site-footer-utility-nav" aria-label={t("navLabel")}>
-              <ul className="site-footer-link-list">
+              <ul className="site-footer-link-list" role="list">
                 <li>
                   <Link href="/" className="site-footer-link">
                     {tNav("home")}

@@ -2,10 +2,6 @@
 
 import { useLayoutEffect, useRef, type ElementType, type ReactNode } from "react";
 import { useLocale } from "next-intl";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 type AnimatedHeadingProps = {
   text?: string;
@@ -88,26 +84,38 @@ export function AnimatedHeading({
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) return;
 
-    splitTextNodes(contentEl);
+    // Mobile: keep text static — avoids loading GSAP on the critical path.
+    const isDesktop = window.matchMedia("(min-width: 992px)").matches;
+    if (!isDesktop) return;
 
-    const chars = contentEl.querySelectorAll(".animated-heading-char");
-    if (!chars.length) return;
+    let cancelled = false;
+    let cleanup: (() => void) | undefined;
 
-    const ctx = gsap.context(() => {
-      if (trigger === "load") {
-        gsap.from(chars, {
-          opacity: 0,
-          y: 10,
-          duration: 0.5,
-          stagger: 0.06,
-          ease: "power3.out",
-        });
-        return;
-      }
+    void (async () => {
+      const [{ default: gsap }, { ScrollTrigger }] = await Promise.all([
+        import("gsap"),
+        import("gsap/ScrollTrigger"),
+      ]);
+      if (cancelled) return;
 
-      const mm = gsap.matchMedia();
+      gsap.registerPlugin(ScrollTrigger);
+      splitTextNodes(contentEl);
 
-      mm.add("(min-width: 992px)", () => {
+      const chars = contentEl.querySelectorAll(".animated-heading-char");
+      if (!chars.length) return;
+
+      const ctx = gsap.context(() => {
+        if (trigger === "load") {
+          gsap.from(chars, {
+            opacity: 0,
+            y: 10,
+            duration: 0.5,
+            stagger: 0.06,
+            ease: "power3.out",
+          });
+          return;
+        }
+
         gsap.from(chars, {
           opacity: 0,
           y: 10,
@@ -120,15 +128,14 @@ export function AnimatedHeading({
             scrub: true,
           },
         });
-      });
+      }, contentEl);
 
-      mm.add("(max-width: 991px)", () => {
-        gsap.set(chars, { opacity: 1, y: 0 });
-      });
-    }, contentEl);
+      cleanup = () => ctx.revert();
+    })();
 
     return () => {
-      ctx.revert();
+      cancelled = true;
+      cleanup?.();
     };
   }, [text, trigger, locale]);
 

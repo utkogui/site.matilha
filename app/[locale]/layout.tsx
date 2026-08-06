@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -8,11 +8,10 @@ import { Footer } from "@/components/layout/Footer";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { RouteAnalytics } from "@/components/analytics/RouteAnalytics";
 import { GoogleAnalyticsWrapper } from "@/components/analytics/GoogleAnalyticsWrapper";
-import { MouseTrail } from "@/components/animation/MouseTrail";
+import { MouseTrailLazy } from "@/components/animation/MouseTrailLazy";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { HashScrollHandler } from "@/components/layout/HashScrollHandler";
 import { moderat } from "@/lib/fonts/moderat";
-import { manrope } from "@/lib/fonts/manrope";
 import "../globals.css";
 
 export const metadata: Metadata = {
@@ -24,6 +23,12 @@ export const metadata: Metadata = {
     ],
     apple: "/images/brand/apple-touch-icon.webp",
   },
+  manifest: "/manifest.webmanifest",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
+  colorScheme: "dark",
 };
 
 export function generateStaticParams() {
@@ -49,7 +54,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale === "pt-BR" ? "pt-BR" : locale === "pt-PT" ? "pt-PT" : locale === "es" ? "es" : "en"}
-      className={`${moderat.variable} ${manrope.variable}`}
+      className={moderat.variable}
     >
       <body className={`${moderat.className} min-h-screen antialiased`}>
         <NextIntlClientProvider messages={messages}>
@@ -57,7 +62,7 @@ export default async function LocaleLayout({
           <main>{children}</main>
           <Footer />
           <BackToTop />
-          <MouseTrail />
+          <MouseTrailLazy />
           <MetaPixel />
           <GoogleAnalyticsWrapper />
           <RouteAnalytics />

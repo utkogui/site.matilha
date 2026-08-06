@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { LottieArrow } from "@/components/animation/LottieArrow";
@@ -13,12 +13,35 @@ export function HeroVideo() {
   const t = useTranslations("home");
   const locale = useLocale();
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [canLoadVideo, setCanLoadVideo] = useState(false);
 
   useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const saveData =
+      "connection" in navigator &&
+      Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
+    if (reduced || saveData) return;
+
+    const enable = () => setCanLoadVideo(true);
+    const ric = window.requestIdleCallback?.bind(window);
+    const cic = window.cancelIdleCallback?.bind(window);
+
+    if (ric) {
+      const idleId = ric(enable, { timeout: 1800 });
+      return () => cic?.(idleId);
+    }
+
+    const timeoutId = window.setTimeout(enable, 1200);
+    return () => window.clearTimeout(timeoutId);
+  }, []);
+
+  useEffect(() => {
+    if (!canLoadVideo) return;
     const video = videoRef.current;
     if (!video) return;
+    video.load();
     video.play().catch(() => undefined);
-  }, []);
+  }, [canLoadVideo]);
 
   return (
     <section className="hero-section">
@@ -26,14 +49,14 @@ export function HeroVideo() {
         <video
           ref={videoRef}
           className="hero-video"
-          autoPlay
           muted
           loop
           playsInline
+          preload="none"
           poster={heroVideo.poster}
           aria-hidden
         >
-          <source src={heroVideo.src} type="video/webm" />
+          {canLoadVideo ? <source src={heroVideo.src} type="video/webm" /> : null}
         </video>
       </div>
 
