@@ -1,6 +1,6 @@
 # matilha.digital — Next.js
 
-Site trilingue (PT/EN/ES) da Matilha Estúdio, reconstruído em Next.js.
+Site multilíngue (pt-BR / pt-PT / EN / ES) da Matilha Estúdio, reconstruído em Next.js.
 
 **Autor:** Mila Zanforlin
 
@@ -47,13 +47,13 @@ npm start
 
 ## Estrutura i18n
 
-| Página | PT | EN | ES |
-|---|---|---|---|
-| Home | `/` | `/en/` | `/es/` |
-| Cases | `/cases` | `/en/our-work` | `/es/nuestro-trabajo` |
-| Contato | `/vamos-conversar` | `/en/lets-talk` | `/es/hablemos` |
-| Carreiras | `/faca-parte` | `/en/join-us` | `/es/unete` |
-| Privacidade | `/politica-de-privacidade` | `/en/privacy-policy` | `/es/politica-de-privacidad` |
+| Página | pt-BR | pt-PT | EN | ES |
+|---|---|---|---|---|
+| Home | `/` | `/pt/` | `/en/` | `/es/` |
+| Cases | `/cases` | `/pt/cases` | `/en/our-work` | `/es/nuestro-trabajo` |
+| Contato | `/vamos-conversar` | `/pt/vamos-conversar` | `/en/lets-talk` | `/es/hablemos` |
+| Carreiras | `/faca-parte` | `/pt/faca-parte` | `/en/join-us` | `/es/unete` |
+| Privacidade | `/politica-de-privacidade` | `/pt/politica-de-privacidade` | `/en/privacy-policy` | `/es/politica-de-privacidad` |
 
 ## Pós-deploy
 
