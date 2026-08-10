@@ -17,7 +17,7 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "Your idea, perfectly executed.",
+    "heroTitle": "Your idea, <u>perfectly</u> executed.",
     "heroCta": "Talk to Matilha",
     "heroCtaHint": "We typically reply within 1 business day",
     "scrollDown": "Go to next section",

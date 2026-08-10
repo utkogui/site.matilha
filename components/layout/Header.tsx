@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/lib/i18n/navigation";
+import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { HeaderLocaleLinks } from "./LocaleLinks";
 
 const FullScreenMenu = dynamic(
@@ -43,33 +44,32 @@ export function Header() {
         style={{ height: headerHeight }}
       >
         <div className="container-site site-header-inner">
-          <Link href="/" aria-label={t("home")} className="site-header-logo">
-            <Image
-              src="/images/brand/logo.svg"
-              alt="Matilha Estúdio"
-              width={232}
-              height={54}
-              className="hidden w-auto lg:block"
-              priority
-            />
-            <Image
-              src="/images/brand/logo.svg"
-              alt=""
-              width={202}
-              height={46}
-              className="site-header-logo-mark w-auto lg:hidden"
-              aria-hidden
-            />
-          </Link>
-
-          <div className="site-header-actions flex items-center justify-end gap-6 lg:gap-10">
-            <HeaderLocaleLinks />
-            <Link
-              href="/contact"
-              className="matilha-btn matilha-btn-underline matilha-btn-header site-header-contact"
-            >
-              {t("contact")}
+          <div className="site-header-brand">
+            <Link href="/" aria-label={t("home")} className="site-header-logo">
+              <Image
+                src="/images/brand/logo.svg"
+                alt="Matilha Estúdio"
+                width={232}
+                height={54}
+                className="hidden w-auto lg:block"
+                priority
+              />
+              <Image
+                src="/images/brand/logo.svg"
+                alt=""
+                width={202}
+                height={46}
+                className="site-header-logo-mark w-auto lg:hidden"
+                aria-hidden
+              />
             </Link>
+            <HeaderLocaleLinks />
+          </div>
+
+          <div className="site-header-actions">
+            <MatilhaButton href="/contact" variant="solid" className="site-header-contact">
+              {t("contact")}
+            </MatilhaButton>
 
             <button
               type="button"

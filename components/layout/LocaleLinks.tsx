@@ -70,24 +70,29 @@ export function HeaderLocaleLinks({ className = "" }: { className?: string }) {
   const { locale, switchUiLanguage } = useLocaleSwitch();
   const tFooter = useTranslations("footer");
   const activeKey = getUiLanguageKey(locale);
-  const alternates = uiLanguages.filter((item) => item.key !== activeKey);
 
   return (
     <nav
       aria-label={tFooter("languagesLabel")}
-      className={`header-locale-links hidden items-center gap-6 lg:flex lg:gap-10 ${className}`}
+      className={`header-locale-switch ${className}`.trim()}
     >
-      {alternates.map((item) => (
-        <button
-          key={item.key}
-          type="button"
-          className="matilha-btn matilha-btn-underline matilha-btn-header"
-          onClick={() => switchUiLanguage(item.key)}
-          aria-label={item.label}
-        >
-          {headerLocaleLabel(item.key)}
-        </button>
-      ))}
+      {uiLanguages.map((item) => {
+        const isActive = item.key === activeKey;
+
+        return (
+          <button
+            key={item.key}
+            type="button"
+            className={`header-locale-option${isActive ? " is-active" : ""}`}
+            aria-label={item.label}
+            aria-pressed={isActive}
+            aria-current={isActive ? "true" : undefined}
+            onClick={() => switchUiLanguage(item.key)}
+          >
+            <span className="header-locale-option-label">{headerLocaleLabel(item.key)}</span>
+          </button>
+        );
+      })}
     </nav>
   );
 }

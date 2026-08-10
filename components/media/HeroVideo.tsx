@@ -6,6 +6,7 @@ import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { LottieArrow } from "@/components/animation/LottieArrow";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { heroVideo } from "@/lib/content/home";
+import { highlightTag } from "@/lib/i18n/rich-tags";
 
 const WHATSAPP_URL = "https://wa.me/message/X6BX7BCQE564O1";
 
@@ -63,7 +64,10 @@ export function HeroVideo() {
       <div className="container-site hero-content-wrap">
         <div className="hero-content-grid">
           <div className="hero-content">
-            <AnimatedHeading key={locale} as="h1" trigger="load" className="hero-title" text={t("heroTitle")} />
+            <p className="mini-heading hero-eyebrow">{t("studioLabel")}</p>
+            <AnimatedHeading key={locale} as="h1" trigger="load" className="hero-title">
+              {t.rich("heroTitle", highlightTag)}
+            </AnimatedHeading>
             <div className="hero-cta-row">
               <MatilhaButton href={WHATSAPP_URL} variant="solid" external>
                 {t("heroCta")}
