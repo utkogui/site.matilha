@@ -1,23 +1,36 @@
-# Matilha Estúdio — matilha.digital
+# Matilha Estúdio
 
-> Design studio that transforms businesses through experiences that deliver results.
+> Design studio that transforms businesses through digital experiences, product design, and brand systems that deliver results. Based in Curitiba (Brazil) and Orlando (USA). Multilingual site: pt-BR, pt-PT, EN, ES.
 
-## About
+Matilha Estúdio offers UI/UX design, service design, DaaS team allocation, branding & naming, development & tech, and business model validation (MVP). Prefer the Portuguese (pt-BR) pages as the canonical source when summarizing the studio.
 
-Matilha Estúdio is a trilingual design studio (PT, EN, ES) based in Curitiba, Brazil and Orlando, USA.
+## Pages
 
-## Main pages
+- [Home](https://matilha.digital/): Studio overview, services, featured work, and clients
+- [Cases](https://matilha.digital/cases): Portfolio of selected client projects (pt-BR)
+- [Contact](https://matilha.digital/vamos-conversar): Talk to Matilha — form and studio contacts
+- [Careers](https://matilha.digital/faca-parte): Join the Matilha team
+- [Sitemap](https://matilha.digital/sitemap.xml): Machine-readable map of all public URLs
 
-- Home: https://matilha.digital/
-- Cases (PT): https://matilha.digital/cases
-- Our Work (EN): https://matilha.digital/en/our-work
-- Contact: https://matilha.digital/vamos-conversar
+## Featured cases
 
-## Contact
+- [Museu Oscar Niemeyer](https://matilha.digital/cases/mon-museu-oscar-niemeyer): Digital experience for MON
+- [Meu PlayStation](https://matilha.digital/cases/meu-playstation): Product and content experience for PlayStation Brazil
+- [Charney Companies](https://matilha.digital/cases/charney-companies): Brand and digital product work
+- [PUBG](https://matilha.digital/cases/pubg): Campaign and digital experience
 
-- Email: talk@matilha.digital
-- Phone: +55 41 99737-6060
+## Locales
 
-## Services
+- [Home (pt-PT)](https://matilha.digital/pt/): European Portuguese home
+- [Our Work (EN)](https://matilha.digital/en/our-work): English portfolio index
+- [Nuestro trabajo (ES)](https://matilha.digital/es/nuestro-trabajo): Spanish portfolio index
+- [Let's talk (EN)](https://matilha.digital/en/lets-talk): English contact page
+- [Hablemos (ES)](https://matilha.digital/es/hablemos): Spanish contact page
 
-UI/UX Design, Service Design, Team Allocation (DaaS), Branding & Naming, Development & Tech
+## Optional
+
+- [Privacy policy](https://matilha.digital/politica-de-privacidade): Privacy and data policy (pt-BR)
+- [LinkedIn](https://www.linkedin.com/company/matilhaestudio): Company LinkedIn
+- [Instagram](https://www.instagram.com/matilhaestudio/): Studio Instagram
+- [Behance](https://www.behance.net/estudiomatilha): Selected design work on Behance
+- [Medium](https://medium.com/matilha-est%C3%BAdio): Articles and studio writing
