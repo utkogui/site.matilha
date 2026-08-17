@@ -5,29 +5,29 @@
   "client": "Neodent",
   "summary": "Landing page for orthodontists, simplifying the product portfolio with an immersive experience.",
   "challenge": "Create a landing page that simplifies Neodent's product portfolio, varying language and products by location.",
-  "solution": "Landing page highlighting products by country — 14 countries and 7 languages with different configuration for each.",
+  "solution": "Landing page highlighting products by country: 14 countries and 7 languages with different configuration for each.",
   "services": [
     "UI | UX Design",
     "Development & Tech"
   ],
   "cover": "/images/cases/neodent/cover.webp",
-  "coverAlt": "Neodent case — Matilha Estúdio",
+  "coverAlt": "Neodent case | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/neodent/gallery-1.webp",
-      "alt": "Neodent — imagem 1 — Matilha Estúdio"
+      "alt": "Neodent | imagem 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/neodent/gallery-2.webp",
-      "alt": "Neodent — imagem 2 — Matilha Estúdio"
+      "alt": "Neodent | imagem 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/neodent/gallery-3.webp",
-      "alt": "Neodent — imagem 3 — Matilha Estúdio"
+      "alt": "Neodent | imagem 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/neodent/gallery-4.webp",
-      "alt": "Neodent — imagem 4 — Matilha Estúdio"
+      "alt": "Neodent | imagem 4 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -35,7 +35,7 @@
     "charney-companies"
   ],
   "seo": {
-    "title": "Neodent — Matilha Estúdio",
+    "title": "Neodent | Matilha Estúdio",
     "description": "Multilingual landing page for Neodent portfolio."
   }
 }

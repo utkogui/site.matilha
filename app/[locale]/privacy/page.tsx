@@ -1,6 +1,7 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { setRequestLocale } from "next-intl/server";
 import { PageTitle } from "@/components/animation/PageTitle";
 import { baseMetadata, buildPageTitle } from "@/lib/seo/metadata";
+import { getPrivacyCopy } from "@/lib/content/lgpd-copy";
 import type { Locale } from "@/lib/i18n/routing";
 
 export async function generateMetadata({
@@ -9,11 +10,11 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "privacy" });
+  const copy = getPrivacyCopy(locale as Locale);
 
   return baseMetadata({
-    title: buildPageTitle(t("title"), locale as Locale),
-    description: t("placeholder"),
+    title: buildPageTitle(copy.title, locale as Locale),
+    description: copy.description,
     pathname: "/privacy",
     locale: locale as Locale,
   });
@@ -26,14 +27,28 @@ export default async function PrivacyPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const t = await getTranslations("privacy");
+  const copy = getPrivacyCopy(locale as Locale);
 
   return (
-    <section className="page-section">
+    <section className="page-section privacy-page">
       <div className="container-site max-w-3xl">
-        <PageTitle text={t("title")} />
-        <p className="mt-4 text-sm text-white/50">{t("updated")}</p>
-        <p className="mt-8 text-lg text-white/80">{t("placeholder")}</p>
+        <PageTitle text={copy.title} />
+        <p className="privacy-updated">{copy.updated}</p>
+        <p className="privacy-intro">{copy.intro}</p>
+        <p className="privacy-notice">{copy.notice}</p>
+
+        <div className="privacy-sections">
+          {copy.sections.map((section) => (
+            <section key={section.heading} className="privacy-section">
+              <h2 className="privacy-section-title">{section.heading}</h2>
+              {section.paragraphs.map((paragraph) => (
+                <p key={paragraph} className="privacy-paragraph">
+                  {paragraph}
+                </p>
+              ))}
+            </section>
+          ))}
+        </div>
       </div>
     </section>
   );

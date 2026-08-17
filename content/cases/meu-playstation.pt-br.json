@@ -3,40 +3,40 @@
   "slug": "meu-playstation",
   "title": "Meu PlayStation",
   "client": "Meu PlayStation",
-  "summary": "O maior canal de notícias sobre PlayStation das Américas — redesenhado do discovery ao pixel.",
-  "challenge": "O MeuPS já era referência na comunidade PlayStation, mas a plataforma precisava acompanhar o ritmo do público: mais conteúdo, mais formatos, mais expectativa de fluidez. O desafio era redesenhar site e app sem perder a identidade construída pela comunidade — melhorar a experiência e a interação do usuário final mantendo a voz que o canal já tinha.",
-  "solution": "Trabalhamos em camadas: pesquisa em serviço com usuários e stakeholders, um roadmap de inovação priorizado e, só então, o redesenho de UI. O resultado é uma experiência gamer coerente entre web e mobile — navegação mais clara, hierarquia editorial forte e detalhes de interface que celebram o universo PlayStation.",
+  "summary": "O maior canal de notícias sobre PlayStation das Américas, redesenhado do discovery ao pixel.",
+  "challenge": "O MeuPS já era referência na comunidade PlayStation, mas a plataforma precisava acompanhar o ritmo do público: mais conteúdo, mais formatos, mais expectativa de fluidez. O desafio era redesenhar site e app sem perder a identidade construída pela comunidade: melhorar a experiência e a interação do usuário final mantendo a voz que o canal já tinha.",
+  "solution": "Trabalhamos em camadas: pesquisa em serviço com usuários e stakeholders, um roadmap de inovação priorizado e, só então, o redesenho de UI. O resultado é uma experiência gamer coerente entre web e mobile, com navegação mais clara, hierarquia editorial forte e detalhes de interface que celebram o universo PlayStation.",
   "services": [
     "Design de Serviço",
     "UI | UX Design",
     "Desenvolvimento e Tech"
   ],
   "cover": "/images/cases/meu-playstation/cover.webp",
-  "coverAlt": "Case Meu PlayStation — Matilha Estúdio",
+  "coverAlt": "Case Meu PlayStation | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/meu-playstation/gallery-1.webp",
-      "alt": "Meu PlayStation — imagem 1 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-2.webp",
-      "alt": "Meu PlayStation — imagem 2 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-3.webp",
-      "alt": "Meu PlayStation — imagem 3 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-4.webp",
-      "alt": "Meu PlayStation — imagem 4 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 4 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-5.webp",
-      "alt": "Meu PlayStation — imagem 5 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 5 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/meu-playstation/gallery-6.webp",
-      "alt": "Meu PlayStation — imagem 6 — Matilha Estúdio"
+      "alt": "Meu PlayStation | imagem 6 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -44,11 +44,12 @@
     "mon-museu-oscar-niemeyer"
   ],
   "story": {
-    "approach": "Antes de abrir o Figma, abrimos a conversa. Entendemos como a redação publica, como o leitor busca e como a marca precisa anunciar — e só então desenhamos o sistema que sustenta tudo isso.",
+    "approachLead": "Antes de abrir o Figma, abrimos a conversa.",
+    "approach": "Entendemos como a redação publica, como o leitor busca e como a marca precisa anunciar. Só então desenhamos o sistema que sustenta tudo isso.",
     "deliverables": [
       {
         "title": "Discovery (Design de Serviço)",
-        "body": "Coleta e estruturação das informações recebidas dos clientes e usuários da plataforma — dores, rotinas e oportunidades reais, não hipóteses de slides."
+        "body": "Coleta e estruturação das informações recebidas dos clientes e usuários da plataforma: dores, rotinas e oportunidades reais, não hipóteses de slides."
       },
       {
         "title": "Roadmap de Inovação",
@@ -56,7 +57,7 @@
       },
       {
         "title": "UI Design",
-        "body": "Redesenho da plataforma existente a partir dos apontamentos das fases anteriores — do home sticky à tipografia das tags, do dark mode ao detalhe do botão de busca."
+        "body": "Redesenho da plataforma existente a partir dos apontamentos das fases anteriores: do home sticky à tipografia das tags, do dark mode ao detalhe do botão de busca."
       }
     ],
     "quote": "A pesquisa em serviço proporcionou uma imersão profunda em diferentes materiais do universo gamer, além do contato com usuários da plataforma, para que fosse possível encontrar oportunidades alinhadas com o mercado e também com a comunidade já estabelecida pelo MeuPS.",
@@ -64,16 +65,16 @@
     "chapters": {
       "app": {
         "title": "O app como extensão da redação",
-        "body": "No mobile, cada polegada conta. Não bastava encolher o site: era preciso redesenhar o ritmo da leitura, da busca e das categorias para o polegar — mantendo a voz do MeuPS intacta.",
+        "body": "No mobile, cada polegada conta. Não bastava encolher o site: era preciso redesenhar o ritmo da leitura, da busca e das categorias para o polegar, mantendo a voz do MeuPS intacta.",
         "points": [
           "Categorias e feeds pensados para scanning rápido sem perder hierarquia editorial.",
           "Busca e resultados que aproximam notícia, review e oferta no mesmo gesto.",
-          "Autores e tags como pontos de continuidade — o leitor volta pelo hábito, não só pela home."
+          "Autores e tags como pontos de continuidade: o leitor volta pelo hábito, não só pela home."
         ]
       },
       "site": {
         "title": "Um portal que escala conteúdo",
-        "body": "A home desktop carrega o peso de um canal diário: destaques, publicidade, listas e navegação. Nosso trabalho foi dar intenção ao scroll longo — cada bloco com função, sem o portal parecer um feed infinito genérico.",
+        "body": "A home desktop carrega o peso de um canal diário: destaques, publicidade, listas e navegação. Nosso trabalho foi dar intenção ao scroll longo: cada bloco com função, sem o portal parecer um feed infinito genérico.",
         "points": [
           "Hierarquia clara entre herói editorial, módulos comerciais e listagens.",
           "Sticky e seções longas desenhadas para o ritmo real de publicação do MeuPS.",
@@ -82,7 +83,7 @@
       },
       "article": {
         "title": "A interna onde a notícia vive",
-        "body": "A página de artigo é o produto. Tipografia, mídia e módulos relacionados existem para leitura profunda — e para o próximo clique que mantém o leitor dentro do ecossistema MeuPS.",
+        "body": "A página de artigo é o produto. Tipografia, mídia e módulos relacionados existem para leitura profunda e para o próximo clique que mantém o leitor dentro do ecossistema MeuPS.",
         "points": [
           "Leitura confortável em blocos longos, sem ruído visual.",
           "Mídia e embeds tratados como parte da narrativa, não como anexos.",
@@ -110,7 +111,7 @@
     ]
   },
   "seo": {
-    "title": "Meu PlayStation — Matilha Estúdio",
+    "title": "Meu PlayStation | Matilha Estúdio",
     "description": "Discovery, roadmap e UI design do maior canal de notícias PlayStation das Américas."
   }
 }

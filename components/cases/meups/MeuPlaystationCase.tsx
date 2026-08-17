@@ -121,11 +121,16 @@ export function MeuPlaystationCase({ content, related }: MeuPlaystationCaseProps
           </FadeInUp>
         </div>
 
-        {story?.approach ? (
+        {story?.approachLead || story?.approach ? (
           <FadeInUp>
-            <section className="meups-approach">
-              <p className="mini-heading">{t("meupsApproach")}</p>
-              <p className="meups-approach-text">{story.approach}</p>
+            <section className="meups-approach" aria-labelledby="meups-approach-heading">
+              <p id="meups-approach-heading" className="mini-heading">
+                {t("meupsApproach")}
+              </p>
+              {story.approachLead ? (
+                <p className="meups-approach-lead">{story.approachLead}</p>
+              ) : null}
+              {story.approach ? <p className="meups-approach-text">{story.approach}</p> : null}
             </section>
           </FadeInUp>
         ) : null}
@@ -155,7 +160,7 @@ export function MeuPlaystationCase({ content, related }: MeuPlaystationCaseProps
           <FadeInUp>
             <blockquote className="meups-quote">
               <p>“{story.quote}”</p>
-              {story.quoteAuthor ? <cite>— {story.quoteAuthor}</cite> : null}
+              {story.quoteAuthor ? <cite>{story.quoteAuthor}</cite> : null}
             </blockquote>
           </FadeInUp>
         ) : null}

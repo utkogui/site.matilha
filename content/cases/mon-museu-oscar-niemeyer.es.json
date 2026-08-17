@@ -12,31 +12,31 @@
     "Desarrollo y Tech"
   ],
   "cover": "/images/cases/mon-museu/cover.webp",
-  "coverAlt": "Case MON — Matilha Estúdio",
+  "coverAlt": "Case MON | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/mon-museu/gallery-1.webp",
-      "alt": "MON — imagen 1 — Matilha Estúdio"
+      "alt": "MON | imagen 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/mon-museu/gallery-2.webp",
-      "alt": "MON — imagen 2 — Matilha Estúdio"
+      "alt": "MON | imagen 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/mon-museu/gallery-3.webp",
-      "alt": "MON — imagen 3 — Matilha Estúdio"
+      "alt": "MON | imagen 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/mon-museu/gallery-4.webp",
-      "alt": "MON — imagen 4 — Matilha Estúdio"
+      "alt": "MON | imagen 4 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/mon-museu/gallery-5.webp",
-      "alt": "MON — imagen 5 — Matilha Estúdio"
+      "alt": "MON | imagen 5 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/mon-museu/gallery-6.webp",
-      "alt": "MON — imagen 6 — Matilha Estúdio"
+      "alt": "MON | imagen 6 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -44,7 +44,7 @@
     "sestini"
   ],
   "seo": {
-    "title": "MON — Matilha Estúdio",
+    "title": "MON | Matilha Estúdio",
     "description": "Rediseño y desarrollo del sitio del Museo Oscar Niemeyer."
   }
 }

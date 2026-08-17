@@ -8,11 +8,11 @@ const office = (n: number): string =>
 
 /** Strong wide shots for the contact hero crossfade. */
 export const officeHeroPhotos: OfficePhoto[] = [
-  { src: office(1), alt: "Escritório Matilha — estação de trabalho e salas de reunião" },
-  { src: office(4), alt: "Escritório Matilha — lounge com balanço e iluminação" },
-  { src: office(9), alt: "Escritório Matilha — detalhe do ambiente" },
-  { src: office(10), alt: "Escritório Matilha — vista urbana do estúdio" },
-  { src: office(14), alt: "Escritório Matilha — parede de referências" },
+  { src: office(1), alt: "Escritório Matilha, estação de trabalho e salas de reunião" },
+  { src: office(4), alt: "Escritório Matilha, lounge com balanço e iluminação" },
+  { src: office(9), alt: "Escritório Matilha, detalhe do ambiente" },
+  { src: office(10), alt: "Escritório Matilha, vista urbana do estúdio" },
+  { src: office(14), alt: "Escritório Matilha, parede de referências" },
 ];
 
 /**

@@ -7,6 +7,7 @@ export const formSchema = z.object({
   subject: z.string().min(2).max(300),
   message: z.string().min(10).max(5000),
   website: z.string().max(0).optional(),
+  privacyAccepted: z.boolean().refine((value) => value === true),
 });
 
 const rateLimit = new Map<string, number>();
@@ -26,7 +27,7 @@ export async function sendFormEmail(type: "contact" | "careers", data: z.infer<t
   const pass = process.env.SMTP_PASS;
 
   if (!host || !user || !pass) {
-    console.warn("SMTP not configured — skipping email send");
+    console.warn("SMTP not configured, skipping email send");
     return { ok: true, skipped: true };
   }
 
@@ -49,7 +50,7 @@ export async function sendFormEmail(type: "contact" | "careers", data: z.infer<t
     to,
     ...(bcc ? { bcc } : {}),
     replyTo: data.email,
-    subject: `[Matilha — ${label}] ${data.subject}`,
+    subject: `[Matilha, ${label}] ${data.subject}`,
     text: `Nome: ${data.name}\nEmail: ${data.email}\nAssunto: ${data.subject}\n\n${data.message}`,
     html: `<p><strong>Nome:</strong> ${data.name}</p><p><strong>Email:</strong> ${data.email}</p><p><strong>Assunto:</strong> ${data.subject}</p><hr/><p>${data.message.replace(/\n/g, "<br/>")}</p>`,
   });

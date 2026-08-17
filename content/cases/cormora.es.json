@@ -13,31 +13,31 @@
     "Desarrollo y Tech"
   ],
   "cover": "/images/cases/cormora/cover.webp",
-  "coverAlt": "Case Cormora — Matilha Estúdio",
+  "coverAlt": "Case Cormora | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/cormora/gallery-1.webp",
-      "alt": "Cormora — imagen 1 — Matilha Estúdio"
+      "alt": "Cormora | imagen 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/cormora/gallery-2.webp",
-      "alt": "Cormora — imagen 2 — Matilha Estúdio"
+      "alt": "Cormora | imagen 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/cormora/gallery-3.webp",
-      "alt": "Cormora — imagen 3 — Matilha Estúdio"
+      "alt": "Cormora | imagen 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/cormora/gallery-4.webp",
-      "alt": "Cormora — imagen 4 — Matilha Estúdio"
+      "alt": "Cormora | imagen 4 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/cormora/gallery-5.webp",
-      "alt": "Cormora — imagen 5 — Matilha Estúdio"
+      "alt": "Cormora | imagen 5 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/cormora/gallery-6.webp",
-      "alt": "Cormora — imagen 6 — Matilha Estúdio"
+      "alt": "Cormora | imagen 6 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -45,7 +45,7 @@
     "sestini"
   ],
   "seo": {
-    "title": "Cormora — Matilha Estúdio",
-    "description": "Plataforma white label de turismo — branding, UX y desarrollo."
+    "title": "Cormora | Matilha Estúdio",
+    "description": "Plataforma white label de turismo: branding, UX y desarrollo."
   }
 }

@@ -1,4 +1,4 @@
-# matilha.digital — Next.js
+# matilha.digital, Next.js
 
 Site multilíngue (pt-BR / pt-PT / EN / ES) da Matilha Estúdio, reconstruído em Next.js.
 

@@ -10,23 +10,23 @@
     "Service Design"
   ],
   "cover": "/images/cases/conecte-ai/cover.webp",
-  "coverAlt": "Conecte AI case — Matilha Estúdio",
+  "coverAlt": "Conecte AI case | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/conecte-ai/gallery-1.webp",
-      "alt": "Conecte.ai — imagem 1 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagem 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-2.webp",
-      "alt": "Conecte.ai — imagem 2 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagem 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-3.webp",
-      "alt": "Conecte.ai — imagem 3 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagem 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-4.webp",
-      "alt": "Conecte.ai — imagem 4 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagem 4 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -34,7 +34,7 @@
     "meu-playstation"
   ],
   "seo": {
-    "title": "Conecte.ai — Matilha Estúdio",
+    "title": "Conecte.ai | Matilha Estúdio",
     "description": "Service design and empathic research for internet providers."
   }
 }

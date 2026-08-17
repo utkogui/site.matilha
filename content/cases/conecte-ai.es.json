@@ -10,23 +10,23 @@
     "Diseño de Servicio"
   ],
   "cover": "/images/cases/conecte-ai/cover.webp",
-  "coverAlt": "Case Conecte AI — Matilha Estúdio",
+  "coverAlt": "Case Conecte AI | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/conecte-ai/gallery-1.webp",
-      "alt": "Conecte.ai — imagen 1 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagen 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-2.webp",
-      "alt": "Conecte.ai — imagen 2 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagen 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-3.webp",
-      "alt": "Conecte.ai — imagen 3 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagen 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/conecte-ai/gallery-4.webp",
-      "alt": "Conecte.ai — imagen 4 — Matilha Estúdio"
+      "alt": "Conecte.ai | imagen 4 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -34,7 +34,7 @@
     "meu-playstation"
   ],
   "seo": {
-    "title": "Conecte.ai — Matilha Estúdio",
+    "title": "Conecte.ai | Matilha Estúdio",
     "description": "Diseño de servicio e investigación empática para proveedores de internet."
   }
 }

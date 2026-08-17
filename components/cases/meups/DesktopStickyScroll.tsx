@@ -38,17 +38,27 @@ export function DesktopStickyScroll({
 
     const ctx = gsap.context(() => {
       const getOverflow = () => Math.max(0, imgWrap.offsetHeight - screen.clientHeight);
+      const getTravel = () => {
+        const overflow = getOverflow();
+        // Cap pin distance so 10k+ desktop shots don't scrub for multiple viewports.
+        return Math.min(Math.max(overflow * 0.7, 1200), 2200);
+      };
 
       gsap.fromTo(
         imgWrap,
         { y: 0 },
         {
-          y: () => -getOverflow(),
+          y: () => {
+            const overflow = getOverflow();
+            const travel = getTravel();
+            const ratio = overflow > 0 ? Math.min(1, travel / Math.max(overflow, 1)) : 0;
+            return -(overflow * ratio);
+          },
           ease: "none",
           scrollTrigger: {
             trigger: section,
             start: "top top",
-            end: () => `+=${Math.max(getOverflow() * 0.7, 1200)}`,
+            end: () => `+=${Math.round(getTravel())}`,
             scrub: 0.7,
             pin: true,
             anticipatePin: 1,
@@ -98,7 +108,12 @@ export function DesktopStickyScroll({
                       width={shot.width}
                       height={shot.height}
                       className="meups-desktop-image"
-                      sizes="(max-width: 1023px) 92vw, min(1100px, 86vw)"
+                      sizes="(max-width: 767px) 100vw, 1100px"
+                      quality={70}
+                      loading="eager"
+                      // Tall showcase shots blow up if the optimizer picks a huge width
+                      // (e.g. 3840×33k), which many GPUs refuse to paint.
+                      unoptimized={shot.height > 8000}
                     />
                   </div>
                 </div>

@@ -12,31 +12,31 @@
     "Desarrollo y Tech"
   ],
   "cover": "/images/cases/pubg/cover.webp",
-  "coverAlt": "Case PUBG — Matilha Estúdio",
+  "coverAlt": "Case PUBG | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/pubg/gallery-1.webp",
-      "alt": "PUBG — imagen 1 — Matilha Estúdio"
+      "alt": "PUBG | imagen 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-2.webp",
-      "alt": "PUBG — imagen 2 — Matilha Estúdio"
+      "alt": "PUBG | imagen 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-3.webp",
-      "alt": "PUBG — imagen 3 — Matilha Estúdio"
+      "alt": "PUBG | imagen 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-4.webp",
-      "alt": "PUBG — imagen 4 — Matilha Estúdio"
+      "alt": "PUBG | imagen 4 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-5.webp",
-      "alt": "PUBG — imagen 5 — Matilha Estúdio"
+      "alt": "PUBG | imagen 5 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-6.webp",
-      "alt": "PUBG — imagen 6 — Matilha Estúdio"
+      "alt": "PUBG | imagen 6 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -44,7 +44,7 @@
     "sestini"
   ],
   "seo": {
-    "title": "PUBG — Matilha Estúdio",
+    "title": "PUBG | Matilha Estúdio",
     "description": "Rediseño y unificación de la experiencia del sitio PUBG."
   }
 }

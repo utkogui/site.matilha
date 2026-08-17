@@ -12,31 +12,31 @@
     "Development & Tech"
   ],
   "cover": "/images/cases/pubg/cover.webp",
-  "coverAlt": "PUBG case — Matilha Estúdio",
+  "coverAlt": "PUBG case | Matilha Estúdio",
   "gallery": [
     {
       "src": "/images/cases/pubg/gallery-1.webp",
-      "alt": "PUBG — imagem 1 — Matilha Estúdio"
+      "alt": "PUBG | imagem 1 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-2.webp",
-      "alt": "PUBG — imagem 2 — Matilha Estúdio"
+      "alt": "PUBG | imagem 2 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-3.webp",
-      "alt": "PUBG — imagem 3 — Matilha Estúdio"
+      "alt": "PUBG | imagem 3 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-4.webp",
-      "alt": "PUBG — imagem 4 — Matilha Estúdio"
+      "alt": "PUBG | imagem 4 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-5.webp",
-      "alt": "PUBG — imagem 5 — Matilha Estúdio"
+      "alt": "PUBG | imagem 5 | Matilha Estúdio"
     },
     {
       "src": "/images/cases/pubg/gallery-6.webp",
-      "alt": "PUBG — imagem 6 — Matilha Estúdio"
+      "alt": "PUBG | imagem 6 | Matilha Estúdio"
     }
   ],
   "relatedCases": [
@@ -44,7 +44,7 @@
     "sestini"
   ],
   "seo": {
-    "title": "PUBG — Matilha Estúdio",
+    "title": "PUBG | Matilha Estúdio",
     "description": "PUBG website experience redesign and unification."
   }
 }

@@ -48,9 +48,11 @@ export function PhoneMaskScroll({ shots, label, title, body }: PhoneMaskScrollPr
             measure();
             const maxOverflow = Math.max(
               ...images.map((img) => (img as HTMLElement & { __overflow?: number }).__overflow ?? 0),
-              800,
+              0,
             );
-            return `+=${Math.round(maxOverflow * 0.85)}`;
+            // Cap pin distance so tall screenshots don't force endless scrubbing.
+            const travel = Math.min(Math.max(maxOverflow * 0.85, 900), 2000);
+            return `+=${Math.round(travel)}`;
           },
           scrub: 0.65,
           pin: true,
@@ -65,7 +67,11 @@ export function PhoneMaskScroll({ shots, label, title, body }: PhoneMaskScrollPr
           {
             y: () => {
               measure();
-              return -((img as HTMLElement & { __overflow?: number }).__overflow ?? 0);
+              const overflow = (img as HTMLElement & { __overflow?: number }).__overflow ?? 0;
+              // Match image travel to the capped scroll distance (partial reveal of tall shots).
+              const travel = Math.min(Math.max(overflow * 0.85, 900), 2000);
+              const ratio = overflow > 0 ? Math.min(1, travel / Math.max(overflow, 1)) : 0;
+              return -(overflow * ratio);
             },
             ease: "none",
             duration: 1,
@@ -116,6 +122,9 @@ export function PhoneMaskScroll({ shots, label, title, body }: PhoneMaskScrollPr
                     height={shot.height}
                     className="meups-phone-image"
                     sizes="(max-width: 1023px) 42vw, 280px"
+                    quality={70}
+                    loading="eager"
+                    unoptimized={shot.height > 8000}
                   />
                 </div>
               </div>

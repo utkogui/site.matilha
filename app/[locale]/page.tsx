@@ -1,4 +1,3 @@
-import Image from "next/image";
 import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HeroVideo } from "@/components/media/HeroVideo";
@@ -20,6 +19,10 @@ const GrowSection = dynamic(() =>
 
 const CaseBlockSlider = dynamic(() =>
   import("@/components/sliders/CaseBlockSlider").then((mod) => ({ default: mod.CaseBlockSlider })),
+);
+
+const ClientsLogoSlider = dynamic(() =>
+  import("@/components/sliders/ClientsLogoSlider").then((mod) => ({ default: mod.ClientsLogoSlider })),
 );
 
 export async function generateMetadata({
@@ -134,19 +137,8 @@ export default async function HomePage({
             </p>
           </div>
 
-          <div className="clients-grid mt-16">
-            {clientLogos.map((logo) => (
-              <div key={logo.src} className="clients-grid-item">
-                <Image
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={200}
-                  height={104}
-                  className="clients-logo"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+          <div className="clients-slider-row mt-16">
+            <ClientsLogoSlider logos={clientLogos} />
           </div>
 
           <div className="home-section-cta-band">

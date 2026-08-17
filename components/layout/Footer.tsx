@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { Link } from "@/lib/i18n/navigation";
 import { LocaleLinks } from "@/components/layout/LocaleLinks";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
+import { ManageCookiesButton } from "@/components/consent/ManageCookiesButton";
 import { footerData } from "@/lib/content/home";
 
 type SocialNetwork = "linkedin" | "instagram" | "medium" | "behance";
@@ -198,6 +199,9 @@ export function Footer() {
                   <Link href="/privacy" className="site-footer-link">
                     {t("privacy")}
                   </Link>
+                </li>
+                <li>
+                  <ManageCookiesButton className="site-footer-link" />
                 </li>
               </ul>
             </nav>

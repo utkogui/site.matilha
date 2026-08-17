@@ -84,7 +84,7 @@ export function AnimatedHeading({
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) return;
 
-    // Mobile: keep text static — avoids loading GSAP on the critical path.
+    // Mobile: keep text static, avoids loading GSAP on the critical path.
     const isDesktop = window.matchMedia("(min-width: 992px)").matches;
     if (!isDesktop) return;
 

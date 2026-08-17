@@ -67,6 +67,9 @@ export function DetailGrid({ shots, label, title, body }: DetailGridProps) {
                 height={shot.height}
                 className="meups-detail-image"
                 sizes="(max-width: 767px) 50vw, 25vw"
+                quality={70}
+                loading="lazy"
+                unoptimized={shot.height > 8000}
               />
             </div>
           </figure>

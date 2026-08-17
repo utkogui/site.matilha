@@ -19,7 +19,7 @@ export function GrowSection() {
       "connection" in navigator &&
       Boolean((navigator as Navigator & { connection?: { saveData?: boolean } }).connection?.saveData);
 
-    // Vimeo is heavy — only on desktop PT locales, without reduced motion / data saver.
+    // Vimeo is heavy, only on desktop PT locales, without reduced motion / data saver.
     setAllowVideo(!reduced && desktop && !saveData);
   }, []);
 

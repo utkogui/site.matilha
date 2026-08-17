@@ -8,7 +8,7 @@ Matilha Estúdio offers UI/UX design, service design, DaaS team allocation, bran
 
 - [Home](https://matilha.digital/): Studio overview, services, featured work, and clients
 - [Cases](https://matilha.digital/cases): Portfolio of selected client projects (pt-BR)
-- [Contact](https://matilha.digital/vamos-conversar): Talk to Matilha — form and studio contacts
+- [Contact](https://matilha.digital/vamos-conversar): Talk to Matilha, form and studio contacts
 - [Careers](https://matilha.digital/faca-parte): Join the Matilha team
 - [Sitemap](https://matilha.digital/sitemap.xml): Machine-readable map of all public URLs
 

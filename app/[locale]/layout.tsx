@@ -5,6 +5,8 @@ import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/lib/i18n/routing";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { ConsentProvider } from "@/components/consent/ConsentProvider";
+import { CookieBanner } from "@/components/consent/CookieBanner";
 import { MetaPixel } from "@/components/analytics/MetaPixel";
 import { RouteAnalytics } from "@/components/analytics/RouteAnalytics";
 import { GoogleAnalyticsWrapper } from "@/components/analytics/GoogleAnalyticsWrapper";
@@ -35,6 +37,9 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+/** Só locales conhecidos, evita /sw.js (e similares) renderizarem a home e quebrarem imports. */
+export const dynamicParams = false;
+
 export default async function LocaleLayout({
   children,
   params,
@@ -58,15 +63,18 @@ export default async function LocaleLayout({
     >
       <body className={`${moderat.className} min-h-screen antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main>{children}</main>
-          <Footer />
-          <BackToTop />
-          <MouseTrailLazy />
-          <MetaPixel />
-          <GoogleAnalyticsWrapper />
-          <RouteAnalytics />
-          <HashScrollHandler />
+          <ConsentProvider>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <BackToTop />
+            <MouseTrailLazy />
+            <MetaPixel />
+            <GoogleAnalyticsWrapper />
+            <RouteAnalytics />
+            <HashScrollHandler />
+            <CookieBanner />
+          </ConsentProvider>
         </NextIntlClientProvider>
       </body>
     </html>

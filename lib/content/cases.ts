@@ -1,7 +1,11 @@
 import { contentLocaleKey } from "@/lib/i18n/content-locale";
-import type { Locale } from "@/lib/i18n/routing";
+import { routing, type Locale } from "@/lib/i18n/routing";
 import type { CaseContent } from "./cases-registry";
 import { caseRegistry, getCaseBySlug } from "./cases-registry";
+
+function isLocale(value: string): value is Locale {
+  return routing.locales.includes(value as Locale);
+}
 
 export async function getCaseContent(
   locale: Locale,
@@ -23,17 +27,24 @@ export async function getCaseContent(
 }
 
 export async function getAllCases(locale: Locale): Promise<CaseContent[]> {
+  if (!isLocale(locale)) return [];
+
   const fileKey = contentLocaleKey(locale);
 
   const cases = await Promise.all(
     caseRegistry.map(async (item) => {
-      const content = (await import(
-        `@/content/cases/${item.id}.${fileKey}.json`
-      )) as { default: CaseContent };
-      return { ...content.default, slug: item.slugs[locale] };
+      try {
+        const content = (await import(
+          `@/content/cases/${item.id}.${fileKey}.json`
+        )) as { default: CaseContent };
+        return { ...content.default, slug: item.slugs[locale] };
+      } catch {
+        return null;
+      }
     }),
   );
-  return cases;
+
+  return cases.filter((item): item is CaseContent => item !== null);
 }
 
 export function getFeaturedCases(locale: Locale) {

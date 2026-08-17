@@ -10,7 +10,7 @@ type MeupsNarrationProps = {
   points?: string[];
 };
 
-/** Bloco de storytelling Matilha — visualmente separado das screenshots do cliente. */
+/** Bloco de storytelling Matilha, visualmente separado das screenshots do cliente. */
 export function MeupsNarration({ eyebrow, label, title, body, points }: MeupsNarrationProps) {
   return (
     <section className="meups-narration" aria-label={title}>

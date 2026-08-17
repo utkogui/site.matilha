@@ -45,32 +45,32 @@ export const services: ServiceItem[] = [
   {
     key: "uxui",
     image: "/images/services/service-uxui.webp",
-    alt: "UI/UX Design — Matilha Estúdio",
+    alt: "UI/UX Design | Matilha Estúdio",
   },
   {
     key: "serviceDesign",
     image: "/images/services/service-service.webp",
-    alt: "Design de Serviço — Matilha Estúdio",
+    alt: "Design de Serviço | Matilha Estúdio",
   },
   {
     key: "daas",
     image: "/images/services/service-alocacao.webp",
-    alt: "Alocação DaaS — Matilha Estúdio",
+    alt: "Alocação DaaS | Matilha Estúdio",
   },
   {
     key: "branding",
     image: "/images/services/service-branding.webp",
-    alt: "Branding e Naming — Matilha Estúdio",
+    alt: "Branding e Naming | Matilha Estúdio",
   },
   {
     key: "development",
     image: "/images/services/service-dev.webp",
-    alt: "Desenvolvimento e Tech — Matilha Estúdio",
+    alt: "Desenvolvimento e Tech | Matilha Estúdio",
   },
   {
     key: "mvp",
     image: "/images/services/service-mvp.webp",
-    alt: "Validação de Modelo de Negócio — Matilha Estúdio",
+    alt: "Validação de Modelo de Negócio | Matilha Estúdio",
   },
 ];
 
