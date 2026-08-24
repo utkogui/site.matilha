@@ -35,12 +35,15 @@ export function Header() {
     if (menuOpen) setMenuMounted(true);
   }, [menuOpen]);
 
+  const isHome = pathname === "/";
+  const isCaseRoute = pathname === "/cases" || pathname.startsWith("/cases/");
+  const headerActive = scrolled || isCaseRoute || isHome;
   const headerHeight = scrolled ? "var(--header-height-shrink)" : "var(--header-height)";
 
   return (
     <>
       <header
-        className={`site-header ${scrolled ? "site-header-scrolled" : ""}`}
+        className={`site-header ${headerActive ? "site-header-scrolled" : ""}`}
         style={{ height: headerHeight }}
       >
         <div className="container-site site-header-inner">
@@ -51,16 +54,8 @@ export function Header() {
                 alt="Matilha Estúdio"
                 width={232}
                 height={54}
-                className="hidden w-auto lg:block"
+                className="w-auto"
                 priority
-              />
-              <Image
-                src="/images/brand/logo.svg"
-                alt=""
-                width={202}
-                height={46}
-                className="site-header-logo-mark w-auto lg:hidden"
-                aria-hidden
               />
             </Link>
             <HeaderLocaleLinks />

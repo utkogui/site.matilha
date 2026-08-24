@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { HeroVideo } from "@/components/media/HeroVideo";
+import { HomeHero } from "@/components/media/HomeHero";
+import { HomeTheme } from "@/components/layout/HomeTheme";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { highlightTag } from "@/lib/i18n/rich-tags";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
@@ -63,8 +64,9 @@ export default async function HomePage({
     }));
 
   return (
-    <>
-      <HeroVideo />
+    <div className="home-shell">
+      <HomeTheme />
+      <HomeHero />
 
       <section id="home-studio" className="home-section home-section-services">
         <div className="container-site home-intro-grid">
@@ -149,6 +151,6 @@ export default async function HomePage({
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }

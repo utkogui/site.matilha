@@ -5,10 +5,20 @@ export interface CaseStoryDeliverable {
   body: string;
 }
 
+export interface CaseStoryPair {
+  title: string;
+  body: string;
+  voice?: string;
+  quote?: string;
+  figure?: string;
+  traits?: string;
+}
+
 export interface CaseStoryChapter {
   title: string;
   body: string;
   points?: string[];
+  pairs?: CaseStoryPair[];
 }
 
 export interface CaseStory {
@@ -22,6 +32,23 @@ export interface CaseStory {
     site?: CaseStoryChapter;
     article?: CaseStoryChapter;
     details?: CaseStoryChapter;
+    identity?: CaseStoryChapter;
+    palette?: CaseStoryChapter;
+    type?: CaseStoryChapter;
+    inspiration?: CaseStoryChapter;
+    graphics?: CaseStoryChapter;
+    elements?: CaseStoryChapter;
+    applications?: CaseStoryChapter;
+    about?: CaseStoryChapter;
+    process?: CaseStoryChapter;
+    audiences?: CaseStoryChapter;
+    language?: CaseStoryChapter;
+    archetypes?: CaseStoryChapter;
+    concept?: CaseStoryChapter;
+    tagline?: CaseStoryChapter;
+    is?: CaseStoryChapter;
+    isNot?: CaseStoryChapter;
+    spelling?: CaseStoryChapter;
   };
   team?: string[];
 }
@@ -115,6 +142,17 @@ export const caseRegistry: CaseRegistryItem[] = [
       ...ptCoverAlt("Case PUBG | Matilha Estúdio"),
       en: "PUBG case | Matilha Estúdio",
       es: "Case PUBG | Matilha Estúdio",
+    },
+    featured: true,
+  },
+  {
+    id: "open-startups",
+    slugs: { ...ptSlugs("open-startups"), en: "open-startups", es: "open-startups" },
+    cover: "/images/cases/open-startups/cover-sober.webp",
+    coverAlt: {
+      ...ptCoverAlt("Case Open Startups | Matilha Estúdio"),
+      en: "Open Startups case | Matilha Estúdio",
+      es: "Case Open Startups | Matilha Estúdio",
     },
     featured: true,
   },

@@ -3,9 +3,9 @@
   "slug": "sestini",
   "title": "Sestini Brandbook",
   "client": "Sestini",
-  "summary": "National reference company in travel bags, backpacks, purses and accessories.",
-  "challenge": "Based on Sestini's new logo, create the Brand Manual to standardize institutional communication.",
-  "solution": "Brandbook with visual identity rules, applications, minimum dimensions and institutional color palette.",
+  "summary": "Matilha designed Sestini’s visual identity guide: system, palette, type and applications for Brazil’s reference brand in luggage, backpacks, bags and accessories.",
+  "challenge": "Sestini came to the studio with a new logo. The brief was something else: turn it into a system, with rules, palette, type and applications so institutional communication could speak with one voice, from the suitcase to the airport.",
+  "solution": "We turned the mark into a method. Lockups, minimum sizes, an institutional palette and a cut of real-world applications: product, merchandising, social and media.",
   "services": [
     "Branding"
   ],
@@ -13,36 +13,90 @@
   "coverAlt": "Sestini case | Matilha Estúdio",
   "gallery": [
     {
-      "src": "/images/cases/sestini/gallery-1.webp",
-      "alt": "Sestini | imagem 1 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/instagram.webp",
+      "alt": "Sestini | social | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/sestini/gallery-2.webp",
-      "alt": "Sestini | imagem 2 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/airport.webp",
+      "alt": "Sestini | airport | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/sestini/gallery-3.webp",
-      "alt": "Sestini | imagem 3 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/accessories.webp",
+      "alt": "Sestini | accessories | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/sestini/gallery-4.webp",
-      "alt": "Sestini | imagem 4 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/suitcase.webp",
+      "alt": "Sestini | luggage | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/sestini/gallery-5.webp",
-      "alt": "Sestini | imagem 5 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/backpack.webp",
+      "alt": "Sestini | backpack | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/sestini/gallery-6.webp",
-      "alt": "Sestini | imagem 6 | Matilha Estúdio"
+      "src": "/images/cases/sestini/showcase/luggage-tag.webp",
+      "alt": "Sestini | luggage tag | Matilha Estúdio"
     }
   ],
   "relatedCases": [
     "charney-companies",
     "neodent"
   ],
+  "story": {
+    "approachLead": "The new logo had to become a system.",
+    "approach": "At Matilha we started from the redrawn mark and organized what holds the communication together: brand versions, color, type and how they show up on product and in the street. Red was already Sestini. The work was giving it a setting that matches.",
+    "deliverables": [
+      {
+        "title": "Brand system",
+        "body": "Horizontal and vertical lockups, with and without tagline, for institutional and product contexts."
+      },
+      {
+        "title": "Institutional palette",
+        "body": "Vermelho, Sand, Mirage and White as the core. Blue, Orange and Topaz as an extension, always at a smaller scale."
+      },
+      {
+        "title": "Typography",
+        "body": "Unbounded for titles: geometric, wide, aligned with the symbol. Supporting text in a humanist sans for long reading."
+      },
+      {
+        "title": "Applications",
+        "body": "From feed to billboard, luggage tag to suitcase: the brandbook proves the mark in use, not only on the board."
+      }
+    ],
+    "quote": "A gente cuida, você vai.",
+    "quoteAuthor": "Sestini institutional tagline",
+    "chapters": {
+      "identity": {
+        "title": "The mark in every direction",
+        "body": "Horizontal for institutional signature, vertical for tight spaces, tagline when the line needs to travel with it. The diamond symbol, an S in two arcs, is the core that repeats from padlock to façade."
+      },
+      "palette": {
+        "title": "Primary colors",
+        "body": "The palette puts Vermelho first, a long-standing Sestini color. Sand brings lightness to large areas. Mirage and White deliver contrast and a more contemporary tone. Secondaries widen the range, always next to the core."
+      },
+      "type": {
+        "title": "Unbounded for titles",
+        "body": "The brandbook’s display family is geometric and assertive, built for titles and high-impact pieces. On this case it is the brand’s voice. Body copy follows the studio’s reading."
+      },
+      "inspiration": {
+        "title": "The palette comes from travel",
+        "body": "The secondary colors came from the tagline and from how you go: sky, land or sea. Topaz, Orange and Blue were pulled from the airplane-window photograph, then tuned to fit the Sestini palette."
+      },
+      "graphics": {
+        "title": "The S becomes a graphic",
+        "body": "The two arcs of the symbol become a pattern. They fill tote, suitcase, tape and ground, readable from a distance, never noise. Vermelho, Blue, Orange and Topaz carry the same drawing."
+      },
+      "elements": {
+        "title": "Supporting shapes",
+        "body": "Shapes derived from the symbol, for more fluid compositions. They support the identity in the real world, from the horizontal band to the tape that seals the box."
+      },
+      "applications": {
+        "title": "From the board into the world",
+        "body": "Instagram, poster, airport, accessories and product. The brandbook does not end in a PDF: it has to survive checkout, the baggage belt and the timeline."
+      }
+    }
+  },
   "seo": {
     "title": "Sestini | Matilha Estúdio",
-    "description": "Brandbook and brand manual for Sestini."
+    "description": "Brandbook and brand manual for Sestini: identity system, palette, type and applications."
   }
 }

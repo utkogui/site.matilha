@@ -1,0 +1,85 @@
+{
+  "id": "open-startups",
+  "slug": "open-startups",
+  "title": "Open Startups",
+  "client": "Open Startups",
+  "summary": "O Matilha desenhou nome e identidade visual da Open Startups: a plataforma que conecta startups, corporações, profissionais, investidores e universidades.",
+  "challenge": "A Open Startups precisava de um nome e de uma marca à altura da rede que opera. Uma plataforma que reúne startups, grandes empresas, executivos, cientistas e governos pedia uma presença que conversa com todos esses mundos, sem parecer informal demais nem um paper científico.",
+  "solution": "A gente partiu do naming e construiu identidade visual e aplicações. Tagline Essential connections, paleta Sober Blue e Energy Blue, e um recorte de peças reais: da Oiweek à camiseta.",
+  "services": ["Naming", "Branding"],
+  "cover": "/images/cases/open-startups/cover-sober.webp",
+  "coverAlt": "Case Open Startups | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/open-startups/cover-sober.webp",
+      "alt": "Open Startups | capa | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/open-startups/logo/symbol-on-dark.webp",
+      "alt": "Open Startups | símbolo | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/open-startups/apps/billboard.webp",
+      "alt": "Open Startups | sinalização Oiweek | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/open-startups/apps/poster.webp",
+      "alt": "Open Startups | poster | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/open-startups/apps/card.webp",
+      "alt": "Open Startups | card | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/open-startups/apps/tee.webp",
+      "alt": "Open Startups | camiseta | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": ["sestini", "syx"],
+  "story": {
+    "approachLead": "O nome precisava virar sistema.",
+    "approach": "No Matilha, naming e branding andam juntos. O trabalho foi dar à plataforma um nome, uma marca e peças que sobrevivem fora da prancha.",
+    "deliverables": [
+      {
+        "title": "Naming",
+        "body": "Nome Open Startups e a tagline Essential connections."
+      },
+      {
+        "title": "Identidade visual",
+        "body": "Símbolo, logotipo, paleta e tipografia para a comunicação da plataforma."
+      },
+      {
+        "title": "Aplicações",
+        "body": "Sinalização da Oiweek, poster, card e camiseta."
+      }
+    ],
+    "quote": "Essential connections",
+    "quoteAuthor": "Tagline Open Startups",
+    "chapters": {
+      "identity": {
+        "title": "Símbolo e logotipo",
+        "body": "A marca em duas leituras: o símbolo e o wordmark. Juntos, eles assinam a plataforma."
+      },
+      "palette": {
+        "title": "Paleta",
+        "body": "Sober Blue conduz. Energy Blue acende. Preto e branco sustentam."
+      },
+      "type": {
+        "title": "Kanit na comunicação",
+        "body": "Uma sans moderna, com variação de pesos, para títulos e peças da marca."
+      },
+      "tagline": {
+        "title": "Essential connections",
+        "body": "A frase que viaja com a marca."
+      },
+      "applications": {
+        "title": "Da prancha para o mundo",
+        "body": "Sinalização da Oiweek, poster, card e camiseta. A marca precisa sobreviver no evento, na mão e no corpo."
+      }
+    }
+  },
+  "seo": {
+    "title": "Open Startups | Matilha Estúdio",
+    "description": "Naming e branding para a Open Startups: nome, identidade visual e aplicações da plataforma de conexões."
+  }
+}

@@ -3,9 +3,9 @@
   "slug": "charney-companies",
   "title": "Charney Companies",
   "client": "Charney Companies",
-  "summary": "Organización inmobiliaria verticalmente integrada: incorporación, corretaje y gestión de propiedades.",
-  "challenge": "Proyectar y desarrollar el nuevo sitio de Charney alineado con la nueva marca.",
-  "solution": "Rediseño del website basado en el nuevo manual de marca y problemas del sitio anterior.",
+  "summary": "Sitio para una organización inmobiliaria integrada: development, brokerage y management.",
+  "challenge": "Charney tenía marca nueva. El sitio anterior no cargaba esa identidad, ni las features que el negocio pedía.",
+  "solution": "Rediseñamos y desarrollamos el website a partir del brandbook: voz, tipo, color, grid, fotografía y un flujo más claro para los tres pilares.",
   "services": [
     "UI | UX Design",
     "Desarrollo y Tech"
@@ -42,8 +42,25 @@
     "cormora",
     "sestini"
   ],
+  "story": {
+    "team": [
+      "Paula Konno · UI/UX",
+      "Nicolas Iargas · PM",
+      "Guilherme Utko · Sales"
+    ],
+    "chapters": {
+      "about": {
+        "title": "About",
+        "body": "Charney Companies es una organización inmobiliaria integrada, en tres pilares: Development, Brokerage y Management. Donde el cultivo encuentra la innovación: respeto por el oficio, ambición estética y una mirada contemporánea a equity en housing."
+      },
+      "process": {
+        "title": "Objective, process &",
+        "body": "Charney pasó por un rediseño de marca. El sitio tenía que reflejarlo: valor, personalidad, voz, tipo, color, grid, fotografía, textura, iconografía. También las features pedidas y lo que se podía mejorar del sitio anterior. El proceso: guidelines, wireframe, layout, styleguide, prototipo y handoff."
+      }
+    }
+  },
   "seo": {
     "title": "Charney Companies | Matilha Estúdio",
-    "description": "Rediseño del sitio inmobiliario Charney Companies."
+    "description": "Rediseño del website inmobiliario Charney Companies: UI, UX y desarrollo."
   }
 }

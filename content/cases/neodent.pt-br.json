@@ -3,9 +3,9 @@
   "slug": "neodent",
   "title": "Neodent",
   "client": "Neodent",
-  "summary": "Landing page para ortodontistas, simplificando o portfólio de produtos com experiência imersiva.",
-  "challenge": "Criar uma landing que simplifique o portfólio de produtos da Neodent, variando idioma e produtos por localidade.",
-  "solution": "Landing page com produtos destacados por país: 14 países e 7 idiomas com configuração diferente para cada um.",
+  "summary": "Landing page para ortodontistas: um portfólio de implantes que muda de idioma e de produto conforme o país.",
+  "challenge": "A Neodent precisava de uma landing que simplificasse o catálogo para o ortodontista. Idioma e produtos mudam por localidade, e a campanha ia rodar em 14 países com 7 línguas. O layout tinha de nascer com isso, sem sair do branding.",
+  "solution": "Desenhamos e desenvolvemos a landing com seletor de idioma, um recorte de produtos por país e uma vitrine imersiva do portfólio. Do wireframe ao handoff, sempre no sistema visual da Neodent.",
   "services": [
     "UI | UX Design",
     "Desenvolvimento e Tech"
@@ -14,28 +14,48 @@
   "coverAlt": "Case Neodent | Matilha Estúdio",
   "gallery": [
     {
-      "src": "/images/cases/neodent/gallery-1.webp",
-      "alt": "Neodent | imagem 1 | Matilha Estúdio"
+      "src": "/images/cases/neodent/photos/hero.webp",
+      "alt": "Neodent | hero da landing | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/neodent/gallery-2.webp",
-      "alt": "Neodent | imagem 2 | Matilha Estúdio"
+      "src": "/images/cases/neodent/screens/languages.webp",
+      "alt": "Neodent | seletor de idioma | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/neodent/gallery-3.webp",
-      "alt": "Neodent | imagem 3 | Matilha Estúdio"
+      "src": "/images/cases/neodent/screens/landing-2.webp",
+      "alt": "Neodent | soluções | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/neodent/gallery-4.webp",
-      "alt": "Neodent | imagem 4 | Matilha Estúdio"
+      "src": "/images/cases/neodent/screens/mobiles-cluster.webp",
+      "alt": "Neodent | telas mobile | Matilha Estúdio"
     }
   ],
   "relatedCases": [
     "sestini",
     "charney-companies"
   ],
+  "story": {
+    "team": [
+      "Paula Konno · UI/UX Designer",
+      "Ilana Heymowski · UI/UX Designer",
+      "Camila Malvessi · Developer",
+      "Vinicius Santiago · Developer",
+      "Guilherme Utko · Sales",
+      "Nicolas Iargas · Project Manager"
+    ],
+    "chapters": {
+      "about": {
+        "title": "About Neodent",
+        "body": "Fundada por um dentista para dentistas, há 30 anos, a Neodent é líder em implantes dentários no Brasil e já devolveu o sorriso a milhões de pessoas. Está presente em mais de 95 países e é líder global em soluções odontológicas."
+      },
+      "process": {
+        "title": "Objective, process & results",
+        "body": "O objetivo era criar uma landing page para ortodontistas, simplificando o portfólio de produtos da Neodent. Idioma e produtos mudam conforme o país de acesso. A campanha rodaria em 14 países e 7 idiomas, então a página precisava de seletor de língua e um conjunto diferente de produtos por país. O layout nasceu com isso em mente, sempre no branding da Neodent. O processo: estudo de catálogo e marca, wireframe, presets visuais, layout, styleguide, protótipo e handoff."
+      }
+    }
+  },
   "seo": {
     "title": "Neodent | Matilha Estúdio",
-    "description": "Landing page multilíngue para portfólio Neodent."
+    "description": "Landing page multilíngue para o portfólio Neodent: 14 países e 7 idiomas."
   }
 }

@@ -7,6 +7,10 @@ import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { PageTitle } from "@/components/animation/PageTitle";
 import { LottieArrow } from "@/components/animation/LottieArrow";
 import { MeuPlaystationCase } from "@/components/cases/meups/MeuPlaystationCase";
+import { SestiniCase } from "@/components/cases/sestini/SestiniCase";
+import { CharneyCase } from "@/components/cases/charney/CharneyCase";
+import { OpenStartupsCase } from "@/components/cases/open-startups/OpenStartupsCase";
+import { NeodentCase } from "@/components/cases/neodent/NeodentCase";
 import { getCaseContent, getAllCases } from "@/lib/content/cases";
 import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-registry";
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
@@ -76,26 +80,44 @@ export default async function CaseDetailPage({
     return <MeuPlaystationCase content={content} related={related} />;
   }
 
+  if (content.id === "sestini") {
+    return <SestiniCase content={content} related={related} />;
+  }
+
+  if (content.id === "charney-companies") {
+    return <CharneyCase content={content} related={related} />;
+  }
+
+  if (content.id === "open-startups") {
+    return <OpenStartupsCase content={content} related={related} />;
+  }
+
+  if (content.id === "neodent") {
+    return <NeodentCase content={content} related={related} />;
+  }
+
   return (
-    <article className="page-section">
-      <div className="container-site">
-        <div className="relative mb-12 aspect-[21/9] overflow-hidden bg-white/5">
+    <article className="case-detail">
+      <section className="case-hero">
+        <div className="case-hero-media">
           <Image
             src={content.cover}
-            alt={content.coverAlt}
+            alt=""
             fill
             className="object-cover"
             priority
             sizes="100vw"
           />
+          <div className="case-hero-veil" />
         </div>
-
-        <header className="max-w-3xl">
+        <header className="container-site case-hero-content">
           <p className="text-label mb-2">{content.client}</p>
           <PageTitle text={content.title} />
-          <p className="mt-6 text-lg text-white/70">{content.summary}</p>
+          <p className="case-hero-summary">{content.summary}</p>
         </header>
+      </section>
 
+      <div className="container-site case-detail-body">
         <LottieArrow />
 
         <div className="mt-16 grid gap-16 lg:grid-cols-2">

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -26,8 +26,17 @@ interface CaseBlockSliderProps {
 export function CaseBlockSlider({ cases }: CaseBlockSliderProps) {
   const t = useTranslations("home");
   const containerRef = useRef<HTMLDivElement>(null);
+  const [autoplayEnabled, setAutoplayEnabled] = useState(false);
 
   useBlockSliderReveal(containerRef);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(min-width: 768px) and (prefers-reduced-motion: no-preference)");
+    const sync = () => setAutoplayEnabled(mq.matches);
+    sync();
+    mq.addEventListener("change", sync);
+    return () => mq.removeEventListener("change", sync);
+  }, []);
 
   return (
     <div ref={containerRef} className="case-block-slider-wrap">
@@ -41,11 +50,15 @@ export function CaseBlockSlider({ cases }: CaseBlockSliderProps) {
             slidesOffsetAfter={casesSliderConfig.slidesOffsetAfter}
             grabCursor
             watchOverflow
-            autoplay={{
-              delay: casesSliderConfig.autoplayDelay,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
+            autoplay={
+              autoplayEnabled
+                ? {
+                    delay: casesSliderConfig.autoplayDelay,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }
+                : false
+            }
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,

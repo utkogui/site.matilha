@@ -116,16 +116,17 @@ export function AnimatedHeading({
           return;
         }
 
+        // Once the heading enters view, play the full phrase. No scroll scrub.
         gsap.from(chars, {
           opacity: 0,
           y: 10,
-          stagger: 0.1,
-          ease: "none",
+          duration: 0.5,
+          stagger: 0.045,
+          ease: "power3.out",
           scrollTrigger: {
             trigger: triggerEl,
-            start: "top bottom",
-            end: "top 40%",
-            scrub: true,
+            start: "top 85%",
+            once: true,
           },
         });
       }, contentEl);

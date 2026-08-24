@@ -1,16 +1,37 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Script from "next/script";
 import { useConsent } from "@/components/consent/ConsentProvider";
 import { hasMetaPixel, metaPixelId } from "@/lib/analytics/config";
 
 export function MetaPixel() {
   const { hydrated, allowsMarketing } = useConsent();
+  const [ready, setReady] = useState(false);
 
-  if (!hasMetaPixel() || !hydrated || !allowsMarketing) return null;
+  useEffect(() => {
+    if (!hydrated || !allowsMarketing) {
+      setReady(false);
+      return;
+    }
+
+    const enable = () => setReady(true);
+    const ric = window.requestIdleCallback?.bind(window);
+    const cic = window.cancelIdleCallback?.bind(window);
+
+    if (ric) {
+      const id = ric(enable, { timeout: 4000 });
+      return () => cic?.(id);
+    }
+
+    const timeoutId = window.setTimeout(enable, 2500);
+    return () => window.clearTimeout(timeoutId);
+  }, [hydrated, allowsMarketing]);
+
+  if (!hasMetaPixel() || !ready) return null;
 
   return (
-    <Script id="meta-pixel" strategy="afterInteractive">
+    <Script id="meta-pixel" strategy="lazyOnload">
       {`
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

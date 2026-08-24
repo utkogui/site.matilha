@@ -3,9 +3,9 @@
   "slug": "charney-companies",
   "title": "Charney Companies",
   "client": "Charney Companies",
-  "summary": "Organização imobiliária verticalmente integrada: incorporação, corretagem e gestão de propriedades.",
-  "challenge": "Projetar e desenvolver o novo site da Charney alinhado com a nova marca da empresa.",
-  "solution": "Redesign do website com base no novo manual de marca e nos problemas identificados no site anterior.",
+  "summary": "Site para uma organização imobiliária verticalmente integrada: development, brokerage e management.",
+  "challenge": "A Charney tinha marca nova. O site antigo não carregava essa identidade, nem as features que o negócio pedia.",
+  "solution": "Redesenhámos e desenvolvemos o website a partir do brandbook: voz, tipo, cor, grid, fotografia e um fluxo mais claro para os três pilares.",
   "services": [
     "UI | UX Design",
     "Desenvolvimento e Tech"
@@ -42,8 +42,25 @@
     "cormora",
     "sestini"
   ],
+  "story": {
+    "team": [
+      "Paula Konno · UI/UX",
+      "Nicolas Iargas · PM",
+      "Guilherme Utko · Sales"
+    ],
+    "chapters": {
+      "about": {
+        "title": "About",
+        "body": "A Charney Companies é uma organização imobiliária verticalmente integrada, em três pilares: Development, Brokerage e Management. Onde o cultivo encontra a inovação: respeito pelo ofício, ambição estética e um olhar contemporâneo para equity em housing."
+      },
+      "process": {
+        "title": "Objective, process &",
+        "body": "A Charney passou por um redesenho de marca. O site precisava refletir isso: valor, personalidade, voz, tipo, cor, grid, fotografia, textura, iconografia. Também as features pedidas e o que dava para melhorar em relação ao site antigo. O processo: guidelines, wireframe, layout, styleguide, protótipo e handoff."
+      }
+    }
+  },
   "seo": {
     "title": "Charney Companies | Matilha Estúdio",
-    "description": "Redesign do website imobiliário Charney Companies."
+    "description": "Redesign do website imobiliário Charney Companies: UI, UX e desenvolvimento."
   }
 }
