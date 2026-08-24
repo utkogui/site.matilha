@@ -165,7 +165,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       en: "Sestini case | Matilha Estúdio",
       es: "Case Sestini | Matilha Estúdio",
     },
-    featured: false,
+    featured: true,
   },
   {
     id: "mon-museu-oscar-niemeyer",
@@ -203,7 +203,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       en: "Neodent case | Matilha Estúdio",
       es: "Case Neodent | Matilha Estúdio",
     },
-    featured: false,
+    featured: true,
   },
   {
     id: "harpia-consultoria",

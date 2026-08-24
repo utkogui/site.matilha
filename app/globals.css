@@ -1715,6 +1715,94 @@ body:has(.home-shell) .matilha-btn-underline:hover {
   color: var(--home-ink);
 }
 
+html.home-page .matilha-btn-icon,
+body:has(.home-shell) .matilha-btn-icon {
+  color: var(--home-ink);
+}
+
+html.home-page .matilha-btn-icon:hover,
+html.home-page .matilha-btn-icon:focus-visible,
+body:has(.home-shell) .matilha-btn-icon:hover,
+body:has(.home-shell) .matilha-btn-icon:focus-visible {
+  color: var(--home-ink);
+}
+
+html.home-page .matilha-btn-icon:hover::after,
+html.home-page .matilha-btn-icon:focus-visible::after,
+body:has(.home-shell) .matilha-btn-icon:hover::after,
+body:has(.home-shell) .matilha-btn-icon:focus-visible::after {
+  background-color: var(--home-ink);
+}
+
+html.home-page .home-cases-action-btn,
+body:has(.home-shell) .home-cases-action-btn {
+  padding-bottom: 0.45rem;
+}
+
+html.home-page .home-cases-action-btn::after,
+html.home-page .home-cases-action-btn:hover::after,
+html.home-page .home-cases-action-btn:focus-visible::after,
+body:has(.home-shell) .home-cases-action-btn::after,
+body:has(.home-shell) .home-cases-action-btn:hover::after,
+body:has(.home-shell) .home-cases-action-btn:focus-visible::after {
+  display: block;
+}
+
+html.home-page .service-block-index,
+html.home-page .clients-stat,
+body:has(.home-shell) .service-block-index,
+body:has(.home-shell) .clients-stat {
+  color: var(--home-ink);
+}
+
+html.home-page .site-footer .mini-heading,
+html.home-page .site-footer-field-label,
+body:has(.home-shell) .site-footer .mini-heading,
+body:has(.home-shell) .site-footer-field-label {
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: 0.75rem;
+  padding: 0.38rem 0.7rem;
+  letter-spacing: 0.16rem;
+  color: var(--color-primary);
+  background: var(--home-ink);
+}
+
+html.home-page .site-footer-email-link:hover,
+html.home-page .site-footer-phone:hover,
+html.home-page .site-footer-address:hover,
+html.home-page .site-footer-social-link:hover,
+html.home-page .site-footer-link:hover,
+html.home-page .footer-locale-link:hover,
+html.home-page .footer-locale-link-active,
+body:has(.home-shell) .site-footer-email-link:hover,
+body:has(.home-shell) .site-footer-phone:hover,
+body:has(.home-shell) .site-footer-address:hover,
+body:has(.home-shell) .site-footer-social-link:hover,
+body:has(.home-shell) .site-footer-link:hover,
+body:has(.home-shell) .footer-locale-link:hover,
+body:has(.home-shell) .footer-locale-link-active {
+  color: var(--home-ink);
+}
+
+html.home-page .matilha-btn-solid:hover,
+html.home-page .matilha-btn-solid:focus-visible,
+body:has(.home-shell) .matilha-btn-solid:hover,
+body:has(.home-shell) .matilha-btn-solid:focus-visible {
+  background-color: var(--home-ink);
+  color: var(--color-primary);
+}
+
+html.neodent-page .mini-heading:not(.neodent-on-dark),
+html.charney-page .mini-heading,
+html.open-startups-page .mini-heading {
+  display: inline-block;
+  width: fit-content;
+  padding: 0.38rem 0.7rem;
+  color: var(--color-primary);
+  background: #000;
+}
+
 .page-section {
   padding-top: 8rem;
   padding-bottom: var(--section-y);
@@ -1960,17 +2048,28 @@ body:has(.home-shell) .matilha-btn-underline:hover {
   color: var(--color-paragraph);
 }
 
-/* Home carousel, stays within the content rail */
-.home-slider-row {
+.home-cases-row {
   overflow: visible;
 }
 
-.home-slider-row .service-slider-wrap,
-.home-slider-row .case-block-slider-wrap {
-  max-width: none;
-  overflow: visible;
-  margin-right: 0;
-  padding-right: 0;
+.home-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.75rem 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .home-cases-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2.75rem 1.75rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .home-cases-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 3rem 2rem;
+  }
 }
 
 /* Block slider shell, peek, fade, chrome */
@@ -2301,19 +2400,6 @@ body:has(.home-shell) .matilha-btn-underline:hover {
 }
 
 /* Case blocks */
-.case-block-slider-wrap {
-  overflow: visible;
-  overscroll-behavior: none;
-}
-
-.case-block-slider.swiper {
-  overflow: visible;
-}
-
-.case-block-slider .swiper-slide {
-  height: auto;
-}
-
 .case-block {
   display: block;
   text-decoration: none;
@@ -2325,25 +2411,21 @@ body:has(.home-shell) .matilha-btn-underline:hover {
   aspect-ratio: 683 / 431;
   overflow: hidden;
   outline: 2px solid transparent;
+  outline-offset: 0;
   transition: outline-color 0.25s ease;
 }
 
-.case-block:hover .case-block-thumb {
+.case-block:hover .case-block-thumb,
+.case-block:focus-visible .case-block-thumb {
   outline-color: var(--color-primary);
 }
 
 .case-block-content {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
 }
 
 .case-block-content-inner {
-  width: 50%;
-}
-
-@media (max-width: 991px) {
-  .case-block-content-inner {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .case-block-title {

@@ -5,6 +5,7 @@ import { HomeTheme } from "@/components/layout/HomeTheme";
 import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { highlightTag } from "@/lib/i18n/rich-tags";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
+import { CaseBlockSlider } from "@/components/sliders/CaseBlockSlider";
 import { baseMetadata, buildHomeTitle } from "@/lib/seo/metadata";
 import { clientLogos, homeFeaturedCaseIds, services } from "@/lib/content/home";
 import { getAllCases } from "@/lib/content/cases";
@@ -16,10 +17,6 @@ const ServiceGrid = dynamic(() =>
 
 const GrowSection = dynamic(() =>
   import("@/components/animation/GrowSection").then((mod) => ({ default: mod.GrowSection })),
-);
-
-const CaseBlockSlider = dynamic(() =>
-  import("@/components/sliders/CaseBlockSlider").then((mod) => ({ default: mod.CaseBlockSlider })),
 );
 
 const ClientsLogoSlider = dynamic(() =>
@@ -109,7 +106,7 @@ export default async function HomePage({
             </MatilhaButton>
           </div>
 
-          <div className="mt-12 home-slider-row">
+          <div className="mt-12 home-cases-row">
             <CaseBlockSlider cases={featuredCases} />
           </div>
 

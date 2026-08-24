@@ -12,11 +12,3 @@ export const servicesSliderConfig = {
   autoplayDelay: 4800,
   slidesOffsetAfter: 32,
 } as const;
-
-export const casesSliderConfig = {
-  speed: 900,
-  spaceBetween: 28,
-  slidesPerView: 1.08,
-  autoplayDelay: 3600,
-  slidesOffsetAfter: 32,
-} as const;

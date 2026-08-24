@@ -76,7 +76,8 @@ export const services: ServiceItem[] = [
 
 export const homeFeaturedCaseIds = [
   "open-startups",
-  "mon-museu-oscar-niemeyer",
+  "neodent",
+  "sestini",
   "meu-playstation",
   "charney-companies",
   "pubg",
