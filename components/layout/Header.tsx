@@ -36,8 +36,9 @@ export function Header() {
   }, [menuOpen]);
 
   const isHome = pathname === "/";
+  const isTraining = pathname === "/training";
   const isCaseRoute = pathname === "/cases" || pathname.startsWith("/cases/");
-  const headerActive = scrolled || isCaseRoute || isHome;
+  const headerActive = scrolled || isCaseRoute || isHome || isTraining;
   const headerHeight = scrolled ? "var(--header-height-shrink)" : "var(--header-height)";
 
   return (

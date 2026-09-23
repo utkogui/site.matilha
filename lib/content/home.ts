@@ -11,8 +11,8 @@ export const growSectionVideo = {
 } as const;
 
 export const heroVideo = {
-  src: "/video/hero.webm",
-  poster: "/video/hero-poster.webp",
+  src: "/video/hero.mp4",
+  poster: "/images/brand/wall.webp",
 } as const;
 
 export const growSectionVideoSrc =

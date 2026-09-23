@@ -3,9 +3,10 @@
 import type { ReactNode } from "react";
 import { useParams } from "next/navigation";
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, useRouter } from "@/lib/i18n/navigation";
+import { usePathname } from "@/lib/i18n/navigation";
 import {
   buildLocaleSwitchTarget,
+  getLocaleSwitchHref,
   resolveLocaleForUiLanguage,
   setLocaleCookie,
 } from "@/lib/i18n/locale-switch";
@@ -17,8 +18,6 @@ import {
   type UiLanguageKey,
 } from "@/lib/i18n/ui-languages";
 
-type StaticPathname = "/" | "/cases" | "/contact" | "/careers" | "/privacy";
-
 type LocaleLinksVariant = "footer" | "menu";
 
 type LocaleLinksProps = {
@@ -29,47 +28,66 @@ type LocaleLinksProps = {
   className?: string;
 };
 
-function useLocaleSwitch(onNavigate?: () => void) {
+function localeHrefLang(locale: Locale) {
+  if (locale === "pt-BR" || locale === "pt-PT") return "pt";
+  return locale;
+}
+
+function useLocaleTargets() {
   const locale = useLocale() as Locale;
   const pathname = usePathname();
   const params = useParams();
-  const router = useRouter();
   const slug = typeof params.slug === "string" ? params.slug : undefined;
+  const activeKey = getUiLanguageKey(locale);
 
-  function navigateToLocale(nextLocale: Locale) {
-    setLocaleCookie(nextLocale);
-    const target = buildLocaleSwitchTarget({
+  function targetFor(nextKey: UiLanguageKey) {
+    const nextLocale = resolveLocaleForUiLanguage(nextKey, locale);
+    return buildLocaleSwitchTarget({
       currentLocale: locale,
       nextLocale,
       pathname,
       slug,
     });
-
-    if (target.pathname === "/cases/[slug]" && "params" in target && target.params) {
-      router.replace(
-        { pathname: "/cases/[slug]", params: target.params },
-        { locale: target.locale },
-      );
-    } else {
-      router.replace(target.pathname as StaticPathname, { locale: target.locale });
-    }
-
-    onNavigate?.();
   }
 
-  function switchUiLanguage(nextKey: UiLanguageKey) {
-    const nextLocale = resolveLocaleForUiLanguage(nextKey, locale);
-    if (nextLocale === locale) return;
-    navigateToLocale(nextLocale);
-  }
+  return { locale, activeKey, targetFor };
+}
 
-  return { locale, switchUiLanguage };
+function LocaleSwitchLink({
+  targetUiKey,
+  className,
+  onNavigate,
+  children,
+  "aria-label": ariaLabel,
+}: {
+  targetUiKey: UiLanguageKey;
+  className: string;
+  onNavigate?: () => void;
+  children: ReactNode;
+  "aria-label"?: string;
+}) {
+  const { targetFor } = useLocaleTargets();
+  const target = targetFor(targetUiKey);
+
+  return (
+    <a
+      href={getLocaleSwitchHref(target)}
+      hrefLang={localeHrefLang(target.locale)}
+      aria-label={ariaLabel}
+      className={className}
+      onClick={() => {
+        setLocaleCookie(target.locale);
+        onNavigate?.();
+      }}
+    >
+      {children}
+    </a>
+  );
 }
 
 export function HeaderLocaleLinks({ className = "" }: { className?: string }) {
-  const { locale, switchUiLanguage } = useLocaleSwitch();
+  const { activeKey } = useLocaleTargets();
   const tFooter = useTranslations("footer");
-  const activeKey = getUiLanguageKey(locale);
 
   return (
     <nav
@@ -79,18 +97,28 @@ export function HeaderLocaleLinks({ className = "" }: { className?: string }) {
       {uiLanguages.map((item) => {
         const isActive = item.key === activeKey;
 
+        if (isActive) {
+          return (
+            <span
+              key={item.key}
+              className="header-locale-option is-active"
+              aria-label={item.label}
+              aria-current="true"
+            >
+              <span className="header-locale-option-label">{headerLocaleLabel(item.key)}</span>
+            </span>
+          );
+        }
+
         return (
-          <button
+          <LocaleSwitchLink
             key={item.key}
-            type="button"
-            className={`header-locale-option${isActive ? " is-active" : ""}`}
+            targetUiKey={item.key}
+            className="header-locale-option"
             aria-label={item.label}
-            aria-pressed={isActive}
-            aria-current={isActive ? "true" : undefined}
-            onClick={() => switchUiLanguage(item.key)}
           >
             <span className="header-locale-option-label">{headerLocaleLabel(item.key)}</span>
-          </button>
+          </LocaleSwitchLink>
         );
       })}
     </nav>
@@ -104,9 +132,8 @@ export function LocaleLinks({
   onNavigate,
   className = "",
 }: LocaleLinksProps) {
-  const { locale, switchUiLanguage } = useLocaleSwitch(onNavigate);
+  const { activeKey } = useLocaleTargets();
   const tFooter = useTranslations("footer");
-  const activeKey = getUiLanguageKey(locale);
 
   const linkClass =
     variant === "menu"
@@ -137,9 +164,9 @@ export function LocaleLinks({
                 {item.label}
               </span>
             ) : (
-              <button type="button" className={linkClass} onClick={() => switchUiLanguage(item.key)}>
+              <LocaleSwitchLink targetUiKey={item.key} className={linkClass} onNavigate={onNavigate}>
                 {item.label}
-              </button>
+              </LocaleSwitchLink>
             )}
           </li>
         ))}
@@ -159,8 +186,7 @@ export function LocaleLinkButton({
   className?: string;
   children: ReactNode;
 }) {
-  const { locale, switchUiLanguage } = useLocaleSwitch(onNavigate);
-  const activeKey = getUiLanguageKey(locale);
+  const { activeKey } = useLocaleTargets();
 
   if (targetUiKey === activeKey) {
     return (
@@ -171,8 +197,8 @@ export function LocaleLinkButton({
   }
 
   return (
-    <button type="button" className={className} onClick={() => switchUiLanguage(targetUiKey)}>
+    <LocaleSwitchLink targetUiKey={targetUiKey} className={className} onNavigate={onNavigate}>
       {children}
-    </button>
+    </LocaleSwitchLink>
   );
 }

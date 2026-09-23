@@ -10,6 +10,7 @@
     "cases": "Our Work",
     "contact": "Let's Talk",
     "careers": "Join Us",
+    "training": "Incompany",
     "menu": "Menu",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
@@ -17,12 +18,13 @@
     "language": "Language"
   },
   "home": {
-    "heroTitle": "We are <u>Matilha</u>.",
+    "heroTitle": "Your idea, <u>perfectly</u> executed.",
     "heroLead": "A mix of <people>people</people>, <ideias>ideas</ideias>, <design>design</design> and <tech>technology</tech>, with artificial intelligence in the process and human intelligence in command.",
     "heroClose": "We help <brands>brands</brands> and <business>businesses</business> find new paths in a world that never stops changing.",
     "heroCta": "Talk to Matilha",
     "heroCtaHint": "We typically reply within 1 business day",
     "scrollDown": "Go to next section",
+    "heroScrollHint": "Scroll the page",
     "heroCaption": "matilha estúdio",
     "studioLabel": "// ESTÚDIO MATILHA",
     "transformHeading": "Transforming businesses through <u>result-driven</u> <u>experiences.</u>",
@@ -41,6 +43,11 @@
     "ctaTitle": "Let's transform your idea together",
     "growLabel": "// MATILHA.DIGITAL",
     "growHeading": "We design products that shape <u>experiences.</u>",
+    "trainingLabel": "// INCOMPANY",
+    "trainingHeading": "We teach your team to build its <u>own product.</u>",
+    "trainingLead": "Eight teams. Two weeks. One live application in the hands of the people who use it.",
+    "trainingVersusLabel": "Keep buying or learn once",
+    "trainingCta": "See the training",
     "sliderPrev": "Previous slide",
     "sliderNext": "Next slide"
   },
@@ -229,6 +236,148 @@
     "title": "Page not found",
     "description": "The page you are looking for does not exist or has been moved.",
     "backHome": "Back to home"
+  },
+  "training": {
+    "title": "Incompany Training",
+    "description": "We teach teams in any department to build their own AI products. From zero to hero in two weeks, inside your company.",
+    "heroLabel": "// INCOMPANY TRAINING",
+    "heroHeading": "What used to wait on IT now starts in <u>your team.</u>",
+    "heroLead": "Legal, compliance, engineering, operations and marketing stop requesting products and start creating them. AI in the process, human intelligence in command.",
+    "heroCta": "I want this for my team",
+    "doorsLabel": "Eight doors. One module each.",
+    "stats": {
+      "weeks": { "value": "2", "unit": "weeks", "label": "from zero to product" },
+      "doors": { "value": "8", "unit": "doors", "label": "one module per department" },
+      "app": { "value": "1", "unit": "application", "label": "live, in the hands of the people who use it" },
+      "queue": { "value": "0", "unit": "queue", "label": "the team does not wait for the next one" }
+    },
+    "learnLabel": "// THE BET",
+    "learnHeading": "Better to learn than to <u>keep buying.</u>",
+    "learnLead": "A bought product clears one request. A trained team clears the next one, and the one after that.",
+    "buyTitle": "Buy",
+    "learnTitle": "Learn",
+    "buyOutcome": "The request comes back. So does the queue.",
+    "learnOutcome": "The capability stays. The next module belongs to the team.",
+    "buySteps": [
+      { "title": "A request", "body": "A brief. A ticket. A department asking." },
+      { "title": "A queue", "body": "IT, marketing or a vendor. Waiting." },
+      { "title": "One product", "body": "It solves that request. Only that one." },
+      { "title": "Again", "body": "The next idea starts from zero." }
+    ],
+    "learnSteps": [
+      { "title": "The team", "body": "The people who live the problem enter the lab." },
+      { "title": "The lab", "body": "Two weeks, incompany, hands on." },
+      { "title": "Autonomy", "body": "A live application and the range to keep creating." },
+      { "title": "The next one", "body": "The following module is born in the department itself." }
+    ],
+    "shiftLabel": "// THE SHIFT",
+    "shiftHeading": "One door before. Now every department builds its own module.",
+    "beforeTitle": "Before",
+    "beforeBody": "A ticket to IT. A queue in marketing. A brief that waits. The internal product lived on the other side of the house.",
+    "afterTitle": "Now",
+    "afterBody": "Each team gains the range to create. Legal builds its own. Compliance builds its own. Engineering builds its own. The company no longer has a single door.",
+    "beforeFormula": "departments",
+    "beforeFormulaDoor": "door",
+    "afterFormula": "departments",
+    "afterFormulaDoor": "modules",
+    "sectorsLabel": "// DEPARTMENTS",
+    "sectorsHeading": "Autonomy where the problem lives.",
+    "sectors": {
+      "legal": "Legal",
+      "compliance": "Compliance",
+      "engineering": "Engineering",
+      "operations": "Operations",
+      "marketing": "Marketing",
+      "finance": "Finance",
+      "hr": "People",
+      "support": "Support"
+    },
+    "whoLabel": "// WHO IT'S FOR",
+    "whoHeading": "From teams born AI first to groups already operating at scale.",
+    "whoStartupsTitle": "Companies that want to be born AI first",
+    "whoStartupsBody": "Lean teams with product superpowers from day one. No waiting on a technology department to validate the next idea.",
+    "whoEnterpriseTitle": "Groups and industry",
+    "whoEnterpriseBody": "At the scale of Volvo, CNH and Neodent. Entire departments with autonomy to create internal applications, without crossing the building for every request.",
+    "modulesLabel": "// MODULES",
+    "modulesHeading": "From the first product to a system that talks to the company.",
+    "basicTag": "Core module",
+    "basicName": "Zero to Hero",
+    "basicDuration": "2 weeks",
+    "basicBody": "Incompany, hands on. The team leaves zero and ships a real internal product: idea, flow, interface and an AI application that solves a live problem in the department.",
+    "basicItems": [
+      "Discovery of the problem in the team's own context",
+      "Flow and experience design",
+      "An AI application ready to use",
+      "A team ready to build the next module"
+    ],
+    "advancedTag": "Advanced module",
+    "advancedName": "Language and data",
+    "advancedDuration": "Tailored",
+    "advancedBody": "For teams already building who need to go beyond the prototype. Services with databases, name recognition and language intent. The product starts to understand what people ask for and to keep what the company already knows.",
+    "advancedItems": [
+      "Persistence in a database",
+      "Names, entities and company context",
+      "Intent in natural language",
+      "Modules that talk to each other"
+    ],
+    "method1Title": "Incompany",
+    "method1Body": "We go to the team. The lab is the real context, not a generic course.",
+    "method2Title": "A product at the end",
+    "method2Body": "Not slides. A live application in the hands of the people who will use it.",
+    "method3Title": "The next module",
+    "method3Body": "Each department gains the range to keep going on its own. Matilha opens the door. The team walks through.",
+    "timelineLabel": "// TWO WEEKS",
+    "timelineHeading": "The team arrives without a product. It leaves with one live.",
+    "timelineLead": "An incompany lab, a real problem, a working application at the end. Then teams already building go deeper into language and data.",
+    "timeline": {
+      "week1": {
+        "label": "Week 1",
+        "steps": [
+          {
+            "mark": "01",
+            "title": "Immersion in the department",
+            "body": "The real problem, in the real context. Legal, operations, marketing: the lab is the team itself."
+          },
+          {
+            "mark": "02",
+            "title": "Designing the module",
+            "body": "Flow, experience and what the AI will do. The team defines the product it will build."
+          }
+        ]
+      },
+      "week2": {
+        "label": "Week 2",
+        "steps": [
+          {
+            "mark": "03",
+            "title": "Hands on",
+            "body": "The application takes shape. Interface, intelligence and a flow that solves the daily demand."
+          },
+          {
+            "mark": "04",
+            "title": "Product in their hands",
+            "body": "Not slides. A live tool, used by the people who asked for it. The team already has the range for the next module."
+          }
+        ]
+      },
+      "after": {
+        "label": "After",
+        "steps": [
+          {
+            "mark": "05",
+            "title": "Language and data",
+            "body": "Teams already building go further: databases, names, entities and language intent. The product starts talking to the company."
+          }
+        ]
+      }
+    },
+    "ctaLabel": "// LET'S TALK",
+    "ctaHeading": "Which department in your company is still waiting in line?",
+    "ctaBody": "Tell us the problem. We assemble the right module for your team.",
+    "ctaButton": "Talk to Matilha",
+    "ctaFormulaIn": "1 training",
+    "ctaFormulaOut": "N products",
+    "ctaFormulaNote": "The capability stays in the department. The next module does not have to cross the building."
   },
   "common": {
     "english": "English",

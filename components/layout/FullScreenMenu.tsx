@@ -175,7 +175,7 @@ export function FullScreenMenu({ open, onClose }: FullScreenMenuProps) {
                           </ServicesAnchorLink>
                         ) : (
                           <Link
-                            href={item.href as "/" | "/cases" | "/contact"}
+                            href={item.href as "/" | "/cases" | "/contact" | "/training"}
                             onClick={onClose}
                             className="fullscreen-menu-link"
                           >

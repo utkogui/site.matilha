@@ -3,7 +3,7 @@ import { getPathname } from "@/lib/i18n/navigation";
 import { caseRegistry } from "@/lib/content/cases-registry";
 import { getSiteUrl } from "@/lib/seo/metadata";
 
-const pages = ["/", "/cases", "/contact", "/careers", "/privacy"] as const;
+const pages = ["/", "/cases", "/contact", "/careers", "/training", "/privacy"] as const;
 const locales = ["pt-BR", "pt-PT", "en", "es"] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

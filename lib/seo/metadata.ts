@@ -98,7 +98,7 @@ export function buildOpenGraphFields({
   };
 }
 
-type PageKey = "/" | "/cases" | "/contact" | "/careers" | "/privacy";
+type PageKey = "/" | "/cases" | "/contact" | "/careers" | "/training" | "/privacy";
 
 export function buildAlternates(pathname: PageKey, locale: Locale) {
   const languages: Record<string, string> = {

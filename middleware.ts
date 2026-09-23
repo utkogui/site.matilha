@@ -2,6 +2,7 @@ import createMiddleware from "next-intl/middleware";
 import { NextRequest, NextResponse } from "next/server";
 import { routing, type Locale } from "./lib/i18n/routing";
 import { PT_VARIANT_COOKIE } from "./lib/i18n/locale-switch";
+import { stripLocalePrefix, toInternalPath } from "./lib/i18n/app-path";
 
 const intlMiddleware = createMiddleware(routing);
 
@@ -71,10 +72,30 @@ function isKnownLocale(value: string | undefined): value is Locale {
   return Boolean(value && routing.locales.includes(value as Locale));
 }
 
+function redirectBareLocaleCode(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
+
+  if (pathname === "/pt-BR" || pathname.startsWith("/pt-BR/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname === "/pt-BR" ? "/" : pathname.slice(6) || "/";
+    return NextResponse.redirect(url);
+  }
+
+  if (pathname === "/pt-PT" || pathname.startsWith("/pt-PT/")) {
+    const url = request.nextUrl.clone();
+    url.pathname = pathname === "/pt-PT" ? "/pt" : `/pt${pathname.slice(6)}`;
+    return NextResponse.redirect(url);
+  }
+
+  return null;
+}
+
 export default function middleware(request: NextRequest) {
   const userAgent = request.headers.get("user-agent") ?? "";
   const isBot = BOT_PATTERN.test(userAgent);
   const pathname = request.nextUrl.pathname;
+  const bareLocaleRedirect = redirectBareLocaleCode(request);
+  if (bareLocaleRedirect) return bareLocaleRedirect;
 
   if (!isBot) {
     const cookieLocale = request.cookies.get("NEXT_LOCALE")?.value;
@@ -92,7 +113,70 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  return intlMiddleware(request);
+  return syncUrlLocaleCookie(request, localizeRewrite(request, intlMiddleware(request)));
+}
+
+function localeFromUrl(pathname: string): Locale {
+  return stripLocalePrefix(pathname).locale;
+}
+
+/** Cookie sempre segue a URL, nunca o contrário. */
+function syncUrlLocaleCookie(request: NextRequest, response: NextResponse) {
+  const location = response.headers.get("location");
+  let pathname = request.nextUrl.pathname;
+
+  if (location) {
+    try {
+      pathname = new URL(location, request.url).pathname;
+    } catch {
+      // keep request pathname
+    }
+  }
+
+  const locale = localeFromUrl(pathname);
+  response.cookies.set("NEXT_LOCALE", locale, {
+    path: "/",
+    maxAge: 31536000,
+    sameSite: "lax",
+  });
+
+  if (locale === "pt-BR" || locale === "pt-PT") {
+    response.cookies.set(PT_VARIANT_COOKIE, locale, {
+      path: "/",
+      maxAge: 31536000,
+      sameSite: "lax",
+    });
+  }
+
+  return response;
+}
+
+/** next-intl 307 para a mesma URL pública (às vezes com ?_rsc=) quebra o fetch e mistura locale. */
+function localizeRewrite(request: NextRequest, response: NextResponse) {
+  const location = response.headers.get("location");
+  if (location) {
+    try {
+      const next = new URL(location, request.url);
+      if (next.pathname !== request.nextUrl.pathname) {
+        return response;
+      }
+    } catch {
+      return response;
+    }
+  }
+
+  const internal = toInternalPath(request.nextUrl.pathname);
+  if (!internal) return response;
+
+  const rewriteUrl = request.nextUrl.clone();
+  rewriteUrl.pathname = internal;
+  const rewritten = NextResponse.rewrite(rewriteUrl);
+  const link = response.headers.get("link");
+  if (link) rewritten.headers.set("link", link);
+  response.cookies.getAll().forEach((cookie) => {
+    rewritten.cookies.set(cookie);
+  });
+  return rewritten;
 }
 
 export const config = {

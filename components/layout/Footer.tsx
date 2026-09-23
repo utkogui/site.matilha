@@ -1,11 +1,33 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/lib/i18n/navigation";
+import { Link, usePathname } from "@/lib/i18n/navigation";
 import { LocaleLinks } from "@/components/layout/LocaleLinks";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { ManageCookiesButton } from "@/components/consent/ManageCookiesButton";
 import { footerData } from "@/lib/content/home";
+
+const footerDogs = [
+  "/images/brand/footer-dogs/01-golden-retriever.png",
+  "/images/brand/footer-dogs/02-husky-siberiano.png",
+  "/images/brand/footer-dogs/03-doberman.png",
+  "/images/brand/footer-dogs/04-labrador.png",
+  "/images/brand/footer-dogs/05-pastor-alemao.png",
+  "/images/brand/footer-dogs/06-corgi.png",
+  "/images/brand/footer-dogs/07-bulldog-frances.png",
+  "/images/brand/footer-dogs/08-shih-tzu.png",
+  "/images/brand/footer-dogs/09-poodle.png",
+  "/images/brand/footer-dogs/10-boston-terrier.png",
+] as const;
+
+const footerDogsHome = [
+  "/images/brand/footer-dogs/01-golden-retriever.png",
+  "/images/brand/footer-dogs/04-labrador.png",
+  "/images/brand/footer-dogs/06-corgi.png",
+  "/images/brand/footer-dogs/07-bulldog-frances.png",
+] as const;
 
 type SocialNetwork = "linkedin" | "instagram" | "medium" | "behance";
 
@@ -40,6 +62,32 @@ const socialLinks: {
     network: "behance",
   },
 ];
+
+function FooterArt() {
+  const pathname = usePathname();
+  const [src, setSrc] = useState<string | null>(null);
+
+  useEffect(() => {
+    const pool = pathname === "/" ? footerDogsHome : footerDogs;
+    setSrc(pool[Math.floor(Math.random() * pool.length)]);
+  }, [pathname]);
+
+  if (!src) return <div className="site-footer-art" aria-hidden />;
+
+  return (
+    <div className="site-footer-art" aria-hidden>
+      <Image
+        src={src}
+        alt=""
+        width={1024}
+        height={1536}
+        className="site-footer-art-img"
+        sizes="(max-width: 767px) 50vw, 28rem"
+        quality={75}
+      />
+    </div>
+  );
+}
 
 function SocialIcon({ network }: { network: SocialNetwork }) {
   switch (network) {
@@ -104,7 +152,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-inner">
-        <div className="site-footer-art" aria-hidden />
+        <FooterArt />
 
         <div className="container-site site-footer-main">
           <div className="site-footer-top">
@@ -183,6 +231,11 @@ export function Footer() {
                 <li>
                   <Link href="/cases" className="site-footer-link">
                     {tNav("cases")}
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/training" className="site-footer-link">
+                    {tNav("training")}
                   </Link>
                 </li>
                 <li>

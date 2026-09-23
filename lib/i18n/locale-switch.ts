@@ -1,9 +1,10 @@
 import { getCaseBySlug } from "@/lib/content/cases-registry";
+import { toLogicalPath } from "@/lib/i18n/app-path";
 import type { Locale } from "@/lib/i18n/routing";
 import { defaultLocale, routing } from "@/lib/i18n/routing";
 import type { UiLanguageKey } from "@/lib/i18n/ui-languages";
 
-export type AppPathname = "/" | "/cases" | "/cases/[slug]" | "/contact" | "/careers" | "/privacy";
+export type AppPathname = "/" | "/cases" | "/cases/[slug]" | "/contact" | "/careers" | "/training" | "/privacy";
 
 export const PT_VARIANT_COOKIE = "PT_VARIANT";
 
@@ -81,15 +82,39 @@ export function buildLocaleSwitchTarget({
     }
   }
 
+  const logical = toLogicalPath(pathname, currentLocale) ?? pathname;
+
   if (
-    pathname === "/" ||
-    pathname === "/cases" ||
-    pathname === "/contact" ||
-    pathname === "/careers" ||
-    pathname === "/privacy"
+    logical === "/" ||
+    logical === "/cases" ||
+    logical === "/contact" ||
+    logical === "/careers" ||
+    logical === "/training" ||
+    logical === "/privacy"
   ) {
-    return { pathname, locale: nextLocale };
+    return { pathname: logical, locale: nextLocale };
   }
 
   return { pathname: "/", locale: nextLocale };
+}
+
+function localePrefix(locale: Locale) {
+  if (locale === defaultLocale) return "";
+  if (locale === "pt-PT") return "/pt";
+  return `/${locale}`;
+}
+
+export function getLocaleSwitchHref(
+  target: ReturnType<typeof buildLocaleSwitchTarget>,
+) {
+  const localized = routing.pathnames[target.pathname];
+  let rest = typeof localized === "string" ? localized : localized[target.locale];
+
+  if (target.pathname === "/cases/[slug]" && "params" in target && target.params) {
+    rest = rest.replace("[slug]", target.params.slug);
+  }
+
+  const prefix = localePrefix(target.locale);
+  if (!rest || rest === "/") return prefix || "/";
+  return `${prefix}${rest}`;
 }

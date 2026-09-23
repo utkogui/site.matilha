@@ -13,6 +13,7 @@ import { GoogleAnalyticsWrapper } from "@/components/analytics/GoogleAnalyticsWr
 import { MouseTrailLazy } from "@/components/animation/MouseTrailLazy";
 import { BackToTop } from "@/components/layout/BackToTop";
 import { HashScrollHandler } from "@/components/layout/HashScrollHandler";
+import { PageCurtain } from "@/components/animation/PageCurtain";
 import { moderat } from "@/lib/fonts/moderat";
 import "../globals.css";
 
@@ -62,7 +63,7 @@ export default async function LocaleLayout({
       className={moderat.variable}
     >
       <body className={`${moderat.className} min-h-screen antialiased`}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <ConsentProvider>
             <Header />
             <main>{children}</main>
@@ -74,6 +75,7 @@ export default async function LocaleLayout({
             <RouteAnalytics />
             <HashScrollHandler />
             <CookieBanner />
+            <PageCurtain />
           </ConsentProvider>
         </NextIntlClientProvider>
       </body>

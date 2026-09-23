@@ -10,6 +10,7 @@
     "cases": "Cases",
     "contact": "Vamos Conversar",
     "careers": "Junte-se",
+    "training": "Incompany",
     "menu": "MENU",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu",
@@ -17,12 +18,13 @@
     "language": "Idioma"
   },
   "home": {
-    "heroTitle": "Somos a <u>Matilha</u>.",
+    "heroTitle": "A sua ideia <u>executada</u> com perfeição.",
     "heroLead": "Uma mistura de <people>gente</people>, <ideias>ideias</ideias>, <design>design</design> e <tech>tecnologia</tech>, com inteligência artificial no processo e inteligência humana no comando.",
     "heroClose": "Ajudamos <brands>marcas</brands> e <business>negócios</business> a encontrar novos caminhos num mundo que muda o tempo todo.",
     "heroCta": "Falar com a Matilha",
     "heroCtaHint": "Resposta em até 1 dia útil",
     "scrollDown": "Ir para a próxima seção",
+    "heroScrollHint": "Deslize a página",
     "heroCaption": "estúdio matilha",
     "studioLabel": "// ESTÚDIO MATILHA",
     "transformHeading": "Transformamos <u>negócios</u> através de <u>experiências</u> que geram resultado.",
@@ -41,6 +43,11 @@
     "ctaTitle": "Vamos transformar a sua ideia connosco",
     "growLabel": "// MATILHA.DIGITAL",
     "growHeading": "Desenhamos produtos que moldam <u>experiências.</u>",
+    "trainingLabel": "// INCOMPANY",
+    "trainingHeading": "Ensinamos a sua equipa a construir o <u>próprio produto.</u>",
+    "trainingLead": "Oito setores. Duas semanas. Uma aplicação nas mãos de quem usa.",
+    "trainingVersusLabel": "Comprar sempre ou aprender de uma vez",
+    "trainingCta": "Conhecer o treino",
     "sliderPrev": "Slide anterior",
     "sliderNext": "Próximo slide"
   },
@@ -229,6 +236,148 @@
     "title": "Página não encontrada",
     "description": "A página que procura não existe ou foi movida.",
     "backHome": "Voltar ao início"
+  },
+  "training": {
+    "title": "Treino Incompany",
+    "description": "Ensinamos equipas de qualquer setor a construir os seus próprios produtos com IA. Do zero ao hero em duas semanas, dentro da sua empresa.",
+    "heroLabel": "// TREINO INCOMPANY",
+    "heroHeading": "O que dependia de TI agora nasce na <u>sua equipa.</u>",
+    "heroLead": "Jurídico, compliance, engenharia, operação e marketing deixam de pedir produto e passam a criar. Com IA no processo e inteligência humana no comando.",
+    "heroCta": "Quero para a minha equipa",
+    "doorsLabel": "Oito portas. Um módulo cada.",
+    "stats": {
+      "weeks": { "value": "2", "unit": "semanas", "label": "do zero ao produto" },
+      "doors": { "value": "8", "unit": "portas", "label": "um módulo por setor" },
+      "app": { "value": "1", "unit": "aplicação", "label": "no ar, nas mãos de quem usa" },
+      "queue": { "value": "0", "unit": "fila", "label": "a equipa não espera a próxima" }
+    },
+    "learnLabel": "// APOSTA",
+    "learnHeading": "Melhor aprender do que <u>comprar sempre.</u>",
+    "learnLead": "Produto comprado apaga uma procura. Equipa treinada apaga a próxima, e a de depois.",
+    "buyTitle": "Comprar",
+    "learnTitle": "Aprender",
+    "buyOutcome": "O pedido volta. A fila também.",
+    "learnOutcome": "A capacidade fica. O próximo módulo é da equipa.",
+    "buySteps": [
+      { "title": "Procura", "body": "Um briefing. Um ticket. Uma área a pedir." },
+      { "title": "Fila", "body": "TI, marketing ou um fornecedor. Esperar." },
+      { "title": "Um produto", "body": "Resolve aquela procura. Só aquela." },
+      { "title": "De novo", "body": "A próxima ideia começa do zero." }
+    ],
+    "learnSteps": [
+      { "title": "A equipa", "body": "Quem vive o problema entra no laboratório." },
+      { "title": "O laboratório", "body": "Duas semanas, incompany, mãos na massa." },
+      { "title": "Autonomia", "body": "Uma aplicação no ar e desenvoltura para criar." },
+      { "title": "O próximo", "body": "O módulo seguinte nasce no próprio setor." }
+    ],
+    "shiftLabel": "// A MUDANÇA",
+    "shiftHeading": "Antes uma porta. Agora cada setor constrói o seu módulo.",
+    "beforeTitle": "Antes",
+    "beforeBody": "Um pedido para a TI. Uma fila no marketing. Um briefing que espera. O produto interno ficava do outro lado da casa.",
+    "afterTitle": "Agora",
+    "afterBody": "Cada equipa ganha desenvoltura para criar. O jurídico faz o seu. Compliance faz o seu. Engenharia faz o seu. A empresa deixa de ter uma porta só.",
+    "beforeFormula": "setores",
+    "beforeFormulaDoor": "porta",
+    "afterFormula": "setores",
+    "afterFormulaDoor": "módulos",
+    "sectorsLabel": "// SETORES",
+    "sectorsHeading": "Autonomia onde o problema mora.",
+    "sectors": {
+      "legal": "Jurídico",
+      "compliance": "Compliance",
+      "engineering": "Engenharia",
+      "operations": "Operação",
+      "marketing": "Marketing",
+      "finance": "Financeiro",
+      "hr": "Pessoas",
+      "support": "Atendimento"
+    },
+    "whoLabel": "// PARA QUEM",
+    "whoHeading": "De quem nasce IA first a quem já opera em escala.",
+    "whoStartupsTitle": "Empresas que já querem nascer IA first",
+    "whoStartupsBody": "Equipas enxutas com superpoder de produto desde o primeiro dia. Sem esperar uma área de tecnologia para validar a próxima ideia.",
+    "whoEnterpriseTitle": "Grupos e indústrias",
+    "whoEnterpriseBody": "Do porte da Volvo, da CNH e da Neodent. Setores inteiros com autonomia para criar aplicações internas, sem atravessar a casa a cada procura.",
+    "modulesLabel": "// MÓDULOS",
+    "modulesHeading": "Do primeiro produto ao sistema que conversa com a empresa.",
+    "basicTag": "Módulo básico",
+    "basicName": "Zero to Hero",
+    "basicDuration": "2 semanas",
+    "basicBody": "Incompany, mãos na massa. A equipa sai do zero e entrega um produto interno a sério: ideia, fluxo, interface e uma aplicação com IA que resolve um problema real do setor.",
+    "basicItems": [
+      "Descoberta do problema no próprio setor",
+      "Desenho do fluxo e da experiência",
+      "Aplicação com IA pronta a usar",
+      "Equipa autónoma para o próximo módulo"
+    ],
+    "advancedTag": "Módulo avançado",
+    "advancedName": "Linguagem e dados",
+    "advancedDuration": "À medida",
+    "advancedBody": "Para quem já constrói e precisa de ir além do protótipo. Serviços com base de dados, reconhecimento de nomes e intenção de linguagem. O produto passa a perceber o que as pessoas pedem e a guardar o que a empresa já sabe.",
+    "advancedItems": [
+      "Persistência em base de dados",
+      "Nomes, entidades e contexto da empresa",
+      "Intenção em linguagem natural",
+      "Módulos que conversam entre si"
+    ],
+    "method1Title": "Incompany",
+    "method1Body": "Vamos até à equipa. O laboratório é o contexto real, não um curso genérico.",
+    "method2Title": "Produto no fim",
+    "method2Body": "Não é um conjunto de slides. É uma aplicação no ar, nas mãos de quem vai usar.",
+    "method3Title": "Próximo módulo",
+    "method3Body": "Cada setor ganha desenvoltura para continuar sozinho. A Matilha abre a porta. A equipa atravessa.",
+    "timelineLabel": "// DUAS SEMANAS",
+    "timelineHeading": "A equipa entra sem produto. Sai com um no ar.",
+    "timelineLead": "Laboratório incompany, problema real, aplicação no fim. Depois, quem já constrói avança em linguagem e dados.",
+    "timeline": {
+      "week1": {
+        "label": "Semana 1",
+        "steps": [
+          {
+            "mark": "01",
+            "title": "Imersão no setor",
+            "body": "O problema real, no contexto real. Jurídico, operação, marketing: o laboratório é a própria área."
+          },
+          {
+            "mark": "02",
+            "title": "Desenho do módulo",
+            "body": "Fluxo, experiência e o que a IA vai fazer. A equipa define o produto que vai construir."
+          }
+        ]
+      },
+      "week2": {
+        "label": "Semana 2",
+        "steps": [
+          {
+            "mark": "03",
+            "title": "Mãos na massa",
+            "body": "A aplicação nasce. Interface, inteligência e um fluxo que resolve a procura do dia a dia."
+          },
+          {
+            "mark": "04",
+            "title": "Produto nas mãos",
+            "body": "Não é um conjunto de slides. É uma ferramenta no ar, usada por quem pediu. A equipa já tem desenvoltura para o próximo módulo."
+          }
+        ]
+      },
+      "after": {
+        "label": "Depois",
+        "steps": [
+          {
+            "mark": "05",
+            "title": "Linguagem e dados",
+            "body": "Quem já constrói avança: base de dados, nomes, entidades e intenção de linguagem. O produto passa a conversar com a empresa."
+          }
+        ]
+      }
+    },
+    "ctaLabel": "// VAMOS CONVERSAR",
+    "ctaHeading": "Qual setor da sua empresa ainda espera na fila?",
+    "ctaBody": "Conte o problema. Nós montamos o módulo certo para a sua equipa.",
+    "ctaButton": "Falar com a Matilha",
+    "ctaFormulaIn": "1 treino",
+    "ctaFormulaOut": "N produtos",
+    "ctaFormulaNote": "A capacidade fica no setor. O próximo módulo não precisa de atravessar a casa."
   },
   "common": {
     "english": "English",

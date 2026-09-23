@@ -9,7 +9,7 @@ const ArrowIcon = () => (
   </svg>
 );
 
-type InternalHref = "/" | "/cases" | "/contact" | "/careers" | "/privacy";
+type InternalHref = "/" | "/cases" | "/contact" | "/careers" | "/training" | "/privacy";
 
 type MatilhaButtonProps = {
   children: ReactNode;

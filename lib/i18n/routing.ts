@@ -15,6 +15,7 @@ export const routing = defineRouting({
     },
   },
   localeDetection: false,
+  localeCookie: false,
   pathnames: {
     "/": "/",
     "/cases": {
@@ -40,6 +41,12 @@ export const routing = defineRouting({
       "pt-PT": "/faca-parte",
       en: "/join-us",
       es: "/unete",
+    },
+    "/training": {
+      "pt-BR": "/treinamento",
+      "pt-PT": "/treinamento",
+      en: "/incompany-training",
+      es: "/entrenamiento",
     },
     "/privacy": {
       "pt-BR": "/politica-de-privacidade",
