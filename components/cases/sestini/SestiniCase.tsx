@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link } from "@/lib/i18n/navigation";
-import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { FadeInUp } from "@/components/animation/FadeInUp";
+import { CaseRelated } from "@/components/cases/CaseRelated";
 import { SestiniApplications } from "@/components/cases/sestini/SestiniApplications";
 import { SestiniLanguage } from "@/components/cases/sestini/SestiniLanguage";
 import { unbounded } from "@/lib/fonts/unbounded";
@@ -304,35 +302,7 @@ export function SestiniCase({ content, related }: SestiniCaseProps) {
         </div>
       </section>
 
-      {related.length > 0 ? (
-        <section className="sestini-related">
-          <div className="container-site">
-            <AnimatedHeading
-              as="h2"
-              text={t("related")}
-              trigger="scroll"
-              className="mb-8 text-[length:var(--text-h2)]"
-            />
-            <div className="sestini-related-grid">
-              {related.map((item) => (
-                <Link
-                  key={item.id}
-                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                  className="sestini-related-card group"
-                >
-                  <div className="sestini-related-cover">
-                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="320px" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                    <span className="text-sm text-primary">{t("viewCase")} →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
+      <CaseRelated related={related} />
     </article>
   );
 }

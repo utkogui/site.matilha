@@ -1,16 +1,16 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Link } from "@/lib/i18n/navigation";
 import { ImageCarousel } from "@/components/media/ImageCarousel";
-import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { PageTitle } from "@/components/animation/PageTitle";
+import { CaseRelated } from "@/components/cases/CaseRelated";
 import { LottieArrow } from "@/components/animation/LottieArrow";
 import { MeuPlaystationCase } from "@/components/cases/meups/MeuPlaystationCase";
 import { SestiniCase } from "@/components/cases/sestini/SestiniCase";
 import { CharneyCase } from "@/components/cases/charney/CharneyCase";
 import { OpenStartupsCase } from "@/components/cases/open-startups/OpenStartupsCase";
 import { NeodentCase } from "@/components/cases/neodent/NeodentCase";
+import { SyxCase } from "@/components/cases/syx/SyxCase";
 import { getCaseContent, getAllCases } from "@/lib/content/cases";
 import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-registry";
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
@@ -96,6 +96,10 @@ export default async function CaseDetailPage({
     return <NeodentCase content={content} related={related} />;
   }
 
+  if (content.id === "syx") {
+    return <SyxCase content={content} related={related} />;
+  }
+
   return (
     <article className="case-detail">
       <section className="case-hero">
@@ -145,35 +149,9 @@ export default async function CaseDetailPage({
         <section className="mt-16">
           <ImageCarousel images={content.gallery} />
         </section>
-
-        {related.length > 0 && (
-          <section className="mt-24">
-            <AnimatedHeading
-              as="h2"
-              text={t("related")}
-              trigger="scroll"
-              className="mb-8 text-[length:var(--text-h2)]"
-            />
-            <div className="grid gap-8 sm:grid-cols-2">
-              {related.map((item) => (
-                <Link
-                  key={item.id}
-                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                  className="group flex gap-4 bg-white/5 p-4"
-                >
-                  <div className="relative h-24 w-32 shrink-0 overflow-hidden">
-                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="128px" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                    <span className="text-sm text-primary">{t("viewCase")} →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
       </div>
+
+      <CaseRelated related={related} />
     </article>
   );
 }

@@ -5,9 +5,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "@/lib/i18n/navigation";
-import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { FadeInUp } from "@/components/animation/FadeInUp";
+import { CaseRelated } from "@/components/cases/CaseRelated";
 import { HeroScrollCue } from "@/components/media/HeroScrollCue";
 import {
   OpenAppFrame,
@@ -381,35 +380,7 @@ export function OpenStartupsCase({ content, related }: OpenStartupsCaseProps) {
         </div>
       </section>
 
-      {related.length > 0 ? (
-        <section className="open-related">
-          <div className="container-site">
-            <AnimatedHeading
-              as="h2"
-              text={t("related")}
-              trigger="scroll"
-              className="mb-8 text-[length:var(--text-h2)]"
-            />
-            <div className="open-related-grid">
-              {related.map((item) => (
-                <Link
-                  key={item.id}
-                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                  className="open-related-card group"
-                >
-                  <div className="open-related-cover">
-                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="320px" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                    <span className="text-sm text-primary">{t("viewCase")} →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
+      <CaseRelated related={related} />
     </article>
   );
 }

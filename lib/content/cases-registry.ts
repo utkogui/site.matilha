@@ -39,6 +39,7 @@ export interface CaseStory {
     graphics?: CaseStoryChapter;
     elements?: CaseStoryChapter;
     applications?: CaseStoryChapter;
+    system?: CaseStoryChapter;
     about?: CaseStoryChapter;
     process?: CaseStoryChapter;
     audiences?: CaseStoryChapter;
@@ -53,6 +54,8 @@ export interface CaseStory {
   team?: string[];
 }
 
+export type CaseCategory = "styleguide";
+
 export interface CaseContent {
   id: string;
   slug: string;
@@ -62,6 +65,7 @@ export interface CaseContent {
   challenge: string;
   solution: string;
   services: string[];
+  category?: CaseCategory;
   cover: string;
   coverAlt: string;
   gallery: { src: string; alt: string }[];
@@ -79,6 +83,7 @@ export interface CaseRegistryItem {
   cover: string;
   coverAlt: Record<Locale, string>;
   featured: boolean;
+  category?: CaseCategory;
 }
 
 function ptSlugs(slug: string) {
@@ -100,6 +105,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case SYX | Matilha Estúdio",
     },
     featured: true,
+    category: "styleguide",
   },
   {
     id: "conecte-ai",

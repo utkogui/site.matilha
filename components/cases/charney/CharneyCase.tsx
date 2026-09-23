@@ -5,9 +5,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "@/lib/i18n/navigation";
-import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { FadeInUp } from "@/components/animation/FadeInUp";
+import { CaseRelated } from "@/components/cases/CaseRelated";
 import { CharneyPinnedScreens } from "@/components/cases/charney/CharneyPinnedScreens";
 import { barlowCondensed } from "@/lib/fonts/barlow-condensed";
 import {
@@ -322,35 +321,7 @@ export function CharneyCase({ content, related }: CharneyCaseProps) {
         </div>
       </section>
 
-      {related.length > 0 ? (
-        <section className="charney-related">
-          <div className="container-site">
-            <AnimatedHeading
-              as="h2"
-              text={t("related")}
-              trigger="scroll"
-              className="mb-8 text-[length:var(--text-h2)]"
-            />
-            <div className="charney-related-grid">
-              {related.map((item) => (
-                <Link
-                  key={item.id}
-                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                  className="charney-related-card group"
-                >
-                  <div className="charney-related-cover">
-                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="320px" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                    <span className="text-sm text-primary">{t("viewCase")} →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-      ) : null}
+      <CaseRelated related={related} />
     </article>
   );
 }

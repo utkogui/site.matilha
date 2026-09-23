@@ -5,9 +5,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Link } from "@/lib/i18n/navigation";
-import { AnimatedHeading } from "@/components/animation/AnimatedHeading";
 import { PageTitle } from "@/components/animation/PageTitle";
+import { CaseRelated } from "@/components/cases/CaseRelated";
 import { FadeInUp } from "@/components/animation/FadeInUp";
 import { PhoneMaskScroll } from "@/components/cases/meups/PhoneMaskScroll";
 import { DesktopStickyScroll } from "@/components/cases/meups/DesktopStickyScroll";
@@ -241,34 +240,9 @@ export function MeuPlaystationCase({ content, related }: MeuPlaystationCaseProps
           </FadeInUp>
         ) : null}
 
-        {related.length > 0 && (
-          <section className="meups-related">
-            <AnimatedHeading
-              as="h2"
-              text={t("related")}
-              trigger="scroll"
-              className="mb-8 text-[length:var(--text-h2)]"
-            />
-            <div className="meups-related-grid">
-              {related.map((item) => (
-                <Link
-                  key={item.id}
-                  href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-                  className="meups-related-card group"
-                >
-                  <div className="meups-related-cover">
-                    <Image src={item.cover} alt={item.coverAlt} fill className="object-cover" sizes="320px" />
-                  </div>
-                  <div>
-                    <h3 className="font-display text-lg group-hover:text-primary">{item.title}</h3>
-                    <span className="text-sm text-primary">{t("viewCase")} →</span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
-        )}
       </div>
+
+      <CaseRelated related={related} />
     </article>
   );
 }

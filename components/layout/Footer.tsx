@@ -72,19 +72,36 @@ function FooterArt() {
     setSrc(pool[Math.floor(Math.random() * pool.length)]);
   }, [pathname]);
 
-  if (!src) return <div className="site-footer-art" aria-hidden />;
-
   return (
     <div className="site-footer-art" aria-hidden>
-      <Image
-        src={src}
-        alt=""
-        width={1024}
-        height={1536}
-        className="site-footer-art-img"
-        sizes="(max-width: 767px) 50vw, 28rem"
-        quality={75}
-      />
+      {src ? (
+        <Image
+          src={src}
+          alt=""
+          width={1024}
+          height={1536}
+          className="site-footer-art-img site-footer-art-img-single"
+          sizes="28rem"
+          quality={75}
+        />
+      ) : (
+        <div className="site-footer-art-img site-footer-art-img-single" />
+      )}
+
+      <div className="site-footer-art-pack">
+        {footerDogs.map((dog) => (
+          <Image
+            key={dog}
+            src={dog}
+            alt=""
+            width={512}
+            height={768}
+            className="site-footer-art-img site-footer-art-img-pack"
+            sizes="20vw"
+            quality={65}
+          />
+        ))}
+      </div>
     </div>
   );
 }
@@ -152,8 +169,6 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="site-footer-inner">
-        <FooterArt />
-
         <div className="container-site site-footer-main">
           <div className="site-footer-top">
             <div className="site-footer-invite">
@@ -219,6 +234,8 @@ export function Footer() {
               </nav>
             </div>
           </div>
+
+          <FooterArt />
 
           <div className="site-footer-utility">
             <nav className="site-footer-utility-nav" aria-label={t("navLabel")}>

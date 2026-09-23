@@ -6,6 +6,7 @@
   "summary": "Marketplace focused on relocating used machinery and equipment",
   "challenge": "Translate the company's new moment into a new brand and redesign the existing platform for a functional, enjoyable user experience.",
   "solution": "Discovery, rebranding and renaming from Central de Materiais, redesign and prototyping of the SYX marketplace focused on market expansion.",
+  "category": "styleguide",
   "services": [
     "Service Design",
     "Branding & Naming",
@@ -43,6 +44,51 @@
     "charney-companies",
     "sestini"
   ],
+  "story": {
+    "approachLead": "The brand had to become a platform.",
+    "approach": "Matilha started from Central de Materiais and built the name, the visual system and the marketplace. Sober Blue leads. Magic Green sparks. IBM Plex holds the type.",
+    "deliverables": [
+      {
+        "title": "Naming and brand",
+        "body": "Renaming Central de Materiais to SYX, with wordmark and color rules."
+      },
+      {
+        "title": "Style guide",
+        "body": "Palette, typography, shapes and components for product and communication."
+      },
+      {
+        "title": "Marketplace",
+        "body": "Redesign and prototyping of the platform for relocating machinery and equipment."
+      }
+    ],
+    "quote": "Trade fixed assets, simply.",
+    "chapters": {
+      "identity": {
+        "title": "Wordmark",
+        "body": "syx signs in black, white, Sober Blue and Magic Green. Four readings, one mark."
+      },
+      "palette": {
+        "title": "Color",
+        "body": "Sober Blue is primary. Magic Green is the accent. Dark Syx and Grey Syx hold the product."
+      },
+      "type": {
+        "title": "IBM Plex Sans",
+        "body": "The family for titles and interface. Work Sans carries product body copy."
+      },
+      "graphics": {
+        "title": "Shapes and curves",
+        "body": "Symmetric radii of 2, 4 and 8. Asymmetric 4, 8, 16 and 24. The cover cut comes from there."
+      },
+      "system": {
+        "title": "The interface system",
+        "body": "From spacing to the card. Buttons, fields, selection and tags share one grid. The marketplace uses the guide. It does not invent again."
+      },
+      "applications": {
+        "title": "From the board to the marketplace",
+        "body": "The brand has to trade: home, listing, detail and the fixed-asset flow."
+      }
+    }
+  },
   "seo": {
     "title": "SYX | Matilha Estúdio",
     "description": "Rebranding and redesign of the SYX marketplace for used machinery and equipment."

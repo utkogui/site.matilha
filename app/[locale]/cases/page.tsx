@@ -57,6 +57,9 @@ export default async function CasesPage({
                 />
               </div>
               <div className="p-6">
+                {item.category === "styleguide" ? (
+                  <p className="text-label mb-2">{t("caseKindStyleguide")}</p>
+                ) : null}
                 <h2 className="font-display text-xl">{item.title}</h2>
                 <p className="mt-2 text-sm text-white/60">{item.summary}</p>
                 <span className="mt-4 inline-block text-sm text-primary">{t("viewCase")} →</span>
