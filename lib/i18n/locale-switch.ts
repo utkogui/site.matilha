@@ -108,7 +108,7 @@ export function getLocaleSwitchHref(
   target: ReturnType<typeof buildLocaleSwitchTarget>,
 ) {
   const localized = routing.pathnames[target.pathname];
-  let rest = typeof localized === "string" ? localized : localized[target.locale];
+  let rest: string = typeof localized === "string" ? localized : localized[target.locale];
 
   if (target.pathname === "/cases/[slug]" && "params" in target && target.params) {
     rest = rest.replace("[slug]", target.params.slug);
