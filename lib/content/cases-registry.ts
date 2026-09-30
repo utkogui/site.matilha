@@ -75,7 +75,7 @@ export interface CaseContent {
   solution: string;
   services: string[];
   category?: CaseCategory;
-  kind?: CaseKind;
+  kind: CaseKind;
   cover: string;
   coverAlt: string;
   gallery: { src: string; alt: string }[];

@@ -19,7 +19,7 @@ export async function getCaseContent(
   try {
     const content = (await import(
       `@/content/cases/${registryItem.id}.${fileKey}.json`
-    )) as { default: CaseContent };
+    )) as { default: Omit<CaseContent, "slug" | "kind"> };
     return { ...content.default, slug: registryItem.slugs[locale], kind: registryItem.kind };
   } catch {
     return null;
@@ -32,11 +32,11 @@ export async function getAllCases(locale: Locale): Promise<CaseContent[]> {
   const fileKey = contentLocaleKey(locale);
 
   const cases = await Promise.all(
-    caseRegistry.map(async (item) => {
+    caseRegistry.map(async (item): Promise<CaseContent | null> => {
       try {
         const content = (await import(
           `@/content/cases/${item.id}.${fileKey}.json`
-        )) as { default: CaseContent };
+        )) as { default: Omit<CaseContent, "slug" | "kind"> };
         return { ...content.default, slug: item.slugs[locale], kind: item.kind };
       } catch {
         return null;

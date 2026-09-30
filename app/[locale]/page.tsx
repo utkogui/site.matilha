@@ -60,7 +60,7 @@ export default async function HomePage({
       cover: c!.cover,
       coverAlt: c!.coverAlt,
       services: c!.services.join(", "),
-      kindLabel: c!.kind ? tCases(`kinds.${c!.kind}`) : undefined,
+      kindLabel: tCases(`kinds.${c!.kind}`),
     }));
 
   return (
