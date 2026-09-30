@@ -3,38 +3,77 @@
   "slug": "conecte-ai",
   "title": "Conecte.ai",
   "client": "Conecte.ai",
-  "summary": "Empresa especializada em ferramentas digitais para provedores regionais de internet na venda online.",
-  "challenge": "Possibilitar o desenvolvimento estratégico de soluções a partir do entendimento de demandas e tarefas dos usuários dos serviços.",
-  "solution": "Pesquisa empática com mapa de modelo mental, thinking styles e jornada do usuário para inovação baseada em tarefas ainda não supridas.",
+  "summary": "A vitrine de planos que o provedor regional usa para vender internet online.",
+  "challenge": "O assinante chega no site do provedor e encontra uma lista de megas. Sem critério, ele abandona ou liga para o comercial. A Conecte.ai precisava de uma vitrine que o provedor pudesse publicar com a cara dele, e de um caminho para quem ainda não sabe qual plano contratar.",
+  "solution": "Desenhamos a página de planos, os cards, os estados de hover e a funcionalidade Descubra seu plano: um formulário curto que chega num resultado, em vez de uma tabela para o usuário decifrar.",
   "services": [
-    "Design de Serviço"
+    "UI | UX Design"
   ],
   "cover": "/images/cases/conecte-ai/cover.webp",
-  "coverAlt": "Case Conecte AI | Matilha Estúdio",
+  "coverAlt": "Case Conecte.ai | Matilha Estúdio",
   "gallery": [
     {
-      "src": "/images/cases/conecte-ai/gallery-1.webp",
-      "alt": "Conecte.ai | imagem 1 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/screens/plans.png",
+      "alt": "Vitrine de planos Conecte.ai | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-2.webp",
-      "alt": "Conecte.ai | imagem 2 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/cards/melhor-oferta.png",
+      "alt": "Card melhor oferta | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-3.webp",
-      "alt": "Conecte.ai | imagem 3 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/screens/descubra.png",
+      "alt": "Descubra seu plano | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-4.webp",
-      "alt": "Conecte.ai | imagem 4 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/cards/hover.png",
+      "alt": "Card em hover | Matilha Estúdio"
     }
   ],
   "relatedCases": [
-    "cormora",
-    "meu-playstation"
+    "conecte-ai-pesquisa",
+    "charney-companies"
   ],
+  "story": {
+    "team": [
+      "Ilana Heymowski · UI/UX",
+      "Thomas Freitas · UI/UX",
+      "Karen Fernandes · Apoio"
+    ],
+    "chapters": {
+      "about": {
+        "title": "Ferramentas para quem vende internet no interior.",
+        "body": "A Conecte.ai constrói produto digital para provedores regionais. O site do provedor deixa de ser um cartão de visitas e passa a vender: planos, benefícios, contratação. O Matilha desenhou a vitrine e o fluxo que o assinante usa sozinho."
+      },
+      "system": {
+        "title": "Para você ou para a empresa.",
+        "body": "Dois públicos, a mesma grelha. O toggle troca o recorte. O card do meio leva o selo de melhor oferta. Hover cresce o card e mostra o que estava escondido. Contrate agora fica no rodapé de cada plano, sempre no mesmo lugar."
+      },
+      "applications": {
+        "title": "Quem não sabe o plano, descobre.",
+        "body": "A vitrine serve quem já compara. Descubra seu plano serve quem ainda não sabe. Um atalho no topo da página abre um formulário: pessoas na casa, dispositivos, uso, cômodos, endereço. No fim, o plano recomendado.",
+        "points": [
+          "Iniciar a funcionalidade no topo da página",
+          "Pessoas, dispositivos e objetivo de uso",
+          "Cômodos e endereço de instalação",
+          "Resultado com o plano recomendado"
+        ]
+      },
+      "palette": {
+        "title": "Roxo Conecte, lilás de apoio.",
+        "body": "A marca pinta o header, o CTA e o selo. O provedor regional pode trocar a cor. O card continua branco, o fundo continua cinza, o preço continua no mesmo eixo."
+      },
+      "type": {
+        "title": "Lexend no display, Asap na interface.",
+        "body": "Títulos da página em Lexend. Velocidade, preço, benefícios e botões em Asap. A hierarquia cabe no card sem gritar."
+      },
+      "process": {
+        "title": "Da prancha para o provedor.",
+        "body": "Styleguide, componentes e a página de planos no mesmo sistema. O teste de usabilidade do Descubra seu plano virou o outro case: o relatório fica com o cliente, o método está publicado ao lado."
+      }
+    }
+  },
   "seo": {
     "title": "Conecte.ai | Matilha Estúdio",
-    "description": "Design de serviço e pesquisa empática para provedores de internet."
+    "description": "Vitrine de planos e Descubra seu plano para provedores regionais de internet."
   }
 }

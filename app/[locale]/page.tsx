@@ -48,6 +48,7 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("home");
+  const tCases = await getTranslations("cases");
   const allCases = await getAllCases(locale as Locale);
 
   const featuredCases = homeFeaturedCaseIds
@@ -59,6 +60,7 @@ export default async function HomePage({
       cover: c!.cover,
       coverAlt: c!.coverAlt,
       services: c!.services.join(", "),
+      kindLabel: c!.kind ? tCases(`kinds.${c!.kind}`) : undefined,
     }));
 
   return (

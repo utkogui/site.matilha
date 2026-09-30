@@ -1,0 +1,154 @@
+{
+  "id": "conecte-ai-pesquisa",
+  "slug": "conecte-ai-pesquisa",
+  "title": "Usability test",
+  "client": "Conecte.ai",
+  "summary": "The report is the product. The data stays with the client.",
+  "challenge": "Conecte.ai needed to know if a subscriber could find a plan alone. The test produces quotes, scores and tables that cannot leave the client. Research still has to show up as a case: that is what we sell.",
+  "solution": "We publish the method, not the dossier. This page shows how Matilha designs, runs and ranks a remote moderated test. Numbers, names and citations stay in the report the client receives.",
+  "services": [
+    "Research",
+    "Usability testing"
+  ],
+  "cover": "/images/cases/conecte-ai-pesquisa/cover.png",
+  "coverAlt": "Usability test report | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/cover.png",
+      "alt": "Report cover | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/sumario.png",
+      "alt": "Report contents | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/metodologia.png",
+      "alt": "Methodology chapter | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/valoracao.png",
+      "alt": "Finding valuation | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "cormora"
+  ],
+  "story": {
+    "approachLead": "Research gets designed too.",
+    "approach": "A Matilha usability test does not become a spreadsheet. It becomes a report with cover, contents, method, results, ranking and recommendation. The client keeps the dossier. The case shows the craft.",
+    "team": [
+      "Ilana Heymowski · Research and moderation",
+      "Thomas Freitas · Support",
+      "Karen Fernandes · Support"
+    ],
+    "deliverables": [
+      {
+        "title": "Remote moderated",
+        "body": "Video call. The participant is at home, on the live product or the prototype."
+      },
+      {
+        "title": "15 to 30 min",
+        "body": "A short session. One task. One scenario. No steering the click."
+      },
+      {
+        "title": "4 people or more",
+        "body": "Different profiles, same cut: people who use the internet without being technical."
+      },
+      {
+        "title": "One task",
+        "body": "Reach the recommended plan without dropping the form."
+      },
+      {
+        "title": "One scenario",
+        "body": "A new address, too many plans on screen, no certainty about speed."
+      },
+      {
+        "title": "Two seats",
+        "body": "The moderator talks. Support takes notes. Nobody drives the other person's cursor."
+      }
+    ],
+    "chapters": {
+      "identity": {
+        "title": "What does not go public",
+        "body": "Names, times, 1-to-5 scores, sticky notes with literal quotes and the quantitative table stay in the client's PDF. What you get here is craft: how we test, how we rank, what kind of friction a flow like this tends to hide.",
+        "points": [
+          "Not a real problem: preference or noise that does not change use.",
+          "Cosmetic: the control is understood, but it costs more than it should.",
+          "Use that does not block completion: the task ends, the path was worse.",
+          "Use that blocks completion: the task breaks. This product had none."
+        ]
+      },
+      "about": {
+        "title": "A report with chapters, not a session dump.",
+        "body": "Cover, manifesto, contents, introduction, methodology, results, recommendations, close. The client pages through it. The team looks things up. Research stops being an appendix and becomes a deliverable.",
+        "points": [
+          "Introduction: the project and what the test came to answer",
+          "Methodology: goal, setup, facilitation, task, scenario, participants",
+          "Results: quantitative, qualitative, ranking",
+          "Recommendations: insight by severity, not a loose list",
+          "Close: the product works, the micro still needs tuning"
+        ]
+      },
+      "process": {
+        "title": "The kit we bring into the session.",
+        "body": "Before the camera goes on, the test already has a type, a duration, material and a cut. That is what we sell: a protocol, not an improvised chat."
+      },
+      "concept": {
+        "title": "Two roles on the same call.",
+        "body": "A remote moderated test copies in-person research, with the room split across two screens. Quantitative measures whether they arrived and at what cost. Qualitative explains the path.",
+        "pairs": [
+          {
+            "title": "Designer who moderates",
+            "body": "Explains the meeting, the product and the scenario. Asks behavioral questions. Avoids pointing at the button."
+          },
+          {
+            "title": "Support designer",
+            "body": "Notes error, success and silence. Pulls the thread the moderator cannot chase in the moment."
+          }
+        ]
+      },
+      "system": {
+        "title": "Five axes, without the client's score.",
+        "body": "Each session becomes a 1-to-5 rating. The average across people shows the pattern. The score itself does not leave this page. The model does.",
+        "points": [
+          "Ease of completing the task",
+          "Satisfaction during use",
+          "Affinity with the interface",
+          "Clarity of communication",
+          "Errors made"
+        ]
+      },
+      "applications": {
+        "title": "The type of friction, not the quote.",
+        "body": "We cluster qualitative notes into positive and negative, then by similarity, then by severity. What follows is the map, not the dossier.",
+        "pairs": [
+          {
+            "voice": "Entry",
+            "title": "The storefront competes with the shortcut.",
+            "body": "People who come to compare plans miss the discover button. The mental model points at the cards, not the simulator."
+          },
+          {
+            "voice": "Control",
+            "title": "A slider needs a why and a real count.",
+            "body": "Grouping numbers instead of sequencing them, and asking for rooms without saying why, creates doubt. Use continues. Trust does not."
+          },
+          {
+            "voice": "Copy",
+            "title": "The question and the house are not the same thing.",
+            "body": "Rooms in the house and rooms that need internet get mixed. The address field still wants a complement."
+          },
+          {
+            "voice": "Result",
+            "title": "The plan shows up. The criterion does not.",
+            "body": "Finishing is possible. Understanding why that plan and not the other still needs copy. Cosmetic, but it is what is missing to sign without calling."
+          }
+        ]
+      }
+    }
+  },
+  "seo": {
+    "title": "Usability test | Matilha Estúdio",
+    "description": "How Matilha designs and delivers a usability test. The method is public. The data stays with the client."
+  }
+}

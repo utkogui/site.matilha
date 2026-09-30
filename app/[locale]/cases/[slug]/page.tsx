@@ -11,6 +11,8 @@ import { CharneyCase } from "@/components/cases/charney/CharneyCase";
 import { OpenStartupsCase } from "@/components/cases/open-startups/OpenStartupsCase";
 import { NeodentCase } from "@/components/cases/neodent/NeodentCase";
 import { SyxCase } from "@/components/cases/syx/SyxCase";
+import { ConecteCase } from "@/components/cases/conecte/ConecteCase";
+import { ConectePesquisaCase } from "@/components/cases/conecte/ConectePesquisaCase";
 import { getCaseContent, getAllCases } from "@/lib/content/cases";
 import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-registry";
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
@@ -98,6 +100,14 @@ export default async function CaseDetailPage({
 
   if (content.id === "syx") {
     return <SyxCase content={content} related={related} />;
+  }
+
+  if (content.id === "conecte-ai") {
+    return <ConecteCase content={content} related={related} />;
+  }
+
+  if (content.id === "conecte-ai-pesquisa") {
+    return <ConectePesquisaCase content={content} related={related} />;
   }
 
   return (

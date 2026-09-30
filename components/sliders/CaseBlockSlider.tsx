@@ -7,6 +7,7 @@ export interface CaseBlockItem {
   cover: string;
   coverAlt: string;
   services: string;
+  kindLabel?: string;
 }
 
 interface CaseBlockSliderProps {
@@ -25,6 +26,7 @@ export function CaseBlockSlider({ cases }: CaseBlockSliderProps) {
           className="case-block group"
         >
           <div className="case-block-thumb">
+            {item.kindLabel ? <p className="case-block-tag">{item.kindLabel}</p> : null}
             <Image
               src={item.cover}
               alt={item.coverAlt}

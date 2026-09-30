@@ -56,6 +56,15 @@ export interface CaseStory {
 
 export type CaseCategory = "styleguide";
 
+export type CaseKind =
+  | "site"
+  | "sistema"
+  | "branding"
+  | "naming"
+  | "styleguide"
+  | "pesquisa"
+  | "siteApp";
+
 export interface CaseContent {
   id: string;
   slug: string;
@@ -66,6 +75,7 @@ export interface CaseContent {
   solution: string;
   services: string[];
   category?: CaseCategory;
+  kind?: CaseKind;
   cover: string;
   coverAlt: string;
   gallery: { src: string; alt: string }[];
@@ -84,6 +94,7 @@ export interface CaseRegistryItem {
   coverAlt: Record<Locale, string>;
   featured: boolean;
   category?: CaseCategory;
+  kind: CaseKind;
 }
 
 function ptSlugs(slug: string) {
@@ -106,6 +117,7 @@ export const caseRegistry: CaseRegistryItem[] = [
     },
     featured: true,
     category: "styleguide",
+    kind: "styleguide",
   },
   {
     id: "conecte-ai",
@@ -117,6 +129,23 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Conecte AI | Matilha Estúdio",
     },
     featured: true,
+    kind: "site",
+  },
+  {
+    id: "conecte-ai-pesquisa",
+    slugs: {
+      ...ptSlugs("conecte-ai-pesquisa"),
+      en: "conecte-ai-research",
+      es: "conecte-ai-investigacion",
+    },
+    cover: "/images/cases/conecte-ai-pesquisa/cover.png",
+    coverAlt: {
+      ...ptCoverAlt("Relatório de usabilidade | Matilha Estúdio"),
+      en: "Usability report | Matilha Estúdio",
+      es: "Informe de usabilidad | Matilha Estúdio",
+    },
+    featured: true,
+    kind: "pesquisa",
   },
   {
     id: "cormora",
@@ -128,6 +157,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Cormora | Matilha Estúdio",
     },
     featured: true,
+    kind: "sistema",
   },
   {
     id: "charney-companies",
@@ -139,6 +169,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Charney Companies | Matilha Estúdio",
     },
     featured: true,
+    kind: "site",
   },
   {
     id: "pubg",
@@ -150,6 +181,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case PUBG | Matilha Estúdio",
     },
     featured: true,
+    kind: "site",
   },
   {
     id: "open-startups",
@@ -161,6 +193,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Open Startups | Matilha Estúdio",
     },
     featured: true,
+    kind: "naming",
   },
   {
     id: "sestini",
@@ -172,6 +205,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Sestini | Matilha Estúdio",
     },
     featured: true,
+    kind: "branding",
   },
   {
     id: "mon-museu-oscar-niemeyer",
@@ -187,7 +221,8 @@ export const caseRegistry: CaseRegistryItem[] = [
       en: "MON case | Matilha Estúdio",
       es: "Case MON | Matilha Estúdio",
     },
-    featured: false,
+    featured: true,
+    kind: "site",
   },
   {
     id: "meu-playstation",
@@ -198,7 +233,8 @@ export const caseRegistry: CaseRegistryItem[] = [
       en: "My PlayStation case | Matilha Estúdio",
       es: "Case Mi PlayStation | Matilha Estúdio",
     },
-    featured: false,
+    featured: true,
+    kind: "siteApp",
   },
   {
     id: "neodent",
@@ -210,6 +246,7 @@ export const caseRegistry: CaseRegistryItem[] = [
       es: "Case Neodent | Matilha Estúdio",
     },
     featured: true,
+    kind: "site",
   },
   {
     id: "harpia-consultoria",
@@ -220,7 +257,8 @@ export const caseRegistry: CaseRegistryItem[] = [
       en: "Harpia Consultoria case | Matilha Estúdio",
       es: "Case Harpia Consultoria | Matilha Estúdio",
     },
-    featured: false,
+    featured: true,
+    kind: "site",
   },
 ];
 

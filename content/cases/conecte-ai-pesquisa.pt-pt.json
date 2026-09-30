@@ -1,0 +1,154 @@
+{
+  "id": "conecte-ai-pesquisa",
+  "slug": "conecte-ai-pesquisa",
+  "title": "Teste de usabilidade",
+  "client": "Conecte.ai",
+  "summary": "O relatório é o produto. Os dados ficam com o cliente.",
+  "challenge": "A Conecte.ai precisava de saber se o assinante conseguia descobrir o plano sozinho. O teste gera falas, notas e tabelas que não podem circular fora do cliente. Mesmo assim, a pesquisa precisa de aparecer como case: é o que vendemos.",
+  "solution": "Publicamos o método, não o dossiê. Mostramos como o Matilha desenha, aplica e valoriza um teste remoto moderado. Números, nomes e citações ficam no relatório que o cliente recebe.",
+  "services": [
+    "Pesquisa",
+    "Teste de usabilidade"
+  ],
+  "cover": "/images/cases/conecte-ai-pesquisa/cover.png",
+  "coverAlt": "Relatório de teste de usabilidade | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/cover.png",
+      "alt": "Capa do relatório | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/sumario.png",
+      "alt": "Sumário do relatório | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/metodologia.png",
+      "alt": "Capítulo de metodologia | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/conecte-ai-pesquisa/pages/valoracao.png",
+      "alt": "Valoração dos achados | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "cormora"
+  ],
+  "story": {
+    "approachLead": "Pesquisa também se desenha.",
+    "approach": "Um teste de usabilidade no Matilha não vira uma folha de cálculo. Vira um relatório com capa, sumário, método, resultados, valoração e recomendação. O cliente leva o dossiê. O case mostra o ofício.",
+    "team": [
+      "Ilana Heymowski · Pesquisa e moderação",
+      "Thomas Freitas · Apoio",
+      "Karen Fernandes · Apoio"
+    ],
+    "deliverables": [
+      {
+        "title": "Remoto moderado",
+        "body": "Videoconferência. O participante está em casa, no produto real ou no protótipo."
+      },
+      {
+        "title": "15 a 30 min",
+        "body": "Sessão curta. Uma tarefa. Um cenário. Sem guiar o clique."
+      },
+      {
+        "title": "4 pessoas ou mais",
+        "body": "Perfis diferentes, o mesmo recorte: gente que usa internet sem ser técnica."
+      },
+      {
+        "title": "Uma tarefa",
+        "body": "Chegar ao plano recomendado sem abandonar o formulário."
+      },
+      {
+        "title": "Um cenário",
+        "body": "Mudança de morada, muitos planos no ecrã, nenhuma certeza de velocidade."
+      },
+      {
+        "title": "Duas cadeiras",
+        "body": "Quem modera conversa. Quem apoia anota. Ninguém conduz o rato do outro."
+      }
+    ],
+    "chapters": {
+      "identity": {
+        "title": "O que não vai para a rua",
+        "body": "Nomes, horários, notas de 1 a 5, post-its com fala literal e a tabela quantitativa ficam no PDF do cliente. Aqui entra o que é de ofício: como testamos, como classificamos, que tipo de atrito um fluxo destes costuma esconder.",
+        "points": [
+          "Não é um problema real: preferência ou ruído que não muda o uso.",
+          "Cosmético: o controlo percebe-se, mas custa mais do que deveria.",
+          "Uso que não impede concluir: a tarefa acaba, o caminho foi pior.",
+          "Uso que impede concluir: a tarefa parte. Neste produto, não apareceu."
+        ]
+      },
+      "about": {
+        "title": "Um relatório com capítulos, não a transcrição crua da sessão.",
+        "body": "Capa, manifesto, sumário, introdução, metodologia, resultados, recomendações, encerramento. O cliente folheia. A equipa consulta. A pesquisa deixa de ser um apêndice e passa a ser entrega.",
+        "points": [
+          "Introdução: o projeto e o que o teste veio responder",
+          "Metodologia: objetivo, configuração, condução, tarefa, cenário, participantes",
+          "Resultados: quantitativo, qualitativo, valoração",
+          "Recomendações: insight por criticidade, não uma lista solta",
+          "Encerramento: o produto cumpre, o micro ainda pede ajuste"
+        ]
+      },
+      "process": {
+        "title": "O kit que levamos para a sessão.",
+        "body": "Antes de ligar a câmara, o teste já tem tipo, tempo, material e recorte. Isto é o que se vende: um protocolo, não uma conversa improvisada."
+      },
+      "concept": {
+        "title": "Duas funções na mesma chamada.",
+        "body": "O teste remoto moderado copia a pesquisa presencial, com a sala dividida em dois ecrãs. O quantitativo mede se chegou e com que custo. O qualitativo explica o caminho.",
+        "pairs": [
+          {
+            "title": "Designer que modera",
+            "body": "Explica o encontro, o produto e o cenário. Faz pergunta de comportamento. Evita apontar o botão."
+          },
+          {
+            "title": "Designer de apoio",
+            "body": "Anota erro, acerto e silêncio. Puxa o tópico que o moderador não pode perseguir na hora."
+          }
+        ]
+      },
+      "system": {
+        "title": "Cinco eixos, sem a nota do cliente.",
+        "body": "Cada sessão vira uma avaliação de 1 a 5. A média entre pessoas mostra o padrão. A nota em si não sai daqui. O modelo, sim.",
+        "points": [
+          "Facilidade para concluir a tarefa",
+          "Satisfação durante o uso",
+          "Afinidade com a interface",
+          "Clareza na comunicação",
+          "Erros cometidos"
+        ]
+      },
+      "applications": {
+        "title": "O tipo de atrito, não a fala.",
+        "body": "Agrupamos o qualitativo em positivo e negativo, depois por semelhança, depois por criticidade. O que segue é o mapa, não o dossiê.",
+        "pairs": [
+          {
+            "voice": "Entrada",
+            "title": "A vitrine compete com o atalho.",
+            "body": "Quem chega para comparar planos não vê o botão de descobrir. O modelo mental aponta para os cards, não para a simulação."
+          },
+          {
+            "voice": "Controlo",
+            "title": "O slider pede o porquê e a conta certa.",
+            "body": "Agrupar números em vez de sequenciar, e perguntar divisões sem dizer para quê, gera dúvida. O uso segue. A confiança não."
+          },
+          {
+            "voice": "Enunciado",
+            "title": "A pergunta e a casa não são a mesma coisa.",
+            "body": "Divisões da casa e divisões que precisam de internet misturam-se. O campo de morada ainda pede complemento."
+          },
+          {
+            "voice": "Resultado",
+            "title": "O plano aparece. O critério, não.",
+            "body": "Chegar ao fim é possível. Perceber por que aquele plano e não o outro ainda pede texto. Cosmético, mas é o que falta para assinar sem ligar."
+          }
+        ]
+      }
+    }
+  },
+  "seo": {
+    "title": "Teste de usabilidade | Matilha Estúdio",
+    "description": "Como o Matilha desenha e entrega um teste de usabilidade. O método é público. Os dados ficam com o cliente."
+  }
+}

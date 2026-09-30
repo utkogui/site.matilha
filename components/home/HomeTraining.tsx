@@ -35,31 +35,47 @@ export async function HomeTraining() {
         </div>
 
         <div className="home-training-versus" aria-label={t("trainingVersusLabel")}>
-          <article className="home-training-flow home-training-flow-buy">
-            <p className="home-training-flow-kicker">{tTraining("buyTitle")}</p>
-            <ol>
+          <article className="home-training-path home-training-path-buy">
+            <header className="home-training-path-head">
+              <p className="home-training-path-kicker">{tTraining("buyKicker")}</p>
+              <h3 className="home-training-path-title">{tTraining("buyTitle")}</h3>
+            </header>
+            <ol className="home-training-flow home-training-flow-loop home-training-flow-row">
               {buySteps.map((step, index) => (
                 <li key={step.title}>
-                  <span className="home-training-flow-icon">
+                  <span className="home-training-node">
                     <TrainingIcon name={trainingBuyStepIcons[index] as TrainingIconName} />
                   </span>
-                  <span>{step.title}</span>
+                  <span className="home-training-step">
+                    <strong>{step.title}</strong>
+                  </span>
                 </li>
               ))}
             </ol>
+            <p className="home-training-path-outcome">{tTraining("buyOutcome")}</p>
           </article>
-          <article className="home-training-flow home-training-flow-learn">
-            <p className="home-training-flow-kicker">{tTraining("learnTitle")}</p>
-            <ol>
+
+          <p className="home-training-pivot">{tTraining("versusPivot")}</p>
+
+          <article className="home-training-path home-training-path-learn">
+            <header className="home-training-path-head">
+              <p className="home-training-path-kicker">{tTraining("learnKicker")}</p>
+              <h3 className="home-training-path-title">{tTraining("learnTitle")}</h3>
+            </header>
+            <ol className="home-training-flow home-training-flow-spine home-training-flow-grid">
               {learnSteps.map((step, index) => (
                 <li key={step.title}>
-                  <span className="home-training-flow-icon">
+                  <span className="home-training-node">
                     <TrainingIcon name={trainingLearnStepIcons[index] as TrainingIconName} />
                   </span>
-                  <span>{step.title}</span>
+                  <span className="home-training-step">
+                    <strong>{step.title}</strong>
+                    <span>{step.body}</span>
+                  </span>
                 </li>
               ))}
             </ol>
+            <p className="home-training-path-outcome">{tTraining("learnOutcome")}</p>
           </article>
         </div>
 

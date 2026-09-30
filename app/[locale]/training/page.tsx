@@ -113,16 +113,18 @@ export default async function TrainingPage({
 
           <div className="training-versus">
             <article className="training-versus-col training-versus-buy">
-              <p className="training-versus-kicker">{t("buyTitle")}</p>
-              <ol>
+              <header className="training-versus-head">
+                <p className="training-versus-kicker">{t("buyKicker")}</p>
+                <h3 className="training-versus-title">{t("buyTitle")}</h3>
+              </header>
+              <ol className="training-flow training-flow-loop training-flow-row">
                 {buySteps.map((step, index) => (
                   <li key={step.title}>
-                    <span className="training-versus-icon">
+                    <span className="training-versus-node">
                       <TrainingIcon name={trainingBuyStepIcons[index] as TrainingIconName} />
                     </span>
                     <div>
-                      <h3>{step.title}</h3>
-                      <p>{step.body}</p>
+                      <h4>{step.title}</h4>
                     </div>
                   </li>
                 ))}
@@ -130,16 +132,21 @@ export default async function TrainingPage({
               <p className="training-versus-outcome">{t("buyOutcome")}</p>
             </article>
 
+            <p className="training-versus-pivot">{t("versusPivot")}</p>
+
             <article className="training-versus-col training-versus-learn">
-              <p className="training-versus-kicker">{t("learnTitle")}</p>
-              <ol>
+              <header className="training-versus-head">
+                <p className="training-versus-kicker">{t("learnKicker")}</p>
+                <h3 className="training-versus-title">{t("learnTitle")}</h3>
+              </header>
+              <ol className="training-flow training-flow-spine training-flow-grid">
                 {learnSteps.map((step, index) => (
                   <li key={step.title}>
-                    <span className="training-versus-icon">
+                    <span className="training-versus-node">
                       <TrainingIcon name={trainingLearnStepIcons[index] as TrainingIconName} />
                     </span>
                     <div>
-                      <h3>{step.title}</h3>
+                      <h4>{step.title}</h4>
                       <p>{step.body}</p>
                     </div>
                   </li>
@@ -192,27 +199,19 @@ export default async function TrainingPage({
           <p className="training-section-lead">{t("timelineLead")}</p>
 
           <div className="training-weekbar" aria-hidden>
-            <div className="training-weekbar-week">
-              <p>{t("timeline.week1.label")}</p>
-              <ol>
-                {Array.from({ length: 5 }, (_, index) => (
-                  <li key={`w1-${index}`} />
-                ))}
-              </ol>
-            </div>
-            <div className="training-weekbar-week">
-              <p>{t("timeline.week2.label")}</p>
-              <ol>
-                {Array.from({ length: 5 }, (_, index) => (
-                  <li key={`w2-${index}`} />
-                ))}
-              </ol>
-            </div>
-            <div className="training-weekbar-week training-weekbar-after">
-              <p>{t("timeline.after.label")}</p>
-              <ol>
-                <li />
-              </ol>
+            <div className="training-weekbar-lane">
+              <div className="training-weekbar-seg">
+                <p>{t("timeline.week1.label")}</p>
+                <span className="training-weekbar-fill" />
+              </div>
+              <div className="training-weekbar-seg">
+                <p>{t("timeline.week2.label")}</p>
+                <span className="training-weekbar-fill" />
+              </div>
+              <div className="training-weekbar-seg training-weekbar-after">
+                <p>{t("timeline.after.label")}</p>
+                <span className="training-weekbar-fill" />
+              </div>
             </div>
           </div>
 
@@ -233,9 +232,11 @@ export default async function TrainingPage({
                           <span className="training-timeline-icon">
                             <TrainingIcon name={icon} />
                           </span>
-                          <p className="training-timeline-mark">{step.mark}</p>
-                          <h3>{step.title}</h3>
-                          <p>{step.body}</p>
+                          <div className="training-timeline-copy">
+                            <p className="training-timeline-mark">{step.mark}</p>
+                            <h3>{step.title}</h3>
+                            <p>{step.body}</p>
+                          </div>
                         </li>
                       );
                     })}

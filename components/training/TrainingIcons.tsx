@@ -17,121 +17,119 @@ export type TrainingIconName =
 const marks: Record<TrainingIconName, ReactNode> = {
   legal: (
     <>
-      <rect x="8" y="5" width="16" height="22" />
-      <path d="M12 11h8M12 16h8M12 21h5" />
+      <path d="M10 5.5h9.5L24.5 10v16.5H10Z" />
+      <path d="M19.5 5.5V10h5" />
+      <path d="M13.5 15h8M13.5 19.5h8M13.5 24h5" />
     </>
   ),
   compliance: (
     <>
-      <path d="M16 4 6 8v8c0 6 4.5 10 10 12 5.5-2 10-6 10-12V8Z" />
-      <path d="m12 16 3 3 6-7" />
+      <path d="M16 4.5 7 8.2v7.6c0 5.6 4 9.4 9 11.7 5-2.3 9-6.1 9-11.7V8.2Z" />
+      <path d="m12 16.2 3.1 3.1 6.2-7.1" />
     </>
   ),
   engineering: (
     <>
-      <circle cx="8" cy="16" r="3" />
-      <circle cx="24" cy="10" r="3" />
-      <circle cx="24" cy="22" r="3" />
-      <path d="M11 16h10M21 12v8" />
+      <circle cx="8.5" cy="16" r="2.6" />
+      <circle cx="23.5" cy="10" r="2.6" />
+      <circle cx="23.5" cy="22" r="2.6" />
+      <path d="M11.2 16H21M21 12.4v7.2" />
     </>
   ),
   operations: (
     <>
-      <rect x="5" y="5" width="9" height="9" />
-      <rect x="18" y="5" width="9" height="9" />
-      <rect x="5" y="18" width="9" height="9" />
-      <rect x="18" y="18" width="9" height="9" />
+      <circle cx="11" cy="11" r="4" />
+      <circle cx="21" cy="11" r="4" />
+      <circle cx="11" cy="21" r="4" />
+      <circle cx="21" cy="21" r="4" />
     </>
   ),
   marketing: (
     <>
-      <path d="M6 12h8l12-6v20L14 20H6Z" />
-      <path d="M10 12v8" />
+      <path d="M7 12.5h7.5L25.5 7v18L14.5 19.5H7Z" />
+      <path d="M11 12.5v7" />
     </>
   ),
   finance: (
     <>
-      <path d="M6 26V14h5v12M13.5 26V8h5v18M21 26V17h5v9" />
+      <path d="M8 24.5V15.5M16 24.5V8.5M24 24.5V18" />
     </>
   ),
   hr: (
     <>
-      <circle cx="11" cy="11" r="3.5" />
-      <circle cx="21" cy="11" r="3.5" />
-      <path d="M5 25c1.2-4 3.5-6 6-6s4.8 2 6 6M15 25c1.2-4 3.5-6 6-6s4.8 2 6 6" />
+      <circle cx="11.2" cy="11" r="3.2" />
+      <circle cx="20.8" cy="11" r="3.2" />
+      <path d="M5.8 24.8c1.1-3.6 3.2-5.4 5.4-5.4s4.3 1.8 5.4 5.4M15.4 24.8c1.1-3.6 3.2-5.4 5.4-5.4s4.3 1.8 5.4 5.4" />
     </>
   ),
   support: (
     <>
-      <path d="M7 7h18v14H13l-6 4V7Z" />
-      <path d="M12 14h8M12 18h5" />
+      <path d="M8 8h16.5a1.5 1.5 0 0 1 1.5 1.5v10.2a1.5 1.5 0 0 1-1.5 1.5H14.2L8 25.5V9.5A1.5 1.5 0 0 1 9.5 8Z" />
+      <path d="M12.5 14.5h8M12.5 18.2h5" />
     </>
   ),
   demand: (
     <>
-      <path d="M7 6h13l5 5v15H7Z" />
-      <path d="M20 6v5h5M11 16h10M11 21h7" />
+      <path d="M9 6.5h11.2L24.5 11v14.5H9Z" />
+      <path d="M20.2 6.5V11h4.3" />
+      <path d="M12.5 16.5h8.5M12.5 21h6" />
     </>
   ),
   queue: (
     <>
-      <path d="M6 9h20M6 16h14M6 23h8" />
+      <path d="M7 10h18M7 16h13M7 22h8" />
     </>
   ),
   product: (
     <>
-      <path d="M16 5 27 11v10L16 27 5 21V11Z" />
-      <path d="M16 5v22M5 11l11 6 11-6" />
+      <path d="M16 5.5 26 11v10.2L16 26.5 6 21.2V11Z" />
+      <path d="M16 5.5v21M6 11l10 5.6L26 11" />
     </>
   ),
   repeat: (
     <>
-      <path d="M8 12V7h14v7" />
-      <path d="m18 10 4 4-4 4" />
-      <path d="M24 20v5H10v-7" />
-      <path d="m14 22-4-4 4-4" />
+      <path d="M9 14.2A7 7 0 0 1 22.2 10" />
+      <path d="M19.4 7.2h4.2v4.2" />
+      <path d="M23 17.8A7 7 0 0 1 9.8 22" />
+      <path d="M12.6 24.8H8.4v-4.2" />
     </>
   ),
   team: (
     <>
-      <circle cx="16" cy="10" r="4" />
-      <path d="M7 26c1.5-6 4.5-9 9-9s7.5 3 9 9" />
+      <circle cx="16" cy="10.2" r="3.6" />
+      <path d="M7.4 25.2c1.4-5.4 4.2-8.1 8.6-8.1s7.2 2.7 8.6 8.1" />
     </>
   ),
   lab: (
     <>
-      <circle cx="8" cy="8" r="2" />
-      <circle cx="16" cy="8" r="2" />
-      <circle cx="24" cy="8" r="2" />
-      <circle cx="8" cy="16" r="2" />
-      <circle cx="16" cy="16" r="2" />
-      <circle cx="24" cy="16" r="2" />
-      <circle cx="8" cy="24" r="2" />
-      <circle cx="16" cy="24" r="2" />
-      <circle cx="24" cy="24" r="2" />
+      <path d="M12.2 5.5h7.6M14.2 5.5v6.2L9 24.2h14L17.8 11.7V5.5" />
+      <path d="M11.2 19.5h9.6" />
     </>
   ),
   autonomy: (
     <>
-      <path d="M7 28V8l9-4 9 4v20" />
-      <path d="M16 28V12M21 20h2" />
+      <path d="M8 27.2V14.2a8 8 0 0 1 16 0v13" />
+      <path d="M16 27.2V14.8" />
+      <circle cx="20.4" cy="19.6" r="1.05" />
     </>
   ),
   next: (
     <>
-      <rect x="5" y="7" width="14" height="18" />
-      <path d="M19 12h8v13H19M23 18v6M20 21h6" />
+      <path d="M7 7.5v17h11" />
+      <path d="M18 7.5c5.6 3.4 5.6 13.6 0 17" />
+      <path d="M14 16.2h10.5" />
+      <path d="m21.4 13 3.2 3.2-3.2 3.2" />
     </>
   ),
   startups: (
     <>
-      <path d="M16 5 18.5 13H27l-6.8 5 2.6 8L16 21l-6.8 5 2.6-8L5 13h8.5Z" />
+      <path d="M16 5.5 18.3 13H26l-6.2 4.5 2.4 7.5L16 21.2 9.8 25l2.4-7.5L6 13h7.7Z" />
     </>
   ),
   enterprise: (
     <>
-      <path d="M6 28V10h8V6h12v22" />
-      <path d="M10 14h2M10 18h2M10 22h2M20 11h2M20 15h2M20 19h2M20 23h2" />
+      <path d="M7.5 27V11.5h7.2V6.5h10.8V27" />
+      <path d="M11 14.5h1.6M11 18.2h1.6M11 22h1.6M21.4 10.8h1.6M21.4 14.5h1.6M21.4 18.2h1.6M21.4 22h1.6" />
     </>
   ),
 };
@@ -143,9 +141,9 @@ export function TrainingIcon({ name, className = "" }: { name: TrainingIconName;
       className={`training-icon ${className}`.trim()}
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.75"
-      strokeLinecap="square"
-      strokeLinejoin="miter"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       aria-hidden
     >
       {marks[name]}

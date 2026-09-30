@@ -3,38 +3,77 @@
   "slug": "conecte-ai",
   "title": "Conecte.ai",
   "client": "Conecte.ai",
-  "summary": "Company specialized in digital tools for regional internet providers selling online.",
-  "challenge": "Enable strategic solution development based on understanding user demands and tasks.",
-  "solution": "Empathic research with mental model map, thinking styles and user journey for innovation based on unmet tasks.",
+  "summary": "The plan storefront regional ISPs use to sell internet online.",
+  "challenge": "A subscriber lands on the provider site and finds a list of speeds. With no criterion, they bounce or call sales. Conecte.ai needed a storefront the provider could publish in its own skin, and a path for people who still do not know which plan to buy.",
+  "solution": "We designed the plans page, the cards, hover states, and Discover your plan: a short form that ends on a result, instead of a table the user has to decode.",
   "services": [
-    "Service Design"
+    "UI | UX Design"
   ],
   "cover": "/images/cases/conecte-ai/cover.webp",
-  "coverAlt": "Conecte AI case | Matilha Estúdio",
+  "coverAlt": "Conecte.ai case | Matilha Estúdio",
   "gallery": [
     {
-      "src": "/images/cases/conecte-ai/gallery-1.webp",
-      "alt": "Conecte.ai | imagem 1 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/screens/plans.png",
+      "alt": "Conecte.ai plans storefront | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-2.webp",
-      "alt": "Conecte.ai | imagem 2 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/cards/melhor-oferta.png",
+      "alt": "Best-offer plan card | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-3.webp",
-      "alt": "Conecte.ai | imagem 3 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/screens/descubra.png",
+      "alt": "Discover your plan | Matilha Estúdio"
     },
     {
-      "src": "/images/cases/conecte-ai/gallery-4.webp",
-      "alt": "Conecte.ai | imagem 4 | Matilha Estúdio"
+      "src": "/images/cases/conecte-ai/cards/hover.png",
+      "alt": "Plan card hover | Matilha Estúdio"
     }
   ],
   "relatedCases": [
-    "cormora",
-    "meu-playstation"
+    "conecte-ai-pesquisa",
+    "charney-companies"
   ],
+  "story": {
+    "team": [
+      "Ilana Heymowski · UI/UX",
+      "Thomas Freitas · UI/UX",
+      "Karen Fernandes · Support"
+    ],
+    "chapters": {
+      "about": {
+        "title": "Tools for people who sell internet outside the capitals.",
+        "body": "Conecte.ai builds digital product for regional providers. The provider site stops being a calling card and starts selling: plans, perks, signup. Matilha designed the storefront and the flow the subscriber uses alone."
+      },
+      "system": {
+        "title": "For you or for the company.",
+        "body": "Two audiences, one grid. The toggle switches the cut. The middle card carries the best-offer badge. Hover grows the card and shows what was folded. Hire now sits at the foot of every plan, always in the same place."
+      },
+      "applications": {
+        "title": "If they do not know the plan, they find it.",
+        "body": "The storefront is for people who already compare. Discover your plan is for people who still do not know. A first-fold shortcut opens a form: people at home, devices, use, rooms, address. At the end, a recommended plan.",
+        "points": [
+          "Start the flow in the first fold",
+          "People, devices and purpose of use",
+          "Rooms and installation address",
+          "Result with a recommended plan"
+        ]
+      },
+      "palette": {
+        "title": "Conecte purple, lilac in support.",
+        "body": "The brand paints the header, the CTA and the badge. The regional provider can swap the color. The card stays white, the ground stays grey, the price stays on the same axis."
+      },
+      "type": {
+        "title": "Lexend on display, Asap in the interface.",
+        "body": "Page titles in Lexend. Speed, price, perks and buttons in Asap. The hierarchy fits the card without shouting."
+      },
+      "process": {
+        "title": "From the board to the provider.",
+        "body": "Styleguide, components and the plans page in one system. The usability test of Discover your plan became the other case: the report stays with the client, the method is published next to it."
+      }
+    }
+  },
   "seo": {
     "title": "Conecte.ai | Matilha Estúdio",
-    "description": "Service design and empathic research for internet providers."
+    "description": "Plan storefront and Discover your plan for regional internet providers."
   }
 }
