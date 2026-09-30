@@ -4,19 +4,10 @@ export type ServiceItem = {
   alt: string;
 };
 
-export const growSectionVideo = {
-  vimeoId: "504394316",
-  title: "Manifesto | Matilha Estúdio",
-  poster: "/images/brand/wall.webp",
-} as const;
-
 export const heroVideo = {
   src: "/video/hero.mp4",
   poster: "/images/brand/wall.webp",
 } as const;
-
-export const growSectionVideoSrc =
-  `https://player.vimeo.com/video/${growSectionVideo.vimeoId}?muted=1&autoplay=1&loop=1&background=1&app_id=122963`;
 
 export const clientLogos = [
   { src: "/images/clients/matilha-digital_cliente-parceria-syx.png", alt: "SYX" },
