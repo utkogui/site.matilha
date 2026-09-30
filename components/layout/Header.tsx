@@ -44,7 +44,7 @@ export function Header() {
   return (
     <>
       <header
-        className={`site-header ${headerActive ? "site-header-scrolled" : ""}`}
+        className={`site-header${headerActive ? " site-header-scrolled" : ""}${menuOpen ? " is-menu-open" : ""}`}
         style={{ height: headerHeight }}
       >
         <div className="container-site site-header-inner">
@@ -69,34 +69,19 @@ export function Header() {
 
             <button
               type="button"
-              className="mobile-hamburger lg:hidden"
+              className={`site-hamburger${menuOpen ? " is-open" : ""}`}
               aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((v) => !v)}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="27" height="11" viewBox="0 0 27 11" aria-hidden>
-                <path fill="#FFFFFF" d="M0,8.932 L26.997,8.932 L26.997,10.932 L0,10.932 ZM26.997,0.932 L26.997,2.932 L0,2.932 L0,0.932 Z" />
-              </svg>
+              <span className="site-hamburger-box" aria-hidden>
+                <span className="site-hamburger-bar" />
+                <span className="site-hamburger-bar" />
+              </span>
             </button>
           </div>
         </div>
       </header>
-
-      <button
-        type="button"
-        className={`menu-trigger ${menuOpen ? "menu-trigger-open" : ""}`}
-        aria-label={menuOpen ? t("closeMenu") : t("openMenu")}
-        aria-expanded={menuOpen}
-        onClick={() => setMenuOpen((v) => !v)}
-      >
-        <span className="menu-trigger-bar-wrapper">
-          <span className="menu-trigger-text">{t("menu")}</span>
-          <span className="menu-trigger-bars" aria-hidden>
-            <span className="menu-trigger-bar menu-trigger-bar-first" />
-            <span className="menu-trigger-bar menu-trigger-bar-second" />
-          </span>
-        </span>
-      </button>
 
       {menuMounted ? <FullScreenMenu open={menuOpen} onClose={() => setMenuOpen(false)} /> : null}
     </>

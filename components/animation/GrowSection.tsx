@@ -159,6 +159,10 @@ export function GrowSection() {
           {String(active + 1).padStart(2, "0")}
           <span> / {String(total).padStart(2, "0")}</span>
         </p>
+        <p className="manifesto-anchor font-display" aria-hidden>
+          15
+          <span>anos</span>
+        </p>
         <div className="manifesto-wheel" aria-hidden>
           {screens.map((beat, index) => (
             <div

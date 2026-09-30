@@ -94,36 +94,6 @@ export default async function HomePage({
             {t.rich("growHeading", highlightTag)}
           </AnimatedHeading>
         </div>
-        <GrowSection />
-      </section>
-
-      <section id="home-cases" className="home-section home-section-cases">
-        <div className="container-site">
-          <div className="home-cases-header">
-            <div className="home-cases-heading-col">
-              <p className="mini-heading">{t("casesLabel")}</p>
-              <AnimatedHeading as="h2" className="heading-display">
-                {t.rich("casesHeading", highlightTag)}
-              </AnimatedHeading>
-            </div>
-            <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn home-cases-action-btn-header">
-              {t("casesCta")}
-            </MatilhaButton>
-          </div>
-
-          <div className="mt-12 home-cases-row">
-            <CaseBlockSlider cases={featuredCases} />
-          </div>
-
-          <div className="home-cases-actions mt-12">
-            <MatilhaButton href="/contact" variant="solid">
-              {t("casesTalkCta")}
-            </MatilhaButton>
-            <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn">
-              {t("viewAllCases")}
-            </MatilhaButton>
-          </div>
-        </div>
       </section>
 
       <section id="home-clients" className="home-section home-section-clients">
@@ -149,6 +119,37 @@ export default async function HomePage({
             <p className="home-section-cta-copy">{t("clientsTalkCopy")}</p>
             <MatilhaButton href="/contact" variant="solid">
               {t("clientsTalkCta")}
+            </MatilhaButton>
+          </div>
+        </div>
+      </section>
+
+      <GrowSection />
+
+      <section id="home-cases" className="home-section home-section-cases">
+        <div className="container-site">
+          <div className="home-cases-header">
+            <div className="home-cases-heading-col">
+              <p className="mini-heading">{t("casesLabel")}</p>
+              <AnimatedHeading as="h2" className="heading-display">
+                {t.rich("casesHeading", highlightTag)}
+              </AnimatedHeading>
+            </div>
+            <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn home-cases-action-btn-header">
+              {t("casesCta")}
+            </MatilhaButton>
+          </div>
+
+          <div className="mt-12 home-cases-row">
+            <CaseBlockSlider cases={featuredCases} />
+          </div>
+
+          <div className="home-cases-actions mt-12">
+            <MatilhaButton href="/contact" variant="solid">
+              {t("casesTalkCta")}
+            </MatilhaButton>
+            <MatilhaButton href="/cases" variant="icon" className="home-cases-action-btn">
+              {t("viewAllCases")}
             </MatilhaButton>
           </div>
         </div>

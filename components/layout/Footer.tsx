@@ -1,33 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Link, usePathname } from "@/lib/i18n/navigation";
+import { Link } from "@/lib/i18n/navigation";
 import { LocaleLinks } from "@/components/layout/LocaleLinks";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { ManageCookiesButton } from "@/components/consent/ManageCookiesButton";
 import { footerData } from "@/lib/content/home";
-
-const footerDogs = [
-  "/images/brand/footer-dogs/01-golden-retriever.png",
-  "/images/brand/footer-dogs/02-husky-siberiano.png",
-  "/images/brand/footer-dogs/03-doberman.png",
-  "/images/brand/footer-dogs/04-labrador.png",
-  "/images/brand/footer-dogs/05-pastor-alemao.png",
-  "/images/brand/footer-dogs/06-corgi.png",
-  "/images/brand/footer-dogs/07-bulldog-frances.png",
-  "/images/brand/footer-dogs/08-shih-tzu.png",
-  "/images/brand/footer-dogs/09-poodle.png",
-  "/images/brand/footer-dogs/10-boston-terrier.png",
-] as const;
-
-const footerDogsHome = [
-  "/images/brand/footer-dogs/01-golden-retriever.png",
-  "/images/brand/footer-dogs/04-labrador.png",
-  "/images/brand/footer-dogs/06-corgi.png",
-  "/images/brand/footer-dogs/07-bulldog-frances.png",
-] as const;
 
 type SocialNetwork = "linkedin" | "instagram" | "medium" | "behance";
 
@@ -62,49 +40,6 @@ const socialLinks: {
     network: "behance",
   },
 ];
-
-function FooterArt() {
-  const pathname = usePathname();
-  const [src, setSrc] = useState<string | null>(null);
-
-  useEffect(() => {
-    const pool = pathname === "/" ? footerDogsHome : footerDogs;
-    setSrc(pool[Math.floor(Math.random() * pool.length)]);
-  }, [pathname]);
-
-  return (
-    <div className="site-footer-art" aria-hidden>
-      {src ? (
-        <Image
-          src={src}
-          alt=""
-          width={1024}
-          height={1536}
-          className="site-footer-art-img site-footer-art-img-single"
-          sizes="28rem"
-          quality={75}
-        />
-      ) : (
-        <div className="site-footer-art-img site-footer-art-img-single" />
-      )}
-
-      <div className="site-footer-art-pack">
-        {footerDogs.map((dog) => (
-          <Image
-            key={dog}
-            src={dog}
-            alt=""
-            width={512}
-            height={768}
-            className="site-footer-art-img site-footer-art-img-pack"
-            sizes="20vw"
-            quality={65}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
 
 function SocialIcon({ network }: { network: SocialNetwork }) {
   switch (network) {
@@ -234,8 +169,6 @@ export function Footer() {
               </nav>
             </div>
           </div>
-
-          <FooterArt />
 
           <div className="site-footer-utility">
             <nav className="site-footer-utility-nav" aria-label={t("navLabel")}>
