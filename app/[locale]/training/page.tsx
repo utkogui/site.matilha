@@ -1,11 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { TrainingIcon, type TrainingIconName } from "@/components/training/TrainingIcons";
+import { TrainingPaths } from "@/components/training/TrainingPaths";
 import { TrainingSectorAutonomia } from "@/components/training/TrainingSectorAutonomia";
 import { highlightTag } from "@/lib/i18n/rich-tags";
 import {
-  trainingBuyStepIcons,
-  trainingLearnStepIcons,
   trainingStatKeys,
   trainingTimelineIcons,
   trainingTimelineWeekKeys,
@@ -22,11 +21,6 @@ type TimelineStep = {
 type TimelineWeek = {
   label: string;
   steps: TimelineStep[];
-};
-
-type VersusStep = {
-  title: string;
-  body: string;
 };
 
 export async function generateMetadata({
@@ -55,8 +49,6 @@ export default async function TrainingPage({
   const t = await getTranslations("training");
   const basicItems = t.raw("basicItems") as string[];
   const advancedItems = t.raw("advancedItems") as string[];
-  const buySteps = t.raw("buySteps") as VersusStep[];
-  const learnSteps = t.raw("learnSteps") as VersusStep[];
   const timeline = t.raw("timeline") as Record<string, TimelineWeek>;
   const sectors = t.raw("sectors") as Record<string, string>;
   let timelineIconIndex = 0;
@@ -100,7 +92,7 @@ export default async function TrainingPage({
             {trainingStatKeys.map((key, index) => (
               <div
                 key={key}
-                className={`training-stat${index === 0 ? " is-featured" : ""}${key === "queue" ? " is-queue" : ""}`}
+                className={`training-stat${index === 0 ? " is-featured" : ""}`}
               >
                 <dt>
                   <strong className={key === "sectors" ? "training-infinity" : undefined}>
@@ -123,51 +115,7 @@ export default async function TrainingPage({
           </h2>
           <p className="training-section-lead">{t("learnLead")}</p>
 
-          <div className="training-versus">
-            <article className="training-versus-col training-versus-buy">
-              <header className="training-versus-head">
-                <p className="training-versus-kicker">{t("buyKicker")}</p>
-                <h3 className="training-versus-title">{t("buyTitle")}</h3>
-              </header>
-              <ol className="training-flow training-flow-stuck">
-                {buySteps.map((step, index) => (
-                  <li key={step.title}>
-                    <span className="training-versus-node">
-                      <TrainingIcon name={trainingBuyStepIcons[index] as TrainingIconName} />
-                    </span>
-                    <div>
-                      <h4>{step.title}</h4>
-                      <p>{step.body}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <p className="training-versus-outcome">{t("buyOutcome")}</p>
-            </article>
-
-            <p className="training-versus-pivot">{t("versusPivot")}</p>
-
-            <article className="training-versus-col training-versus-learn">
-              <header className="training-versus-head">
-                <p className="training-versus-kicker">{t("learnKicker")}</p>
-                <h3 className="training-versus-title">{t("learnTitle")}</h3>
-              </header>
-              <ol className="training-flow training-flow-progress">
-                {learnSteps.map((step, index) => (
-                  <li key={step.title}>
-                    <span className="training-versus-node">
-                      <TrainingIcon name={trainingLearnStepIcons[index] as TrainingIconName} />
-                    </span>
-                    <div>
-                      <h4>{step.title}</h4>
-                      <p>{step.body}</p>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-              <p className="training-versus-outcome">{t("learnOutcome")}</p>
-            </article>
-          </div>
+          <TrainingPaths />
         </div>
       </section>
 
@@ -289,7 +237,10 @@ export default async function TrainingPage({
       <section className="training-section training-section-paper">
         <div className="container-site">
           <p className="mini-heading">{t("whoLabel")}</p>
-          <h2 className="heading-display training-section-heading">{t("whoHeading")}</h2>
+          <h2 className="heading-display training-section-heading training-who-heading">
+            {t("whoHeading")}
+          </h2>
+          <p className="training-section-lead">{t("whoLead")}</p>
 
           <div className="training-who-grid">
             <article className="training-who-card">

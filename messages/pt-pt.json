@@ -46,8 +46,6 @@
     "manifestoHint": "Deslize para ler",
     "trainingLabel": "// INCOMPANY",
     "trainingHeading": "Ensinamos a sua equipa a construir o <u>próprio produto.</u>",
-    "trainingLead": "O produto interno hoje atravessa a casa. Nós pomos o laboratório dentro da equipa.",
-    "trainingVersusLabel": "O modo normal e o que oferecemos",
     "trainingCta": "Conhecer o treino",
     "sliderPrev": "Slide anterior",
     "sliderNext": "Próximo slide"
@@ -405,53 +403,48 @@
       "sectors": {
         "value": "∞",
         "unit": "qualquer setor",
-        "label": "Cada setor com autonomia para fazer o seu produto"
-      },
-      "app": {
-        "value": "1",
-        "unit": "aplicação",
-        "label": "no ar, nas mãos de quem usa"
+        "label": "qualquer setor da empresa passa a ter autonomia"
       },
       "queue": {
         "value": "0",
         "unit": "fila",
-        "label": "a equipa não espera a próxima"
+        "label": "não depende de filas para lançar os seus produtos"
       }
     },
     "learnLabel": "// O QUE OFERECEMOS",
     "learnHeading": "A procura continua. Quem <u>constrói</u> muda.",
-    "learnLead": "O produto interno hoje atravessa a casa. Em duas semanas o setor sai com o módulo no ar, e a próxima ideia nasce na própria área.",
-    "buyKicker": "O modo normal",
-    "learnKicker": "O que oferecemos",
-    "versusPivot": "Aí nós entramos",
-    "buyTitle": "Tire o seu projeto do backlog",
-    "learnTitle": "O laboratório no setor",
-    "buyOutcome": "Não acumule tickets deixando uma boa ideia ser esquecida.",
-    "learnOutcome": "Em duas semanas, produto no ar e autonomia para o próximo.",
-    "buySteps": [
-      {
-        "title": "Backlog",
-        "body": "A ideia entra na fila e espera."
-      },
-      {
-        "title": "Espera",
-        "body": "Tickets acumulam. O setor não avança."
-      }
+    "learnLead": "Hoje uma boa ideia atravessa a casa e espera na fila. Com o treinamento Incompany, ela nasce e vai para o ar dentro do próprio setor.",
+    "normalKicker": "O modo normal",
+    "normalTitle": "Uma ideia, uma fila, um produto que chega tarde.",
+    "normalSteps": [
+      "Um setor viu uma necessidade",
+      "Desenhou o modelo do produto",
+      "Enviou ao setor que vai desenvolver",
+      "O setor recebe e abre um ticket",
+      "O ticket entra numa fila de prioridades",
+      "Perde a visibilidade, e a equipa de desenvolvimento decide a prioridade",
+      "Um dia o produto chega",
+      "Muitas vezes, já não era preciso"
     ],
-    "learnSteps": [
-      {
-        "title": "A equipa",
-        "body": "Quem vive o problema entra no laboratório."
-      },
-      {
-        "title": "Duas semanas",
-        "body": "Incompany, mãos na massa, módulo a nascer."
-      },
-      {
-        "title": "Autonomia",
-        "body": "Aplicação no ar. O próximo nasce no próprio setor."
-      }
+    "normalTicket": "Ticket",
+    "pathsTimeLabel": "Prazo",
+    "pathsResultLabel": "Resultado",
+    "normalTimeValue": "? meses",
+    "normalResultValue": "1 produto, se ainda servir",
+    "pivotTitle": "Aí a Matilha entra.",
+    "pivotBody": "Cortamos a fila: o laboratório vai para dentro do seu setor.",
+    "matilhaKicker": "Com a Matilha",
+    "matilhaTitle": "A ideia nasce e vai para o ar no próprio setor.",
+    "matilhaSteps": [
+      "O seu setor teve uma ideia",
+      "Desenhou o modelo do produto",
+      "Usou o que aprendeu no treinamento",
+      "Em 2 semanas, o produto está no ar"
     ],
+    "matilhaLaunchTag": "interno ou externo",
+    "matilhaTimeValue": "2 semanas",
+    "matilhaResultValue": "o 1.º produto. A equipa continua a criar os próximos.",
+    "pathsClosing": "Isto acontece porque a equipa está capacitada com o nosso <u>treinamento Incompany</u>: qualificada e pronta para resolver infinitos problemas sem sair do departamento.",
     "shiftLabel": "// A MUDANÇA",
     "shiftHeading": "Antes uma fila. Agora cada setor constrói o seu módulo.",
     "beforeTitle": "Antes",
@@ -475,11 +468,12 @@
       "support": "Atendimento"
     },
     "whoLabel": "// PARA QUEM",
-    "whoHeading": "De quem nasce IA first a quem já opera em escala.",
-    "whoStartupsTitle": "Empresas que já querem nascer IA first",
-    "whoStartupsBody": "Equipas enxutas com superpoder de produto desde o primeiro dia. Sem esperar uma área de tecnologia para validar a próxima ideia.",
-    "whoEnterpriseTitle": "Grupos e indústrias",
-    "whoEnterpriseBody": "Do porte da Volvo, da CNH e da Neodent. Setores inteiros com autonomia para criar aplicações internas, sem atravessar a casa a cada procura.",
+    "whoHeading": "Da startup à grande empresa: IA aplicada para gerar resultados.",
+    "whoLead": "Um treinamento para equipas que querem transformar ideias em soluções reais, ganhar velocidade e aplicar inteligência artificial com autonomia.",
+    "whoStartupsTitle": "Startups e empresas em crescimento",
+    "whoStartupsBody": "Capacite a sua equipa para validar ideias, criar soluções e automatizar processos com IA desde o início. Tudo com mais agilidade e menos dependência técnica.",
+    "whoEnterpriseTitle": "Grandes empresas e grupos corporativos",
+    "whoEnterpriseBody": "Prepare áreas e equipas inteiras para aplicar IA no dia a dia, desenvolver soluções internas e responder às exigências do negócio com segurança, autonomia e eficiência.",
     "modulesLabel": "// MÓDULOS",
     "modulesHeading": "Do primeiro produto ao sistema que conversa com a empresa.",
     "basicTag": "Módulo básico",
@@ -558,7 +552,7 @@
     "ctaBody": "Conte o problema. Nós montamos o módulo certo para a sua equipa.",
     "ctaButton": "Falar com a Matilha",
     "ctaFormulaIn": "1 treino",
-    "ctaFormulaOut": "N produtos",
+    "ctaFormulaOut": "quantos produtos precisar",
     "ctaFormulaNote": "A capacidade fica no setor. O próximo módulo não precisa de atravessar a casa.",
     "shiftVersus": "vs",
     "autonomiaPrefix": "O seu setor de",

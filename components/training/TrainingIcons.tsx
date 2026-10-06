@@ -12,7 +12,11 @@ export type TrainingIconName =
   | "autonomy"
   | "next"
   | "startups"
-  | "enterprise";
+  | "enterprise"
+  | "ticket"
+  | "clock"
+  | "hidden"
+  | "launch";
 
 const marks: Record<TrainingIconName, ReactNode> = {
   legal: (
@@ -130,6 +134,32 @@ const marks: Record<TrainingIconName, ReactNode> = {
     <>
       <path d="M7.5 27V11.5h7.2V6.5h10.8V27" />
       <path d="M11 14.5h1.6M11 18.2h1.6M11 22h1.6M21.4 10.8h1.6M21.4 14.5h1.6M21.4 18.2h1.6M21.4 22h1.6" />
+    </>
+  ),
+  ticket: (
+    <>
+      <path d="M6 10h20v3.6a2.4 2.4 0 0 0 0 4.8V22H6v-3.6a2.4 2.4 0 0 0 0-4.8Z" />
+      <path d="M19 10v12" strokeDasharray="1.6 2" />
+    </>
+  ),
+  clock: (
+    <>
+      <circle cx="16" cy="16" r="9.5" />
+      <path d="M16 10.5V16l3.8 2.4" />
+    </>
+  ),
+  hidden: (
+    <>
+      <path d="M5.5 16s3.8-6.5 10.5-6.5S26.5 16 26.5 16 22.7 22.5 16 22.5 5.5 16 5.5 16Z" />
+      <circle cx="16" cy="16" r="2.8" />
+      <path d="M7.5 25 24.5 7" />
+    </>
+  ),
+  launch: (
+    <>
+      <path d="M16 4.8c4 2.8 6 7 6 11.8l-2.6 4.6h-6.8L10 16.6c0-4.8 2-9 6-11.8Z" />
+      <circle cx="16" cy="13.2" r="2.1" />
+      <path d="M12.6 21.2 10 25.6M19.4 21.2l2.6 4.4M16 21.2v5" />
     </>
   ),
 };

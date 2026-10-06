@@ -46,8 +46,6 @@
     "manifestoHint": "Scroll to read",
     "trainingLabel": "// INCOMPANY",
     "trainingHeading": "We teach your team to build its <u>own product.</u>",
-    "trainingLead": "Today the internal product crosses the building. We put the lab inside the team.",
-    "trainingVersusLabel": "The usual way and what we offer",
     "trainingCta": "See the training",
     "sliderPrev": "Previous slide",
     "sliderNext": "Next slide"
@@ -405,53 +403,48 @@
       "sectors": {
         "value": "∞",
         "unit": "any sector",
-        "label": "Every sector with the autonomy to build its own product"
-      },
-      "app": {
-        "value": "1",
-        "unit": "application",
-        "label": "live, in the hands of users"
+        "label": "any sector of the company gains autonomy"
       },
       "queue": {
         "value": "0",
         "unit": "queue",
-        "label": "the team does not wait for the next one"
+        "label": "no queues to launch your products"
       }
     },
     "learnLabel": "// WHAT WE OFFER",
     "learnHeading": "The request stays. Who <u>builds</u> it changes.",
-    "learnLead": "Today the internal product crosses the building. In two weeks the team leaves with a live module, and the next idea is born in the department itself.",
-    "buyKicker": "The usual way",
-    "learnKicker": "What we offer",
-    "versusPivot": "This is where we come in",
-    "buyTitle": "Get your project out of the backlog",
-    "learnTitle": "The lab inside the department",
-    "buyOutcome": "Do not pile up tickets and let a good idea be forgotten.",
-    "learnOutcome": "In two weeks: a live product and autonomy for the next one.",
-    "buySteps": [
-      {
-        "title": "Backlog",
-        "body": "The idea joins the queue and waits."
-      },
-      {
-        "title": "Waiting",
-        "body": "Tickets pile up. The department stalls."
-      }
+    "learnLead": "Today a good idea crosses the whole company and waits in line. With the Incompany training, it is born and goes live inside the sector itself.",
+    "normalKicker": "The usual way",
+    "normalTitle": "One idea, one queue, one product that arrives late.",
+    "normalSteps": [
+      "A sector spots a need",
+      "Sketches the product model",
+      "Sends it to the team that will build it",
+      "That team receives it and opens a ticket",
+      "The ticket joins a priority queue",
+      "You lose visibility, and the dev team sets the priority",
+      "One day the product arrives",
+      "Often, it is no longer needed"
     ],
-    "learnSteps": [
-      {
-        "title": "The team",
-        "body": "The people who live the problem enter the lab."
-      },
-      {
-        "title": "Two weeks",
-        "body": "Incompany, hands-on, a module taking shape."
-      },
-      {
-        "title": "Autonomy",
-        "body": "A live app. The next one starts in the same department."
-      }
+    "normalTicket": "Ticket",
+    "pathsTimeLabel": "Timeline",
+    "pathsResultLabel": "Result",
+    "normalTimeValue": "? months",
+    "normalResultValue": "1 product, if it still fits",
+    "pivotTitle": "That is where Matilha comes in.",
+    "pivotBody": "We cut the queue: the lab moves inside your sector.",
+    "matilhaKicker": "With Matilha",
+    "matilhaTitle": "The idea is born and goes live in the sector itself.",
+    "matilhaSteps": [
+      "Your sector has an idea",
+      "Sketches the product model",
+      "Applies what it learned in the training",
+      "In 2 weeks, the product is live"
     ],
+    "matilhaLaunchTag": "internal or external",
+    "matilhaTimeValue": "2 weeks",
+    "matilhaResultValue": "the 1st product. The team keeps building the next ones.",
+    "pathsClosing": "This happens because the team is trained with our <u>Incompany training</u>: skilled and ready to solve endless problems without leaving the department.",
     "shiftLabel": "// THE SHIFT",
     "shiftHeading": "Before: one queue. Now each department builds its own module.",
     "beforeTitle": "Before",
@@ -475,11 +468,12 @@
       "support": "Support"
     },
     "whoLabel": "// WHO IT'S FOR",
-    "whoHeading": "From teams born AI first to groups already operating at scale.",
-    "whoStartupsTitle": "Companies that want to be born AI first",
-    "whoStartupsBody": "Lean teams with product superpowers from day one. No waiting on a technology department to validate the next idea.",
-    "whoEnterpriseTitle": "Groups and industry",
-    "whoEnterpriseBody": "At the scale of Volvo, CNH and Neodent. Entire departments with autonomy to create internal applications, without crossing the building for every request.",
+    "whoHeading": "From startup to large enterprise: applied AI that drives results.",
+    "whoLead": "A training for teams that want to turn ideas into real solutions, gain speed and apply artificial intelligence with autonomy.",
+    "whoStartupsTitle": "Startups and growing companies",
+    "whoStartupsBody": "Equip your team to validate ideas, build solutions and automate processes with AI from day one. All with more agility and less technical dependence.",
+    "whoEnterpriseTitle": "Large companies and corporate groups",
+    "whoEnterpriseBody": "Prepare entire areas and teams to apply AI day to day, build internal solutions and meet business demands with security, autonomy and efficiency.",
     "modulesLabel": "// MODULES",
     "modulesHeading": "From the first product to a system that talks to the company.",
     "basicTag": "Core module",
@@ -558,7 +552,7 @@
     "ctaBody": "Tell us the problem. We assemble the right module for your team.",
     "ctaButton": "Talk to Matilha",
     "ctaFormulaIn": "1 training",
-    "ctaFormulaOut": "N products",
+    "ctaFormulaOut": "as many products as you need",
     "ctaFormulaNote": "The capability stays in the department. The next module does not have to cross the building.",
     "shiftVersus": "vs",
     "autonomiaPrefix": "Your",
