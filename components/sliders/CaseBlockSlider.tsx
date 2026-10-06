@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 import { Link } from "@/lib/i18n/navigation";
 
 export interface CaseBlockItem {
@@ -6,7 +7,7 @@ export interface CaseBlockItem {
   title: string;
   cover: string;
   coverAlt: string;
-  services: string;
+  services: string[];
   kindLabel?: string;
 }
 
@@ -38,7 +39,11 @@ export function CaseBlockSlider({ cases }: CaseBlockSliderProps) {
           <div className="case-block-content">
             <div className="case-block-content-inner">
               <h3 className="case-block-title font-display">{item.title}</h3>
-              <p className="case-block-services">{item.services}</p>
+              <ul className="case-block-services">
+                {item.services.map((service) => (
+                  <ServiceTag key={service} label={service} />
+                ))}
+              </ul>
             </div>
           </div>
         </Link>

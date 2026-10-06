@@ -564,5 +564,425 @@
     "english": "English",
     "portuguese": "Português",
     "spanish": "Español"
+  },
+  "servicePage": {
+    "common": {
+      "indexLabel": "Serviço",
+      "scrollHint": "Role a página",
+      "scrollDown": "Ir para a próxima seção",
+      "introLabel": "// O QUE É",
+      "deliverablesLabel": "// O QUE ENTREGAMOS",
+      "processLabel": "// COMO TRABALHAMOS",
+      "processHeading": "Do primeiro papo ao produto no ar.",
+      "process": [
+        {
+          "title": "Escuta",
+          "body": "Entendemos o negócio, as pessoas e o problema antes de qualquer tela."
+        },
+        {
+          "title": "Desenho",
+          "body": "Transformamos o que ouvimos em fluxos, conceitos e protótipos que dá para testar."
+        },
+        {
+          "title": "Validação",
+          "body": "Colocamos na frente de quem usa, medimos e ajustamos rápido."
+        },
+        {
+          "title": "Entrega",
+          "body": "Material pronto para escalar, com o seu time junto em cada decisão."
+        }
+      ],
+      "casesLabel": "// NA PRÁTICA",
+      "casesHeading": "Cases com esse serviço.",
+      "viewCase": "Ver case",
+      "otherLabel": "// OUTROS SERVIÇOS",
+      "ctaHeading": "Vamos falar do seu projeto?",
+      "ctaBody": "Conte o desafio. A gente responde em até 1 dia útil.",
+      "ctaButton": "Vamos conversar"
+    },
+    "items": {
+      "uxui": {
+        "intro": "Interface boa é a que ninguém precisa explicar.",
+        "lead": "Desenhamos sites, apps e sistemas a partir do comportamento real de quem usa. Cada tela tem um objetivo claro, cada clique leva para perto do resultado do negócio.",
+        "deliverables": [
+          {
+            "title": "Pesquisa e testes de usabilidade",
+            "body": "Entrevistas, testes e dados de uso para decidir com evidência, não com opinião."
+          },
+          {
+            "title": "Arquitetura e fluxos",
+            "body": "Navegação e jornadas organizadas para a pessoa achar o que precisa sem esforço."
+          },
+          {
+            "title": "Interface e protótipos",
+            "body": "Telas de alta fidelidade e protótipos navegáveis, prontos para validar e desenvolver."
+          },
+          {
+            "title": "Design system",
+            "body": "Componentes e regras que mantêm o produto consistente enquanto ele cresce."
+          }
+        ],
+        "seoDescription": "UI/UX Design na Matilha: pesquisa, fluxos, interfaces e design system para sites, apps e sistemas que convertem.",
+        "build": {
+          "label": "// DO RABISCO AO PIXEL",
+          "heading": "Uma interface nasce em camadas.",
+          "scrollHint": "Role para montar a tela",
+          "steps": [
+            {
+              "title": "Wireframe",
+              "body": "Estrutura antes de estética. Onde cada coisa mora e o que vem primeiro."
+            },
+            {
+              "title": "Hierarquia",
+              "body": "Tipografia e espaço guiam o olhar. Em segundos a pessoa sabe o que fazer."
+            },
+            {
+              "title": "Identidade",
+              "body": "Cor, imagem e marca entram para criar desejo, sem atrapalhar a leitura."
+            },
+            {
+              "title": "Interação",
+              "body": "Cada clique responde. Feedback claro transforma intenção em conversão."
+            }
+          ],
+          "mock": {
+            "url": "matilha.store",
+            "brand": "Matilha Store",
+            "category": "Tênis de corrida",
+            "product": "Run Pack 01",
+            "rating": "4,9 (312 avaliações)",
+            "price": "R$ 489",
+            "sizeLabel": "Tamanho",
+            "cta": "Comprar agora",
+            "toast": "Adicionado ao carrinho"
+          }
+        },
+        "challenge": {
+          "label": "// TESTE AO VIVO",
+          "heading": "Ache o botão de finalizar compra.",
+          "lead": "Duas telas, a mesma tarefa. Comece e clique no botão certo o mais rápido que puder.",
+          "start": "Começar o teste",
+          "roundA": "Tela 1 de 2",
+          "roundB": "Tela 2 de 2",
+          "seconds": "segundos",
+          "miss": "Não é esse. Continue procurando.",
+          "resultTitle": "A diferença é design.",
+          "resultBody": "Na primeira tela você levou {a}s. Na segunda, {b}s.",
+          "resultFactor": "{factor}x mais rápido com uma interface clara.",
+          "resultEqual": "Você foi rápido nas duas. Agora imagine quem chega com pressa.",
+          "labelA": "Tela confusa",
+          "labelB": "Tela clara",
+          "retry": "Fazer de novo",
+          "cartTitle": "Seu carrinho",
+          "banner": "SUPER OFERTA RELÂMPAGO",
+          "coupon": "Ganhe 10% com o cupom MATILHA10",
+          "popup": "Cadastre-se e ganhe frete grátis",
+          "items": [
+            "Run Pack 01",
+            "Meia esportiva"
+          ],
+          "itemPrices": [
+            "R$ 489",
+            "R$ 49"
+          ],
+          "totalLabel": "Total",
+          "total": "R$ 538",
+          "target": "Finalizar compra",
+          "decoys": [
+            "Continuar comprando",
+            "Ver ofertas do dia",
+            "Salvar para depois",
+            "Assinar newsletter",
+            "Calcular frete",
+            "Aplicar cupom",
+            "Produtos parecidos"
+          ],
+          "cleanTitle": "Resumo do pedido",
+          "secure": "Pagamento seguro"
+        }
+      },
+      "serviceDesign": {
+        "intro": "A experiência não começa na tela e não termina nela.",
+        "lead": "Mapeamos a jornada inteira, dos bastidores ao atendimento, para que cada ponto de contato funcione junto. O resultado é um serviço que faz sentido para quem usa e para quem opera.",
+        "deliverables": [
+          {
+            "title": "Mapa de jornada",
+            "body": "Todos os momentos do cliente, com dores, expectativas e oportunidades à vista."
+          },
+          {
+            "title": "Blueprint de serviço",
+            "body": "O que acontece na frente e nos bastidores, com pessoas, sistemas e processos conectados."
+          },
+          {
+            "title": "Pesquisa com pessoas reais",
+            "body": "Clientes, equipes e parceiros ouvidos de perto para entender o serviço como ele é."
+          },
+          {
+            "title": "Plano de implantação",
+            "body": "Prioridades, pilotos e indicadores para tirar o novo serviço do papel."
+          }
+        ],
+        "seoDescription": "Design de Serviço na Matilha: jornadas, blueprints e pesquisa para serviços que funcionam ponta a ponta."
+      },
+      "daas": {
+        "intro": "Um time de design dentro do seu, sem a demora de contratar.",
+        "lead": "Alocamos designers da Matilha no seu dia a dia, no ritmo do seu produto. Você ganha senioridade, método e velocidade, com a flexibilidade de ajustar o time conforme a demanda.",
+        "deliverables": [
+          {
+            "title": "Designers dedicados",
+            "body": "Profissionais de UI, UX e produto integrados às suas rotinas e ferramentas."
+          },
+          {
+            "title": "Squad sob medida",
+            "body": "Composição do time ajustada ao momento do produto, para mais ou para menos."
+          },
+          {
+            "title": "Método Matilha junto",
+            "body": "Processos, rituais e boas práticas que ficam com o seu time depois."
+          },
+          {
+            "title": "Acompanhamento contínuo",
+            "body": "Gestão próxima e indicadores para garantir qualidade e entrega."
+          }
+        ],
+        "seoDescription": "Alocação de designers (DaaS) na Matilha: time de design dedicado e integrado ao seu produto, com flexibilidade."
+      },
+      "branding": {
+        "intro": "Antes de ser vista, uma marca precisa ser entendida.",
+        "lead": "Criamos nomes, identidades e linguagens que contam quem você é e para onde vai. Da estratégia ao último detalhe visual, a marca nasce pronta para viver em qualquer lugar.",
+        "deliverables": [
+          {
+            "title": "Estratégia de marca",
+            "body": "Propósito, posicionamento, arquétipos e o tom de voz que guia todas as decisões."
+          },
+          {
+            "title": "Naming",
+            "body": "Nomes com conceito, sonoridade e checagem de disponibilidade."
+          },
+          {
+            "title": "Identidade visual",
+            "body": "Logo, cores, tipografia e grafismos que formam um sistema reconhecível."
+          },
+          {
+            "title": "Brandbook e aplicações",
+            "body": "Guia completo e peças aplicadas para a marca chegar inteira ao mundo."
+          }
+        ],
+        "seoDescription": "Branding e Naming na Matilha: estratégia, nome, identidade visual e brandbook para marcas com presença.",
+        "build": {
+          "label": "// DO NOME À MARCA",
+          "heading": "Toda marca começa por um nome.",
+          "scrollHint": "Role para criar a marca",
+          "steps": [
+            {
+              "title": "Naming",
+              "body": "Dezenas de opções, uma escolha. Conceito, som e disponibilidade decidem."
+            },
+            {
+              "title": "Símbolo",
+              "body": "Um sinal simples, que funciona do favicon ao outdoor."
+            },
+            {
+              "title": "Cor e tipo",
+              "body": "Paleta e tipografia dão voz e temperatura à marca."
+            },
+            {
+              "title": "Aplicações",
+              "body": "A marca sai do papel e vive na embalagem, na tela e na rua."
+            }
+          ],
+          "board": {
+            "namesLabel": "Opções de nome",
+            "candidates": [
+              "Grão Forte",
+              "Café Central",
+              "Moka Já",
+              "Alba",
+              "Bom Dia Café",
+              "Torra Viva"
+            ],
+            "chosen": "Alba",
+            "tagline": "Café torrado ao amanhecer",
+            "paletteLabel": "Paleta",
+            "typeLabel": "Tipografia",
+            "typeName": "Moderat Bold",
+            "apps": [
+              "Embalagem",
+              "Cartão",
+              "App"
+            ],
+            "cardName": "Marina Alves",
+            "cardRole": "Mestre de torra"
+          }
+        },
+        "challenge": {
+          "label": "// MEMÓRIA DE MARCA",
+          "heading": "Quais marcas você lembra?",
+          "lead": "Oito marcas passam uma de cada vez. Depois, marque as que ficaram na cabeça.",
+          "start": "Começar o teste",
+          "memorize": "Memorize",
+          "seconds": "segundos",
+          "askTitle": "Marque as que você lembra",
+          "askCount": "marcadas",
+          "check": "Conferir",
+          "resultTitle": "Genérico se confunde. Marca forte fica.",
+          "labelStrong": "Marcas com identidade",
+          "labelGeneric": "Nomes genéricos",
+          "resultBody": "Você lembrou {strong} de 2 marcas com identidade e {generic} de 6 nomes genéricos.",
+          "resultFalse": "E marcou {count, plural, one {# nome que nem apareceu} other {# nomes que nem apareceram}}.",
+          "resultClean": "E não caiu em nenhum nome falso. Boa memória!",
+          "retry": "Fazer de novo",
+          "strong": [
+            "Alba",
+            "Tucano"
+          ],
+          "generic": [
+            "Prime Soluções",
+            "Grupo Integra",
+            "TechNova",
+            "Max Serviços",
+            "Total Brasil",
+            "Global Tec"
+          ],
+          "decoys": [
+            "Nova Prime",
+            "Integra Max",
+            "Tec Global",
+            "Brasil Total"
+          ],
+          "flashIndex": "{current} de {total}",
+          "idleUnit": "marcas"
+        }
+      },
+      "development": {
+        "intro": "Design que não vai ao ar é só uma boa intenção.",
+        "lead": "Levamos o produto do protótipo à produção com o mesmo time que desenhou. Sites, apps e sistemas rápidos, acessíveis e prontos para crescer, com inteligência artificial onde ela faz diferença.",
+        "deliverables": [
+          {
+            "title": "Sites e plataformas",
+            "body": "Front-end e back-end com performance, SEO e gestão de conteúdo."
+          },
+          {
+            "title": "Apps e sistemas",
+            "body": "Produtos web e mobile com integrações, painéis e regras de negócio."
+          },
+          {
+            "title": "IA aplicada",
+            "body": "Automações e recursos inteligentes que resolvem problemas reais do produto."
+          },
+          {
+            "title": "Evolução contínua",
+            "body": "Monitoramento, melhorias e novas versões depois do lançamento."
+          }
+        ],
+        "seoDescription": "Desenvolvimento e Tecnologia na Matilha: sites, apps, sistemas e IA aplicada, do protótipo ao produto no ar.",
+        "build": {
+          "label": "// DO CÓDIGO AO AR",
+          "heading": "Software bom é o que fica de pé.",
+          "scrollHint": "Role para publicar",
+          "steps": [
+            {
+              "title": "Código",
+              "body": "Componentes limpos e tipados, escritos para durar e mudar sem medo."
+            },
+            {
+              "title": "Testes",
+              "body": "Cada mudança passa por testes automáticos antes de chegar em alguém."
+            },
+            {
+              "title": "Deploy",
+              "body": "Do commit à produção em minutos, com previews para validar antes."
+            },
+            {
+              "title": "No ar",
+              "body": "Monitoramento em tempo real, performance alta e o time de olho."
+            }
+          ],
+          "board": {
+            "file": "checkout.tsx",
+            "tests": [
+              "calcula o total do carrinho",
+              "aplica cupom de desconto",
+              "trata pagamento recusado",
+              "passa na checagem de acessibilidade"
+            ],
+            "testsSummary": "4 de 4 testes passaram",
+            "pipeline": [
+              "Build",
+              "Testes",
+              "Preview",
+              "Produção"
+            ],
+            "deployLog": "Deploy concluído em 2m 14s",
+            "live": "Ao vivo",
+            "metrics": [
+              {
+                "value": "99,98%",
+                "label": "disponibilidade"
+              },
+              {
+                "value": "0,8s",
+                "label": "carregamento"
+              },
+              {
+                "value": "98",
+                "label": "performance"
+              }
+            ],
+            "onlineCount": "1.284",
+            "online": "pessoas online agora"
+          }
+        },
+        "challenge": {
+          "label": "// TESTE AO VIVO",
+          "heading": "Clique em Comprar o mais rápido que puder.",
+          "lead": "Dois sites, a mesma tarefa. Um foi feito às pressas, o outro foi otimizado. Sinta a diferença.",
+          "start": "Começar o teste",
+          "roundA": "Site 1 de 2",
+          "roundB": "Site 2 de 2",
+          "seconds": "segundos",
+          "miss": "Clique perdido. A página pulou.",
+          "loading": "Carregando...",
+          "urlSlow": "loja-lenta.com",
+          "urlFast": "loja-otimizada.com",
+          "banner": "Frete grátis só hoje",
+          "store": "Matilha Store",
+          "product": "Fone Pulse X",
+          "price": "R$ 899",
+          "buy": "Comprar",
+          "resultTitle": "Velocidade também é design.",
+          "labelA": "Site lento",
+          "labelB": "Site otimizado",
+          "resultBody": "No site lento você levou {a}s. No otimizado, {b}s.",
+          "resultMisses": "E ainda perdeu {count, plural, one {# clique} other {# cliques}} porque a página mudou de lugar.",
+          "resultFactor": "{factor}x mais rápido com um site bem construído.",
+          "resultEqual": "Você foi rápido nos dois. Seu cliente, no 4G, talvez não seja.",
+          "retry": "Fazer de novo"
+        }
+      },
+      "mvp": {
+        "intro": "Descubra se a ideia para de pé antes de investir tudo nela.",
+        "lead": "Testamos o modelo de negócio com pessoas reais, protótipos e experimentos rápidos. Você decide o próximo passo com dados na mão, e não com achismo.",
+        "deliverables": [
+          {
+            "title": "Hipóteses claras",
+            "body": "O que precisa ser verdade para o negócio funcionar, escrito e priorizado."
+          },
+          {
+            "title": "Protótipos e MVP",
+            "body": "A versão mínima que permite testar o valor com quem vai pagar por ele."
+          },
+          {
+            "title": "Experimentos de mercado",
+            "body": "Landing pages, entrevistas e testes para medir interesse e disposição."
+          },
+          {
+            "title": "Relatório de decisão",
+            "body": "Aprendizados, números e recomendação objetiva: seguir, ajustar ou parar."
+          }
+        ],
+        "seoDescription": "Validação de Modelo de Negócio na Matilha: hipóteses, protótipos, MVP e experimentos para decidir com dados."
+      }
+    }
   }
 }

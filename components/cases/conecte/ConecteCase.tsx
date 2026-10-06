@@ -17,6 +17,7 @@ import {
   conecteScreens,
 } from "@/lib/media/conecte-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -112,7 +113,7 @@ export function ConecteCase({ content, related }: ConecteCaseProps) {
         <FadeInUp>
           <ul className="conecte-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>

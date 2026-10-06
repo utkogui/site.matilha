@@ -29,6 +29,7 @@ import {
   type OpenSwatch,
 } from "@/lib/media/open-startups-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -155,7 +156,7 @@ export function OpenStartupsCase({ content, related }: OpenStartupsCaseProps) {
         <FadeInUp>
           <ul className="open-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>

@@ -9,6 +9,7 @@ import { asap } from "@/lib/fonts/asap";
 import { lexend } from "@/lib/fonts/lexend";
 import { conecteReport, type ConecteShot } from "@/lib/media/conecte-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 type RelatedCase = {
   id: string;
@@ -126,7 +127,7 @@ export function ConectePesquisaCase({ content, related }: ConectePesquisaCasePro
         <div className="container-site">
           <ul className="pesquisa-services">
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
           {story?.approachLead ? <p className="pesquisa-approach-lead">{story.approachLead}</p> : null}

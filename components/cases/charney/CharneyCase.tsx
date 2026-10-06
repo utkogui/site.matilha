@@ -16,6 +16,7 @@ import {
   charneyScreens,
 } from "@/lib/media/charney-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -146,7 +147,7 @@ export function CharneyCase({ content, related }: CharneyCaseProps) {
           <div className="charney-hero-panel">
             <div className="charney-hero-tags">
               {content.services.map((service) => (
-                <span key={service}>{service}</span>
+                <ServiceTag key={service} label={service} as="span" />
               ))}
               <em>{t("charneyYear")}</em>
             </div>

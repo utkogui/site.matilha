@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getPathname } from "@/lib/i18n/navigation";
 import { caseRegistry } from "@/lib/content/cases-registry";
+import { servicePages } from "@/lib/content/services";
 import { getSiteUrl } from "@/lib/seo/metadata";
 
 const pages = ["/", "/cases", "/contact", "/careers", "/training", "/privacy"] as const;
@@ -29,6 +30,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
         changeFrequency: "monthly",
         priority: 0.7,
+      });
+    }
+
+    for (const item of servicePages) {
+      entries.push({
+        url: `${base}${getPathname({
+          locale,
+          href: { pathname: "/services/[slug]", params: { slug: item.slugs[locale] } },
+        })}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly",
+        priority: 0.8,
       });
     }
   }

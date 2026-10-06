@@ -38,7 +38,8 @@ export function Header() {
   const isHome = pathname === "/";
   const isTraining = pathname === "/training";
   const isCaseRoute = pathname === "/cases" || pathname.startsWith("/cases/");
-  const headerActive = scrolled || isCaseRoute || isHome || isTraining;
+  const isService = pathname.startsWith("/services/");
+  const headerActive = scrolled || isCaseRoute || isHome || isTraining || isService;
   const headerHeight = scrolled ? "var(--header-height-shrink)" : "var(--header-height)";
 
   return (

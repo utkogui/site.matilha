@@ -59,7 +59,7 @@ export default async function HomePage({
       title: c!.title,
       cover: c!.cover,
       coverAlt: c!.coverAlt,
-      services: c!.services.join(", "),
+      services: c!.services,
       kindLabel: tCases(`kinds.${c!.kind}`),
     }));
 

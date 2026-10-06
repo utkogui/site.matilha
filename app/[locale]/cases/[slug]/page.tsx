@@ -19,6 +19,7 @@ import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-re
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
 import type { Locale } from "@/lib/i18n/routing";
 import type { Metadata } from "next";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 export async function generateStaticParams() {
   return caseRegistry.flatMap((item) =>
@@ -155,9 +156,7 @@ export default async function CaseDetailPage({
             <h2 className="text-label mb-4">{t("services")}</h2>
             <ul className="flex flex-wrap gap-3">
               {content.services.map((service) => (
-                <li key={service} className="border border-white/20 px-4 py-2 text-sm">
-                  {service}
-                </li>
+                <ServiceTag key={service} label={service} className="border border-white/20 px-4 py-2 text-sm" />
               ))}
             </ul>
           </section>

@@ -13,6 +13,7 @@ import { NeodentLockup } from "@/components/cases/neodent/NeodentLockup";
 import { publicSans } from "@/lib/fonts/public-sans";
 import { neodentPhotos, neodentScreens } from "@/lib/media/neodent-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -103,7 +104,7 @@ export function NeodentCase({ content, related }: NeodentCaseProps) {
         <div className="container-site neodent-hero-top">
           <div className="neodent-hero-tags neodent-hero-anim">
             {content.services.map((service) => (
-              <span key={service}>{service}</span>
+              <ServiceTag key={service} label={service} as="span" />
             ))}
             <em>{t("neodentYear")}</em>
           </div>

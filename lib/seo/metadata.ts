@@ -159,6 +159,43 @@ export function baseMetadata({
   };
 }
 
+export function buildServiceMetadata({
+  title,
+  description,
+  locale,
+  slug,
+  slugs,
+  image = DEFAULT_OG_IMAGE,
+}: {
+  title: string;
+  description: string;
+  locale: Locale;
+  slug: string;
+  slugs: Record<Locale, string>;
+  image?: string;
+}): Metadata {
+  const href = (value: string) => ({ pathname: "/services/[slug]" as const, params: { slug: value } });
+  const url = `${getSiteUrl()}${getPathname({ locale, href: href(slug) })}`;
+
+  return {
+    title,
+    description,
+    authors: [{ name: "Mila Zanforlin" }],
+    creator: "Mila Zanforlin",
+    alternates: {
+      canonical: url,
+      languages: {
+        "pt-BR": `${getSiteUrl()}${getPathname({ locale: "pt-BR", href: href(slugs["pt-BR"]) })}`,
+        "pt-PT": `${getSiteUrl()}${getPathname({ locale: "pt-PT", href: href(slugs["pt-PT"]) })}`,
+        en: `${getSiteUrl()}${getPathname({ locale: "en", href: href(slugs.en) })}`,
+        es: `${getSiteUrl()}${getPathname({ locale: "es", href: href(slugs.es) })}`,
+        "x-default": `${getSiteUrl()}${getPathname({ locale: defaultLocale, href: href(slugs["pt-BR"]) })}`,
+      },
+    },
+    ...buildOpenGraphFields({ title, description, url, locale, image }),
+  };
+}
+
 export function buildCaseMetadata({
   title,
   description,

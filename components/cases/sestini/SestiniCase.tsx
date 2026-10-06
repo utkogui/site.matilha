@@ -9,6 +9,7 @@ import { SestiniLanguage } from "@/components/cases/sestini/SestiniLanguage";
 import { unbounded } from "@/lib/fonts/unbounded";
 import { sestiniLogos, sestiniPalette, sestiniPaletteSecondary } from "@/lib/media/sestini-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 type RelatedCase = {
   id: string;
@@ -67,7 +68,7 @@ export function SestiniCase({ content, related }: SestiniCaseProps) {
         <FadeInUp>
           <ul className="sestini-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>

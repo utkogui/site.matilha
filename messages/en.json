@@ -564,5 +564,425 @@
     "english": "English",
     "portuguese": "Português",
     "spanish": "Español"
+  },
+  "servicePage": {
+    "common": {
+      "indexLabel": "Service",
+      "scrollHint": "Scroll down",
+      "scrollDown": "Go to the next section",
+      "introLabel": "// WHAT IT IS",
+      "deliverablesLabel": "// WHAT WE DELIVER",
+      "processLabel": "// HOW WE WORK",
+      "processHeading": "From the first chat to a live product.",
+      "process": [
+        {
+          "title": "Listen",
+          "body": "We understand the business, the people and the problem before any screen."
+        },
+        {
+          "title": "Design",
+          "body": "We turn what we hear into flows, concepts and prototypes you can test."
+        },
+        {
+          "title": "Validate",
+          "body": "We put it in front of real users, measure and adjust fast."
+        },
+        {
+          "title": "Deliver",
+          "body": "Work ready to scale, with your team involved in every decision."
+        }
+      ],
+      "casesLabel": "// IN PRACTICE",
+      "casesHeading": "Cases with this service.",
+      "viewCase": "View case",
+      "otherLabel": "// OTHER SERVICES",
+      "ctaHeading": "Shall we talk about your project?",
+      "ctaBody": "Tell us the challenge. We reply within 1 business day.",
+      "ctaButton": "Let's talk"
+    },
+    "items": {
+      "uxui": {
+        "intro": "A good interface is one nobody needs to explain.",
+        "lead": "We design sites, apps and systems around how people actually behave. Every screen has a clear goal, every click moves closer to a business result.",
+        "deliverables": [
+          {
+            "title": "Research and usability testing",
+            "body": "Interviews, tests and usage data so decisions rest on evidence, not opinion."
+          },
+          {
+            "title": "Architecture and flows",
+            "body": "Navigation and journeys organized so people find what they need effortlessly."
+          },
+          {
+            "title": "Interface and prototypes",
+            "body": "High fidelity screens and clickable prototypes, ready to validate and build."
+          },
+          {
+            "title": "Design system",
+            "body": "Components and rules that keep the product consistent as it grows."
+          }
+        ],
+        "seoDescription": "UI/UX Design at Matilha: research, flows, interfaces and design systems for sites, apps and platforms that convert.",
+        "build": {
+          "label": "// FROM SKETCH TO PIXEL",
+          "heading": "An interface is built in layers.",
+          "scrollHint": "Scroll to build the screen",
+          "steps": [
+            {
+              "title": "Wireframe",
+              "body": "Structure before style. Where everything lives and what comes first."
+            },
+            {
+              "title": "Hierarchy",
+              "body": "Type and space guide the eye. In seconds people know what to do."
+            },
+            {
+              "title": "Identity",
+              "body": "Color, imagery and brand add desire without getting in the way."
+            },
+            {
+              "title": "Interaction",
+              "body": "Every click responds. Clear feedback turns intent into conversion."
+            }
+          ],
+          "mock": {
+            "url": "matilha.store",
+            "brand": "Matilha Store",
+            "category": "Running shoes",
+            "product": "Run Pack 01",
+            "rating": "4.9 (312 reviews)",
+            "price": "US$ 129",
+            "sizeLabel": "Size",
+            "cta": "Buy now",
+            "toast": "Added to cart"
+          }
+        },
+        "challenge": {
+          "label": "// LIVE TEST",
+          "heading": "Find the checkout button.",
+          "lead": "Two screens, one task. Start and click the right button as fast as you can.",
+          "start": "Start the test",
+          "roundA": "Screen 1 of 2",
+          "roundB": "Screen 2 of 2",
+          "seconds": "seconds",
+          "miss": "Not that one. Keep looking.",
+          "resultTitle": "The difference is design.",
+          "resultBody": "On the first screen you took {a}s. On the second, {b}s.",
+          "resultFactor": "{factor}x faster with a clear interface.",
+          "resultEqual": "You were fast on both. Now picture someone in a hurry.",
+          "labelA": "Cluttered screen",
+          "labelB": "Clear screen",
+          "retry": "Try again",
+          "cartTitle": "Your cart",
+          "banner": "FLASH MEGA DEAL",
+          "coupon": "Get 10% off with code MATILHA10",
+          "popup": "Sign up for free shipping",
+          "items": [
+            "Run Pack 01",
+            "Sport socks"
+          ],
+          "itemPrices": [
+            "US$ 129",
+            "US$ 12"
+          ],
+          "totalLabel": "Total",
+          "total": "US$ 141",
+          "target": "Checkout",
+          "decoys": [
+            "Keep shopping",
+            "Today's deals",
+            "Save for later",
+            "Join newsletter",
+            "Estimate shipping",
+            "Apply coupon",
+            "Similar products"
+          ],
+          "cleanTitle": "Order summary",
+          "secure": "Secure payment"
+        }
+      },
+      "serviceDesign": {
+        "intro": "The experience doesn't start on the screen, and it doesn't end there.",
+        "lead": "We map the whole journey, from back office to customer care, so every touchpoint works together. The result is a service that makes sense for the people who use it and the people who run it.",
+        "deliverables": [
+          {
+            "title": "Journey map",
+            "body": "Every customer moment, with pain points, expectations and opportunities in plain sight."
+          },
+          {
+            "title": "Service blueprint",
+            "body": "What happens front stage and backstage, with people, systems and processes connected."
+          },
+          {
+            "title": "Research with real people",
+            "body": "Customers, teams and partners heard up close to see the service as it really is."
+          },
+          {
+            "title": "Rollout plan",
+            "body": "Priorities, pilots and metrics to get the new service off the ground."
+          }
+        ],
+        "seoDescription": "Service Design at Matilha: journeys, blueprints and research for services that work end to end."
+      },
+      "daas": {
+        "intro": "A design team inside yours, without the hiring delay.",
+        "lead": "We embed Matilha designers in your daily routine, at your product's pace. You get seniority, method and speed, with the flexibility to scale the team with demand.",
+        "deliverables": [
+          {
+            "title": "Dedicated designers",
+            "body": "UI, UX and product professionals integrated into your rituals and tools."
+          },
+          {
+            "title": "Tailored squad",
+            "body": "Team setup adjusted to the product's moment, up or down."
+          },
+          {
+            "title": "Matilha method included",
+            "body": "Processes, rituals and good practices that stay with your team."
+          },
+          {
+            "title": "Ongoing support",
+            "body": "Close management and metrics to ensure quality and delivery."
+          }
+        ],
+        "seoDescription": "Design as a Service (DaaS) at Matilha: a dedicated design team embedded in your product, with flexibility."
+      },
+      "branding": {
+        "intro": "Before it's seen, a brand needs to be understood.",
+        "lead": "We create names, identities and languages that tell who you are and where you're going. From strategy to the last visual detail, the brand is born ready to live anywhere.",
+        "deliverables": [
+          {
+            "title": "Brand strategy",
+            "body": "Purpose, positioning, archetypes and the tone of voice that guides every decision."
+          },
+          {
+            "title": "Naming",
+            "body": "Names with concept, sound and availability checks."
+          },
+          {
+            "title": "Visual identity",
+            "body": "Logo, colors, typography and graphics forming a recognizable system."
+          },
+          {
+            "title": "Brandbook and applications",
+            "body": "A complete guide and applied pieces so the brand reaches the world whole."
+          }
+        ],
+        "seoDescription": "Branding and Naming at Matilha: strategy, name, visual identity and brandbook for brands with presence.",
+        "build": {
+          "label": "// FROM NAME TO BRAND",
+          "heading": "Every brand starts with a name.",
+          "scrollHint": "Scroll to create the brand",
+          "steps": [
+            {
+              "title": "Naming",
+              "body": "Dozens of options, one choice. Concept, sound and availability decide."
+            },
+            {
+              "title": "Symbol",
+              "body": "A simple sign that works from favicon to billboard."
+            },
+            {
+              "title": "Color and type",
+              "body": "Palette and typography give the brand its voice and warmth."
+            },
+            {
+              "title": "Applications",
+              "body": "The brand leaves the page and lives on packaging, screens and streets."
+            }
+          ],
+          "board": {
+            "namesLabel": "Name options",
+            "candidates": [
+              "Strong Bean",
+              "Central Coffee",
+              "Moka Now",
+              "Alba",
+              "Good Morning Coffee",
+              "Live Roast"
+            ],
+            "chosen": "Alba",
+            "tagline": "Coffee roasted at dawn",
+            "paletteLabel": "Palette",
+            "typeLabel": "Typography",
+            "typeName": "Moderat Bold",
+            "apps": [
+              "Packaging",
+              "Card",
+              "App"
+            ],
+            "cardName": "Marina Alves",
+            "cardRole": "Head roaster"
+          }
+        },
+        "challenge": {
+          "label": "// BRAND RECALL",
+          "heading": "Which brands do you remember?",
+          "lead": "Eight brands flash by, one at a time. Then mark the ones that stuck.",
+          "start": "Start the test",
+          "memorize": "Memorize",
+          "seconds": "seconds",
+          "askTitle": "Mark the ones you remember",
+          "askCount": "marked",
+          "check": "Check",
+          "resultTitle": "Generic blurs. Strong brands stick.",
+          "labelStrong": "Brands with identity",
+          "labelGeneric": "Generic names",
+          "resultBody": "You remembered {strong} of 2 brands with identity and {generic} of 6 generic names.",
+          "resultFalse": "And you marked {count, plural, one {# name that never showed up} other {# names that never showed up}}.",
+          "resultClean": "And you fell for no fake names. Great memory!",
+          "retry": "Try again",
+          "strong": [
+            "Alba",
+            "Tucano"
+          ],
+          "generic": [
+            "Prime Solutions",
+            "Integra Group",
+            "TechNova",
+            "Max Services",
+            "Total Global",
+            "Global Tech"
+          ],
+          "decoys": [
+            "Nova Prime",
+            "Integra Max",
+            "Tech Global",
+            "Global Total"
+          ],
+          "flashIndex": "{current} of {total}",
+          "idleUnit": "brands"
+        }
+      },
+      "development": {
+        "intro": "Design that never ships is just a good intention.",
+        "lead": "We take the product from prototype to production with the same team that designed it. Fast, accessible sites, apps and systems ready to grow, with artificial intelligence where it makes a difference.",
+        "deliverables": [
+          {
+            "title": "Sites and platforms",
+            "body": "Front end and back end with performance, SEO and content management."
+          },
+          {
+            "title": "Apps and systems",
+            "body": "Web and mobile products with integrations, dashboards and business rules."
+          },
+          {
+            "title": "Applied AI",
+            "body": "Automations and smart features that solve real product problems."
+          },
+          {
+            "title": "Continuous evolution",
+            "body": "Monitoring, improvements and new releases after launch."
+          }
+        ],
+        "seoDescription": "Development and Technology at Matilha: sites, apps, systems and applied AI, from prototype to live product.",
+        "build": {
+          "label": "// FROM CODE TO LIVE",
+          "heading": "Good software is software that stays up.",
+          "scrollHint": "Scroll to ship",
+          "steps": [
+            {
+              "title": "Code",
+              "body": "Clean, typed components written to last and to change without fear."
+            },
+            {
+              "title": "Tests",
+              "body": "Every change goes through automated tests before it reaches anyone."
+            },
+            {
+              "title": "Deploy",
+              "body": "From commit to production in minutes, with previews to validate first."
+            },
+            {
+              "title": "Live",
+              "body": "Real time monitoring, high performance and a team keeping watch."
+            }
+          ],
+          "board": {
+            "file": "checkout.tsx",
+            "tests": [
+              "calculates the cart total",
+              "applies a discount coupon",
+              "handles declined payments",
+              "passes the accessibility check"
+            ],
+            "testsSummary": "4 of 4 tests passed",
+            "pipeline": [
+              "Build",
+              "Tests",
+              "Preview",
+              "Production"
+            ],
+            "deployLog": "Deploy finished in 2m 14s",
+            "live": "Live",
+            "metrics": [
+              {
+                "value": "99.98%",
+                "label": "uptime"
+              },
+              {
+                "value": "0.8s",
+                "label": "load time"
+              },
+              {
+                "value": "98",
+                "label": "performance"
+              }
+            ],
+            "onlineCount": "1,284",
+            "online": "people online now"
+          }
+        },
+        "challenge": {
+          "label": "// LIVE TEST",
+          "heading": "Click Buy as fast as you can.",
+          "lead": "Two sites, one task. One was rushed, the other was optimized. Feel the difference.",
+          "start": "Start the test",
+          "roundA": "Site 1 of 2",
+          "roundB": "Site 2 of 2",
+          "seconds": "seconds",
+          "miss": "Missed click. The page jumped.",
+          "loading": "Loading...",
+          "urlSlow": "slow-store.com",
+          "urlFast": "optimized-store.com",
+          "banner": "Free shipping today only",
+          "store": "Matilha Store",
+          "product": "Pulse X Headphones",
+          "price": "US$ 199",
+          "buy": "Buy",
+          "resultTitle": "Speed is design too.",
+          "labelA": "Slow site",
+          "labelB": "Optimized site",
+          "resultBody": "On the slow site you took {a}s. On the optimized one, {b}s.",
+          "resultMisses": "And you missed {count, plural, one {# click} other {# clicks}} because the page moved.",
+          "resultFactor": "{factor}x faster with a well built site.",
+          "resultEqual": "You were fast on both. Your customer on 4G might not be.",
+          "retry": "Try again"
+        }
+      },
+      "mvp": {
+        "intro": "Find out if the idea holds up before betting everything on it.",
+        "lead": "We test the business model with real people, prototypes and quick experiments. You choose the next step with data in hand, not guesswork.",
+        "deliverables": [
+          {
+            "title": "Clear hypotheses",
+            "body": "What has to be true for the business to work, written down and prioritized."
+          },
+          {
+            "title": "Prototypes and MVP",
+            "body": "The minimum version that lets you test value with the people who will pay for it."
+          },
+          {
+            "title": "Market experiments",
+            "body": "Landing pages, interviews and tests to measure interest and willingness."
+          },
+          {
+            "title": "Decision report",
+            "body": "Learnings, numbers and a straight recommendation: go, adjust or stop."
+          }
+        ],
+        "seoDescription": "Business Model Validation at Matilha: hypotheses, prototypes, MVP and experiments to decide with data."
+      }
+    }
   }
 }

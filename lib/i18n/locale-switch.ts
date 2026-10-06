@@ -1,10 +1,16 @@
 import { getCaseBySlug } from "@/lib/content/cases-registry";
+import { getServicePageBySlug } from "@/lib/content/services";
 import { toLogicalPath } from "@/lib/i18n/app-path";
 import type { Locale } from "@/lib/i18n/routing";
 import { defaultLocale, routing } from "@/lib/i18n/routing";
 import type { UiLanguageKey } from "@/lib/i18n/ui-languages";
 
-export type AppPathname = "/" | "/cases" | "/cases/[slug]" | "/contact" | "/careers" | "/training" | "/privacy";
+export type AppPathname =
+  | "/"
+  | "/cases"
+  | "/cases/[slug]"
+  | "/services/[slug]"
+  | "/contact" | "/careers" | "/training" | "/privacy";
 
 export const PT_VARIANT_COOKIE = "PT_VARIANT";
 
@@ -82,6 +88,17 @@ export function buildLocaleSwitchTarget({
     }
   }
 
+  if (pathname === "/services/[slug]" && slug) {
+    const service = getServicePageBySlug(currentLocale, slug);
+    if (service) {
+      return {
+        pathname: "/services/[slug]",
+        params: { slug: service.slugs[nextLocale] },
+        locale: nextLocale,
+      };
+    }
+  }
+
   const logical = toLogicalPath(pathname, currentLocale) ?? pathname;
 
   if (
@@ -110,7 +127,11 @@ export function getLocaleSwitchHref(
   const localized = routing.pathnames[target.pathname];
   let rest: string = typeof localized === "string" ? localized : localized[target.locale];
 
-  if (target.pathname === "/cases/[slug]" && "params" in target && target.params) {
+  if (
+    (target.pathname === "/cases/[slug]" || target.pathname === "/services/[slug]") &&
+    "params" in target &&
+    target.params
+  ) {
     rest = rest.replace("[slug]", target.params.slug);
   }
 

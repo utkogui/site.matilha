@@ -18,6 +18,7 @@ import {
   beautySections,
 } from "@/lib/media/beauty-color-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -134,7 +135,7 @@ export function BeautyColorCase({ content, related }: BeautyColorCaseProps) {
         <FadeInUp>
           <ul className="beauty-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>

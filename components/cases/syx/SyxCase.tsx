@@ -19,6 +19,7 @@ import {
   type SyxSwatch,
 } from "@/lib/media/syx-assets";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 type RelatedCase = {
   id: string;
@@ -81,7 +82,7 @@ export function SyxCase({ content, related }: SyxCaseProps) {
         <FadeInUp>
           <ul className="syx-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>

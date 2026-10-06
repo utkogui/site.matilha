@@ -19,6 +19,7 @@ import {
   meupsPhoneRunway,
 } from "@/lib/media/meups-shots";
 import type { CaseContent } from "@/lib/content/cases-registry";
+import { ServiceTag } from "@/components/ui/ServiceTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -100,7 +101,7 @@ export function MeuPlaystationCase({ content, related }: MeuPlaystationCaseProps
         <FadeInUp>
           <ul className="meups-services" aria-label={t("services")}>
             {content.services.map((service) => (
-              <li key={service}>{service}</li>
+              <ServiceTag key={service} label={service} />
             ))}
           </ul>
         </FadeInUp>
