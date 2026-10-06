@@ -13,6 +13,7 @@ import { NeodentCase } from "@/components/cases/neodent/NeodentCase";
 import { SyxCase } from "@/components/cases/syx/SyxCase";
 import { ConecteCase } from "@/components/cases/conecte/ConecteCase";
 import { ConectePesquisaCase } from "@/components/cases/conecte/ConectePesquisaCase";
+import { BeautyColorCase } from "@/components/cases/beauty-color/BeautyColorCase";
 import { getCaseContent, getAllCases } from "@/lib/content/cases";
 import { caseRegistry, getCaseBySlug, getCaseSlug } from "@/lib/content/cases-registry";
 import { buildCaseMetadata, buildPageTitle } from "@/lib/seo/metadata";
@@ -110,58 +111,64 @@ export default async function CaseDetailPage({
     return <ConectePesquisaCase content={content} related={related} />;
   }
 
+  if (content.id === "beauty-color") {
+    return <BeautyColorCase content={content} related={related} />;
+  }
+
   return (
-    <article className="case-detail">
-      <section className="case-hero">
-        <div className="case-hero-media">
-          <Image
-            src={content.cover}
-            alt=""
-            fill
-            className="object-cover"
-            priority
-            sizes="100vw"
-          />
-          <div className="case-hero-veil" />
-        </div>
-        <header className="container-site case-hero-content">
-          <p className="text-label mb-2">{content.client}</p>
-          <PageTitle text={content.title} />
-          <p className="case-hero-summary">{content.summary}</p>
-        </header>
-      </section>
-
-      <div className="container-site case-detail-body">
-        <LottieArrow />
-
-        <div className="mt-16 grid gap-16 lg:grid-cols-2">
-          <section>
-            <h2 className="text-label mb-4">{t("challenge")}</h2>
-            <p className="text-white/80">{content.challenge}</p>
-          </section>
-          <section>
-            <h2 className="text-label mb-4">{t("solution")}</h2>
-            <p className="whitespace-pre-line text-white/80">{content.solution}</p>
-          </section>
-        </div>
-
-        <section className="mt-16">
-          <h2 className="text-label mb-4">{t("services")}</h2>
-          <ul className="flex flex-wrap gap-3">
-            {content.services.map((service) => (
-              <li key={service} className="border border-white/20 px-4 py-2 text-sm">
-                {service}
-              </li>
-            ))}
-          </ul>
+    <>
+      <article className="case-detail">
+        <section className="case-hero">
+          <div className="case-hero-media">
+            <Image
+              src={content.cover}
+              alt=""
+              fill
+              className="object-cover"
+              priority
+              sizes="100vw"
+            />
+            <div className="case-hero-veil" />
+          </div>
+          <header className="container-site case-hero-content">
+            <p className="text-label mb-2">{content.client}</p>
+            <PageTitle text={content.title} />
+            <p className="case-hero-summary">{content.summary}</p>
+          </header>
         </section>
 
-        <section className="mt-16">
-          <ImageCarousel images={content.gallery} />
-        </section>
-      </div>
+        <div className="container-site case-detail-body">
+          <LottieArrow />
+
+          <div className="mt-16 grid gap-16 lg:grid-cols-2">
+            <section>
+              <h2 className="text-label mb-4">{t("challenge")}</h2>
+              <p className="text-white/80">{content.challenge}</p>
+            </section>
+            <section>
+              <h2 className="text-label mb-4">{t("solution")}</h2>
+              <p className="whitespace-pre-line text-white/80">{content.solution}</p>
+            </section>
+          </div>
+
+          <section className="mt-16">
+            <h2 className="text-label mb-4">{t("services")}</h2>
+            <ul className="flex flex-wrap gap-3">
+              {content.services.map((service) => (
+                <li key={service} className="border border-white/20 px-4 py-2 text-sm">
+                  {service}
+                </li>
+              ))}
+            </ul>
+          </section>
+
+          <section className="mt-16">
+            <ImageCarousel images={content.gallery} />
+          </section>
+        </div>
+      </article>
 
       <CaseRelated related={related} />
-    </article>
+    </>
   );
 }

@@ -139,6 +139,7 @@ export function CharneyCase({ content, related }: CharneyCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`charney-case ${barlowCondensed.variable}`}>
       <section ref={heroRef} className="charney-hero">
         <div className="charney-hero-split">
@@ -321,7 +322,8 @@ export function CharneyCase({ content, related }: CharneyCaseProps) {
         </div>
       </section>
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }

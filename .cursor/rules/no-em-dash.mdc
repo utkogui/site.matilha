@@ -1,0 +1,11 @@
+---
+description: Nunca usar travessão (—) ou en-dash (–) em copy do site
+alwaysApply: true
+---
+
+# Tipografia e copy
+
+- Nunca use o caractere `—` (em dash) nem `–` (en dash) em textos do site, JSON de cases, messages/i18n ou UI.
+- Isso inclui titles, summaries, challenge/solution, story, SEO e labels.
+- Prefira vírgula, ponto, dois-pontos ou reformular a frase.
+- Evite o padrão “frase — frase” típico de texto gerado por IA.

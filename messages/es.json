@@ -70,6 +70,18 @@
     "related": "Proyectos relacionados",
     "caseKindStyleguide": "Style guide y elementos",
     "conecteVoice": "// CONECTE.AI",
+    "beautyVoice": "// BEAUTY COLOR",
+    "beautyScroll": "Ver el case",
+    "beautyApproach": "// CÓMO LO HICIMOS",
+    "beautyAboutLabel": "// SOBRE",
+    "beautyHomeLabel": "// HOME",
+    "beautyProductsLabel": "// PRODUCTOS",
+    "beautyPdpLabel": "// PRODUCTO INTERNO",
+    "beautyQuizLabel": "// QUIZ",
+    "beautyFreeFromLabel": "// FREE FROM",
+    "beautySystemLabel": "// SISTEMA",
+    "beautyQuoteLabel": "// VOZ",
+    "beautyTeamLabel": "// EQUIPO",
     "conecteScroll": "Ver los planes",
     "conecteAboutLabel": "// SOBRE",
     "conectePlansLabel": "// PLANES",
@@ -381,14 +393,30 @@
     "description": "Enseñamos a equipos de cualquier área a construir sus propios productos con IA. De cero a héroe en dos semanas, dentro de tu empresa.",
     "heroLabel": "// ENTRENAMIENTO INCOMPANY",
     "heroHeading": "Lo que dependía de TI ahora nace en <u>tu equipo.</u>",
-    "heroLead": "Legal, compliance, ingeniería, operación y marketing construyen su propio módulo. En dos semanas, con IA en el proceso e inteligencia humana al mando.",
+    "heroLead": "En dos semanas el área sale con el módulo en el aire. IA en el proceso, inteligencia humana al mando.",
     "heroCta": "Lo quiero para mi equipo",
-    "doorsLabel": "Ocho puertas. Un módulo cada una.",
+    "doorsLabel": "Autonomía donde vive el problema.",
     "stats": {
-      "weeks": { "value": "2", "unit": "semanas", "label": "de cero al producto" },
-      "doors": { "value": "8", "unit": "puertas", "label": "un módulo por área" },
-      "app": { "value": "1", "unit": "aplicación", "label": "en el aire, en las manos de quien la usa" },
-      "queue": { "value": "0", "unit": "fila", "label": "el equipo no espera la siguiente" }
+      "weeks": {
+        "value": "2",
+        "unit": "semanas",
+        "label": "de cero al producto"
+      },
+      "sectors": {
+        "value": "∞",
+        "unit": "cualquier área",
+        "label": "Cada área con autonomía para hacer su producto"
+      },
+      "app": {
+        "value": "1",
+        "unit": "aplicación",
+        "label": "en el aire, en manos de quien usa"
+      },
+      "queue": {
+        "value": "0",
+        "unit": "fila",
+        "label": "el equipo no espera la siguiente"
+      }
     },
     "learnLabel": "// LO QUE OFRECEMOS",
     "learnHeading": "La demanda sigue. Quien <u>construye</u> cambia.",
@@ -396,30 +424,42 @@
     "buyKicker": "El modo normal",
     "learnKicker": "Lo que ofrecemos",
     "versusPivot": "Ahí entramos nosotros",
-    "buyTitle": "El pedido cruza la casa",
+    "buyTitle": "Saca tu proyecto del backlog",
     "learnTitle": "El laboratorio en el área",
-    "buyOutcome": "La siguiente idea entra por la misma puerta.",
-    "learnOutcome": "La siguiente idea nace en la propia área.",
+    "buyOutcome": "No acumules tickets dejando que una buena idea se olvide.",
+    "learnOutcome": "En dos semanas: producto en el aire y autonomía para el siguiente.",
     "buySteps": [
-      { "title": "Demanda", "body": "Un área necesita un producto interno." },
-      { "title": "Fila", "body": "El pedido va a TI, marketing o un proveedor." },
-      { "title": "Un producto", "body": "La entrega resuelve esa demanda." },
-      { "title": "Otra vez", "body": "La siguiente idea vuelve a la misma puerta." }
+      {
+        "title": "Backlog",
+        "body": "La idea entra en la fila y espera."
+      },
+      {
+        "title": "Espera",
+        "body": "Los tickets se acumulan. El área no avanza."
+      }
     ],
     "learnSteps": [
-      { "title": "El equipo", "body": "Quien vive el problema entra al laboratorio." },
-      { "title": "El laboratorio", "body": "Dos semanas, incompany, manos a la obra." },
-      { "title": "Autonomía", "body": "Una aplicación en el aire y desenvoltura para crear." },
-      { "title": "El siguiente", "body": "El módulo que sigue nace en la propia área." }
+      {
+        "title": "El equipo",
+        "body": "Quien vive el problema entra al laboratorio."
+      },
+      {
+        "title": "Dos semanas",
+        "body": "Incompany, manos a la obra, el módulo nace."
+      },
+      {
+        "title": "Autonomía",
+        "body": "App en el aire. El siguiente nace en la propia área."
+      }
     ],
     "shiftLabel": "// EL CAMBIO",
-    "shiftHeading": "Antes una puerta. Ahora cada área construye su propio módulo.",
+    "shiftHeading": "Antes una fila. Ahora cada área construye su módulo.",
     "beforeTitle": "Antes",
-    "beforeBody": "Un ticket a TI. Una fila en marketing. Un brief que espera. El producto interno quedaba al otro lado de la casa.",
+    "beforeBody": "Un pedido a TI. Una fila en marketing. Un briefing que espera. El producto interno quedaba del otro lado de la casa.",
     "afterTitle": "Ahora",
-    "afterBody": "Cada equipo gana desenvoltura para crear. Legal hace el suyo. Compliance hace el suyo. Ingeniería hace el suyo. La empresa deja de tener una sola puerta.",
+    "afterBody": "Cada equipo gana destreza para crear. Legal hace el suyo. Compliance hace el suyo. Ingeniería hace el suyo. La empresa deja de depender de una sola fila.",
     "beforeFormula": "áreas",
-    "beforeFormulaDoor": "puerta",
+    "beforeFormulaDoor": "fila",
     "afterFormula": "áreas",
     "afterFormulaDoor": "módulos",
     "sectorsLabel": "// ÁREAS",
@@ -467,7 +507,7 @@
     "method2Title": "Producto al final",
     "method2Body": "No es una presentación. Es una aplicación en el aire, en las manos de quien va a usarla.",
     "method3Title": "Siguiente módulo",
-    "method3Body": "Cada área gana desenvoltura para seguir sola. Matilha abre la puerta. El equipo cruza.",
+    "method3Body": "Cada área gana destreza para seguir sola. Matilha arranca. El equipo continúa.",
     "timelineLabel": "// DOS SEMANAS",
     "timelineHeading": "El equipo entra sin producto. Sale con uno en el aire.",
     "timelineLead": "Laboratorio incompany, problema real, aplicación al final. Después, quien ya construye avanza en lenguaje y datos.",
@@ -519,7 +559,12 @@
     "ctaButton": "Hablar con Matilha",
     "ctaFormulaIn": "1 entrenamiento",
     "ctaFormulaOut": "N productos",
-    "ctaFormulaNote": "La capacidad se queda en el área. El siguiente módulo no necesita cruzar la casa."
+    "ctaFormulaNote": "La capacidad se queda en el área. El siguiente módulo no necesita cruzar la casa.",
+    "shiftVersus": "vs",
+    "autonomiaPrefix": "Tu sector de",
+    "autonomiaSuffixLead": "con mucha más ",
+    "autonomiaBase": "autonom",
+    "autonomiaAccent": "ía"
   },
   "common": {
     "english": "English",

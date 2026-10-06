@@ -1,0 +1,96 @@
+{
+  "id": "beauty-color",
+  "slug": "beauty-color",
+  "title": "Beauty Color",
+  "client": "Beauty Color",
+  "summary": "Sitio y ecommerce para quien cuida cabellos crespos, rizados y ondulados, con quiz de rutina, vitrina y fichas de producto en la voz de la marca.",
+  "challenge": "Beauty Color habla con quien busca la fórmula correcta para su propio cabello. El sitio anterior apilaba catálogo. Faltaba el camino: descubrir el tipo, entender free from, llegar al producto sin perderse.",
+  "solution": "Diseñamos home, sobre, listado e interna de productos, quiz de recomendación y FAQ. La paleta violeta, magenta y amarillo sostiene la marca; la grilla de productos y el quiz guían la compra.",
+  "services": [
+    "UI | UX Design",
+    "Ecommerce"
+  ],
+  "cover": "/images/cases/beauty-color/cover.webp",
+  "coverAlt": "Case Beauty Color | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/beauty-color/screens/hero.webp",
+      "alt": "Hero Beauty Color | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produtos-lista.webp",
+      "alt": "Lista de productos | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/quiz.webp",
+      "alt": "Quiz Beauty Color | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produto-interna.webp",
+      "alt": "Producto interno | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "sestini",
+    "neodent"
+  ],
+  "story": {
+    "approachLead": "Cabello texturizado en el centro. El sitio acompaña.",
+    "approach": "Partimos de SoulPower y de la línea Beauty Color: tipografía audaz, ondas gráficas y una paleta que no pide disculpas. Cada pantalla tiene un trabajo: la home vende la marca, los productos venden la línea, el quiz reduce la duda.",
+    "deliverables": [
+      {
+        "title": "Home y sobre",
+        "body": "Hero con producto destacado, vitrina, quiz, influencers, free from y blog. La marca se presenta antes de empujar el carrito."
+      },
+      {
+        "title": "Productos",
+        "body": "Listado con filtros y cards; interna con galería, beneficios y free from. El pliegue de la grilla se pensó para scroll y descubrimiento."
+      },
+      {
+        "title": "Quiz de rutina",
+        "body": "Preguntas cortas hasta el resultado con productos recomendados y CTA de compra."
+      }
+    ],
+    "quote": "La fórmula correcta empieza por entender el cabello.",
+    "chapters": {
+      "about": {
+        "title": "Para crespos, rizados y ondulados.",
+        "body": "Beauty Color posiciona cuidado y fórmula limpia. El sitio debe parecer el producto: color, textura y confianza. Sobre sostiene la historia; la home ya entrega la línea."
+      },
+      "system": {
+        "title": "La home vende la marca en pliegues.",
+        "body": "Hero, productos en carrusel, quiz, influencers, free from, blog y social. Cada bloque tiene una salida: ver línea, hacer el quiz, seguir en Instagram."
+      },
+      "applications": {
+        "title": "La lista de productos es el pliegue que anima.",
+        "body": "Filtros, cards y CTAs en una grilla larga. En el case, la pantalla entra y el pliegue sube con el scroll. El catálogo se vuelve narrativa, no solo grilla estática.",
+        "points": [
+          "Hero de productos con tono de marca",
+          "Grilla con imagen, nombre, precio y comprar",
+          "Banner de compra al final de la lista",
+          "Interna con galería y free from"
+        ]
+      },
+      "process": {
+        "title": "Quiz: la duda se vuelve recomendación.",
+        "body": "Tres preguntas, loading y resultado. La persona sale con kit sugerido y camino claro a la tienda."
+      },
+      "palette": {
+        "title": "Violeta, magenta y amarillo.",
+        "body": "El fondo oscuro de la marca, el CTA magenta y el amarillo de apoyo cargan SoulPower. El crema sostiene los pliegues de producto y lectura."
+      },
+      "type": {
+        "title": "Display audaz, texto limpio.",
+        "body": "Títulos anchos en la voz de la marca. Sans legible para precio, filtro y formulario."
+      }
+    },
+    "team": [
+      "Equipo Matilha · UI/UX"
+    ]
+  },
+  "seo": {
+    "title": "Beauty Color | Matilha Estúdio",
+    "description": "Sitio y ecommerce Beauty Color para cabellos crespos, rizados y ondulados, con quiz, vitrina y fichas de producto."
+  }
+}

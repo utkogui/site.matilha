@@ -94,7 +94,9 @@ export async function HomeTraining() {
           {trainingStatKeys.map((key) => (
             <div key={key} className="home-training-stat">
               <dt>
-                <strong>{tTraining(`stats.${key}.value`)}</strong>
+                <strong className={key === "sectors" ? "training-infinity" : undefined}>
+                  {tTraining(`stats.${key}.value`)}
+                </strong>
                 <span>{tTraining(`stats.${key}.unit`)}</span>
               </dt>
               <dd>{tTraining(`stats.${key}.label`)}</dd>

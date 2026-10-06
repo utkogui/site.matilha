@@ -35,6 +35,7 @@ export function SestiniCase({ content, related }: SestiniCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`sestini-case ${unbounded.variable}`}>
       <section className="sestini-hero">
         <div className="sestini-hero-shape" aria-hidden>
@@ -302,7 +303,8 @@ export function SestiniCase({ content, related }: SestiniCaseProps) {
         </div>
       </section>
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }

@@ -70,6 +70,18 @@
     "related": "Related projects",
     "caseKindStyleguide": "Style guide and elements",
     "conecteVoice": "// CONECTE.AI",
+    "beautyVoice": "// BEAUTY COLOR",
+    "beautyScroll": "See the case",
+    "beautyApproach": "// HOW WE DID IT",
+    "beautyAboutLabel": "// ABOUT",
+    "beautyHomeLabel": "// HOME",
+    "beautyProductsLabel": "// PRODUCTS",
+    "beautyPdpLabel": "// PRODUCT PAGE",
+    "beautyQuizLabel": "// QUIZ",
+    "beautyFreeFromLabel": "// FREE FROM",
+    "beautySystemLabel": "// SYSTEM",
+    "beautyQuoteLabel": "// VOICE",
+    "beautyTeamLabel": "// TEAM",
     "conecteScroll": "See the plans",
     "conecteAboutLabel": "// ABOUT",
     "conectePlansLabel": "// PLANS",
@@ -381,14 +393,30 @@
     "description": "We teach teams in any department to build their own AI products. From zero to hero in two weeks, inside your company.",
     "heroLabel": "// INCOMPANY TRAINING",
     "heroHeading": "What used to wait on IT now starts in <u>your team.</u>",
-    "heroLead": "Legal, compliance, engineering, operations and marketing build their own module. In two weeks, with AI in the process and human intelligence in command.",
+    "heroLead": "In two weeks the department ships a live module. AI in the process, human intelligence in command.",
     "heroCta": "I want this for my team",
-    "doorsLabel": "Eight doors. One module each.",
+    "doorsLabel": "Autonomy where the problem lives.",
     "stats": {
-      "weeks": { "value": "2", "unit": "weeks", "label": "from zero to product" },
-      "doors": { "value": "8", "unit": "doors", "label": "one module per department" },
-      "app": { "value": "1", "unit": "application", "label": "live, in the hands of the people who use it" },
-      "queue": { "value": "0", "unit": "queue", "label": "the team does not wait for the next one" }
+      "weeks": {
+        "value": "2",
+        "unit": "weeks",
+        "label": "from zero to product"
+      },
+      "sectors": {
+        "value": "∞",
+        "unit": "any sector",
+        "label": "Every sector with the autonomy to build its own product"
+      },
+      "app": {
+        "value": "1",
+        "unit": "application",
+        "label": "live, in the hands of users"
+      },
+      "queue": {
+        "value": "0",
+        "unit": "queue",
+        "label": "the team does not wait for the next one"
+      }
     },
     "learnLabel": "// WHAT WE OFFER",
     "learnHeading": "The request stays. Who <u>builds</u> it changes.",
@@ -396,30 +424,42 @@
     "buyKicker": "The usual way",
     "learnKicker": "What we offer",
     "versusPivot": "This is where we come in",
-    "buyTitle": "The request crosses the building",
-    "learnTitle": "The lab in the team",
-    "buyOutcome": "The next idea goes through the same door.",
-    "learnOutcome": "The next idea is born in the department itself.",
+    "buyTitle": "Get your project out of the backlog",
+    "learnTitle": "The lab inside the department",
+    "buyOutcome": "Do not pile up tickets and let a good idea be forgotten.",
+    "learnOutcome": "In two weeks: a live product and autonomy for the next one.",
     "buySteps": [
-      { "title": "A request", "body": "A department needs an internal product." },
-      { "title": "A queue", "body": "The request goes to IT, marketing or a vendor." },
-      { "title": "One product", "body": "The delivery solves that request." },
-      { "title": "Again", "body": "The next idea returns to the same door." }
+      {
+        "title": "Backlog",
+        "body": "The idea joins the queue and waits."
+      },
+      {
+        "title": "Waiting",
+        "body": "Tickets pile up. The department stalls."
+      }
     ],
     "learnSteps": [
-      { "title": "The team", "body": "The people who live the problem enter the lab." },
-      { "title": "The lab", "body": "Two weeks, incompany, hands on." },
-      { "title": "Autonomy", "body": "A live application and the range to keep creating." },
-      { "title": "The next one", "body": "The following module is born in the department itself." }
+      {
+        "title": "The team",
+        "body": "The people who live the problem enter the lab."
+      },
+      {
+        "title": "Two weeks",
+        "body": "Incompany, hands-on, a module taking shape."
+      },
+      {
+        "title": "Autonomy",
+        "body": "A live app. The next one starts in the same department."
+      }
     ],
     "shiftLabel": "// THE SHIFT",
-    "shiftHeading": "One door before. Now every department builds its own module.",
+    "shiftHeading": "Before: one queue. Now each department builds its own module.",
     "beforeTitle": "Before",
-    "beforeBody": "A ticket to IT. A queue in marketing. A brief that waits. The internal product lived on the other side of the house.",
+    "beforeBody": "A request to IT. A marketing queue. A brief that waits. Internal product lived on the other side of the building.",
     "afterTitle": "Now",
-    "afterBody": "Each team gains the range to create. Legal builds its own. Compliance builds its own. Engineering builds its own. The company no longer has a single door.",
+    "afterBody": "Each team gains the craft to create. Legal builds its own. Compliance builds its own. Engineering builds its own. The company stops depending on a single queue.",
     "beforeFormula": "departments",
-    "beforeFormulaDoor": "door",
+    "beforeFormulaDoor": "queue",
     "afterFormula": "departments",
     "afterFormulaDoor": "modules",
     "sectorsLabel": "// DEPARTMENTS",
@@ -467,7 +507,7 @@
     "method2Title": "A product at the end",
     "method2Body": "Not slides. A live application in the hands of the people who will use it.",
     "method3Title": "The next module",
-    "method3Body": "Each department gains the range to keep going on its own. Matilha opens the door. The team walks through.",
+    "method3Body": "Each department gains the craft to continue alone. Matilha starts it. The team keeps going.",
     "timelineLabel": "// TWO WEEKS",
     "timelineHeading": "The team arrives without a product. It leaves with one live.",
     "timelineLead": "An incompany lab, a real problem, a working application at the end. Then teams already building go deeper into language and data.",
@@ -519,7 +559,12 @@
     "ctaButton": "Talk to Matilha",
     "ctaFormulaIn": "1 training",
     "ctaFormulaOut": "N products",
-    "ctaFormulaNote": "The capability stays in the department. The next module does not have to cross the building."
+    "ctaFormulaNote": "The capability stays in the department. The next module does not have to cross the building.",
+    "shiftVersus": "vs",
+    "autonomiaPrefix": "Your",
+    "autonomiaSuffixLead": "with much more autonom",
+    "autonomiaBase": "",
+    "autonomiaAccent": "IA"
   },
   "common": {
     "english": "English",

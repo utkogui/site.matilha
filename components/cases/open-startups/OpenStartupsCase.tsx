@@ -125,6 +125,7 @@ export function OpenStartupsCase({ content, related }: OpenStartupsCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`open-startups-case ${kanit.variable} ${readexPro.variable}`}>
       <section className="open-hero" ref={heroRef}>
         <div className="open-hero-graph" aria-hidden>
@@ -380,8 +381,9 @@ export function OpenStartupsCase({ content, related }: OpenStartupsCaseProps) {
         </div>
       </section>
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }
 

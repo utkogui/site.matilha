@@ -44,6 +44,7 @@ export function SyxCase({ content, related }: SyxCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`syx-case ${ibmPlexSans.variable} ${workSans.variable}`}>
       <section className="syx-hero">
         <div className="syx-hero-shapes" aria-hidden>
@@ -282,8 +283,9 @@ export function SyxCase({ content, related }: SyxCaseProps) {
         </div>
       </section>
 
-      <CaseRelated related={related} tone="syx" />
     </article>
+    <CaseRelated related={related} tone="syx" />
+    </>
   );
 }
 

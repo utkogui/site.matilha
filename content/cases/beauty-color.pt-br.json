@@ -1,0 +1,96 @@
+{
+  "id": "beauty-color",
+  "slug": "beauty-color",
+  "title": "Beauty Color",
+  "client": "Beauty Color",
+  "summary": "Site e ecommerce para quem cuida de cabelos crespos, cacheados e ondulados, com quiz de rotina, vitrine e páginas de produto na voz da marca.",
+  "challenge": "A Beauty Color fala com quem busca fórmula certa para o próprio cabelo. O site antigo empilhava catálogo. Faltava caminho: descobrir o tipo, entender free from, chegar no produto sem se perder.",
+  "solution": "Desenhamos home, sobre, lista e interna de produtos, quiz de recomendação e FAQ. A paleta violeta, magenta e amarelo carrega a marca; a grade de produtos e o quiz guiam a compra.",
+  "services": [
+    "UI | UX Design",
+    "Ecommerce"
+  ],
+  "cover": "/images/cases/beauty-color/cover.webp",
+  "coverAlt": "Case Beauty Color | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/beauty-color/screens/hero.webp",
+      "alt": "Hero Beauty Color | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produtos-lista.webp",
+      "alt": "Lista de produtos | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/quiz.webp",
+      "alt": "Quiz Beauty Color | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produto-interna.webp",
+      "alt": "Produto interno | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "sestini",
+    "neodent"
+  ],
+  "story": {
+    "approachLead": "Cabelo texturizado no centro. O site acompanha.",
+    "approach": "Partimos da SoulPower e da linha Beauty Color: tipografia ousada, ondas gráficas e uma paleta que não pede desculpa. Cada tela tem um trabalho: home vende a marca, produtos vendem a linha, quiz reduz dúvida.",
+    "deliverables": [
+      {
+        "title": "Home e sobre",
+        "body": "Hero com produto em destaque, vitrine, quiz, influenciadoras, free from e blog. A marca se apresenta antes de empurrar o carrinho."
+      },
+      {
+        "title": "Produtos",
+        "body": "Lista com filtros e cards; interna com galeria, benefícios e free from. A dobra da grade foi pensada para scroll e descoberta."
+      },
+      {
+        "title": "Quiz de rotina",
+        "body": "Perguntas curtas até o resultado com produtos recomendados e CTA de compra."
+      }
+    ],
+    "quote": "A fórmula certa começa em entender o cabelo.",
+    "chapters": {
+      "about": {
+        "title": "Para crespos, cacheados e ondulados.",
+        "body": "A Beauty Color posiciona cuidado e fórmula limpa. O site precisa parecer o produto: cor, textura e confiança. A página Sobre sustenta a história; a home já entrega a linha."
+      },
+      "system": {
+        "title": "A home vende a marca em dobras.",
+        "body": "Hero, produtos em carrossel, quiz, influenciadoras, free from, blog e social. Cada bloco tem uma saída: ver linha, fazer o quiz, seguir no Instagram."
+      },
+      "applications": {
+        "title": "A lista de produtos é a dobra que anima.",
+        "body": "Filtros, cards e CTAs numa grade longa. No case, a tela entra e a dobra sobe com o scroll. O catálogo vira narrativa, não só grade estática.",
+        "points": [
+          "Hero de produtos com tom da marca",
+          "Grade com imagem, nome, preço e comprar",
+          "Banner de compra no fim da lista",
+          "Interna com galeria e free from"
+        ]
+      },
+      "process": {
+        "title": "Quiz: dúvida vira recomendação.",
+        "body": "Três perguntas, loading e resultado. O usuário sai com kit sugerido e caminho claro para a loja, no mesmo espírito do Descubra seu plano, no território de cabelo."
+      },
+      "palette": {
+        "title": "Violeta, magenta e amarelo.",
+        "body": "O fundo escuro da marca, o CTA magenta e o amarelo de apoio carregam SoulPower. O creme segura as dobras de produto e leitura."
+      },
+      "type": {
+        "title": "Display ousado, texto limpo.",
+        "body": "Títulos largos e curvos na voz da marca. Interface em sans legível para preço, filtro e formulário."
+      }
+    },
+    "team": [
+      "Equipe Matilha · UI/UX"
+    ]
+  },
+  "seo": {
+    "title": "Beauty Color | Matilha Estúdio",
+    "description": "Site e ecommerce Beauty Color para cabelos crespos, cacheados e ondulados, com quiz, vitrine e páginas de produto."
+  }
+}

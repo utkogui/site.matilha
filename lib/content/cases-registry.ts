@@ -107,6 +107,18 @@ function ptCoverAlt(label: string) {
 
 export const caseRegistry: CaseRegistryItem[] = [
   {
+    id: "beauty-color",
+    slugs: { ...ptSlugs("beauty-color"), en: "beauty-color", es: "beauty-color" },
+    cover: "/images/cases/beauty-color/cover.webp",
+    coverAlt: {
+      ...ptCoverAlt("Case Beauty Color | Matilha Estúdio"),
+      en: "Beauty Color case | Matilha Estúdio",
+      es: "Case Beauty Color | Matilha Estúdio",
+    },
+    featured: true,
+    kind: "site",
+  },
+  {
     id: "syx",
     slugs: { ...ptSlugs("syx"), en: "syx", es: "syx" },
     cover: "/images/cases/syx/cover.webp",

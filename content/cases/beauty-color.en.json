@@ -1,0 +1,96 @@
+{
+  "id": "beauty-color",
+  "slug": "beauty-color",
+  "title": "Beauty Color",
+  "client": "Beauty Color",
+  "summary": "Site and ecommerce for curly, coily and wavy hair care, with a routine quiz, product grid and PDP in the brand's voice.",
+  "challenge": "Beauty Color speaks to people hunting the right formula for their own hair. The old site stacked a catalog. What was missing was a path: learn your type, understand free-from, reach the product without getting lost.",
+  "solution": "We designed home, about, product listing and PDP, a recommendation quiz and FAQ. The violet, magenta and yellow palette carries the brand; the product fold and quiz guide the purchase.",
+  "services": [
+    "UI | UX Design",
+    "Ecommerce"
+  ],
+  "cover": "/images/cases/beauty-color/cover.webp",
+  "coverAlt": "Beauty Color case | Matilha Estúdio",
+  "gallery": [
+    {
+      "src": "/images/cases/beauty-color/screens/hero.webp",
+      "alt": "Beauty Color hero | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produtos-lista.webp",
+      "alt": "Product listing | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/quiz.webp",
+      "alt": "Beauty Color quiz | Matilha Estúdio"
+    },
+    {
+      "src": "/images/cases/beauty-color/screens/produto-interna.webp",
+      "alt": "Product detail | Matilha Estúdio"
+    }
+  ],
+  "relatedCases": [
+    "conecte-ai",
+    "sestini",
+    "neodent"
+  ],
+  "story": {
+    "approachLead": "Textured hair at the center. The site keeps up.",
+    "approach": "We started from SoulPower and the Beauty Color line: bold type, graphic waves and a palette that doesn't apologize. Each screen has a job: home sells the brand, products sell the line, the quiz cuts doubt.",
+    "deliverables": [
+      {
+        "title": "Home and about",
+        "body": "Hero with a hero product, shelf, quiz, influencers, free-from and blog. The brand shows up before the cart."
+      },
+      {
+        "title": "Products",
+        "body": "Listing with filters and cards; PDP with gallery, benefits and free-from. The product fold was built for scroll and discovery."
+      },
+      {
+        "title": "Routine quiz",
+        "body": "Short questions into a result with recommended products and a buy CTA."
+      }
+    ],
+    "quote": "The right formula starts with understanding the hair.",
+    "chapters": {
+      "about": {
+        "title": "For coily, curly and wavy hair.",
+        "body": "Beauty Color stands for care and clean formulas. The site has to feel like the product: color, texture, trust. About holds the story; home already delivers the line."
+      },
+      "system": {
+        "title": "Home sells the brand in folds.",
+        "body": "Hero, product carousel, quiz, influencers, free-from, blog and social. Each block has an exit: see the line, take the quiz, follow on Instagram."
+      },
+      "applications": {
+        "title": "The product list is the fold that moves.",
+        "body": "Filters, cards and CTAs on a long grid. In the case, the screen arrives and the fold scrolls up. The catalog becomes narrative, not a static grid.",
+        "points": [
+          "Product hero in brand tone",
+          "Grid with image, name, price and buy",
+          "Buy banner at the end of the list",
+          "PDP with gallery and free-from"
+        ]
+      },
+      "process": {
+        "title": "Quiz: doubt becomes a recommendation.",
+        "body": "Three questions, loading and result. The user leaves with a suggested kit and a clear path to the shop."
+      },
+      "palette": {
+        "title": "Violet, magenta and yellow.",
+        "body": "The dark brand ground, magenta CTA and yellow support carry SoulPower. Cream holds product folds and reading."
+      },
+      "type": {
+        "title": "Bold display, clean UI type.",
+        "body": "Wide titles in the brand voice. Readable sans for price, filters and forms."
+      }
+    },
+    "team": [
+      "Matilha team · UI/UX"
+    ]
+  },
+  "seo": {
+    "title": "Beauty Color | Matilha Estúdio",
+    "description": "Beauty Color site and ecommerce for curly, coily and wavy hair, with quiz, shelf and product pages."
+  }
+}

@@ -66,12 +66,12 @@ export const services: ServiceItem[] = [
 ];
 
 export const homeFeaturedCaseIds = [
+  "beauty-color",
   "open-startups",
   "neodent",
   "sestini",
   "meu-playstation",
   "charney-companies",
-  "pubg",
 ];
 
 export const footerData = {

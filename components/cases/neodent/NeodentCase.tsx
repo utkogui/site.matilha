@@ -94,6 +94,7 @@ export function NeodentCase({ content, related }: NeodentCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`neodent-case ${publicSans.variable}`}>
       <section ref={heroRef} className="neodent-hero">
         <span className="neodent-orb neodent-orb-tl" aria-hidden />
@@ -285,7 +286,8 @@ export function NeodentCase({ content, related }: NeodentCaseProps) {
         </div>
       </section>
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }

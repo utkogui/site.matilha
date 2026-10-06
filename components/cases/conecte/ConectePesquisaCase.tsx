@@ -77,6 +77,7 @@ export function ConectePesquisaCase({ content, related }: ConectePesquisaCasePro
   }, []);
 
   return (
+    <>
     <article className={`pesquisa-case ${lexend.variable} ${asap.variable}`}>
       <section className="pesquisa-hero">
         <div className="pesquisa-hero-pattern" aria-hidden>
@@ -329,7 +330,8 @@ export function ConectePesquisaCase({ content, related }: ConectePesquisaCasePro
         </section>
       ) : null}
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }

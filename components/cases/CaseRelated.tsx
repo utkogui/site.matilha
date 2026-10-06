@@ -18,13 +18,17 @@ type CaseRelatedProps = {
   tone?: "matilha" | "syx";
 };
 
+const MAX_RELATED = 3;
+
 export function CaseRelated({ related, tone = "matilha" }: CaseRelatedProps) {
   const t = useTranslations("cases");
   const sectionRef = useRef<HTMLElement>(null);
+  const items = related.slice(0, MAX_RELATED);
+  const count = items.length;
 
   useEffect(() => {
     const section = sectionRef.current;
-    if (!section || related.length === 0) return;
+    if (!section || count === 0) return;
 
     const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (reduced) return;
@@ -45,16 +49,16 @@ export function CaseRelated({ related, tone = "matilha" }: CaseRelatedProps) {
 
       const intro = gsap.fromTo(
         cards,
-        { opacity: 0, y: 72 },
+        { opacity: 0, y: 28 },
         {
           opacity: 1,
           y: 0,
-          duration: 1,
-          stagger: 0.14,
-          ease: "power3.out",
+          duration: 0.75,
+          stagger: 0.08,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: section,
-            start: "top 82%",
+            start: "top 88%",
           },
         },
       );
@@ -69,56 +73,60 @@ export function CaseRelated({ related, tone = "matilha" }: CaseRelatedProps) {
       cancelled = true;
       cleanup?.();
     };
-  }, [related.length]);
+  }, [count]);
 
-  if (related.length === 0) return null;
+  if (count === 0) return null;
 
   return (
     <section
       ref={sectionRef}
       className={`case-related${tone === "syx" ? " is-syx" : ""}`}
+      data-count={count}
       aria-labelledby="case-related-title"
     >
-      <div className="container-site case-related-head">
-        <p className="case-related-chip">{t("nextLabel")}</p>
-        <h2 id="case-related-title" className="case-related-title">
-          {t("nextHeading")}
-        </h2>
-        <p className="case-related-cue">{t("nextCue")}</p>
-      </div>
+      <div className="container-site">
+        <div className="case-related-head">
+          <p className="case-related-chip">{t("nextLabel")}</p>
+          <div className="case-related-head-row">
+            <h2 id="case-related-title" className="case-related-title">
+              {t("nextHeading")}
+            </h2>
+            <p className="case-related-cue">{t("nextCue")}</p>
+          </div>
+        </div>
 
-      <div className="case-related-track">
-        {related.map((item, index) => (
-          <Link
-            key={item.id}
-            href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
-            className={`case-related-card${index === 0 ? " is-lead" : ""}`}
-          >
-            <span className="case-related-cover" aria-hidden>
-              <Image
-                src={item.cover}
-                alt=""
-                fill
-                className="case-related-media object-cover"
-                sizes={index === 0 ? "(max-width: 860px) 100vw, 62vw" : "(max-width: 860px) 100vw, 38vw"}
-              />
-            </span>
-            <span className="case-related-veil" aria-hidden />
-            <span className="case-related-mark" aria-hidden />
-            <span className="case-related-copy">
-              <span className="case-related-index" aria-hidden>
-                {String(index + 1).padStart(2, "0")}
+        <div className="case-related-track">
+          {items.map((item, index) => (
+            <Link
+              key={item.id}
+              href={{ pathname: "/cases/[slug]", params: { slug: item.slug } }}
+              className="case-related-card"
+            >
+              <span className="case-related-cover" aria-hidden>
+                <Image
+                  src={item.cover}
+                  alt=""
+                  fill
+                  className="case-related-media object-cover"
+                  sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                />
               </span>
-              <span className="case-related-name">{item.title}</span>
-              <span className="case-related-cta">
-                {t("viewCase")}
-                <span className="case-related-arrow" aria-hidden>
-                  →
+              <span className="case-related-veil" aria-hidden />
+              <span className="case-related-copy">
+                <span className="case-related-index" aria-hidden>
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="case-related-name">{item.title}</span>
+                <span className="case-related-cta">
+                  {t("viewCase")}
+                  <span className="case-related-arrow" aria-hidden>
+                    →
+                  </span>
                 </span>
               </span>
-            </span>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
     </section>
   );

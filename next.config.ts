@@ -5,11 +5,11 @@ const withNextIntl = createNextIntlPlugin("./lib/i18n/request.ts");
 
 const nextConfig: NextConfig = {
   // Netlify usa o adapter OpenNext, não usar output: "standalone"
-  // Permite abrir o dev server pela rede (ex.: http://10.0.1.122:3000)
-  allowedDevOrigins: ["10.0.1.122"],
+  // Permite abrir o dev server pela rede (IP da máquina na LAN)
+  allowedDevOrigins: ["10.0.1.110", "10.0.1.122"],
   images: {
     formats: ["image/avif", "image/webp"],
-    qualities: [70, 75],
+    qualities: [70, 72, 74, 75, 76, 78, 80],
   },
   async redirects() {
     return [

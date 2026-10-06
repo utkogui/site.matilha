@@ -83,6 +83,7 @@ export function ConecteCase({ content, related }: ConecteCaseProps) {
   }, []);
 
   return (
+    <>
     <article className={`conecte-case ${lexend.variable} ${asap.variable}`}>
       <section ref={heroRef} className="conecte-hero">
         <div className="conecte-hero-pattern" aria-hidden>
@@ -308,7 +309,8 @@ export function ConecteCase({ content, related }: ConecteCaseProps) {
         </section>
       ) : null}
 
-      <CaseRelated related={related} />
     </article>
+    <CaseRelated related={related} />
+    </>
   );
 }

@@ -1,11 +1,11 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { MatilhaButton } from "@/components/ui/MatilhaButton";
 import { TrainingIcon, type TrainingIconName } from "@/components/training/TrainingIcons";
+import { TrainingSectorAutonomia } from "@/components/training/TrainingSectorAutonomia";
 import { highlightTag } from "@/lib/i18n/rich-tags";
 import {
   trainingBuyStepIcons,
   trainingLearnStepIcons,
-  trainingSectorKeys,
   trainingStatKeys,
   trainingTimelineIcons,
   trainingTimelineWeekKeys,
@@ -58,17 +58,36 @@ export default async function TrainingPage({
   const buySteps = t.raw("buySteps") as VersusStep[];
   const learnSteps = t.raw("learnSteps") as VersusStep[];
   const timeline = t.raw("timeline") as Record<string, TimelineWeek>;
+  const sectors = t.raw("sectors") as Record<string, string>;
   let timelineIconIndex = 0;
 
   return (
     <article className="training-page">
       <section className="training-hero">
-        <div className="container-site training-grid">
+        <div className="training-hero-media" aria-hidden>
+          <img
+            src="/images/training/hero-incompany-1920.webp"
+            srcSet="/images/training/hero-incompany-1280.webp 1280w, /images/training/hero-incompany-1920.webp 1920w, /images/training/hero-incompany-2400.webp 2400w"
+            sizes="100vw"
+            alt=""
+            className="training-hero-image"
+            width={1920}
+            height={1280}
+            fetchPriority="high"
+          />
+          <div className="training-hero-veil" />
+        </div>
+
+        <div className="container-site training-hero-layout">
           <div className="training-hero-copy">
             <p className="mini-heading">{t("heroLabel")}</p>
-            <h1 className="training-hero-heading heading-display">
-              {t.rich("heroHeading", highlightTag)}
-            </h1>
+            <TrainingSectorAutonomia
+              prefix={t("autonomiaPrefix")}
+              suffixLead={t("autonomiaSuffixLead")}
+              autonomiaBase={t("autonomiaBase")}
+              autonomiaAccent={t("autonomiaAccent")}
+              sectors={sectors}
+            />
             <p className="training-hero-lead">{t("heroLead")}</p>
             <div className="training-hero-actions">
               <MatilhaButton href="/contact" variant="solid">
@@ -77,23 +96,16 @@ export default async function TrainingPage({
             </div>
           </div>
 
-          <aside className="training-doors" aria-label={t("doorsLabel")}>
-            <p className="training-doors-kicker">{t("doorsLabel")}</p>
-            <ul className="training-doors-grid">
-              {trainingSectorKeys.map((key) => (
-                <li key={key}>
-                  <TrainingIcon name={key} />
-                  <span>{t(`sectors.${key}`)}</span>
-                </li>
-              ))}
-            </ul>
-          </aside>
-
           <dl className="training-stats">
-            {trainingStatKeys.map((key) => (
-              <div key={key} className="training-stat">
+            {trainingStatKeys.map((key, index) => (
+              <div
+                key={key}
+                className={`training-stat${index === 0 ? " is-featured" : ""}${key === "queue" ? " is-queue" : ""}`}
+              >
                 <dt>
-                  <strong>{t(`stats.${key}.value`)}</strong>
+                  <strong className={key === "sectors" ? "training-infinity" : undefined}>
+                    {t(`stats.${key}.value`)}
+                  </strong>
                   <span>{t(`stats.${key}.unit`)}</span>
                 </dt>
                 <dd>{t(`stats.${key}.label`)}</dd>
@@ -117,7 +129,7 @@ export default async function TrainingPage({
                 <p className="training-versus-kicker">{t("buyKicker")}</p>
                 <h3 className="training-versus-title">{t("buyTitle")}</h3>
               </header>
-              <ol className="training-flow training-flow-loop training-flow-row">
+              <ol className="training-flow training-flow-stuck">
                 {buySteps.map((step, index) => (
                   <li key={step.title}>
                     <span className="training-versus-node">
@@ -125,6 +137,7 @@ export default async function TrainingPage({
                     </span>
                     <div>
                       <h4>{step.title}</h4>
+                      <p>{step.body}</p>
                     </div>
                   </li>
                 ))}
@@ -139,7 +152,7 @@ export default async function TrainingPage({
                 <p className="training-versus-kicker">{t("learnKicker")}</p>
                 <h3 className="training-versus-title">{t("learnTitle")}</h3>
               </header>
-              <ol className="training-flow training-flow-spine training-flow-grid">
+              <ol className="training-flow training-flow-progress">
                 {learnSteps.map((step, index) => (
                   <li key={step.title}>
                     <span className="training-versus-node">
@@ -163,28 +176,31 @@ export default async function TrainingPage({
           <p className="mini-heading">{t("shiftLabel")}</p>
           <h2 className="heading-display training-section-heading">{t("shiftHeading")}</h2>
 
-          <div className="training-shift-grid">
-            <article className="training-shift-card">
-              <p className="training-shift-index">01</p>
-              <h3>{t("beforeTitle")}</h3>
+          <div className="training-shift-compare" role="group" aria-label={t("shiftHeading")}>
+            <article className="training-shift-card training-shift-before">
+              <p className="training-shift-side">{t("beforeTitle")}</p>
               <p>{t("beforeBody")}</p>
               <p className="training-shift-formula" aria-hidden>
-                <span>8</span>
+                <span className="training-infinity">∞</span>
                 <small>{t("beforeFormula")}</small>
                 <span className="training-shift-arrow">→</span>
                 <span>1</span>
                 <small>{t("beforeFormulaDoor")}</small>
               </p>
             </article>
+
+            <p className="training-shift-vs" aria-hidden>
+              {t("shiftVersus")}
+            </p>
+
             <article className="training-shift-card training-shift-card-now">
-              <p className="training-shift-index">02</p>
-              <h3>{t("afterTitle")}</h3>
+              <p className="training-shift-side">{t("afterTitle")}</p>
               <p>{t("afterBody")}</p>
               <p className="training-shift-formula" aria-hidden>
-                <span>8</span>
+                <span className="training-infinity">∞</span>
                 <small>{t("afterFormula")}</small>
                 <span className="training-shift-arrow">→</span>
-                <span>8</span>
+                <span className="training-infinity">∞</span>
                 <small>{t("afterFormulaDoor")}</small>
               </p>
             </article>
@@ -197,23 +213,6 @@ export default async function TrainingPage({
           <p className="mini-heading">{t("timelineLabel")}</p>
           <h2 className="heading-display training-section-heading">{t("timelineHeading")}</h2>
           <p className="training-section-lead">{t("timelineLead")}</p>
-
-          <div className="training-weekbar" aria-hidden>
-            <div className="training-weekbar-lane">
-              <div className="training-weekbar-seg">
-                <p>{t("timeline.week1.label")}</p>
-                <span className="training-weekbar-fill" />
-              </div>
-              <div className="training-weekbar-seg">
-                <p>{t("timeline.week2.label")}</p>
-                <span className="training-weekbar-fill" />
-              </div>
-              <div className="training-weekbar-seg training-weekbar-after">
-                <p>{t("timeline.after.label")}</p>
-                <span className="training-weekbar-fill" />
-              </div>
-            </div>
-          </div>
 
           <ol className="training-timeline">
             {trainingTimelineWeekKeys.map((weekKey) => {
@@ -312,24 +311,18 @@ export default async function TrainingPage({
       </section>
 
       <section className="training-cta">
-        <div className="container-site training-cta-grid">
-          <div>
-            <p className="mini-heading">{t("ctaLabel")}</p>
-            <h2 className="font-display training-cta-heading">{t("ctaHeading")}</h2>
-            <p className="training-cta-body">{t("ctaBody")}</p>
-            <MatilhaButton href="/contact" variant="solid" className="training-cta-button">
-              {t("ctaButton")}
-            </MatilhaButton>
-          </div>
-
-          <aside className="training-cta-graphic" aria-hidden>
-            <p className="training-cta-formula">
-              <span>{t("ctaFormulaIn")}</span>
-              <span className="training-shift-arrow">→</span>
-              <span>{t("ctaFormulaOut")}</span>
-            </p>
-            <p>{t("ctaFormulaNote")}</p>
-          </aside>
+        <div className="container-site training-cta-simple">
+          <p className="mini-heading">{t("ctaLabel")}</p>
+          <h2 className="font-display training-cta-heading">
+            <span>{t("ctaFormulaIn")}</span>
+            <span className="training-shift-arrow" aria-hidden>
+              →
+            </span>
+            <span>{t("ctaFormulaOut")}</span>
+          </h2>
+          <MatilhaButton href="/contact" variant="solid" className="training-cta-button">
+            {t("ctaButton")}
+          </MatilhaButton>
         </div>
       </section>
     </article>
