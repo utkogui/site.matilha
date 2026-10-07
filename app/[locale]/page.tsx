@@ -87,15 +87,6 @@ export default async function HomePage({
 
       <HomeTraining />
 
-      <section id="home-grow" className="home-section home-section-grow">
-        <div className="container-site">
-          <p className="mini-heading">{t("growLabel")}</p>
-          <AnimatedHeading as="h2" className="heading-display">
-            {t.rich("growHeading", highlightTag)}
-          </AnimatedHeading>
-        </div>
-      </section>
-
       <section id="home-clients" className="home-section home-section-clients">
         <div className="container-site">
           <div className="clients-header">

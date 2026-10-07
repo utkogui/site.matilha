@@ -26,6 +26,8 @@ export function HeroVideo() {
 
       <div className="hero-content-wrap">
         <h1 className="hero-title">MATILHA</h1>
+      </div>
+      <div className="hero-scroll-slot">
         <HeroScrollCue targetId="home-studio" label={t("scrollDown")}>
           {t("heroScrollHint")}
         </HeroScrollCue>

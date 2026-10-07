@@ -98,6 +98,7 @@ export function BrandingBuild() {
             </span>
             <span className="brand-app-label">{apps[2]}</span>
           </div>
+          <p className="brand-benefit">{t("board.benefit")}</p>
         </div>
       </div>
     </ServiceStepper>

@@ -41,8 +41,6 @@
     "clientsTalkCta": "Vamos conversar",
     "viewAllCases": "Ver todos os nossos cases",
     "ctaTitle": "Vamos transformar sua ideia juntos",
-    "growLabel": "// MATILHA.DIGITAL",
-    "growHeading": "Desenhamos produtos que moldam <u>experiências.</u>",
     "manifestoHint": "Role para ler",
     "trainingLabel": "// INCOMPANY",
     "trainingHeading": "Ensinamos o seu time a construir o <u>próprio produto.</u>",
@@ -641,8 +639,8 @@
               "body": "Cor, imagem e marca entram para criar desejo, sem atrapalhar a leitura."
             },
             {
-              "title": "Interação",
-              "body": "Cada clique responde. Feedback claro transforma intenção em conversão."
+              "title": "Conversão",
+              "body": "A pessoa acha, entende e compra. Menos dúvida na tela vira mais resultado no caixa."
             }
           ],
           "mock": {
@@ -722,7 +720,147 @@
             "body": "Prioridades, pilotos e indicadores para tirar o novo serviço do papel."
           }
         ],
-        "seoDescription": "Design de Serviço na Matilha: jornadas, blueprints e pesquisa para serviços que funcionam ponta a ponta."
+        "seoDescription": "Design de Serviço na Matilha: jornadas, blueprints e pesquisa para serviços que funcionam ponta a ponta.",
+        "build": {
+          "label": "// DA FRENTE AOS BASTIDORES",
+          "heading": "A fila quase nunca está no balcão.",
+          "scrollHint": "Role para ver os bastidores",
+          "steps": [
+            {
+              "title": "Jornada",
+              "body": "Reclamam da espera na retirada. Ao mapear, a dor está no site que vende o que a loja não tem."
+            },
+            {
+              "title": "Frente",
+              "body": "O que a pessoa vê: pedido confirmado, fila, balcão, sacola. A promessa é pegar e ir embora."
+            },
+            {
+              "title": "Bastidores",
+              "body": "Site e estoque não se falam. A espera nasce nesse handoff, não no sorriso do balcão."
+            },
+            {
+              "title": "Retorno",
+              "body": "Pedido reserva a peça. Quem chega pega e sai. Quem opera para de improvisar na prateleira."
+            }
+          ],
+          "board": {
+            "case": "Lume",
+            "complaint": "Reclamação: espera demais na retirada",
+            "fixed": "Serviço redesenhado",
+            "momentsLabel": "Momento",
+            "moments": ["Comprar", "Chegar", "Balcão", "Depósito"],
+            "clientLabel": "Cliente",
+            "frontLabel": "Na frente",
+            "backLabel": "Bastidores",
+            "visibility": "Linha de visibilidade",
+            "interaction": "Linha de interação",
+            "client": [
+              { "title": "No app", "messy": "Pronto em 1h", "fix": "Peça reservada" },
+              { "title": "Na loja", "messy": "40 min sem sacola", "fix": "Retira e sai" },
+              { "title": "No balcão", "messy": "Atendem em 2 min", "fix": "Sacola na mão" },
+              { "title": "No fim", "messy": "Não tem a peça", "fix": "Pedido e estoque juntos" }
+            ],
+            "front": [
+              { "title": "Site", "messy": "Vende o que quiser", "fix": "Só o que tem na loja" },
+              { "title": "Fila", "messy": "Sem previsão", "fix": "Pedido já separado" },
+              { "title": "Balcão", "messy": "Procura na hora", "fix": "Sacola pronta" },
+              { "title": "Prateleira", "messy": "Vazia no fim", "fix": "Reservada na compra" }
+            ],
+            "back": [
+              { "title": "Pedido", "messy": "Não baixa na loja", "fix": "Cai no estoque na hora" },
+              { "title": "Estoque", "messy": "Outro sistema", "fix": "O mesmo do site" },
+              { "title": "Equipe", "messy": "Sem a peça", "fix": "Separou antes" },
+              { "title": "Depósito", "messy": "Descobre tarde", "fix": "Confirma na venda" }
+            ],
+            "kpis": [
+              { "label": "Espera", "from": "40 min", "to": "4 min" },
+              { "label": "Pedido na loja", "from": "61%", "to": "98%" },
+              { "label": "Volta a comprar", "from": "22%", "to": "64%" }
+            ]
+          }
+        },
+        "challenge": {
+          "label": "// A RECLAMAÇÃO MENTE",
+          "heading": "Comprou no site. Por que ainda espera?",
+          "lead": "Na Lume, quem compra online chega achando que é só pegar. A loja promete retirada em 1 hora. Entre na jornada e clique no que realmente quebra o serviço.",
+          "start": "Comprar e retirar",
+          "store": "Lume",
+          "complaint": "Reclamação: espera demais na retirada",
+          "liveLabel": "Você é quem compra",
+          "status": "Pedido pronto em 1 hora · retirada na loja",
+          "diagnose": "A queixa é a fila da retirada. Onde o serviço quebra de verdade?",
+          "fixedLabel": "Serviço redesenhado",
+          "reveal": "O site vendeu o que a loja não tinha. Você esperou por um pedido que não existia na prateleira.",
+          "resultTitle": "A reclamação aponta o sintoma, não a causa.",
+          "resultBody": "Você precisou de {count, plural, one {# tentativa extra} other {# tentativas extras}}. A fila dói. O pedido nunca esteve no estoque.",
+          "resultClean": "Você não caiu na fila. A maioria aponta a espera e ninguém olha o depósito.",
+          "retry": "Fazer de novo",
+          "scene": {
+            "onTime": "no horário",
+            "ready": "Pronto em 1h",
+            "appTitle": "Pedido",
+            "product": "Jaqueta Lume",
+            "order": "Pedido 1042",
+            "paid": "pago",
+            "pickupCta": "Retirar na loja",
+            "waitTitle": "Fila da retirada",
+            "ticket": "Pedido 1042",
+            "desk": "Balcão 2",
+            "noEta": "sem previsão",
+            "you": "você",
+            "called": "1041 pronto",
+            "arrived": "chegou no horário",
+            "waitClock": "40 min na loja",
+            "counterTitle": "Balcão",
+            "counterOk": "2 min",
+            "counterTime": "2 min",
+            "staff": "loja",
+            "bag": "sacola",
+            "stockTitle": "Depósito",
+            "stockError": "Não tem na loja",
+            "stockHint": "O site vendeu à frente"
+          },
+          "rooms": [
+            { "id": "app", "title": "Pedido", "line": "Pronto em 1h", "miss": "O app cumpriu a promessa. A espera não nasce aqui." },
+            { "id": "wait", "title": "Fila da loja", "line": "40 min sem sacola", "miss": "Aqui você sofre. O pedido nunca esteve nesta fila." },
+            { "id": "counter", "title": "Balcão", "line": "Achou você em 2 min", "miss": "O atendimento foi rápido. Não era o balcão." },
+            { "id": "stock", "title": "Depósito", "line": "Não tem na loja", "fix": "Site e estoque no mesmo fluxo" }
+          ],
+          "live": [
+            {
+              "id": "app",
+              "title": "Retire em 1 hora",
+              "body": "Pago. Confirmado. A loja fica a 10 minutos. Você não deveria esperar.",
+              "cta": "Ir à loja"
+            },
+            {
+              "id": "wait",
+              "title": "A sacola não está pronta",
+              "body": "Você chegou no horário da retirada. Ninguém tem o pedido. O painel não mostra previsão.",
+              "cta": "Continuar esperando",
+              "cta2": "Fui chamado",
+              "clock": "18 min na loja",
+              "clock2": "40 min na loja"
+            },
+            {
+              "id": "counter",
+              "title": "O balcão te acha em 2 min",
+              "body": "A pessoa atende rápido. O problema não é o sorriso no balcão.",
+              "cta": "Pedir a sacola"
+            }
+          ],
+          "designed": [
+            "Pedido reserva o estoque",
+            "Retirada sem fila",
+            "Sacola pronta no balcão",
+            "Site e loja no mesmo fluxo"
+          ],
+          "kpis": [
+            { "label": "Espera", "from": "40 min", "to": "4 min" },
+            { "label": "Pedido na loja", "from": "61%", "to": "98%" },
+            { "label": "Volta a comprar", "from": "22%", "to": "64%" }
+          ]
+        }
       },
       "daas": {
         "intro": "Um time de design dentro do seu, sem a demora de contratar.",
@@ -745,7 +883,120 @@
             "body": "Gestão próxima e indicadores para garantir qualidade e entrega."
           }
         ],
-        "seoDescription": "Alocação de designers (DaaS) na Matilha: time de design dedicado e integrado ao seu produto, com flexibilidade."
+        "seoDescription": "Alocação de designers (DaaS) na Matilha: time de design dedicado e integrado ao seu produto, com flexibilidade.",
+        "build": {
+          "label": "// DA CADEIRA AO FLUXO",
+          "heading": "Design dentro do time, não do lado de fora.",
+          "scrollHint": "Role para sentar o time",
+          "steps": [
+            {
+              "title": "Cadeira",
+              "body": "O squad já roda. Falta quem desenha com eles, todo dia."
+            },
+            {
+              "title": "Pessoa",
+              "body": "Entra um designer da Matilha, no ritmo e nas ferramentas de vocês."
+            },
+            {
+              "title": "Rituais",
+              "body": "Sem design, a daily acontece sem quem desenha. Com Matilha, daily, pairing e review trazem a pessoa para dentro do método."
+            },
+            {
+              "title": "Velocidade",
+              "body": "Contratar leva 45 dias com a cadeira ainda vazia. Alocar senta em 1 semana, com gestão e resultado no ritmo do produto."
+            }
+          ],
+          "board": {
+            "app": "Squad Atlas",
+            "countEmpty": "Falta design",
+            "countFull": "Time completo",
+            "waitingLabel": "Parados na fila",
+            "emptyTitle": "Cadeira vazia",
+            "emptyRole": "Design",
+            "people": [
+              { "role": "PM", "name": "Ana", "initial": "A" },
+              { "role": "Dev", "name": "João", "initial": "J" },
+              { "role": "QA", "name": "Lia", "initial": "L" },
+              { "role": "CS", "name": "Bia", "initial": "B" }
+            ],
+            "designer": {
+              "name": "Marina",
+              "role": "Product Designer",
+              "from": "Matilha",
+              "initial": "M",
+              "line": "No ritmo e nas ferramentas de vocês."
+            },
+            "tools": ["Figma", "Linear", "Slack"],
+            "ritualBefore": "Sem design",
+            "ritualAfter": "Com Matilha",
+            "ritualEmptyWho": "Ninguém de design",
+            "ritualGap": "falta",
+            "agenda": [
+              { "day": "Seg", "time": "9h15", "title": "Daily", "who": "Marina com o squad", "whoEmpty": "Squad sem design" },
+              { "day": "Qua", "time": "14h", "title": "Pairing", "who": "Marina e João", "whoEmpty": "Dev sozinho" },
+              { "day": "Qui", "time": "16h", "title": "Review", "who": "Marina com produto", "whoEmpty": "Review sem design" }
+            ],
+            "tickets": ["Checkout", "Onboarding", "Busca"],
+            "speedHireLabel": "Seletivo",
+            "speedHireTime": "45 dias",
+            "speedHireNote": "Cadeira ainda vazia. Fila presa.",
+            "speedDaasLabel": "Alocar",
+            "speedDaasTime": "1 semana",
+            "shipped": "No time, com gestão e resultado no ritmo do produto."
+          }
+        },
+        "challenge": {
+          "label": "// QUEM SENTA AQUI?",
+          "heading": "A cadeira é necessária agora. O cargo permanente, não.",
+          "lead": "O squad já roda. Design falta. Veja o que acontece se você abre um seletivo, e o que muda quando aloca alguém completo por um período.",
+          "start": "Ver a cadeira vazia",
+          "squad": "Squad Atlas",
+          "gapChip": "Cadeiras abertas · agora",
+          "openLabel": "Cadeiras abertas",
+          "openFilledLabel": "Uma alocada, outras disponíveis",
+          "promptKicker": "// SUA VEZ",
+          "promptReady": "// PRÓXIMO PASSO",
+          "waitingLabel": "Parados na fila",
+          "hireWaiting": "Fila crescendo no seletivo",
+          "movingLabel": "Andando com design",
+          "hireRunning": "Dia {days} de 45 no seletivo",
+          "hireMeter": "A cadeira continua vazia",
+          "gapLead": "A cadeira é necessária. Como vocês resolvem?",
+          "hireLead": "45 dias depois, o time ainda espera. A cadeira não esperou o processo.",
+          "hireAction": "Abrir seletivo",
+          "hireActionHint": "Ver os 45 dias passar",
+          "daasAction": "Alocar Matilha",
+          "daasActionHint": "Sentar alguém completo agora",
+          "period": "Alocada · 12 semanas",
+          "people": [
+            { "role": "PM", "name": "Ana", "initial": "A" },
+            { "role": "Dev", "name": "João", "initial": "J" },
+            { "role": "QA", "name": "Lia", "initial": "L" },
+            { "role": "CS", "name": "Bia", "initial": "B" }
+          ],
+          "openRoles": ["Designer", "Writer", "Service Designer", "PO", "PM", "QA", "IA"],
+          "tickets": ["Checkout", "Onboarding", "Busca"],
+          "hireTickets": ["Homologação", "Entrevistas", "Proposta"],
+          "designer": {
+            "name": "Marina",
+            "role": "Product Designer",
+            "initial": "M"
+          },
+          "resultTitle": "A cadeira precisa de alguém agora.",
+          "resultBody": "Você viu o seletivo correr e a cadeira continuar vazia. Alocar senta um profissional completo por um período, sem abrir headcount permanente.",
+          "resultClean": "Você alocou sem esperar o seletivo. Gap resolvido em 1 semana, por um período definido.",
+          "points": [
+            "Profissional completo no squad",
+            "Por um período definido",
+            "Sem abrir contratação permanente",
+            "No time em 1 semana"
+          ],
+          "hireTime": "45 dias",
+          "hireLabel": "seletivo, ainda vazio",
+          "daasTime": "1 semana",
+          "daasLabel": "alocado e produzindo",
+          "retry": "Ver de novo"
+        }
       },
       "branding": {
         "intro": "Antes de ser vista, uma marca precisa ser entendida.",
@@ -787,8 +1038,8 @@
               "body": "Paleta e tipografia dão voz e temperatura à marca."
             },
             {
-              "title": "Aplicações",
-              "body": "A marca sai do papel e vive na embalagem, na tela e na rua."
+              "title": "Lembrança",
+              "body": "Marca que fica na cabeça é marca que se escolhe. Lembrança vira consumo, não só papel timbrado."
             }
           ],
           "board": {
@@ -812,7 +1063,8 @@
               "App"
             ],
             "cardName": "Marina Alves",
-            "cardRole": "Mestre de torra"
+            "cardRole": "Mestre de torra",
+            "benefit": "Marca lembrada é marca comprada."
           }
         },
         "challenge": {
@@ -894,8 +1146,8 @@
               "body": "Do commit à produção em minutos, com previews para validar antes."
             },
             {
-              "title": "No ar",
-              "body": "Monitoramento em tempo real, performance alta e o time de olho."
+              "title": "Confiança",
+              "body": "Produto no ar, rápido e de pé. Menos queda, menos retrabalho, mais gente usando de verdade."
             }
           ],
           "board": {
@@ -981,7 +1233,94 @@
             "body": "Aprendizados, números e recomendação objetiva: seguir, ajustar ou parar."
           }
         ],
-        "seoDescription": "Validação de Modelo de Negócio na Matilha: hipóteses, protótipos, MVP e experimentos para decidir com dados."
+        "seoDescription": "Validação de Modelo de Negócio na Matilha: hipóteses, protótipos, MVP e experimentos para decidir com dados.",
+        "build": {
+          "label": "// DA APOSTA À PROVA",
+          "heading": "A ideia só vale quando alguém prova.",
+          "scrollHint": "Role para validar",
+          "steps": [
+            {
+              "title": "Hipótese",
+              "body": "A frase fica na mesa: se o pai consegue pediatra no mesmo dia, paga na hora."
+            },
+            {
+              "title": "Protótipo",
+              "body": "Sem app. A Matilha marca a consulta no WhatsApp, numa tarde."
+            },
+            {
+              "title": "Experimento",
+              "body": "Os mesmos 20 pais, no WhatsApp. Quem pagou, quem marcou no dia, quem repetiu a dor."
+            },
+            {
+              "title": "Decisão",
+              "body": "O feito à mão segurou. O app só entra depois disso."
+            }
+          ],
+          "board": {
+            "case": "Pediatra no mesmo dia",
+            "chips": ["Escrita, sem prova", "Feito à mão", "20 pais no WhatsApp", "Decisão tomada"],
+            "betLabel": "A aposta",
+            "if": "Se",
+            "hypothesis": "um pai conseguir pediatra no mesmo dia",
+            "then": "então",
+            "outcome": "paga R$ 29 na hora.",
+            "noiseLabel": "Isso não prova",
+            "noise": ["2 mil likes", "Minha mãe adorou", "Slide bonito"],
+            "emptyCount": "0/20",
+            "emptyTitle": "pais ouvidos",
+            "emptyBody": "A frase está escrita. Falta marcar uma consulta de verdade.",
+            "chatTitle": "WhatsApp",
+            "chatWho": "Matilha",
+            "thread": [
+              { "from": "pai", "text": "Meu filho está com febre, 2 anos." },
+              { "from": "matilha", "text": "Dra. Ana hoje, 16h. R$ 29." },
+              { "from": "pai", "text": "Pode marcar." }
+            ],
+            "proto": "Sem app. Uma tarde.",
+            "payLabel": "pagariam R$ 29",
+            "accessValue": "9",
+            "accessLabel": "marcadas no mesmo dia",
+            "talkValue": "7",
+            "talkLabel": "entrevistas, mesma dor",
+            "quotes": ["Marcou no WhatsApp em dois minutos. O plano demora três dias."],
+            "stamp": "SEGUIR",
+            "decision": "O feito à mão segurou.",
+            "next": "Próximo: 50 pais, ainda sem app."
+          }
+        },
+        "challenge": {
+          "label": "// EVIDÊNCIA OU VAIDADE",
+          "heading": "Separe evidência de vaidade.",
+          "lead": "Dez sinais. Evidência é o que alguém fez. O resto é vaidade.",
+          "start": "Ver as evidências",
+          "askTitle": "Arraste a evidência para Evidência. O resto é vaidade.",
+          "decideLead": "Separou. Agora, Ir.",
+          "proofLabel": "Evidência",
+          "noiseLabel": "Vaidade",
+          "go": "Ir",
+          "and": "e",
+          "resultGoTitle": "A evidência segurou.",
+          "resultGoBody": "Pagamento, consulta e a mesma dor ficaram. A vaidade ficou de fora.",
+          "resultBlindTitle": "Você foi, mas não devia.",
+          "whyVanity": "Entrou como evidência: {items}.",
+          "whyMissed": "Ficou na vaidade: {items}.",
+          "whyClose": "Isso não sustenta a ida. Like, mãe, slide e newsletter não pagam boleto.",
+          "retry": "Fazer de novo",
+          "real": [
+            "12 de 20 pais pagariam R$ 29",
+            "9 consultas marcadas no WhatsApp, no mesmo dia",
+            "7 pais descrevem a mesma dor",
+            "4 pais mandaram o comprovante de R$ 29"
+          ],
+          "vanity": [
+            "2 mil likes no post de lançamento",
+            "Minha mãe achou incrível",
+            "O concorrente já faz algo parecido",
+            "O pitch tem um slide bonito",
+            "400 inscritos na newsletter, nenhum clique",
+            "O logo novo ficou bonito"
+          ]
+        }
       }
     }
   }

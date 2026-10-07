@@ -6,8 +6,14 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { HeroScrollCue } from "@/components/media/HeroScrollCue";
 import { BrandingBuild } from "@/components/services/branding/BrandingBuild";
 import { BrandingChallenge } from "@/components/services/branding/BrandingChallenge";
+import { DaasBuild } from "@/components/services/daas/DaasBuild";
+import { DaasChallenge } from "@/components/services/daas/DaasChallenge";
 import { DevelopmentBuild } from "@/components/services/development/DevelopmentBuild";
 import { DevelopmentChallenge } from "@/components/services/development/DevelopmentChallenge";
+import { MvpBuild } from "@/components/services/mvp/MvpBuild";
+import { MvpChallenge } from "@/components/services/mvp/MvpChallenge";
+import { ServiceDesignBuild } from "@/components/services/service-design/ServiceDesignBuild";
+import { ServiceDesignChallenge } from "@/components/services/service-design/ServiceDesignChallenge";
 import { UxuiBuild } from "@/components/services/uxui/UxuiBuild";
 import { UxuiChallenge } from "@/components/services/uxui/UxuiChallenge";
 import { getAllCases } from "@/lib/content/cases";
@@ -104,7 +110,7 @@ export default async function ServicePage({ params }: ServicePageParams) {
           <p className="service-hero-tagline">{getServiceBlurb(locale as Locale, service.key)}</p>
         </div>
 
-        <div className="service-hero-cue">
+        <div className="hero-scroll-slot">
           <HeroScrollCue targetId="service-intro" label={t("common.scrollDown")}>
             {t("common.scrollHint")}
           </HeroScrollCue>
@@ -143,6 +149,20 @@ export default async function ServicePage({ params }: ServicePageParams) {
         </>
       ) : null}
 
+      {service.key === "serviceDesign" ? (
+        <>
+          <ServiceDesignBuild />
+          <ServiceDesignChallenge />
+        </>
+      ) : null}
+
+      {service.key === "daas" ? (
+        <>
+          <DaasBuild />
+          <DaasChallenge />
+        </>
+      ) : null}
+
       {service.key === "branding" ? (
         <>
           <BrandingBuild />
@@ -154,6 +174,13 @@ export default async function ServicePage({ params }: ServicePageParams) {
         <>
           <DevelopmentBuild />
           <DevelopmentChallenge />
+        </>
+      ) : null}
+
+      {service.key === "mvp" ? (
+        <>
+          <MvpBuild />
+          <MvpChallenge />
         </>
       ) : null}
 

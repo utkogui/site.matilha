@@ -41,8 +41,6 @@
     "clientsTalkCta": "Let's talk",
     "viewAllCases": "View all our work",
     "ctaTitle": "Let's transform your idea together",
-    "growLabel": "// MATILHA.DIGITAL",
-    "growHeading": "We design products that shape <u>experiences.</u>",
     "manifestoHint": "Scroll to read",
     "trainingLabel": "// INCOMPANY",
     "trainingHeading": "We teach your team to build its <u>own product.</u>",
@@ -641,8 +639,8 @@
               "body": "Color, imagery and brand add desire without getting in the way."
             },
             {
-              "title": "Interaction",
-              "body": "Every click responds. Clear feedback turns intent into conversion."
+              "title": "Conversion",
+              "body": "People find it, get it and buy. Less doubt on the screen turns into more result at checkout."
             }
           ],
           "mock": {
@@ -722,7 +720,147 @@
             "body": "Priorities, pilots and metrics to get the new service off the ground."
           }
         ],
-        "seoDescription": "Service Design at Matilha: journeys, blueprints and research for services that work end to end."
+        "seoDescription": "Service Design at Matilha: journeys, blueprints and research for services that work end to end.",
+        "build": {
+          "label": "// FRONTSTAGE TO BACKSTAGE",
+          "heading": "The queue is almost never the counter.",
+          "scrollHint": "Scroll to see backstage",
+          "steps": [
+            {
+              "title": "Journey",
+              "body": "People complain about waiting to pick up. Mapping it shows the pain is the site selling what the store does not have."
+            },
+            {
+              "title": "Frontstage",
+              "body": "What they see: confirmed order, queue, counter, bag. The promise is grab it and go."
+            },
+            {
+              "title": "Backstage",
+              "body": "Site and stock do not talk. The wait is born in that handoff, not in the smile at the counter."
+            },
+            {
+              "title": "Return",
+              "body": "The order reserves the piece. People pick up and leave. Operations stop improvising on the shelf."
+            }
+          ],
+          "board": {
+            "case": "Lume",
+            "complaint": "Complaint: waiting too long to pick up",
+            "fixed": "Service redesigned",
+            "momentsLabel": "Moment",
+            "moments": ["Buy", "Arrive", "Counter", "Stock"],
+            "clientLabel": "Customer",
+            "frontLabel": "Frontstage",
+            "backLabel": "Backstage",
+            "visibility": "Line of visibility",
+            "interaction": "Line of interaction",
+            "client": [
+              { "title": "In the app", "messy": "Ready in 1h", "fix": "Item reserved" },
+              { "title": "In store", "messy": "40 min, no bag", "fix": "Pick up and go" },
+              { "title": "At the counter", "messy": "Served in 2 min", "fix": "Bag in hand" },
+              { "title": "At the end", "messy": "Item missing", "fix": "Order and stock together" }
+            ],
+            "front": [
+              { "title": "Site", "messy": "Sells anything", "fix": "Only what the store has" },
+              { "title": "Queue", "messy": "No estimate", "fix": "Order already picked" },
+              { "title": "Counter", "messy": "Searches on the spot", "fix": "Bag ready" },
+              { "title": "Shelf", "messy": "Empty at the end", "fix": "Reserved at purchase" }
+            ],
+            "back": [
+              { "title": "Order", "messy": "Never hits the store", "fix": "Lands in stock at once" },
+              { "title": "Stock", "messy": "Another system", "fix": "The same as the site" },
+              { "title": "Staff", "messy": "No item", "fix": "Picked it earlier" },
+              { "title": "Backroom", "messy": "Finds out too late", "fix": "Confirms at sale" }
+            ],
+            "kpis": [
+              { "label": "Wait", "from": "40 min", "to": "4 min" },
+              { "label": "In store", "from": "61%", "to": "98%" },
+              { "label": "Buys again", "from": "22%", "to": "64%" }
+            ]
+          }
+        },
+        "challenge": {
+          "label": "// THE COMPLAINT LIES",
+          "heading": "You bought online. Why are you still waiting?",
+          "lead": "At Lume, people who buy online arrive thinking it is grab and go. The store promises pickup in 1 hour. Walk the visit, then click what is actually breaking the service.",
+          "start": "Buy and pick up",
+          "store": "Lume",
+          "complaint": "Complaint: waiting too long to pick up",
+          "liveLabel": "You are the shopper",
+          "status": "Order ready in 1 hour · pick up in store",
+          "diagnose": "The complaint is the pickup queue. Where does the service actually break?",
+          "fixedLabel": "Service redesigned",
+          "reveal": "The site sold what the store did not have. You waited for an order that was never on the shelf.",
+          "resultTitle": "The complaint points to the symptom, not the cause.",
+          "resultBody": "You needed {count, plural, one {# extra try} other {# extra tries}}. The queue hurts. The order was never in stock.",
+          "resultClean": "You did not fall for the queue. Most people point at the wait and nobody looks at the stockroom.",
+          "retry": "Try again",
+          "scene": {
+            "onTime": "on time",
+            "ready": "Ready in 1h",
+            "appTitle": "Order",
+            "product": "Lume jacket",
+            "order": "Order 1042",
+            "paid": "paid",
+            "pickupCta": "Pick up in store",
+            "waitTitle": "Pickup queue",
+            "ticket": "Order 1042",
+            "desk": "Counter 2",
+            "noEta": "no estimate",
+            "you": "you",
+            "called": "1041 ready",
+            "arrived": "arrived on time",
+            "waitClock": "40 min in store",
+            "counterTitle": "Counter",
+            "counterOk": "2 min",
+            "counterTime": "2 min",
+            "staff": "store",
+            "bag": "bag",
+            "stockTitle": "Stockroom",
+            "stockError": "Not in store",
+            "stockHint": "The site sold ahead"
+          },
+          "rooms": [
+            { "id": "app", "title": "Order", "line": "Ready in 1h", "miss": "The app kept the promise. The wait does not start here." },
+            { "id": "wait", "title": "Store queue", "line": "40 min, no bag", "miss": "This is where you suffer. The order was never in this queue." },
+            { "id": "counter", "title": "Counter", "line": "Found you in 2 min", "miss": "The greeting was quick. It was not the counter." },
+            { "id": "stock", "title": "Stockroom", "line": "Not in store", "fix": "Site and stock in the same flow" }
+          ],
+          "live": [
+            {
+              "id": "app",
+              "title": "Pick up in 1 hour",
+              "body": "Paid. Confirmed. The store is 10 minutes away. You should not have to wait.",
+              "cta": "Go to the store"
+            },
+            {
+              "id": "wait",
+              "title": "The bag is not ready",
+              "body": "You arrived on time for pickup. Nobody has the order. The board shows no estimate.",
+              "cta": "Keep waiting",
+              "cta2": "I got called",
+              "clock": "18 min in store",
+              "clock2": "40 min in store"
+            },
+            {
+              "id": "counter",
+              "title": "The counter finds you in 2 min",
+              "body": "They serve you fast. The problem is not the smile at the counter.",
+              "cta": "Ask for the bag"
+            }
+          ],
+          "designed": [
+            "Order reserves stock",
+            "Pickup with no queue",
+            "Bag ready at the counter",
+            "Site and store in the same flow"
+          ],
+          "kpis": [
+            { "label": "Wait", "from": "40 min", "to": "4 min" },
+            { "label": "In store", "from": "61%", "to": "98%" },
+            { "label": "Buys again", "from": "22%", "to": "64%" }
+          ]
+        }
       },
       "daas": {
         "intro": "A design team inside yours, without the hiring delay.",
@@ -745,7 +883,120 @@
             "body": "Close management and metrics to ensure quality and delivery."
           }
         ],
-        "seoDescription": "Design as a Service (DaaS) at Matilha: a dedicated design team embedded in your product, with flexibility."
+        "seoDescription": "Design as a Service (DaaS) at Matilha: a dedicated design team embedded in your product, with flexibility.",
+        "build": {
+          "label": "// FROM SEAT TO FLOW",
+          "heading": "Design inside the team, not next door.",
+          "scrollHint": "Scroll to seat the team",
+          "steps": [
+            {
+              "title": "Seat",
+              "body": "The squad already runs. Someone who designs with them, every day, is missing."
+            },
+            {
+              "title": "Person",
+              "body": "A Matilha designer joins, on your pace and your tools."
+            },
+            {
+              "title": "Rituals",
+              "body": "Without design, the daily happens with no one designing. With Matilha, daily, pairing and review bring the person into the method."
+            },
+            {
+              "title": "Speed",
+              "body": "Hiring takes 45 days with the seat still empty. Allocation sits in 1 week, with management and output at the product's pace."
+            }
+          ],
+          "board": {
+            "app": "Atlas squad",
+            "countEmpty": "Design missing",
+            "countFull": "Squad complete",
+            "waitingLabel": "Stuck in the queue",
+            "emptyTitle": "Empty seat",
+            "emptyRole": "Design",
+            "people": [
+              { "role": "PM", "name": "Ana", "initial": "A" },
+              { "role": "Dev", "name": "João", "initial": "J" },
+              { "role": "QA", "name": "Lia", "initial": "L" },
+              { "role": "CS", "name": "Bia", "initial": "B" }
+            ],
+            "designer": {
+              "name": "Marina",
+              "role": "Product Designer",
+              "from": "Matilha",
+              "initial": "M",
+              "line": "On your pace, in your tools."
+            },
+            "tools": ["Figma", "Linear", "Slack"],
+            "ritualBefore": "Without design",
+            "ritualAfter": "With Matilha",
+            "ritualEmptyWho": "No design in the room",
+            "ritualGap": "missing",
+            "agenda": [
+              { "day": "Mon", "time": "9:15", "title": "Daily", "who": "Marina with the squad", "whoEmpty": "Squad without design" },
+              { "day": "Wed", "time": "2pm", "title": "Pairing", "who": "Marina and João", "whoEmpty": "Dev alone" },
+              { "day": "Thu", "time": "4pm", "title": "Review", "who": "Marina with product", "whoEmpty": "Review without design" }
+            ],
+            "tickets": ["Checkout", "Onboarding", "Search"],
+            "speedHireLabel": "Hiring",
+            "speedHireTime": "45 days",
+            "speedHireNote": "Seat still empty. Queue stuck.",
+            "speedDaasLabel": "Allocate",
+            "speedDaasTime": "1 week",
+            "shipped": "On the squad, with management and output at the product's pace."
+          }
+        },
+        "challenge": {
+          "label": "// WHO SITS HERE?",
+          "heading": "The seat is needed now. The permanent role is not.",
+          "lead": "The squad already runs. Design is missing. See what happens if you open a hiring process, and what changes when you allocate someone complete for a period.",
+          "start": "See the empty seat",
+          "squad": "Atlas squad",
+          "gapChip": "Open seats · now",
+          "openLabel": "Open seats",
+          "openFilledLabel": "One seated, others available",
+          "promptKicker": "// YOUR MOVE",
+          "promptReady": "// NEXT STEP",
+          "waitingLabel": "Stuck in the queue",
+          "hireWaiting": "Queue growing in hiring",
+          "movingLabel": "Moving with design",
+          "hireRunning": "Day {days} of 45 in hiring",
+          "hireMeter": "The seat is still empty",
+          "gapLead": "The seat is needed. How do you solve it?",
+          "hireLead": "45 days later, the team is still waiting. The seat did not wait for the process.",
+          "hireAction": "Open hiring",
+          "hireActionHint": "Watch 45 days pass",
+          "daasAction": "Allocate Matilha",
+          "daasActionHint": "Seat someone complete now",
+          "period": "Allocated · 12 weeks",
+          "people": [
+            { "role": "PM", "name": "Ana", "initial": "A" },
+            { "role": "Dev", "name": "João", "initial": "J" },
+            { "role": "QA", "name": "Lia", "initial": "L" },
+            { "role": "CS", "name": "Bia", "initial": "B" }
+          ],
+          "openRoles": ["Designer", "Writer", "Service Designer", "PO", "PM", "QA", "AI"],
+          "tickets": ["Checkout", "Onboarding", "Search"],
+          "hireTickets": ["Screening", "Interviews", "Offer"],
+          "designer": {
+            "name": "Marina",
+            "role": "Product Designer",
+            "initial": "M"
+          },
+          "resultTitle": "The seat needs someone now.",
+          "resultBody": "You watched hiring run and the seat stay empty. Allocation seats a complete professional for a period, without opening a permanent headcount.",
+          "resultClean": "You allocated without waiting on hiring. Gap closed in 1 week, for a defined period.",
+          "points": [
+            "A complete professional on the squad",
+            "For a defined period",
+            "Without opening a permanent hire",
+            "On the team in 1 week"
+          ],
+          "hireTime": "45 days",
+          "hireLabel": "hiring, still empty",
+          "daasTime": "1 week",
+          "daasLabel": "allocated and shipping",
+          "retry": "See again"
+        }
       },
       "branding": {
         "intro": "Before it's seen, a brand needs to be understood.",
@@ -787,8 +1038,8 @@
               "body": "Palette and typography give the brand its voice and warmth."
             },
             {
-              "title": "Applications",
-              "body": "The brand leaves the page and lives on packaging, screens and streets."
+              "title": "Recall",
+              "body": "A brand that sticks is a brand people pick. Recall turns into consumption, not just letterhead."
             }
           ],
           "board": {
@@ -812,7 +1063,8 @@
               "App"
             ],
             "cardName": "Marina Alves",
-            "cardRole": "Head roaster"
+            "cardRole": "Head roaster",
+            "benefit": "A remembered brand is a chosen brand."
           }
         },
         "challenge": {
@@ -894,8 +1146,8 @@
               "body": "From commit to production in minutes, with previews to validate first."
             },
             {
-              "title": "Live",
-              "body": "Real time monitoring, high performance and a team keeping watch."
+              "title": "Trust",
+              "body": "A product that stays up and stays fast. Fewer crashes, less rework, more people actually using it."
             }
           ],
           "board": {
@@ -981,7 +1233,94 @@
             "body": "Learnings, numbers and a straight recommendation: go, adjust or stop."
           }
         ],
-        "seoDescription": "Business Model Validation at Matilha: hypotheses, prototypes, MVP and experiments to decide with data."
+        "seoDescription": "Business Model Validation at Matilha: hypotheses, prototypes, MVP and experiments to decide with data.",
+        "build": {
+          "label": "// FROM BET TO PROOF",
+          "heading": "An idea only counts when someone proves it.",
+          "scrollHint": "Scroll to validate",
+          "steps": [
+            {
+              "title": "Hypothesis",
+              "body": "The line stays on the table: if a parent gets a pediatrician the same day, they pay on the spot."
+            },
+            {
+              "title": "Prototype",
+              "body": "No app. Matilha books the visit on WhatsApp, in an afternoon."
+            },
+            {
+              "title": "Experiment",
+              "body": "The same 20 parents, on WhatsApp. Who paid, who booked that day, who named the same pain."
+            },
+            {
+              "title": "Decision",
+              "body": "The handmade version held. The app only comes after that."
+            }
+          ],
+          "board": {
+            "case": "Pediatrician the same day",
+            "chips": ["Written, no proof", "Done by hand", "20 parents on WhatsApp", "Decision made"],
+            "betLabel": "The bet",
+            "if": "If",
+            "hypothesis": "a parent gets a pediatrician the same day",
+            "then": "then",
+            "outcome": "they pay US$ 29 on the spot.",
+            "noiseLabel": "This is not proof",
+            "noise": ["2,000 likes", "My mom loved it", "A pretty slide"],
+            "emptyCount": "0/20",
+            "emptyTitle": "parents heard",
+            "emptyBody": "The line is written. A real visit still needs to be booked.",
+            "chatTitle": "WhatsApp",
+            "chatWho": "Matilha",
+            "thread": [
+              { "from": "pai", "text": "My child has a fever, age 2." },
+              { "from": "matilha", "text": "Dr. Ana today, 4pm. US$ 29." },
+              { "from": "pai", "text": "Book it." }
+            ],
+            "proto": "No app. One afternoon.",
+            "payLabel": "would pay US$ 29",
+            "accessValue": "9",
+            "accessLabel": "booked the same day",
+            "talkValue": "7",
+            "talkLabel": "interviews, same pain",
+            "quotes": ["Booked on WhatsApp in two minutes. The plan takes three days."],
+            "stamp": "GO",
+            "decision": "The handmade version held.",
+            "next": "Next: 50 parents, still no app."
+          }
+        },
+        "challenge": {
+          "label": "// EVIDENCE OR VANITY",
+          "heading": "Separate evidence from vanity.",
+          "lead": "Ten signals. Evidence is what someone actually did. The rest is vanity.",
+          "start": "See the evidence",
+          "askTitle": "Drag the evidence to Evidence. The rest is vanity.",
+          "decideLead": "Sorted. Now, Go.",
+          "proofLabel": "Evidence",
+          "noiseLabel": "Vanity",
+          "go": "Go",
+          "and": "and",
+          "resultGoTitle": "The evidence held.",
+          "resultGoBody": "Payment, the booked visit and the same pain stayed. Vanity stayed out.",
+          "resultBlindTitle": "You went, but you should not have.",
+          "whyVanity": "Counted as evidence: {items}.",
+          "whyMissed": "Left in vanity: {items}.",
+          "whyClose": "That does not hold the decision to go. Likes, mom, a slide and a newsletter do not pay the bill.",
+          "retry": "Try again",
+          "real": [
+            "12 of 20 parents would pay US$ 29",
+            "9 visits booked on WhatsApp, the same day",
+            "7 parents describe the same pain",
+            "4 parents sent the US$ 29 receipt"
+          ],
+          "vanity": [
+            "2,000 likes on the launch post",
+            "My mom thought it was amazing",
+            "A competitor already does something similar",
+            "The pitch deck has a pretty slide",
+            "400 newsletter subscribers, zero clicks",
+            "The new logo looks nice"
+          ]
+        }
       }
     }
   }

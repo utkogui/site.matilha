@@ -93,7 +93,11 @@ export async function HomeHero() {
         </div>
       </div>
 
-      <HeroScrollCue targetId="home-studio" label={t("scrollDown")} />
+      <div className="hero-scroll-slot">
+        <HeroScrollCue targetId="home-studio" label={t("scrollDown")}>
+          {t("heroScrollHint")}
+        </HeroScrollCue>
+      </div>
     </section>
   );
 }
