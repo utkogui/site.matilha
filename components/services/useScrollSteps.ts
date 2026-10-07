@@ -11,8 +11,6 @@ export type ScrollDirection = 1 | -1;
 export type ScrollStepHandler = (direction: ScrollDirection, commit: boolean) => boolean;
 
 const STEP_COOLDOWN = 850;
-const INERTIA_WINDOW = 180;
-const TOUCH_THRESHOLD = 36;
 const KEYS_DOWN = new Set(["ArrowDown", "PageDown"]);
 const KEYS_UP = new Set(["ArrowUp", "PageUp"]);
 
@@ -30,50 +28,6 @@ export function useScrollSteps(handler: ScrollStepHandler) {
   });
 
   useEffect(() => {
-    let touchStart = 0;
-    let touchFired = false;
-
-    const commit = (direction: ScrollDirection) => {
-      handlerRef.current(direction, true);
-      lockUntil = performance.now() + STEP_COOLDOWN;
-    };
-
-    const onWheel = (event: WheelEvent) => {
-      if (event.defaultPrevented || event.ctrlKey || Math.abs(event.deltaY) < 4) return;
-      const now = performance.now();
-      if (now < lockUntil) {
-        event.preventDefault();
-        lockUntil = Math.max(lockUntil, now + INERTIA_WINDOW);
-        return;
-      }
-      const direction: ScrollDirection = event.deltaY > 0 ? 1 : -1;
-      if (!handlerRef.current(direction, false)) return;
-      event.preventDefault();
-      commit(direction);
-    };
-
-    const onTouchStart = (event: TouchEvent) => {
-      touchStart = event.touches[0]?.clientY ?? 0;
-      touchFired = false;
-    };
-
-    const onTouchMove = (event: TouchEvent) => {
-      if (event.defaultPrevented) return;
-      if (performance.now() < lockUntil) {
-        event.preventDefault();
-        return;
-      }
-      const delta = touchStart - (event.touches[0]?.clientY ?? touchStart);
-      if (Math.abs(delta) < 4) return;
-      const direction: ScrollDirection = delta > 0 ? 1 : -1;
-      if (!handlerRef.current(direction, false)) return;
-      event.preventDefault();
-      if (!touchFired && Math.abs(delta) > TOUCH_THRESHOLD) {
-        touchFired = true;
-        commit(direction);
-      }
-    };
-
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.defaultPrevented || event.altKey || event.metaKey || event.ctrlKey) return;
       let direction: ScrollDirection | 0 = 0;
@@ -87,19 +41,11 @@ export function useScrollSteps(handler: ScrollStepHandler) {
       }
       if (!handlerRef.current(direction, false)) return;
       event.preventDefault();
-      commit(direction);
+      handlerRef.current(direction, true);
+      lockUntil = performance.now() + STEP_COOLDOWN;
     };
 
-    window.addEventListener("wheel", onWheel, { passive: false });
-    window.addEventListener("touchstart", onTouchStart, { passive: true });
-    window.addEventListener("touchmove", onTouchMove, { passive: false });
     window.addEventListener("keydown", onKeyDown);
-
-    return () => {
-      window.removeEventListener("wheel", onWheel);
-      window.removeEventListener("touchstart", onTouchStart);
-      window.removeEventListener("touchmove", onTouchMove);
-      window.removeEventListener("keydown", onKeyDown);
-    };
+    return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 }

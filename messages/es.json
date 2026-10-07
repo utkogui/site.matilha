@@ -780,85 +780,25 @@
           }
         },
         "challenge": {
-          "label": "// LA QUEJA MENTE",
-          "heading": "Compraste en el sitio. ¿Por qué sigues esperando?",
-          "lead": "En Lume, quien compra online llega pensando que es tomar y listo. La tienda promete retiro en 1 hora. Entra al recorrido y haz clic en lo que realmente rompe el servicio.",
-          "start": "Comprar y retirar",
-          "store": "Lume",
-          "complaint": "Queja: espera de más en el retiro",
-          "liveLabel": "Eres quien compra",
-          "status": "Pedido listo en 1 hora · retiro en tienda",
-          "diagnose": "La queja es la fila del retiro. ¿Dónde se rompe de verdad el servicio?",
-          "fixedLabel": "Servicio rediseñado",
-          "reveal": "El sitio vendió lo que la tienda no tenía. Esperaste un pedido que no existía en el estante.",
-          "resultTitle": "La queja apunta al síntoma, no a la causa.",
-          "resultBody": "Necesitaste {count, plural, one {# intento extra} other {# intentos extra}}. La fila duele. El pedido nunca estuvo en el stock.",
-          "resultClean": "No caíste en la fila. La mayoría señala la espera y nadie mira el depósito.",
+          "label": "// QUÉ ES DISEÑO DE SERVICIO",
+          "heading": "La fila es lo que ella siente.",
+          "lead": "El diseño de servicio es el recorrido entero. El frente es lo que la persona ve. Los bastidores son lo que la tienda hace. La queja casi nunca es la causa.",
+          "symptomAsk": "¿Dónde siente el dolor?",
+          "causeAsk": "La fila es el síntoma. ¿Dónde se rompe el servicio?",
+          "doneAsk": "La causa estaba en los bastidores.",
+          "frontLabel": "Al frente",
+          "backLabel": "En los bastidores",
+          "backLocked": "Todavía cerrado. Primero encuentra dónde siente el dolor.",
+          "symptomMiss": "Ella ya pagó y el mostrador fue rápido. El dolor que cuenta es la fila.",
+          "causeMiss": "Eso es lo que ella ve. Mira el stock.",
+          "resultTitle": "Esto es diseño de servicio.",
+          "resultBody": "El sitio vendió la chaqueta. La tienda no la tenía. La fila aparece porque el frente y el stock no se hablan.",
           "retry": "Repetir",
-          "scene": {
-            "onTime": "en horario",
-            "ready": "Listo en 1h",
-            "appTitle": "Pedido",
-            "product": "Chaqueta Lume",
-            "order": "Pedido 1042",
-            "paid": "pagado",
-            "pickupCta": "Retirar en tienda",
-            "waitTitle": "Fila del retiro",
-            "ticket": "Pedido 1042",
-            "desk": "Mostrador 2",
-            "noEta": "sin previsión",
-            "you": "tú",
-            "called": "1041 listo",
-            "arrived": "llegó en horario",
-            "waitClock": "40 min en tienda",
-            "counterTitle": "Mostrador",
-            "counterOk": "2 min",
-            "counterTime": "2 min",
-            "staff": "tienda",
-            "bag": "bolsa",
-            "stockTitle": "Depósito",
-            "stockError": "No está en tienda",
-            "stockHint": "El sitio vendió de más"
-          },
-          "rooms": [
-            { "id": "app", "title": "Pedido", "line": "Listo en 1h", "miss": "La app cumplió la promesa. La espera no nace aquí." },
-            { "id": "wait", "title": "Fila de la tienda", "line": "40 min sin bolsa", "miss": "Aquí sufres. El pedido nunca estuvo en esta fila." },
-            { "id": "counter", "title": "Mostrador", "line": "Te encontró en 2 min", "miss": "La atención fue rápida. No era el mostrador." },
-            { "id": "stock", "title": "Depósito", "line": "No está en tienda", "fix": "Sitio y stock en el mismo flujo" }
-          ],
-          "live": [
-            {
-              "id": "app",
-              "title": "Retira en 1 hora",
-              "body": "Pagado. Confirmado. La tienda queda a 10 minutos. No deberías esperar.",
-              "cta": "Ir a la tienda"
-            },
-            {
-              "id": "wait",
-              "title": "La bolsa no está lista",
-              "body": "Llegaste en el horario del retiro. Nadie tiene el pedido. El panel no muestra previsión.",
-              "cta": "Seguir esperando",
-              "cta2": "Me llamaron",
-              "clock": "18 min en tienda",
-              "clock2": "40 min en tienda"
-            },
-            {
-              "id": "counter",
-              "title": "El mostrador te encuentra en 2 min",
-              "body": "La persona atiende rápido. El problema no es la sonrisa en el mostrador.",
-              "cta": "Pedir la bolsa"
-            }
-          ],
-          "designed": [
-            "El pedido reserva el stock",
-            "Retiro sin fila",
-            "Bolsa lista en el mostrador",
-            "Sitio y tienda en el mismo flujo"
-          ],
-          "kpis": [
-            { "label": "Espera", "from": "40 min", "to": "4 min" },
-            { "label": "Pedido en tienda", "from": "61%", "to": "98%" },
-            { "label": "Vuelve a comprar", "from": "22%", "to": "64%" }
+          "facts": [
+            { "id": "app", "side": "front", "title": "Pedido", "line": "Retira en 1 hora" },
+            { "id": "wait", "side": "front", "title": "Fila", "line": "40 min sin bolsa" },
+            { "id": "counter", "side": "front", "title": "Mostrador", "line": "Atendida en 2 min" },
+            { "id": "stock", "side": "back", "title": "Stock", "line": "No hay en el stock" }
           ]
         }
       },

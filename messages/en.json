@@ -780,85 +780,25 @@
           }
         },
         "challenge": {
-          "label": "// THE COMPLAINT LIES",
-          "heading": "You bought online. Why are you still waiting?",
-          "lead": "At Lume, people who buy online arrive thinking it is grab and go. The store promises pickup in 1 hour. Walk the visit, then click what is actually breaking the service.",
-          "start": "Buy and pick up",
-          "store": "Lume",
-          "complaint": "Complaint: waiting too long to pick up",
-          "liveLabel": "You are the shopper",
-          "status": "Order ready in 1 hour · pick up in store",
-          "diagnose": "The complaint is the pickup queue. Where does the service actually break?",
-          "fixedLabel": "Service redesigned",
-          "reveal": "The site sold what the store did not have. You waited for an order that was never on the shelf.",
-          "resultTitle": "The complaint points to the symptom, not the cause.",
-          "resultBody": "You needed {count, plural, one {# extra try} other {# extra tries}}. The queue hurts. The order was never in stock.",
-          "resultClean": "You did not fall for the queue. Most people point at the wait and nobody looks at the stockroom.",
+          "label": "// WHAT SERVICE DESIGN IS",
+          "heading": "The queue is what she feels.",
+          "lead": "Service design is the whole journey. The front is what the person sees. The backstage is what the store does. The complaint is almost never the cause.",
+          "symptomAsk": "Where does she feel the pain?",
+          "causeAsk": "The queue is the symptom. Where does the service break?",
+          "doneAsk": "The cause was backstage.",
+          "frontLabel": "In front",
+          "backLabel": "Backstage",
+          "backLocked": "Still closed. First find where she feels the pain.",
+          "symptomMiss": "She already paid and the counter was fast. The pain she tells is the queue.",
+          "causeMiss": "That is what she sees. Look at the stock.",
+          "resultTitle": "This is service design.",
+          "resultBody": "The site sold the jacket. The store did not have it. The queue only shows up because the front and the stock do not talk.",
           "retry": "Try again",
-          "scene": {
-            "onTime": "on time",
-            "ready": "Ready in 1h",
-            "appTitle": "Order",
-            "product": "Lume jacket",
-            "order": "Order 1042",
-            "paid": "paid",
-            "pickupCta": "Pick up in store",
-            "waitTitle": "Pickup queue",
-            "ticket": "Order 1042",
-            "desk": "Counter 2",
-            "noEta": "no estimate",
-            "you": "you",
-            "called": "1041 ready",
-            "arrived": "arrived on time",
-            "waitClock": "40 min in store",
-            "counterTitle": "Counter",
-            "counterOk": "2 min",
-            "counterTime": "2 min",
-            "staff": "store",
-            "bag": "bag",
-            "stockTitle": "Stockroom",
-            "stockError": "Not in store",
-            "stockHint": "The site sold ahead"
-          },
-          "rooms": [
-            { "id": "app", "title": "Order", "line": "Ready in 1h", "miss": "The app kept the promise. The wait does not start here." },
-            { "id": "wait", "title": "Store queue", "line": "40 min, no bag", "miss": "This is where you suffer. The order was never in this queue." },
-            { "id": "counter", "title": "Counter", "line": "Found you in 2 min", "miss": "The greeting was quick. It was not the counter." },
-            { "id": "stock", "title": "Stockroom", "line": "Not in store", "fix": "Site and stock in the same flow" }
-          ],
-          "live": [
-            {
-              "id": "app",
-              "title": "Pick up in 1 hour",
-              "body": "Paid. Confirmed. The store is 10 minutes away. You should not have to wait.",
-              "cta": "Go to the store"
-            },
-            {
-              "id": "wait",
-              "title": "The bag is not ready",
-              "body": "You arrived on time for pickup. Nobody has the order. The board shows no estimate.",
-              "cta": "Keep waiting",
-              "cta2": "I got called",
-              "clock": "18 min in store",
-              "clock2": "40 min in store"
-            },
-            {
-              "id": "counter",
-              "title": "The counter finds you in 2 min",
-              "body": "They serve you fast. The problem is not the smile at the counter.",
-              "cta": "Ask for the bag"
-            }
-          ],
-          "designed": [
-            "Order reserves stock",
-            "Pickup with no queue",
-            "Bag ready at the counter",
-            "Site and store in the same flow"
-          ],
-          "kpis": [
-            { "label": "Wait", "from": "40 min", "to": "4 min" },
-            { "label": "In store", "from": "61%", "to": "98%" },
-            { "label": "Buys again", "from": "22%", "to": "64%" }
+          "facts": [
+            { "id": "app", "side": "front", "title": "Order", "line": "Pick up in 1 hour" },
+            { "id": "wait", "side": "front", "title": "Queue", "line": "40 min, no bag" },
+            { "id": "counter", "side": "front", "title": "Counter", "line": "Served in 2 min" },
+            { "id": "stock", "side": "back", "title": "Stock", "line": "Not in stock" }
           ]
         }
       },

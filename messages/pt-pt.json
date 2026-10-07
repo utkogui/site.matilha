@@ -780,85 +780,25 @@
           }
         },
         "challenge": {
-          "label": "// A QUEIXA MENTE",
-          "heading": "Comprou no site. Porque ainda espera?",
-          "lead": "Na Lume, quem compra online chega achando que é só pegar. A loja promete retirada em 1 hora. Entre na jornada e clique no que realmente quebra o serviço.",
-          "start": "Comprar e retirar",
-          "store": "Lume",
-          "complaint": "Queixa: espera demais na recolha",
-          "liveLabel": "Você é quem compra",
-          "status": "Pedido pronto em 1 hora · recolha na loja",
-          "diagnose": "A queixa é a fila da recolha. Onde o serviço quebra de verdade?",
-          "fixedLabel": "Serviço redesenhado",
-          "reveal": "O site vendeu o que a loja não tinha. Você esperou por um pedido que não existia na prateleira.",
-          "resultTitle": "A queixa aponta o sintoma, não a causa.",
-          "resultBody": "Precisou de {count, plural, one {# tentativa extra} other {# tentativas extra}}. A fila dói. O pedido nunca esteve no stock.",
-          "resultClean": "Não caiu na fila. A maior parte aponta a espera e ninguém olha o depósito.",
+          "label": "// O QUE É DESIGN DE SERVIÇO",
+          "heading": "A fila é o que ela sente.",
+          "lead": "Design de serviço é a jornada inteira. A frente é o que a pessoa vê. Os bastidores são o que a loja faz. A queixa quase nunca é a causa.",
+          "symptomAsk": "Onde a pessoa sente a dor?",
+          "causeAsk": "A fila é o sintoma. Onde o serviço quebra?",
+          "doneAsk": "A causa estava nos bastidores.",
+          "frontLabel": "Na frente",
+          "backLabel": "Nos bastidores",
+          "backLocked": "Ainda fechado. Primeiro encontre onde ela sente a dor.",
+          "symptomMiss": "Ela já pagou e o balcão foi rápido. A dor que ela conta é a fila.",
+          "causeMiss": "Isto é o que ela vê. Olhe o stock.",
+          "resultTitle": "Isto é design de serviço.",
+          "resultBody": "O site vendeu o casaco. A loja não tinha. A fila só aparece porque a frente e o stock não se falam.",
           "retry": "Repetir",
-          "scene": {
-            "onTime": "a horas",
-            "ready": "Pronto em 1h",
-            "appTitle": "Pedido",
-            "product": "Casaco Lume",
-            "order": "Pedido 1042",
-            "paid": "pago",
-            "pickupCta": "Recolher na loja",
-            "waitTitle": "Fila da recolha",
-            "ticket": "Pedido 1042",
-            "desk": "Balcão 2",
-            "noEta": "sem previsão",
-            "you": "você",
-            "called": "1041 pronto",
-            "arrived": "chegou a horas",
-            "waitClock": "40 min na loja",
-            "counterTitle": "Balcão",
-            "counterOk": "2 min",
-            "counterTime": "2 min",
-            "staff": "loja",
-            "bag": "saco",
-            "stockTitle": "Depósito",
-            "stockError": "Não tem na loja",
-            "stockHint": "O site vendeu à frente"
-          },
-          "rooms": [
-            { "id": "app", "title": "Pedido", "line": "Pronto em 1h", "miss": "O app cumpriu a promessa. A espera não nasce aqui." },
-            { "id": "wait", "title": "Fila da loja", "line": "40 min sem saco", "miss": "Aqui você sofre. O pedido nunca esteve nesta fila." },
-            { "id": "counter", "title": "Balcão", "line": "Encontrou-o em 2 min", "miss": "O atendimento foi rápido. Não era o balcão." },
-            { "id": "stock", "title": "Depósito", "line": "Não tem na loja", "fix": "Site e stock no mesmo fluxo" }
-          ],
-          "live": [
-            {
-              "id": "app",
-              "title": "Recolha em 1 hora",
-              "body": "Pago. Confirmado. A loja fica a 10 minutos. Você não deveria esperar.",
-              "cta": "Ir à loja"
-            },
-            {
-              "id": "wait",
-              "title": "O saco não está pronto",
-              "body": "Chegou a horas da recolha. Ninguém tem o pedido. O painel não mostra previsão.",
-              "cta": "Continuar a esperar",
-              "cta2": "Fui chamado",
-              "clock": "18 min na loja",
-              "clock2": "40 min na loja"
-            },
-            {
-              "id": "counter",
-              "title": "O balcão encontra-o em 2 min",
-              "body": "A pessoa atende rápido. O problema não é o sorriso no balcão.",
-              "cta": "Pedir o saco"
-            }
-          ],
-          "designed": [
-            "Pedido reserva o stock",
-            "Recolha sem fila",
-            "Saco pronto no balcão",
-            "Site e loja no mesmo fluxo"
-          ],
-          "kpis": [
-            { "label": "Espera", "from": "40 min", "to": "4 min" },
-            { "label": "Pedido na loja", "from": "61%", "to": "98%" },
-            { "label": "Volta a comprar", "from": "22%", "to": "64%" }
+          "facts": [
+            { "id": "app", "side": "front", "title": "Pedido", "line": "Recolha em 1 hora" },
+            { "id": "wait", "side": "front", "title": "Fila", "line": "40 min sem saco" },
+            { "id": "counter", "side": "front", "title": "Balcão", "line": "Atendida em 2 min" },
+            { "id": "stock", "side": "back", "title": "Stock", "line": "Não tem no stock" }
           ]
         }
       },
